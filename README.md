@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Rad u timu na React aplikaciji
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Setapovanje projekta
 
-## Available Scripts
+**Kako bismo setapovali react aplikaciju, potrebno je da uradimo par stvari:**
 
-In the project directory, you can run:
+1 . kloniramo github repozitorijum na **lokalnu masinu:**
 
-### `npm start`
+`git clone https://github.com/filipstev/fon-hakaton`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2 . ulazimo u direktorjium fon-hakaton-a:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`cd fon-hakaton`
 
-### `npm test`
+3 . instaliramo potrebne dependency-je za react:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm install`
 
-### `npm run build`
+### **Rad na sajtu:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bilo bi dobro da svako od nas napravi granu na kojoj ce raditi (grana se pravi komandom `git checkout -b "naziv grane"`). Nazivi grana mogu biti: "landing", "o hakatonu", "partneri"... Kada napravimo granu, na master grani ce se menjati samo po potrebi, **npr:** Treba da se izmeni globalni css, push-ujemo na master granu kako bi css mogao da se primeni kod svih.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Kada kloniramo i setapujemo projekat, svako od nas bi trebalo da napravi folder u `src\components` kao naziv stranice na kojoj radi. **npr:** Filip radi na stranici "o-hakatonu", Filip ce napraviti folder `o-hakatonu` i u njega ce ubacivati sve komponente vezane za njegov deo posla.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Bonus
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Kada u buducnosti sami budete pravili react aplikacije, upalicete terminal na vasem racunaru (Command Prompt na Windowsu) , oticicete na lokaciju gde zelite da vam se napravi folder sa datom aplikacijom (npr. desktop) i upisacete komandu **`npx create-react-app ime-aplikacije`**
