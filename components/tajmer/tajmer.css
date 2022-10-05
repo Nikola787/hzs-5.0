@@ -1,0 +1,19 @@
+p {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+}
+
+#dani {
+    margin-left: -20rem;
+    font-size: 2rem;
+}
+
+#sati {
+    font-size: 2rem;
+}
+
+.wrapper {
+    display: block;
+    text-align: center;
+}
