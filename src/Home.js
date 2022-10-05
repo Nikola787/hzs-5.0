@@ -4,7 +4,7 @@ import Animacija from './components/animacija/animacija.js'
 const Home = () => {
   return (
     <div>
-        {/* <Animacija /> */}
+        Test
     </div>
   )
 }
