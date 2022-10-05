@@ -1,11 +1,12 @@
 import React from 'react'
-import Animacija from './components/animacija/animacija.js'
+import Iskustva from './components/iskustva/iskustva'
+//import Animacija from './components/animacija/animacija.js'
 
 const Home = () => {
   return (
-    <div>
-        {/* <Animacija /> */}
-    </div>
+
+    <Iskustva/>
+    
   )
 }
 
