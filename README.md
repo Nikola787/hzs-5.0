@@ -6,7 +6,7 @@
 
 1 . kloniramo github repozitorijum na **lokalnu masinu:**
 
-`git clone https://github.com/filipstev/fon-hakaton`
+`git clone https://github.com/Nikola787/hzs-5.0.git`
 
 2 . ulazimo u direktorjium fon-hakaton-a:
 
