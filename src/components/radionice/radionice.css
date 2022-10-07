@@ -8,8 +8,8 @@
   display: block;
   background-image: url(../../images/Frame.png);
   background-repeat: no-repeat;
-  background-size: 68.7%;
-  background-position: top;
+  background-size: 68%;
+  background-position: 69% 0%;
   background-color: #181919;
 }
 
@@ -84,10 +84,10 @@
 
 .radionica1-desno-container .slika_desna {
   border-radius: 50%;
-  width: 624px;
-  height: 624px;
-  margin-top: 1.84rem;
-  margin-left: -12.4rem;
+  width: 621px;
+  height: 621px;
+  margin-top: 1.65rem;
+  margin-left: -7.4rem;
 }
 
 .radionica1-desno-container .ime-predavaca {
@@ -96,7 +96,7 @@
   font-family: "Manrope";
   font-weight: 400;
   margin-bottom: -0.8rem;
-  margin-left: -4rem;
+  margin-left: -6.5rem;
 }
 
 .radionica1-desno-container .predavac-opis {
@@ -106,6 +106,6 @@
   font-weight: 200;
   text-align: right;
   margin-top: 2rem;
-  margin-left: -2rem;
+  margin-left: -11rem;
   width: 50rem;
 }
