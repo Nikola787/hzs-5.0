@@ -38,7 +38,12 @@ const radionice = () => {
       <div className="radionica2-container">
         <div className="radionica2-levo-container">
           <div className="prvi-deo">
-            <h1>Pavle Prica</h1>
+            <h1 className="ime-predavaca">Pavle Prica</h1>
+            <img
+              className="slika_leva"
+              src={slikaPredavaca}
+              alt="Slika predavaca"
+            />
           </div>
         </div>
       </div>
