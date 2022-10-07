@@ -35,7 +35,15 @@ const radionice = () => {
           </p>
         </div>
       </div>
-      <div className="radionica2-wrapper"></div>
+      <div className="radionica2-container">
+        <div className="radionica2-levo-container">
+          <div className="prvi-deo">
+            <h1>Pavle Prica</h1>
+          </div>
+        </div>
+      </div>
+      <div className="radionica3-container"></div>
+      <div className="radionica4-container"></div>
     </div>
   );
 };

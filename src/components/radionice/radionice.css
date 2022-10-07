@@ -8,7 +8,7 @@
   display: block;
   background-image: url(../../images/Frame.png);
   background-repeat: no-repeat;
-  background-size: 68%;
+  background-size: 69%;
   background-position: 69% 0%;
   background-color: #181919;
 }
@@ -26,6 +26,7 @@
   max-height: 50%;
   max-width: 37rem;
   flex-direction: column;
+  font-size: 19px;
 }
 
 .radionica1-container .radionica1-levo-container .rectangle {
@@ -108,4 +109,23 @@
   margin-top: 2rem;
   margin-left: -11rem;
   width: 50rem;
+}
+
+.radionica2-container {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  justify-content: space-around;
+}
+.radionica3-container {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  justify-content: space-around;
+}
+.radionica4-container {
+  display: flex;
+  height: 145vh;
+  width: auto;
+  justify-content: space-around;
 }
