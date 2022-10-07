@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+}
+
+.navbar-logo {
+    width: 10%;
+}
+
+.navbar-pages .list{
+    display: flex;
+}
+
+.navbar-pages {
+    width: 90%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-pages .list li{
+text-decoration: none;
+}
