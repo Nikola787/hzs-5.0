@@ -4,12 +4,20 @@
   box-sizing: border-box;
 }
 
+.radionice-wrapper {
+  display: block;
+  background-image: url(../../images/Frame.png);
+  background-repeat: no-repeat;
+  background-size: 68.7%;
+  background-position: top;
+  background-color: #181919;
+}
+
 .radionica1-container {
   display: flex;
   height: 100vh;
   width: auto;
   justify-content: space-around;
-  background-color: #181919;
 }
 
 .radionica1-levo-container {
@@ -76,10 +84,10 @@
 
 .radionica1-desno-container .slika_desna {
   border-radius: 50%;
-  width: 450px;
-  height: 450px;
-  border: 4px solid #00ffa3;
-  margin-left: -5rem;
+  width: 624px;
+  height: 624px;
+  margin-top: 1.84rem;
+  margin-left: -12.4rem;
 }
 
 .radionica1-desno-container .ime-predavaca {
