@@ -128,12 +128,24 @@ const navbar = () => {
         </div>
         <div className="navbar-pages">
           <ul className="list">
-            <li>O PROJEKTU</li>
-            <li>ISKUSTVA</li>
-            <li>RADIONICE</li>
-            <li>PITANJA</li>
-            <li>TIM</li>
-            <li id="log-in">PRIJAVI SE</li>
+            <li>
+              <a href="#">O PROJEKTU</a>
+            </li>
+            <li>
+              <a href="#">ISKUSTVA</a>
+            </li>
+            <li>
+              <a href="#">RADIONICE</a>
+            </li>
+            <li>
+              <a href="#">PITANJA</a>
+            </li>
+            <li>
+              <a href="#">TIM</a>
+            </li>
+            <li id="log-in">
+              <a href="#">PRIJAVI SE</a>
+            </li>
           </ul>
         </div>
       </div>
