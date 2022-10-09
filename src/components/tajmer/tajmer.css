@@ -1,7 +1,6 @@
 p {
     text-align: center;
-    font-size: 60px;
-    margin: 0;
+        font-size: 60px;
 }
 
 #dani {
@@ -15,5 +14,30 @@ p {
 
 .wrapper {
     display: block;
-    text-align: center;
+    background-color: #181919;
+    padding-top: 10rem;
 }
+
+
+
+/* @property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+
+p {
+    animation: counter 5s infinite alternate ease-in-out;
+    counter-reset: num var(--num);
+    
+}
+
+@keyframes p {
+    from {
+        --num: 0;
+    }
+
+    to {
+        --num: 100;
+    }
+} */

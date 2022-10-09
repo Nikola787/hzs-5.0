@@ -3,6 +3,7 @@ import Animacija from "./components/animacija/animacija.js";
 import Radionice from "./components/radionice/radionice.jsx";
 import Navbar from "./components/navbar/navbar";
 import Tajmer from "./components/tajmer/tajmer.jsx";
+import Agenda from "./components/agenda/agenda.jsx";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Navbar />
       <Tajmer />
       <Radionice />
+      <Agenda />
     </div>
   );
 };
