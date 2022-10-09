@@ -1,0 +1,71 @@
+
+.prijava {
+    color:white;
+}
+/* 
+
+.prijavabutton {
+    color: white;
+    background: none;
+    text-decoration: inherit;
+    font-family: system-ui;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    background-image: linear-gradient(to right, #181919 -10%, #00FFA3 120%);
+    border-image-source: linear-gradient(to right, #00FFA3 -10%, #181919 120%);
+} */
+
+.gradijentcontent {
+    background-image: linear-gradient(to right, #181919 -10%, #00FFA3 120%);
+    border: none;
+    border-radius: 1.5rem;
+    color: white;
+}
+
+.gradijentborder {
+    background-image: linear-gradient(to right, #00FFA3 -10%, #181919 120%);
+    border: none;
+    border-radius: 2rem;
+}
+
+.prijavabutton {
+    font-size: 3rem;
+    position: relative;
+    top: 5pt;
+    text-align: center;
+    width: 250pt;
+    height: 60pt;
+}
+
+.prijavaborder {
+    width: 260pt;
+    height: 70pt;
+    margin: auto;
+    position: relative;
+    top: -30pt;
+}
+
+.prijavaboxborder {
+    margin: auto;
+    width: 610pt;
+    height: 360pt;
+}
+
+.prijavabox {
+    margin: auto;
+    background-color: black;
+    width: 600pt;
+    height: 350pt;
+    position: relative;
+    top: 5pt;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.prijavatitle {
+    font-size: 3rem;
+}
