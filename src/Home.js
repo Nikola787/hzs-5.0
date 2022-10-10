@@ -8,10 +8,10 @@ import SlikeTima from "./components/slike_tima/slike_tima.jsx";
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <Tajmer />
+      {/* <Navbar />
+      <Tajmer /> */}
       <Radionice />
-      <SlikeTima />
+      {/* <SlikeTima /> */}
     </div>
   );
 };
