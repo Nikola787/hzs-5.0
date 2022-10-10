@@ -1,0 +1,140 @@
+.ceo{
+    background-image: url('./assets/pozadina_forma.png');
+    background-size: cover;
+    /* background-repeat: repeat;
+    background-size: contain;
+    height: 1920px; */
+}
+
+.naslov{
+    display: flex;
+}
+
+.boja{
+    margin-top: 6%;
+    margin-left: 5%;
+
+    background: #C3B0FF;
+    width: 17px;
+    height: 60px;
+}
+
+.naslov-tekst{
+    margin-top: 4%;
+    margin-left: 1%;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 123px;
+    color: #FFFFFF;
+}
+
+.box-clan{
+
+    margin-left: 16%;
+    padding-top: 1.7%;
+
+    width: 60vw;
+    height: 67vh;
+
+    background: linear-gradient(#181919, #181919) padding-box, linear-gradient(120.39deg, #C3B0FF 23.45%, rgba(190, 171, 248, 0.975) 59.96%, rgba(24, 25, 25, 0.2) 104.96%) border-box;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 50px;
+
+    box-shadow: -37px 37px 74px rgba(14, 15, 15, 0.2), 37px -37px 74px rgba(14, 15, 15, 0.2), -37px -37px 74px rgba(34, 35, 35, 0.9), 37px 37px 93px rgba(14, 15, 15, 0.9), inset 1px 1px 2px rgba(34, 35, 35, 0.3), inset -1px -1px 2px rgba(14, 15, 15, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+.dugme{
+
+    margin-top: 34%;
+    margin-left: 64%;
+
+    width: 250px;
+    height: 50px;
+    border: 5px;
+    border-style: solid;
+    /* border-radius: 44px; */
+
+    border-image-source: linear-gradient(120.39deg, #C3B0FF 63.36%, rgba(24, 25, 25, 0.2) 104.96%);
+    border-image-slice: 9;
+
+    text-align: center;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 28px;
+
+    background: rgba(24, 25, 25, 0.2);
+    color: white;
+}
+
+.input{
+    margin-top: 4%;
+}
+
+.unos {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 4%;
+}
+
+.unos-tekst{
+    margin-left: 6%;
+}
+
+.clan{
+    margin-top: 3%;
+    margin-left: 23.5%;
+    text-align: left;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+input {
+
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #181919;
+
+    border-radius: 3px;
+    width:40vw;
+    outline: none;
+
+    color: white;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+
+    margin-top: 0.8%;
+    margin-left: -10%;
+
+    border-bottom: 2px solid #C3B0FF
+    
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    color: rgba(195, 176, 255, 0.4);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+
+}
