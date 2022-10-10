@@ -118,14 +118,12 @@
 
 .radionica2-levo-container {
   display: flex;
-  margin-top: 6em;
-  max-width: 42rem;
   flex-direction: column;
 }
 
 .radionica2-levo-container .prvi-deo {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .radionica2-levo-container .ime-predavaca {
@@ -133,8 +131,6 @@
   font-size: 3.5rem;
   font-family: "Manrope";
   font-weight: 400;
-  margin-bottom: -0.8rem;
-  margin-left: -5rem;
 }
 
 .radionica2-levo-container .slika_leva {

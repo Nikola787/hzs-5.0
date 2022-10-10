@@ -45,6 +45,24 @@ const radionice = () => {
               alt="Slika predavaca"
             />
           </div>
+          <p className="predavac-opis">
+            Pavle je Cloud inženjer i deo Zühlke tima. Bavi se aplikacijama
+            baziranim na Cloud-u i fokus je na tehnologijama kao što su Java,
+            Kotlin, Spring, Amazon Web Services.
+          </p>
+        </div>
+        <div className="radionica2-desno-container">
+          <div className="prvi-deo">
+            <div className="rectangle" />
+            <h1 className="redni-broj">002</h1>
+          </div>
+          <h1 className="naziv-radionice">BACK-END</h1>
+          <p className="radionica-opis">
+            Na back-end radionici učesnici će saznati šta mogu ostvariti kroz
+            Spring, njegov ekosistem i za šta on nudi rešenje. Programski jezik
+            koji će biti korišćen je Java, a kreiraće se back-end aplikacija
+            koja će se koristiti i na front-end radionici.
+          </p>
         </div>
       </div>
       <div className="radionica3-container"></div>
