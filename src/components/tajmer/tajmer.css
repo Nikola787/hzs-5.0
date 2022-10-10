@@ -1,6 +1,6 @@
 p {
     text-align: center;
-        font-size: 3rem;
+    font-size: 3rem;
 }
 
 #dani {
@@ -16,8 +16,10 @@ p {
 .wrapper {
     display: block;
     background-color: #181919;
-    padding-top: 10rem;
     color: #00ffa3;
+    position: relative;
+    height: 50vh;
+    padding-top: 20vh;
 }
 
 .timer-text {
@@ -26,6 +28,7 @@ p {
     text-align: center;
     transform: scale(0.94);
     animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
 }
 
 @keyframes scale {
@@ -43,6 +46,7 @@ span .timer-span {
 
 .timer-span:nth-child(1) {
     animation: fade-out 2s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
 }
 
 .timer-span:nth-child(2) {
@@ -79,9 +83,14 @@ span .timer-span {
 }
 
 .timer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     filter: blur(4px);
     animation: fade-in 2s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
 }
 
 @keyframes fade-in {
