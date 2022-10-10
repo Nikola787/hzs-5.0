@@ -1,0 +1,65 @@
+.footer {
+    background-color: #181919;
+    height: 17vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 5px solid green;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.center-footer {
+    grid-column: 2/4;
+    border: 2px solid white;
+}
+
+.left-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ltext {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.site{
+    font-weight: 500;
+}
+
+.fonis{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.left-icons {
+    display: flex;
+    font-size: 3rem;
+    color: white;
+    margin-top: .3rem;
+}
+
+.left-icons .insta a,
+.left-icons .fb a,
+.left-icons .linkedin a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.ctext {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.rtext .adress,
+.rtext .faqulty-text,
+.rtext .adress-text {
+    font-size: 1rem;
+    text-align: right;
+}
+

@@ -4,6 +4,7 @@ import Radionice from "./components/radionice/radionice.jsx";
 import Navbar from "./components/navbar/navbar";
 import Tajmer from "./components/tajmer/tajmer.jsx";
 import Agenda from "./components/agenda/agenda.jsx";
+import Footer from "./components/footer/footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Tajmer />
       <Radionice />
       <Agenda />
+      <Footer />
     </div>
   );
 };
