@@ -26,15 +26,21 @@
   max-width: 37rem;
   flex-direction: column;
 }
+.radionica1-levo-container .prvi-deo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 .radionica1-levo-container .rectangle {
-  width: 10px;
-  height: 80px;
+  margin-top: -1%;
+  width: 0.7vw;
+  height: 10vh;
   background: #00ffa3;
 }
 
 .radionica1-levo-container .redni-broj {
-  font-size: 7em;
+  font-size: 10vh;
   font-family: "Manrope";
   font-weight: 500;
   color: #ffffff;
@@ -43,17 +49,11 @@
   line-height: 5rem;
 }
 
-.radionica1-levo-container .prvi-deo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 .radionica1-levo-container .naziv-radionice {
   align-self: flex-start;
   font-family: "Manrope";
   color: #00ffa3;
-  font-size: 6em;
+  font-size: 12vh;
   font-weight: 200;
   margin-left: 1.4rem;
   line-height: 13rem;
@@ -82,9 +82,10 @@
 }
 
 .radionica1-desno-container .slika_desna {
+  border: #00ffa3 0.5vh solid;
   border-radius: 50%;
-  width: 621px;
-  height: 621px;
+  width: 30vw;
+  height: auto;
   margin-top: 1.55rem;
   margin-left: -16.1rem;
 }
