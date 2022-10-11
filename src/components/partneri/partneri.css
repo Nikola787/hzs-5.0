@@ -1,0 +1,238 @@
+.partneri-naslov {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 135px;
+    line-height: 121px;
+    /* identical to box height */
+    text-align: center;
+    color: #f9711d;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .sponzor-naslov {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 78px;
+    text-align: center;
+    margin-top: 115px;
+    margin-bottom: 25px;
+    color: #ffffff;
+  }
+  .pokroviteljpr-naslov {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 78px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  
+  img {
+    max-block-size: 100%;
+    max-inline-size: 100%;
+    justify-items: center;
+    /* z-index: -1; */
+  }
+  
+  .partner {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5%;
+    transform: scale(1.1);
+    /* padding: 1.5rem; */
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+  .pokrovitelj-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .slajder1 {
+    position: relative;
+    z-index: 1;
+  }
+  .slajder2 {
+    position: relative;
+    z-index: 1;
+  }
+  .kocka-1 {
+    position: absolute;
+    left: -2%;
+    top: 120%;
+    height: 45%;
+    width: 15%;
+  }
+  
+  .kocka-2 {
+    position: absolute;
+    top: 120%;
+    left: 80%;
+    height: 55%;
+    width: 8%;
+    transform: rotate(-20deg);
+  }
+  
+  .kocka-3 {
+    position: absolute;
+    width: 5%;
+    height: 30%;
+    left: 90%;
+    top: 104%;
+    transform: rotate(-78.41deg);
+  }
+  
+  .kocka-4 {
+    position: absolute;
+    width: 4%;
+    height: 35%;
+    left: 73%;
+    top: 114%;
+  }
+  
+  .kocka-5 {
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    height: 32%;
+    width: 12%;
+    transform: rotate(-10deg);
+  }
+  
+  .kocka-6 {
+    position: absolute;
+    top: 145%;
+    left: 9%;
+    height: 25%;
+    width: 8%;
+    transform: rotate(-20deg);
+  }
+  
+  .kocka-7 {
+    position: absolute;
+    top: 115%;
+    left: 15%;
+    height: 45%;
+    width: 5%;
+  }
+  
+  /*
+  .kocka-5{
+    position: absolute;
+    width: 152px;
+    height: 162px;
+    top: 1400px;
+    left: 72px;
+  }
+  .kocka-6{
+    position: absolute;
+    width: 54px;
+    height: 64px;
+    left: 20px;  
+    top: 1380px;
+  }
+  .kocka-7{
+    position: absolute;
+    width: 54px;
+    height: 64px;
+    left: 225.53px;
+    transform: rotate(1.37deg);
+    top: 1380px;
+  }
+  .kocka-8{
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 430px;
+    top: 420px;
+    transform: rotate(128.32deg);
+  }
+  .kocka-9{
+    position: absolute;
+    width: 161px;
+    height: 171px;
+    left: 430px;
+    top:490px;
+  }
+  .kocka-10{
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 600px;
+    top: 580px;
+    transform: rotate(-37.19deg);
+  }
+  .kocka-11{
+    position: absolute;
+    width: 113px;
+    height: 95px;
+    top: 270px;
+    left: 1000px;
+  }
+  */
+  
+  @media screen and (max-width: 1300px) {
+    .partneri-naslov {
+      font-size: 120px;
+    }
+    .pokroviteljpr-naslov {
+      font-size: 60px;
+    }
+    .sponzor-naslov {
+      font-size: 55px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .partneri-naslov {
+      font-size: 110px;
+    }
+    .pokroviteljpr-naslov {
+      font-size: 55px;
+    }
+    .sponzor-naslov {
+      font-size: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .partneri-naslov {
+      font-size: 80px;
+    }
+    .pokroviteljpr-naslov {
+      font-size: 45px;
+    }
+    .sponzor-naslov {
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .partneri-naslov {
+      font-size: 90px;
+    }
+    .pokroviteljpr-naslov {
+      font-size: 52px;
+    }
+    .sponzor-naslov {
+      font-size: 35px;
+    }
+  
+    .partner {
+      width: 16em !important;
+    }
+  }
+  
+
+  .hr-style {
+    box-sizing: border-box;
+    height: 0px;
+    background-color: #00FFA3;
+    /* border: none; */
+    filter: drop-shadow(0px 2px 2px #00FFA3) drop-shadow(0px -2px 2px #00FFA3);
+    border: 0.1px solid #00FFA3;
+  }
