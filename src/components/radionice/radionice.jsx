@@ -7,10 +7,7 @@ const radionice = () => {
     <div className="radionice-wrapper">
       <div className="radionica1-container">
         <div className="radionica1-levo-container">
-          <div className="prvi-deo">
-            <div className="rectangle" />
-            <h1 className="redni-broj">001</h1>
-          </div>
+          <h1 className="redni-broj">001</h1>
           <h1 className="naziv-radionice">BACK-END</h1>
           <p className="radionica-opis">
             Na back-end radionici učesnici će saznati šta mogu ostvariti kroz
