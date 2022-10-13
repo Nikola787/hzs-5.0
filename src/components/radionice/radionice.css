@@ -8,14 +8,12 @@
   display: flex;
   flex-direction: column;
   background-image: url(../../images/Radionice.png);
-  background-size: cover;
+  background-size: 100%;
   background-color: #181919;
 }
 
 .radionica1-container {
   display: flex;
-  height: 100vh;
-  width: auto;
   justify-content: space-around;
 }
 
@@ -23,7 +21,7 @@
   display: flex;
   margin-top: 11%;
   margin-right: 2%;
-  max-width: 37%;
+  max-width: 35%;
   flex-direction: column;
 }
 .radionica1-levo-container .redni-broj {
@@ -69,7 +67,7 @@
 .radionica1-desno-container .slika_desna {
   border: #00ffa3 0.3vw solid;
   border-radius: 50%;
-  width: 65%;
+  width: 30vw;
   height: auto;
   margin-top: 1.55%;
 }
@@ -94,18 +92,20 @@
 
 .radionica2-container {
   display: flex;
-  height: 100vh;
-  width: auto;
   justify-content: space-around;
+  margin-top: 12%;
 }
 
 .radionica2-levo-container {
   display: flex;
   flex-direction: column;
+  max-width: 50%;
+  margin-left: 4%;
 }
 
 .radionica2-levo-container .prvi-deo {
   display: flex;
+  align-items: flex-end;
 }
 
 .radionica2-levo-container .ime-predavaca {
@@ -116,22 +116,64 @@
 }
 
 .radionica2-levo-container .slika_leva {
+  border: #00ffa3 0.3vw solid;
   border-radius: 50%;
   width: 30vw;
   height: auto;
-  margin-top: 1.55rem;
-  margin-left: -16.1rem;
+}
+
+.radionica2-levo-container .predavac-opis {
+  font-family: "Manrope";
+  color: #ffffff;
+  font-size: 2vw;
+  font-weight: 400;
+  text-align: left;
+  margin-left: -2%;
+  margin-top: 2%;
+}
+
+.radionica2-desno-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  margin-top: 4%;
+}
+
+.radionica2-desno-container .redni-broj {
+  border-left: 0.75vw solid #00ffa3;
+  padding-left: 2%;
+
+  font-size: 5vw;
+  font-family: "Manrope";
+  font-weight: 500;
+  color: #ffffff;
+  align-self: flex-start;
+  line-height: 100%;
+}
+
+.radionica2-desno-container .naziv-radionice {
+  align-self: flex-start;
+  font-family: "Manrope";
+  color: #00ffa3;
+  font-size: 6vw;
+  font-weight: 200;
+}
+
+.radionica2-desno-container .radionica-opis {
+  font-family: "Manrope";
+  color: #ffffff;
+  font-size: 2vw;
+  font-weight: 400;
+  text-align: left;
 }
 
 .radionica3-container {
   display: flex;
-  height: 100vh;
-  width: auto;
   justify-content: space-around;
+  margin-top: 8%;
 }
 .radionica4-container {
   display: flex;
-  height: 100vh;
-  width: auto;
   justify-content: space-around;
+  margin-top: 12%;
 }
