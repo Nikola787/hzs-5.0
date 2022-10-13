@@ -4,17 +4,65 @@
   box-sizing: border-box;
 }
 
-.navbar {
+.slike-tima-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
+  flex-direction: column;
+  background-color: #181919;
+  height: 100vh;
+}
+
+.navbar {
+  justify-content: center;
+  margin-top: 5%;
 }
 
 .navbar ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
+
 .navbar ul li {
-  display: inline-block;
-  padding: 0px 20px;
+  padding: 5% 5%;
+  margin-right: 10%;
+  font-weight: 300;
+  color: #00ffa3;
+  font-family: "Manrope";
+  font-size: 1.5vw;
+  cursor: pointer;
+  border-radius: 30%;
+}
+
+.navbar ul li:hover {
+  background-color: #00ffa3;
+  color: #333333;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.navbar ul li:active {
+  background-color: #00ffa3;
+  color: #333333;
+}
+
+.slike-tima-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slike-tima-container .slike-tima-levo {
+  display: flex;
+  flex-direction: column;
+}
+
+.slike-tima-levo .slika-strelica {
+  position: absolute;
+  top: 42%;
+  left: 6.5%;
+}
+
+.slike-tima-levo .slika-bordera {
+  position: absolute;
+  left: 10%;
+  top: 20%;
 }
