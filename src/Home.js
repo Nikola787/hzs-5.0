@@ -1,8 +1,9 @@
 import React from "react";
 import Animacija from "./components/animacija/animacija.js";
-import Tajmer from "./components/tajmer/tajmer.jsx";
 import Radionice from "./components/radionice/radionice.jsx";
-import Prijava from "./components/prijava/prijava.js"
+import Prijava from "./components/prijava/Prijava.js"
+import Gradijent from "./components/gradijent/gradijent.js"
+import Test from "./components/prijava/test.js"
 
 const Home = () => {
   return (

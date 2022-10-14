@@ -1,0 +1,10 @@
+.pozadina {
+    height: 1000px;
+    width: 10000px;
+    
+}
+
+.tekst{
+    position: fixed;
+    top: 40px; left: 40px;
+}
