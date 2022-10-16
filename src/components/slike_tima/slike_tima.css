@@ -13,18 +13,21 @@
 
 .navbar {
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
+  gap: 2%;
   justify-content: center;
+  width: 70vw;
 }
 
 .navbar ul li {
-  padding: 5% 5%;
-  margin-right: 10%;
+  width: 7vw;
+  height: 5vw;
+  padding-top: 2%;
   font-weight: 300;
   color: #00ffa3;
   font-family: "Manrope";
@@ -48,21 +51,86 @@
 .slike-tima-container {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .slike-tima-container .slike-tima-levo {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  left: 5%;
 }
 
-.slike-tima-levo .slika-strelica {
+.slike-tima-levo .slika-strela-levo {
   position: absolute;
   top: 42%;
   left: 6.5%;
+  cursor: pointer;
+  width: 5.5vw;
 }
 
 .slike-tima-levo .slika-bordera {
-  position: absolute;
+  /* position: absolute;
   left: 10%;
-  top: 20%;
+  top: 20%; */
+  width: 24vw;
+}
+
+.slike-tima-levo .slika-koordinatora {
+  position: absolute;
+  top: 27%;
+  left: 12%;
+  width: 19vw;
+  z-index: 51;
+}
+
+.slike-tima-levo .slika-strela-desno {
+  /* position: absolute;
+  top: 42%;
+  left: 32%; */
+  cursor: pointer;
+  width: 5.5vw;
+}
+
+.slike-tima-levo .opis-slike {
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  top: 80%;
+  left: 10.8%;
+  font-family: "Manrope";
+  color: #ffffff;
+}
+
+.opis-slike .ime-koordinatora {
+  padding-bottom: 3%;
+  font-weight: 400;
+  font-size: 3vw;
+}
+.opis-slike .funkcija-koordinatora {
+  font-weight: 200;
+  font-size: 2vw;
+}
+
+.slike-tima-container .slike-tima-desno {
+  display: flex;
+  flex-direction: column;
+}
+.slike-tima-desno .slika-bordera1 {
+  /* position: absolute; */
+  top: 15%;
+  right: 5%;
+  width: 55vw;
+}
+
+.slike-tima-desno .opis-tima {
+  font-weight: 200;
+  font-family: "Manrope";
+  color: #ffffff;
+  font-size: 1.5vw;
+  width: 50%;
+  text-align: start;
+  /* position: absolute; */
+  top: 75%;
+  left: 43%;
 }
