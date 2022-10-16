@@ -65,7 +65,7 @@
 }
 
 .radionica1-desno-container .slika_desna {
-  border: #00ffa3 0.3vw solid;
+  border: #00ffa3 3px solid;
   border-radius: 50%;
   width: 30vw;
   height: auto;
@@ -116,7 +116,7 @@
 }
 
 .radionica2-levo-container .slika_leva {
-  border: #00ffa3 0.3vw solid;
+  border: #00ffa3 3px solid;
   border-radius: 50%;
   width: 30vw;
   height: auto;
