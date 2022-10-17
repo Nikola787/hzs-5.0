@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    border: 2px solid;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /* From https://css.glass */
+background-color: transparent;
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+font-size: 1.2rem;
+z-index: 100;
+}
+
+.navbar-logo {
+    width: 20%;
+}
+
+.navbar-pages .list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navbar-pages {
+    width: 80%;
+}
+
+.navbar-pages .list li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.navbar-pages .list li{
+        padding: .3rem 1rem;
+}
+
+#log-in{
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #0C8B5D, #00FFA3);
+    color: #FFFFFF;
+    
+}
