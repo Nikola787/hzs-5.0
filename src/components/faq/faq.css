@@ -1,0 +1,66 @@
+.ceo{
+    background-color: purple;
+    height: 1000px;
+   
+}
+.rectangle{
+    float: left;
+    background: #00FFA3;
+    width: 17px;
+    height: 65px;
+    margin-top: 6%;
+}
+
+.tekst_naslov{
+    margin-left: 1.5%;
+    margin-top: 2.5%;
+    float: right;
+    font-size: 80px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    line-height: 164px;
+    color: #FFFFFF;
+   
+}
+.naslov{
+    margin-left: 8%;
+    
+    display: flex;
+}
+.body{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+section{
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+.pitanje{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pitanje h3{
+    font-size: 1.8rem;
+}
+.odgovor p{
+    padding: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}

@@ -30,7 +30,7 @@
 .tekst{
     
     width: 100vh;
-    margin-right: 22%;
+    margin-right: 10%;
     border: 5px solid green;
 
 }
@@ -43,14 +43,14 @@
     background-color: aliceblue;
     width: 200px ;
     height: 100px ;
-    margin-right: 20%;
+    margin-right: 30%;
     margin-bottom: 60%;
 }
 .gradovi{
     background-color: aliceblue;
     width: 200px ;
     height: 100px ;
-    margin-right: 20%;
+    margin-right: 90%;
     margin-bottom: 60%;
 
 }
@@ -58,7 +58,7 @@
     background-color: blue;
     width: 200px ;
     height: 100px ;
-    margin-right: 20%;
+    margin-right: 90%;
 }
 .statistika{
     flex-direction: row;
