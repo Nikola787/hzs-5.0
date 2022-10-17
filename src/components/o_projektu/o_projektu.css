@@ -1,8 +1,65 @@
 .ceo {
-  background-color: purple;
-  height: 1000px;
+  background: purple;
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 2900px;
 }
-#rectangle {
+
+.prostor {
+  height: 100px;
+}
+
+.o-projektu {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.levi-deo {
+  width: 60%;
+  margin-right: 10%;
+}
+
+.naslov-box h1 {
+  text-align: left;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.levi-prozor-box {
+  background: black;
+
+  height: 300px;
+
+  margin-top: 3%;
+  /* margin-right: 10%; */
+}
+
+.statistika-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.statistika-jedan-box {
+  background: black;
+  height: 150px;
+}
+
+.statistika-dva-box {
+  background: black;
+  height: 150px;
+}
+
+.statistika-tri-box {
+  background: black;
+  height: 150px;
+}
+/* #rectangle {
   float: left;
   background: #00ffa3;
   width: 17px;
@@ -58,4 +115,4 @@
 .statistika {
   flex-direction: row;
   justify-content: space-around;
-}
+} */
