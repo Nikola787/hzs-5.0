@@ -9,6 +9,7 @@ import Gradijent from "./components/gradijent/gradijent.js";
 import Navbar from "./components/navbar/navbar";
 import Tajmer from "./components/tajmer/tajmer.jsx";
 import Agenda from "./components/agenda/agenda.jsx";
+import Footer from "./components/footer/footer";
 
 const Home = () => {
   return (
