@@ -1,40 +1,24 @@
 import React from "react";
 import "./Prijava.css";
 
-import Clan from "./Clan.js"
+import Clan from "./Clan.js";
 
 import { useState } from "react";
+import { useEffect } from "react";
+
 
 const Prijava = () => {
 
-  const[imePrezime1, setImePrezime1] = useState();
-  const[grad1, setGrad1] = useState();
-  const[srednjaSkola1, setSrednjaSkola1] = useState();
-  const[razred1, setRazred1] = useState();
-  const[brojTelefona1, setBrojTelefona1] = useState();
-  const[email1, setEmail1] = useState();
+  const handleClick = () => {
+    console.log('this is:', this);
+    posaljiPrijavu()
+  };
 
-  const[imePrezime2, setImePrezime22] = useState();
-  const[grad2, setGrad2] = useState();
-  const[srednjaSkola2, setSrednjaSkola2] = useState();
-  const[razred2, setRazred2] = useState();
-  const[brojTelefona2, setBrojTelefona2] = useState();
-  const[email2, setEmail2] = useState();
+  const [clan1, setClan1] = useState({});
+  const [clan2, setClan2] = useState({});
+  const [clan3, setClan3] = useState({});
+  const [clan4, setClan4] = useState({});
 
-  const[imePrezime3, setImePrezime33] = useState();
-  const[grad3, setGrad3] = useState();
-  const[srednjaSkola3, setSrednjaSkola3] = useState();
-  const[razred3, setRazred3] = useState();
-  const[brojTelefona3, setBrojTelefona3] = useState();
-  const[email3, setEmail3] = useState();
-
-  const[imePrezime4, setImePrezime4] = useState();
-  const[grad4, setGrad4] = useState();
-  const[srednjaSkola4, setSrednjaSkola4] = useState();
-  const[razred4, setRazred4] = useState();
-  const[brojTelefona4, setBrojTelefona4] = useState();
-  const[email4, setEmail4] = useState();
-  
   const [pitanje1, setPitanje1] = useState();
   const [pitanje2, setPitanje2] = useState();
   const [pitanje3, setPitanje3] = useState();
@@ -42,6 +26,160 @@ const Prijava = () => {
   const [pitanje5, setPitanje5] = useState();
   const [pitanje6, setPitanje6] = useState();
   const [pitanje7, setPitanje7] = useState();
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    console.log(pitanje1);
+    console.log(pitanje2);
+    console.log(pitanje3);
+    console.log(pitanje4);
+    console.log(pitanje5);
+    console.log(pitanje6);
+    console.log(pitanje7);
+  }, [clan1, clan2, clan3, clan4]);
+
+  const openModal = (poruka) => {
+    setModalMessage(poruka);
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalMessage("");
+    setModalOpen(false);
+  };
+
+  const simulateWaiting = (duration) => {
+    return new Promise((resolve, reject) => {
+      if (duration < 4000) {
+        setTimeout(() => {
+          resolve();
+        }, duration);
+      } else {
+        setTimeout(() => {
+          reject(new Error("Preveliko cekanje"));
+        }, duration);
+      }
+    });
+  };
+
+  const onClan1 = (
+    imePrezime,
+    grad,
+    srednjaSkola,
+    razred,
+    brojTelefona,
+    email
+  ) => {
+    const noviClan = {
+      imePrezime,
+      grad,
+      srednjaSkola,
+      razred,
+      brojTelefona,
+      email,
+    };
+    setClan1(noviClan);
+  };
+
+  const onClan2 = (
+    imePrezime,
+    grad,
+    srednjaSkola,
+    razred,
+    brojTelefona,
+    email
+  ) => {
+    const noviClan = {
+      imePrezime,
+      grad,
+      srednjaSkola,
+      razred,
+      brojTelefona,
+      email,
+    };
+    setClan2(noviClan);
+  };
+
+  const onClan3 = (
+    imePrezime,
+    grad,
+    srednjaSkola,
+    razred,
+    brojTelefona,
+    email
+  ) => {
+    const noviClan = {
+      imePrezime,
+      grad,
+      srednjaSkola,
+      razred,
+      brojTelefona,
+      email,
+    };
+    setClan3(noviClan);
+  };
+
+  const onClan4 = (
+    imePrezime,
+    grad,
+    srednjaSkola,
+    razred,
+    brojTelefona,
+    email
+  ) => {
+    const noviClan = {
+      imePrezime,
+      grad,
+      srednjaSkola,
+      razred,
+      brojTelefona,
+      email,
+    };
+    setClan4(noviClan);
+  };
+
+  const postPrijava = async (prijava) => {
+
+    console.log("Post zahtev za prijava");
+    console.log(prijava);
+
+    try {
+      const response = await fetch("heroku link ...", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(prijava),
+      });
+      await simulateWaiting(3000);
+      const data = await response.json();
+      if (data.success) {
+        openModal("Uspesno poslata prijava");
+      } else {
+        openModal(data.msg);
+      }
+    } catch (e) {
+      openModal(e.message);
+    }
+  };
+
+  const posaljiPrijavu = () => {
+    let prijava = {
+      pitanje1: pitanje1,
+      pitanje2: pitanje2,
+      pitanje3: pitanje3,
+      pitanje4: pitanje4,
+      pitanje5: pitanje5,
+      pitanje6: pitanje6,
+      pitanje7: pitanje7,
+      clanovi: [clan1, clan2, clan3, clan4],
+    };
+
+    postPrijava(prijava);
+  };
 
   return (
     <div>
@@ -51,11 +189,15 @@ const Prijava = () => {
             <h1>FORMA ZA PRIJAVU</h1>
           </div>
         </div>
-        
-        <Clan naslov={"Član 1"}/>
-        <Clan naslov={"Član 2"}/>
-        <Clan naslov={"Član 3"}/>
-        <Clan naslov={"Član 4 (opcionalno)"}/>
+
+        <div className="clan">Član 1</div>
+        <Clan onChange={onClan1} />
+        <div className="clan">Član 2</div>
+        <Clan onChange={onClan2} />
+        <div className="clan">Član 3</div>
+        <Clan onChange={onClan3} />
+        <div className="clan">Član 4</div>
+        <Clan onChange={onClan4} />
 
         <div className="box-pitanja">
           <div className="pitanje">
@@ -65,7 +207,11 @@ const Prijava = () => {
 
           <div className="radio-box">
             <label className="radio-btn">
-              <input type="radio" name="mreze" />
+              <input
+                type="radio"
+                name="mreze"
+                onChange={(e) => setPitanje1("prva opcija")}
+              />
               <span className="checkmark" />
             </label>
             <div className="odgovor">Preko društvenih mreža</div>
@@ -73,7 +219,11 @@ const Prijava = () => {
 
           <div className="radio-box">
             <label className="radio-btn">
-              <input type="radio" name="mreze" />
+              <input
+                type="radio"
+                name="mreze"
+                onChange={(e) => setPitanje1("druga opcija")}
+              />
               <span className="checkmark" />
             </label>
             <div className="odgovor">Preko društvenih mreža</div>
@@ -81,7 +231,11 @@ const Prijava = () => {
 
           <div className="radio-box">
             <label className="radio-btn">
-              <input type="radio" name="mreze" />
+              <input
+                type="radio"
+                name="mreze"
+                onChange={(e) => setPitanje1("treca opcija")}
+              />
               <span className="checkmark" />
             </label>
             <div className="odgovor">Preko društvenih mreža</div>
@@ -89,7 +243,11 @@ const Prijava = () => {
 
           <div className="radio-box">
             <label className="radio-btn">
-              <input type="radio" name="mreze" />
+              <input
+                type="radio"
+                name="mreze"
+                onChange={(e) => setPitanje1("cetvrta opcija")}
+              />
               <span className="checkmark" />
             </label>
             <div className="odgovor">Preko društvenih mreža</div>
@@ -97,7 +255,11 @@ const Prijava = () => {
 
           <div className="radio-box">
             <label className="radio-btn">
-              <input type="radio" name="mreze" />
+              <input
+                type="radio"
+                name="mreze"
+                onChange={(e) => setPitanje1("peta opcija")}
+              />
               <span className="checkmark" />
             </label>
             <div className="odgovor">Preko društvenih mreža</div>
@@ -110,7 +272,11 @@ const Prijava = () => {
           <div className="linija"></div>
           <div className="otvoreno-pitanje">
             <label className="otvoreno-text">
-              <textarea type="text" placeholder="Primer teksta koji se unosi" />
+              <textarea
+                type="text"
+                placeholder="Primer teksta koji se unosi"
+                onChange={(e) => setPitanje2(e.target.value)}
+              />
             </label>
           </div>
 
@@ -121,7 +287,11 @@ const Prijava = () => {
           <div className="linija"></div>
           <div className="otvoreno-pitanje">
             <label className="otvoreno-text">
-              <textarea type="text" placeholder="Primer teksta koji se unosi" />
+              <textarea
+                type="text"
+                placeholder="Primer teksta koji se unosi"
+                onChange={(e) => setPitanje3(e.target.value)}
+              />
             </label>
           </div>
 
@@ -129,7 +299,11 @@ const Prijava = () => {
           <div className="linija"></div>
           <div className="otvoreno-pitanje">
             <label className="otvoreno-text">
-              <textarea type="text" placeholder="Primer teksta koji se unosi" />
+              <textarea
+                type="text"
+                placeholder="Primer teksta koji se unosi"
+                onChange={(e) => setPitanje4(e.target.value)}
+              />
             </label>
           </div>
 
@@ -140,7 +314,11 @@ const Prijava = () => {
           <div className="linija"></div>
           <div className="otvoreno-pitanje">
             <label className="otvoreno-text">
-              <textarea type="text" placeholder="Primer teksta koji se unosi" />
+              <textarea
+                type="text"
+                placeholder="Primer teksta koji se unosi"
+                onChange={(e) => setPitanje5(e.target.value)}
+              />
             </label>
           </div>
 
@@ -150,7 +328,11 @@ const Prijava = () => {
           <div className="linija"></div>
           <div className="otvoreno-pitanje">
             <label className="otvoreno-text">
-              <textarea type="text" placeholder="Primer teksta koji se unosi" />
+              <textarea
+                type="text"
+                placeholder="Primer teksta koji se unosi"
+                onChange={(e) => setPitanje6(e.target.value)}
+              />
             </label>
           </div>
 
@@ -161,7 +343,11 @@ const Prijava = () => {
 
           <div className="radio-box">
             <label className="radio-btn">
-              <input type="radio" name="mreze" />
+              <input
+                type="radio"
+                name="mreze"
+                onChange={(e) => setPitanje7("prva opcija sedmo")}
+              />
               <span className="checkmark" />
             </label>
             <div className="odgovor">Preko društvenih mreža</div>
@@ -169,7 +355,11 @@ const Prijava = () => {
 
           <div className="radio-box">
             <label className="radio-btn">
-              <input type="radio" name="mreze" />
+              <input
+                type="radio"
+                name="mreze"
+                onChange={(e) => setPitanje7("druga opcija sedmo")}
+              />
               <span className="checkmark" />
             </label>
             <div className="odgovor">Preko društvenih mreža</div>
@@ -177,18 +367,23 @@ const Prijava = () => {
 
           <div className="radio-box">
             <label className="radio-btn">
-              <input type="radio" name="mreze" />
+              <input
+                type="radio"
+                name="mreze"
+                onChange={(e) => setPitanje7("treca opcija sedmo")}
+              />
               <span className="checkmark" />
             </label>
             <div className="odgovor">Preko društvenih mreža</div>
           </div>
-
-
         </div>
 
-        <div className="dugme">
-          <button>Pošalji prijavu</button>
-        </div>
+        <button
+          className="dugme"
+          onClick={(e) => handleClick()}
+        >
+          Pošalji prijavu
+        </button>
       </div>
     </div>
   );

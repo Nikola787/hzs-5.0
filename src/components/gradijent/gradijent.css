@@ -1,10 +1,26 @@
 .pozadina {
-    height: 1000px;
-    width: 10000px;
-    
+  background-image: url("./FrameC.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 2900px;
 }
 
-.tekst{
-    position: fixed;
-    top: 40px; left: 40px;
+.tekst {
+  position: fixed;
+  top: 40%;
+  justify-content: center;
+  width: 100%;
+}
+
+.tekst h1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 80px;
+  line-height: 164px;
+  text-align: center;
+
+  /* identical to box height */
+
+  color: #181919;
 }

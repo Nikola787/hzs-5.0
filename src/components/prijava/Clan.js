@@ -7,10 +7,24 @@ import Ikona5 from "./assets/5.png";
 import Ikona6 from "./assets/6.png";
 import "./Prijava.css";
 
-const Clan = ({ naslov }) => {
+import { useState } from "react";
+import { useEffect } from "react";
+
+const Clan = (props) => {
+  const [imePrezime, setImePrezime] = useState("");
+  const [grad, setGrad] = useState("");
+  const [srednjaSkola, setSrednjaSkola] = useState("");
+  const [razred, setRazred] = useState("");
+  const [brojTelefona, setBrojTelefona] = useState("");
+  const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    props.onChange(imePrezime, grad, srednjaSkola, razred, brojTelefona, email);
+  }, [imePrezime, grad, srednjaSkola, razred, brojTelefona, email]);
+
+
   return (
     <div className="forma">
-      <div className="clan">{naslov}</div>
       <div className="box-clan">
         <div className="input">
           <div className="unos">
@@ -19,7 +33,12 @@ const Clan = ({ naslov }) => {
             </div>
             <div className="unos-tekst">
               <label className="label-text">
-                <input type="text" placeholder="Ime i prezime" />
+                <input
+                  type="text"
+                  placeholder="Ime i prezime"
+                  onChange={(e) => setImePrezime(e.target.value)}
+                  required
+                />
               </label>
             </div>
           </div>
@@ -30,7 +49,12 @@ const Clan = ({ naslov }) => {
             </div>
             <div className="unos-tekst">
               <label className="label-text">
-                <input type="text" placeholder="Grad" />
+                <input
+                  type="text"
+                  placeholder="Grad"
+                  onChange={(e) => setGrad(e.target.value)}
+                  required
+                />
               </label>
             </div>
           </div>
@@ -41,7 +65,12 @@ const Clan = ({ naslov }) => {
             </div>
             <div className="unos-tekst">
               <label className="label-text">
-                <input type="text" placeholder="Srednja škola" />
+                <input
+                  type="text"
+                  placeholder="Srednja škola"
+                  onChange={(e) => setSrednjaSkola(e.target.value)}
+                  required
+                />
               </label>
             </div>
           </div>
@@ -52,7 +81,12 @@ const Clan = ({ naslov }) => {
             </div>
             <div className="unos-tekst">
               <label className="label-text">
-                <input type="text" placeholder="Razred" />
+                <input
+                  type="text"
+                  placeholder="Razred"
+                  onChange={(e) => setRazred(e.target.value)}
+                  required
+                />
               </label>
             </div>
           </div>
@@ -62,7 +96,12 @@ const Clan = ({ naslov }) => {
             </div>
             <div className="unos-tekst">
               <label className="label-text">
-                <input type="text" placeholder="Broj telefona" />
+                <input
+                  type="text"
+                  placeholder="Broj telefona"
+                  onChange={(e) => setBrojTelefona(e.target.value)}
+                  required
+                />
               </label>
             </div>
           </div>
@@ -72,7 +111,12 @@ const Clan = ({ naslov }) => {
             </div>
             <div className="unos-tekst">
               <label className="label-text">
-                <input type="text" placeholder="E-mail" />
+                <input
+                  type="text"
+                  placeholder="E-mail"
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
               </label>
             </div>
           </div>
