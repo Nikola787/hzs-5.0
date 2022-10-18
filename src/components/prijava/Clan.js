@@ -5,7 +5,7 @@ import Ikona3 from "./assets/3.png";
 import Ikona4 from "./assets/4.png";
 import Ikona5 from "./assets/5.png";
 import Ikona6 from "./assets/6.png";
-import "./Prijava.css";
+import "./prijava.css";
 
 import { useState } from "react";
 import { useEffect } from "react";

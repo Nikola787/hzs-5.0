@@ -10,16 +10,20 @@ import Footer from "./components/footer/footer";
 import Faq from "./components/faq/faq.js";
 import O_projektu from "./components/o_projektu/o_projektu.js"
 import Iskustva from "./components/iskustva/iskustva.js"
+import Prijava from "./components/prijava/prijava.js"
 
 const Home = () => {
   return (
     <div>
       {/* <Animacija /> */}
+      <Navbar />
       <Gradijent />
       <Tajmer />
       {/* <O_projektu /> */}
-      {/* <Iskustva /> */}
+      <Iskustva />
       <Radionice />
+      <Agenda />
+      <Footer />
 
     </div>
   );
