@@ -1,117 +1,64 @@
 import React from "react";
+import { useState } from "react";
 import "./faq.css";
 
-const faq = () => {
+const Faq = () => {
+  const [selected, setSelected] = useState(null);
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    }
+
+    setSelected(i);
+  };
+
   return (
     <div className="ceo">
       <div className="naslov">
         <div className="rectangle"></div>
         <div className="tekst_naslov">ČESTO POSTAVLJANA PITANJA</div>
       </div>
-      <div className="body">
-        <section>
-          <div className="faq">
-            <div className="pitanje">
-              <h3>Kako se može prijaviti za hakaton ?</h3>
-              <svg width="15" height="10" viewBox="0 0 42 25">
-                <path
-                  d="M3 3L21 21L39 3"
-                  stroke="white"
-                  stroke-width="7"
-                  stroke-linecap="round"
-                />
-              </svg>
+      <div className="wrapper">
+        <div className="accordion">
+          {data.map((item, i) => (
+            <div className="item">
+              <div className="title" onClick={() => toggle(i)}>
+                <h2 style={{ color: selected === i ? "#00ffa3" : "#FFFFFF" }}>
+                  {item.question}
+                </h2>
+                <span>{selected === i ? "-" : "+"}</span>
+              </div>
+              <div className={selected === i ? "content show" : "content"}>
+                {item.answer}
+              </div>
             </div>
-            <div className="odgovor">
-              <p>Učešće je besplatno i možete se prijaviti preko forme</p>
-            </div>
-          </div>
-          <div className="faq">
-            <div className="pitanje">
-              <h3>
-                Da li tim mogu činiti takmičari iz različitih srednjih škola?
-              </h3>
-              <svg width="15" height="10" viewBox="0 0 42 25">
-                <path
-                  d="M3 3L21 21L39 3"
-                  stroke="white"
-                  stroke-width="7"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <div className="odgovor">
-              <p>Učešće je besplatno i možete se prijaviti preko forme</p>
-            </div>
-          </div>
-          <div className="faq">
-            <div className="pitanje">
-              <h3>Na osnovu čega se vrši selekcija timova?</h3>
-              <svg width="15" height="10" viewBox="0 0 42 25">
-                <path
-                  d="M3 3L21 21L39 3"
-                  stroke="white"
-                  stroke-width="7"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <div className="odgovor">
-              <p>Učešće je besplatno i možete se prijaviti preko forme</p>
-            </div>
-          </div>
-          <div className="faq">
-            <div className="pitanje">
-              <h3>Kako se može prijaviti za hakaton ?</h3>
-              <svg width="15" height="10" viewBox="0 0 42 25">
-                <path
-                  d="M3 3L21 21L39 3"
-                  stroke="white"
-                  stroke-width="7"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <div className="odgovor">
-              <p>Učešće je besplatno i možete se prijaviti preko forme</p>
-            </div>
-          </div>
-          <div className="faq">
-            <div className="pitanje">
-              <h3>Kako se može prijaviti za hakaton ?</h3>
-              <svg width="15" height="10" viewBox="0 0 42 25">
-                <path
-                  d="M3 3L21 21L39 3"
-                  stroke="white"
-                  stroke-width="7"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <div className="odgovor">
-              <p>Učešće je besplatno i možete se prijaviti preko forme</p>
-            </div>
-          </div>
-          <div className="faq">
-            <div className="pitanje">
-              <h3>Kako se može prijaviti za hakaton ?</h3>
-              <svg width="15" height="10" viewBox="0 0 42 25">
-                <path
-                  d="M3 3L21 21L39 3"
-                  stroke="white"
-                  stroke-width="7"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <div className="odgovor">
-              <p>Učešće je besplatno i možete se prijaviti preko forme</p>
-            </div>
-          </div>
-        </section>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
+const data = [
+  {
+    question: "Question 1",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
+  },
+  {
+    question: "Question 2",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
+  },
+  {
+    question: "Question 3",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
+  },
+  {
+    question: "Question 4",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
+  },
+];
 
-export default faq;
+export default Faq;

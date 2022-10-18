@@ -1,12 +1,16 @@
 .ceo{
     background-color: purple;
-    height: 1000px;
+    /* height: 1000px; */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    
    
 }
 .rectangle{
     float: left;
     background: #00FFA3;
-    width: 17px;
+    width: 15px;
     height: 65px;
     margin-top: 6%;
 }
@@ -35,32 +39,45 @@
     font-size: 32px;
     line-height: 44px;
     color: #FFFFFF;
+    background-color: purple;
 }
-section{
-    min-height: 100vh;
-    width: 80%;
-    margin: 0 auto;
+.wrapper{
+    margin-top: 0em;
     display: flex;
-    flex-direction: column;
+    height: 50vh;
+    width: 100vw;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 11%;
 }
-.faq{
-    max-width: 700px;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #FFFFFF;
-    cursor: pointer;
+.accordion{
+    width: 500px;
 }
-.pitanje{
+.item{
+    
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+.title{
+    color:#FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+
+    
 }
-.pitanje h3{
-    font-size: 1.8rem;
+.content{
+    color: #FFFFFF;
+    overflow : hidden;
+    max-height: 0;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
 }
-.odgovor p{
-    padding: 1rem;
-    line-height: 1.6;
-    font-size: 1.4rem;
+
+.content.show{
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+    
 }
