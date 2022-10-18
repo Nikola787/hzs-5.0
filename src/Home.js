@@ -9,14 +9,18 @@ import Agenda from "./components/agenda/agenda.jsx";
 import Footer from "./components/footer/footer";
 import Faq from "./components/faq/faq.js";
 import O_projektu from "./components/o_projektu/o_projektu.js"
+import Iskustva from "./components/iskustva/iskustva.js"
 
 const Home = () => {
   return (
     <div>
       {/* <Animacija /> */}
-      {/* <Gradijent /> */}
-      {/* <Tajmer /> */}
-      <O_projektu />
+      <Gradijent />
+      <Tajmer />
+      {/* <O_projektu /> */}
+      {/* <Iskustva /> */}
+      <Radionice />
+
     </div>
   );
 };
