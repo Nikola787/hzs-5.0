@@ -5,6 +5,7 @@ import StrelaDesno from "../../images/RightArrow.png";
 import SlikaBordera from "../../images/Slike tima - okvir za koordinatora.png";
 import SlikaKoordinatora from "../../images/5-3.jpg";
 import SLikaBordera1 from "../../images/Slike tima - okvir za sliku tima.png";
+import SlikaGrupna from "../../images/Grupna.png";
 
 const slike_tima = () => {
   return (
@@ -28,33 +29,42 @@ const slike_tima = () => {
               src={StrelaLevo}
               alt="Strelica leva oko slike koordinatora"
             />
-            <img
-              className="slika-bordera"
-              src={SlikaBordera}
-              alt="Okvir za sliku koordinatora"
-            />
-            <img
-              className="slika-koordinatora"
-              src={SlikaKoordinatora}
-              alt="Slika koordinatora"
-            />
+            <div className="slika-roditelj">
+              <img
+                className="slika-bordera"
+                src={SlikaBordera}
+                alt="Okvir za sliku koordinatora"
+              />
+              <img
+                className="slika-koordinatora"
+                src={SlikaKoordinatora}
+                alt="Slika koordinatora"
+              />
+            </div>
             <img
               className="slika-strela-desno"
               src={StrelaDesno}
               alt="Strelica desna oko slike koordinatora"
             />
-            <div className="opis-slike">
-              <h1 className="ime-koordinatora">Vladislav Vidović</h1>
-              <h3 className="funkcija-koordinatora">Koordinator projekta</h3>
-            </div>
+          </div>
+          <div className="opis-slike">
+            <h1 className="ime-koordinatora">Vladislav Vidović</h1>
+            <h3 className="funkcija-koordinatora">Koordinator projekta</h3>
           </div>
         </div>
-        {/* <div className="slike-tima-desno">
-          <img
-            className="slika-bordera1"
-            src={SLikaBordera1}
-            alt="Okvir za sliku tima"
-          />
+        <div className="slike-tima-desno">
+          <div className="slika-roditelj">
+            <img
+              className="slika-bordera1"
+              src={SLikaBordera1}
+              alt="Okvir za sliku tima"
+            />
+            <img
+              className="slika-grupna"
+              src={SlikaGrupna}
+              alt="Grupna slika tima"
+            />
+          </div>
           <p className="opis-tima">
             Tim za dizajn, u saradnji sa timom za odnose sa javnošću, na
             kreativan način osmišljava vizuelni identitet projekta. Svoju
@@ -63,7 +73,7 @@ const slike_tima = () => {
             informacije o našem takmičenju, kao i izgleda sajta ovogodišnjeg
             takmičenja.
           </p>
-        </div> */}
+        </div>
       </div>
     </div>
   );
