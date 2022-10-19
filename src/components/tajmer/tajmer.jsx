@@ -1,8 +1,6 @@
 import "./tajmer.css";
 import React, { useState, useEffect } from "react";
 
-import MovingComponent from "react-moving-text";
-
 function getTime(countDownDate) {
   let now = new Date().getTime();
 

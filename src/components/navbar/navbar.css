@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Manrope;
 }
 
 .navbar {
@@ -13,7 +14,7 @@
   position: fixed;
   /* From https://css.glass */
   background-color: transparent;
-
+  padding: .5rem 1rem !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -21,9 +22,6 @@
   z-index: 100;
 }
 
-.navbar-logo {
-  width: 20%;
-}
 
 .navbar-pages .list {
   display: flex;
@@ -32,7 +30,8 @@
 }
 
 .navbar-pages {
-  width: 80%;
+  max-width: 90%;
+  width: 90%;
 }
 
 .navbar-pages .list li a {

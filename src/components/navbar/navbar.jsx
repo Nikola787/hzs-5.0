@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { debounce } from "../../utilities/helpers";
 import "./navbar.css";
-const navbar = () => {
+
+const Navbar = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 70) ||
+        currentScrollPos < 10
+    );
+
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
+
+  const navbarStyles = {
+    position: "fixed",
+    textAlign: "center",
+    transition: "top 0.4s",
+  };
   return (
-    <div>
+    <div style={{ ...navbarStyles, top: visible ? "0" : "-6rem" }}>
       <div className="navbar">
         <div className="navbar-logo">
           <svg
@@ -153,4 +181,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
