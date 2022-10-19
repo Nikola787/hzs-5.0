@@ -5,7 +5,7 @@ const gradijent = () => {
   return (
     <div className="pozadina">
       <div className="hzs-tekst">
-        <h1>HAKATON ZA SREDNJOSKOLCE</h1>
+        {/* <h1>HAKATON ZA SREDNJOSKOLCE</h1> */}
       </div>
     </div>
   );

@@ -10,7 +10,6 @@ import Footer from "./components/footer/footer";
 import Faq from "./components/faq/faq.js";
 import O_projektu from "./components/o_projektu/o_projektu.js";
 import Iskustva from "./components/iskustva/iskustva.js";
-import Prijava from "./components/prijava/prijava.js";
 
 const Home = () => {
   return (
@@ -19,12 +18,12 @@ const Home = () => {
       <Navbar />
       <Gradijent />
       <Tajmer />
-      {/* <O_projektu /> */}
+      <O_projektu />
       <Iskustva />
       <Radionice />
       <Agenda />
+      <SlikeTima />
       <Footer />
-      {/* <Prijava /> */}
     </div>
   );
 };
