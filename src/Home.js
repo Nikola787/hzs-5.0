@@ -10,20 +10,22 @@ import Footer from "./components/footer/footer";
 import Faq from "./components/faq/faq.js";
 import O_projektu from "./components/o_projektu/o_projektu.js";
 import Iskustva from "./components/iskustva/iskustva.js";
+import Partneri from "./components/partneri/Partneri.js";
 
 const Home = () => {
   return (
     <div>
       {/* <Animacija /> */}
       <Navbar />
-      <Gradijent />
+      {/* <Gradijent /> */}
       <Tajmer />
-      <O_projektu />
-      <Iskustva />
-      <Radionice />
-      <Agenda />
-      <SlikeTima />
-      <Footer />
+      {/* <O_projektu /> */}
+      {/* <Iskustva /> */}
+      {/* <Radionice /> */}
+      {/* <Agenda /> */}
+      {/* <SlikeTima /> */}
+      <Partneri />
+      {/* <Footer /> */}
     </div>
   );
 };
