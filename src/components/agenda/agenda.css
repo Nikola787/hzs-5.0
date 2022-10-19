@@ -28,7 +28,12 @@
     grid-template-columns: repeat(6, 1fr);
 }
 
-.first, .second, .third, .fourth, .fifth, .sixth{
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth {
     /* border: 2px solid black; */
     border-radius: 20px;
     background-color: #181414;
@@ -79,6 +84,7 @@
 .ag-sh-title {
     width: 100%;
 }
+
 .ag-fi-title p,
 .ag-sc-title p,
 .ag-th-title p,
@@ -128,4 +134,214 @@
 
 .agenda-sixth {
     padding-bottom: 50%;
+}
+
+@media screen and (max-width:960px) {
+    .agenda-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .agenda .title {
+        font-size: 2rem;
+        font-weight: 100;
+        color: #FFFFFF;
+        padding-left: 5rem !important;
+    }
+
+    .agenda .title::before {
+        content: "";
+        height: 2.4rem;
+        width: 7px;
+        background-color: #00FFA3;
+        position: absolute;
+        top: 5.4rem;
+        left: 4.4rem;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        padding: 1rem .1rem;
+    }
+
+    .agenda-first,
+    .agenda-second,
+    .agenda-third,
+    .agenda-fourth,
+    .agenda-fifth,
+    .agenda-sixth {
+        height: 35vh;
+        border: 2px solid #00FFA3;
+        padding: 2rem;
+    }
+
+    .ag-fi-date,
+    .ag-sc-date,
+    .ag-th-date,
+    .ag-fo-date,
+    .ag-fv-date,
+    .ag-sh-date {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .ag-fi-date p,
+    .ag-sc-date p,
+    .ag-th-date p,
+    .ag-fo-date p,
+    .ag-fv-date p,
+    .ag-sh-date p {
+        font-size: 1.7rem;
+        color: #00FFA3;
+        text-align: left;
+    }
+
+    .ag-fi-title,
+    .ag-sc-title,
+    .ag-th-title,
+    .ag-fo-title,
+    .ag-fv-title,
+    .ag-sh-title {
+        width: 100%;
+    }
+
+    .ag-fi-title p,
+    .ag-sc-title p,
+    .ag-th-title p,
+    .ag-fo-title p,
+    .ag-fv-title p,
+    .ag-sh-title p {
+        font-size: 1.4rem;
+        color: #FFFFFF;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .ag-fi-text p,
+    .ag-sc-text p,
+    .ag-th-text p,
+    .ag-fo-text p,
+    .ag-fv-text p,
+    .ag-sh-text p {
+        font-size: 1rem;
+        color: #FFFFFF;
+        font-weight: 100;
+        text-align: left;
+    }
+
+    .agenda-first,
+    .agenda-third,
+    .agenda-fifth {
+        display: block;
+    }
+
+    .agenda-second,
+    .agenda-fourth,
+    .agenda-sixth {
+        width: 100%;
+        align-items: flex-end;
+
+    }
+}
+
+/* extra mali mobilni */
+@media screen and (max-width: 320px) {
+    .agenda .title {
+        font-size: 2rem;
+    }
+
+        .ag-fi-date p,
+        .ag-sc-date p,
+        .ag-th-date p,
+        .ag-fo-date p,
+        .ag-fv-date p,
+        .ag-sh-date p {
+            font-size: .8rem;
+
+        }
+    .ag-fi-text p,
+    .ag-sc-text p,
+    .ag-th-text p,
+    .ag-fo-text p,
+    .ag-fv-text p,
+    .ag-sh-text p {
+        font-size: .5rem;
+    }
+
+    .ag-fi-title p,
+    .ag-sc-title p,
+    .ag-th-title p,
+    .ag-fo-title p,
+    .ag-fv-title p,
+    .ag-sh-title p {
+        font-size: .8rem;
+    }
+}
+
+/* mali tableti */
+@media screen and (max-width: 375px) {
+.agenda .title {
+        font-size: 2rem;
+    }
+
+    .ag-fi-date p,
+    .ag-sc-date p,
+    .ag-th-date p,
+    .ag-fo-date p,
+    .ag-fv-date p,
+    .ag-sh-date p {
+        font-size: 1rem;
+
+    }
+
+    .ag-fi-text p,
+    .ag-sc-text p,
+    .ag-th-text p,
+    .ag-fo-text p,
+    .ag-fv-text p,
+    .ag-sh-text p {
+        font-size: .7rem;
+    }
+
+    .ag-fi-title p,
+    .ag-sc-title p,
+    .ag-th-title p,
+    .ag-fo-title p,
+    .ag-fv-title p,
+    .ag-sh-title p {
+        font-size: .9rem;
+    }
+}
+
+/* veliki tableti i mali  */
+@media screen and (min-width: 960px) {}
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+
+    body {
+        font-size: 20px;
+    }
+
+}
+
+/* ultrawide i sve vece od fhd */
+@media screen and (min-width: 1920px) {
+
+    body {
+        font-size: 20px;
+    }
+
 }
