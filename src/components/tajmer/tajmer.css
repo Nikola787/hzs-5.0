@@ -1,11 +1,13 @@
 p {
     text-align: center;
     font-size: 3rem;
+
 }
 
 #dani {
     margin-left: -18rem;
     font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
 #sati {
@@ -20,6 +22,7 @@ p {
     position: relative;
     height: 100vh;
     padding-top: 45vh;
+    z-index: -1;
 }
 
 .timer-text {
