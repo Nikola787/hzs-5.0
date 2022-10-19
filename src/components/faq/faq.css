@@ -1,5 +1,5 @@
 .ceo{
-    background-color: purple;
+    background-color: black;
     /* height: 1000px; */
     font-family: 'Manrope';
     font-style: normal;
@@ -47,16 +47,14 @@
     height: 50vh;
     width: 100vw;
     justify-content: flex-start;
-    align-items: center;
+    /* align-items: center; */
     margin-left: 11%;
 }
 .accordion{
     width: 500px;
 }
 .item{
-    
-    margin-bottom: 5px;
-    padding: 10px 20px;
+    margin-bottom: 5%;
     border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
 .title{
@@ -65,19 +63,39 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+}
 
+.title h2 {
+    margin-bottom: -0.1%;
     
 }
+
 .content{
     color: #FFFFFF;
     overflow : hidden;
     max-height: 0;
     transition: all 0.5s cubic-bezier(0,1,0,1);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
 }
 
 .content.show{
     height: auto;
     max-height: 9999px;
     transition: all 0.5s cubic-bezier(1,0,1,0);
-    
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+span{
+    display: inline-block;
+    transform: scale(4);
 }
