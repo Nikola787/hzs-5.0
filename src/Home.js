@@ -21,7 +21,7 @@ const Home = () => {
       <Tajmer />
       {/* <O_projektu /> */}
       {/* <Iskustva /> */}
-      {/* <Radionice /> */}
+      <Radionice />
       {/* <Agenda /> */}
       {/* <SlikeTima /> */}
       <Partneri />

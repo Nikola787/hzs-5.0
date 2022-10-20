@@ -47,6 +47,10 @@
   width: 100%;
 }
 
+.linija img {
+  width: 100vw;
+}
+
 /* extra mali mobilni */
 @media screen and (max-width: 340px) {
   .ceo-partneri h1 {
