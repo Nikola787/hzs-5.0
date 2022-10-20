@@ -11,6 +11,7 @@ import Faq from "./components/faq/faq.js";
 import O_projektu from "./components/o_projektu/o_projektu.js";
 import Iskustva from "./components/iskustva/iskustva.js";
 import Partneri from "./components/partneri/Partneri.js";
+import PrijavaT from "./components/prijava_tekst/PrijavaT.js"
 
 const Home = () => {
   return (
@@ -25,7 +26,8 @@ const Home = () => {
       {/* <Agenda /> */}
       {/* <SlikeTima /> */}
       <Partneri />
-      {/* <Footer /> */}
+      <PrijavaT />
+      <Footer />
     </div>
   );
 };
