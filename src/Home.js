@@ -17,7 +17,7 @@ const Home = () => {
     <div>
       {/* <Animacija /> */}
       <Navbar />
-      {/* <Gradijent /> */}
+      <Gradijent />
       <Tajmer />
       {/* <O_projektu /> */}
       {/* <Iskustva /> */}

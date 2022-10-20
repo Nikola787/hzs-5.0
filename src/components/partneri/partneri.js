@@ -31,14 +31,14 @@ const Partneri = (props) => {
         },
       },
       {
-        breakpoint: 1500,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1100,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -113,8 +113,8 @@ const Partneri = (props) => {
         <Partner
           partnerSlika={Slika}
           partnerIme="Partner"
-          width="20em"
-          height="12em"
+          width="16em"
+          height="9em"
           pozadina="#C3B0FF"
           link="http://fonis.rs/"
         ></Partner>
@@ -128,8 +128,8 @@ const Partneri = (props) => {
         <PartneriSlider
           partneri={partneriLista}
           settings={partneriSettings}
-          width="20em"
-          height="12em"
+          width="16em"
+          height="9em"
         />
       </div>
       <div className="linija">
@@ -143,8 +143,8 @@ const Partneri = (props) => {
         <PartneriSlider
           partneri={partneriLista}
           settings={partneriSettings}
-          width="20em"
-          height="12em"
+          width="16em"
+          height="9em"
         />
       </div>
       <div className="linija">
@@ -158,8 +158,8 @@ const Partneri = (props) => {
         <PartneriSlider
           partneri={partneriLista}
           settings={partneriSettings}
-          width="20em"
-          height="12em"
+          width="16em"
+          height="9em"
         />
       </div>
       <div className="linija">
