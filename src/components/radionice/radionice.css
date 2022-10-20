@@ -20,24 +20,25 @@
 .radionica1-levo-container {
   display: flex;
   margin-top: 11%;
-  margin-right: 2%;
-  max-width: 35%;
+  margin-left: 2%;
+  width: 35%;
   flex-direction: column;
 }
 .radionica1-levo-container .redni-broj {
-  border-left: 0.75vw solid #00ffa3;
-  padding-left: 2%;
-
-  font-size: 5vw;
+  display: flex;
+  border-left: 0.9vw #00ffa3 solid;
+  padding-left: 3%;
+  padding-bottom: 1%;
+  margin-left: -6%;
+  font-size: 7vw;
   font-family: "Manrope";
   font-weight: 500;
   color: #ffffff;
-  align-self: flex-start;
-  line-height: 100%;
+  line-height: 70%;
 }
 
 .radionica1-levo-container .naziv-radionice {
-  align-self: flex-start;
+  display: flex;
   font-family: "Manrope";
   color: #00ffa3;
   font-size: 6vw;
@@ -62,6 +63,7 @@
 .radionica1-desno-container .prvi-deo {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .radionica1-desno-container .slika_desna {
@@ -73,12 +75,11 @@
 }
 
 .radionica1-desno-container .ime-predavaca {
+  display: flex;
   color: #ffffff;
-  font-size: 3vw;
+  font-size: 2.7vw;
   font-family: "Manrope";
   font-weight: 400;
-  margin-bottom: -0.8%;
-  margin-left: -5%;
 }
 
 .radionica1-desno-container .predavac-opis {
@@ -87,7 +88,7 @@
   font-size: 2vw;
   font-weight: 400;
   text-align: right;
-  margin-top: 2%;
+  padding-top: 2%;
 }
 
 .radionica2-container {
@@ -99,13 +100,14 @@
 .radionica2-levo-container {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 50.5%;
   margin-left: 4%;
 }
 
 .radionica2-levo-container .prvi-deo {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .radionica2-levo-container .ime-predavaca {
@@ -120,6 +122,7 @@
   border-radius: 50%;
   width: 30vw;
   height: auto;
+  margin-right: 10%;
 }
 
 .radionica2-levo-container .predavac-opis {
@@ -128,7 +131,6 @@
   font-size: 2vw;
   font-weight: 400;
   text-align: left;
-  margin-left: -2%;
   margin-top: 2%;
 }
 
@@ -140,19 +142,20 @@
 }
 
 .radionica2-desno-container .redni-broj {
-  border-left: 0.75vw solid #00ffa3;
-  padding-left: 2%;
-
-  font-size: 5vw;
+  display: flex;
+  border-left: 0.9vw solid #00ffa3;
+  padding-left: 3%;
+  padding-bottom: 1%;
+  margin-left: -6%;
+  font-size: 7vw;
   font-family: "Manrope";
   font-weight: 500;
   color: #ffffff;
-  align-self: flex-start;
-  line-height: 100%;
+  line-height: 70%;
 }
 
 .radionica2-desno-container .naziv-radionice {
-  align-self: flex-start;
+  display: flex;
   font-family: "Manrope";
   color: #00ffa3;
   font-size: 6vw;
