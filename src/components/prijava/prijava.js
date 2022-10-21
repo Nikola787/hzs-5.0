@@ -1,5 +1,5 @@
 import React from "react";
-import "./Prijava.css";
+import "./prijava.css";
 
 import Clan from "./Clan.js";
 

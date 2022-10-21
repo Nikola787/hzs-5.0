@@ -5,20 +5,21 @@
   height: 2900px;
 }
 
-.tekst {
+.hzs-tekst {
   position: fixed;
   top: 40%;
   justify-content: center;
   width: 100%;
 }
 
-.tekst h1 {
+.hzs-tekst h1 {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
   font-size: 80px;
   line-height: 164px;
   text-align: center;
+  opacity: 1;
 
   /* identical to box height */
 
