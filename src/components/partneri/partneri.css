@@ -1,5 +1,5 @@
 .ceo-partneri {
-  height: 1900px;
+  height: 100%;
   background-color: #181919;
 }
 
@@ -8,7 +8,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
-  font-size: 50px;
+  font-size: 40px;
   color: #ffffff;
 }
 
@@ -36,8 +36,8 @@
 
 .partner img {
   margin-top: 0px;
-  width: 20em;
-  height: 12em;
+  width: 16em;
+  height: 9em;
   border-radius: 30px;
 }
 
@@ -68,14 +68,14 @@
 /* veliki tableti i mali  */
 @media screen and (min-width: 960px) {
   .ceo-partneri h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
 /* desktop */
 @media screen and (min-width: 1200px) {
   .ceo-partneri h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
