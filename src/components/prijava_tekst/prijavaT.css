@@ -2,7 +2,6 @@
   background-image: url("./assets/prijavaTpozadina.png");
   background-size: cover;
   background-repeat: repeat-y;
-  height: 600px;
 
   margin-top: -2.3%;
 }
@@ -14,8 +13,8 @@
 
 .prijavaT-box {
   margin-top: 10%;
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 0%;
 
   background: linear-gradient(#181919, #181919) padding-box,
     linear-gradient(120.39deg, #00ffa3 23.45%, rgba(24, 25, 25, 0.2) 104.96%)
@@ -62,9 +61,14 @@
 }
 
 .dugme-prijava {
-  width: 15%;
+  width: 22%;
   height: 12%;
-  margin-top: -15%;
+  margin-top: -2%;
+  margin-bottom: 10%;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
 
   background: linear-gradient(
         266.26deg,
@@ -94,7 +98,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 35px;
 
   /* identical to box height */
 
