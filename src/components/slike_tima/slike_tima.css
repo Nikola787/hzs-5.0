@@ -61,9 +61,10 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 3%;
+  position: relative;
 }
 
-.slike-tima-levo .gornji-deo {
+/* .slike-tima-levo .gornji-deo {
   display: flex;
   align-items: center;
 }
@@ -78,9 +79,6 @@
   position: relative;
 }
 
-.gornji-deo .slika-bordera {
-  width: 24vw;
-}
 
 .slike-tima-levo .slika-koordinatora {
   position: absolute;
@@ -95,6 +93,62 @@
 .gornji-deo .slika-strela-desno {
   cursor: pointer;
   width: 6vw;
+} */
+.slika-bordera {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24vw;
+}
+.slider {
+  position: relative;
+  display: flex;
+  width: 5vw;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  z-index: 52;
+  margin: 10%;
+}
+
+.image {
+  height: 24vw;
+  width: 17.8vw;
+  object-fit: cover;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 25%;
+  right: 250%;
+  width: 7vw;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+.right-arrow {
+  position: absolute;
+  top: 25%;
+  left: 250%;
+  width: 7vw;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+
+.slide {
+  display: flex;
+  opacity: 0;
+  /* transition: opacity ease-in-out; */
+  transition: 1s ease;
+}
+
+.slide-active {
+  display: flex;
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 }
 
 .slike-tima-levo .opis-slike {

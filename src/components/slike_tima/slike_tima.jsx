@@ -6,6 +6,8 @@ import SlikaBordera from "../../images/Slike tima - okvir za koordinatora.png";
 import SlikaKoordinatora from "../../images/5-3.jpg";
 import SLikaBordera1 from "../../images/Slike tima - okvir za sliku tima.png";
 import SlikaGrupna from "../../images/Grupna.png";
+import ImageSlider from "./ImageSlider/ImageSlider";
+import { DataSlider } from "./ImageSlider/DataSlider";
 
 const slike_tima = () => {
   return (
@@ -23,7 +25,7 @@ const slike_tima = () => {
       </div>
       <div className="slike-tima-container">
         <div className="slike-tima-levo">
-          <div className="gornji-deo">
+          {/* <div className="gornji-deo">
             <img
               className="slika-strela-levo"
               src={StrelaLevo}
@@ -46,7 +48,9 @@ const slike_tima = () => {
               src={StrelaDesno}
               alt="Strelica desna oko slike koordinatora"
             />
-          </div>
+          </div> */}
+
+          <ImageSlider slides={DataSlider} />
           <div className="opis-slike">
             <h1 className="ime-koordinatora">Vladislav Vidović</h1>
             <h3 className="funkcija-koordinatora">Koordinator projekta</h3>
