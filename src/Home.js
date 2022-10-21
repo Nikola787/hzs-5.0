@@ -17,17 +17,17 @@ const Home = () => {
   return (
     <div>
       {/* <Animacija /> */}
-      <Navbar />
-      <Gradijent />
-      <Tajmer />
+      {/* <Navbar /> */}
+      {/* <Gradijent /> */}
+      {/* <Tajmer /> */}
       {/* <O_projektu /> */}
       {/* <Iskustva /> */}
       <Radionice />
       {/* <Agenda /> */}
       {/* <SlikeTima /> */}
-      <Partneri />
+      {/* <Partneri /> */}
       <PrijavaT />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
