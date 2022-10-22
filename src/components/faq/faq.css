@@ -1,11 +1,11 @@
-.ceo {
+.ceo-f {
   background-color: black;
   /* height: 1000px; */
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
 }
-.rectangle {
+.rectangle-f {
   float: left;
   background: #00ffa3;
   width: 15px;
@@ -13,7 +13,7 @@
   margin-top: 6%;
 }
 
-.tekst_naslov {
+.tekst_naslov-f {
   margin-left: 1.5%;
   margin-top: 2.5%;
   float: right;
@@ -24,7 +24,7 @@
   line-height: 164px;
   color: #ffffff;
 }
-.naslov {
+.naslov-f {
   margin-left: 8%;
 
   display: flex;
@@ -38,7 +38,7 @@
   color: #ffffff;
   background-color: purple;
 }
-.wrapper {
+.wrapper-f {
   margin-top: 0em;
   display: flex;
   height: 50vh;
@@ -47,14 +47,14 @@
   /* align-items: center; */
   margin-left: 11%;
 }
-.accordion {
+.accordion-f {
   width: 500px;
 }
-.item {
+.item-f {
   margin-bottom: 5%;
   border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
-.title {
+.title-f {
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -65,7 +65,7 @@
   font-weight: 400;
 }
 
-.title h2 {
+.title-f h2 {
   margin-bottom: -0.1%;
 }
 
@@ -91,7 +91,7 @@
   margin-top: 5px;
   margin-bottom: 10px;
 }
-span {
+.span-f {
   display: inline-block;
   transform: scale(4);
 }

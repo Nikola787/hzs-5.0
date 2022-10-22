@@ -13,23 +13,23 @@ const Faq = () => {
   };
 
   return (
-    <div className="ceo">
-      <div className="naslov">
-        <div className="rectangle"></div>
-        <div className="tekst_naslov">ČESTO POSTAVLJANA PITANJA</div>
+    <div className="ceo-f">
+      <div className="naslov-f">
+        <div className="rectangle-f"></div>
+        <div className="tekst_naslov-f">ČESTO POSTAVLJANA PITANJA</div>
       </div>
-      <div className="wrapper">
-        <div className="accordion">
-          {data.map((item, i) => (
-            <div className="item">
-              <div className="title" onClick={() => toggle(i)}>
+      <div className="wrapper-f">
+        <div className="accordion-f">
+          {dataF.map((item, i) => (
+            <div className="item-f">
+              <div className="title-f" onClick={() => toggle(i)}>
                 <h2 style={{ color: selected === i ? "#00ffa3" : "#FFFFFF" }}>
-                  {item.question}
+                  {item.questionF}
                 </h2>
-                <span>{selected === i ? "-" : "+"}</span>
+                <span className="span-f">{selected === i ? "-" : "+"}</span>
               </div>
               <div className={selected === i ? "content show" : "content"}>
-                {item.answer}
+                {item.answerF}
               </div>
             </div>
           ))}
@@ -38,25 +38,25 @@ const Faq = () => {
     </div>
   );
 };
-const data = [
+const dataF = [
   {
-    question: "Question 1",
-    answer:
+    questionF: "Question 1",
+    answerF:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
   },
   {
-    question: "Question 2",
-    answer:
+    questionF: "Question 2",
+    answerF:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
   },
   {
-    question: "Question 3",
-    answer:
+    questionF: "Question 3",
+    answerF:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
   },
   {
-    question: "Question 4",
-    answer:
+    questionF: "Question 4",
+    answerF:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
   },
 ];

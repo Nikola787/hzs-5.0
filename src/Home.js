@@ -7,7 +7,7 @@ import SlikeTima from "./components/slike_tima/slike_tima.jsx";
 import Gradijent from "./components/gradijent/gradijent.js";
 import Agenda from "./components/agenda/agenda.jsx";
 import Footer from "./components/footer/footer";
-import Faq from "./components/faq/Faq.js";
+import Faq from "./components/faq/faq.js";
 import O_projektu from "./components/o_projektu/o_projektu.js";
 import Iskustva from "./components/iskustva/iskustva.js";
 import Partneri from "./components/partneri/partneri.js";
@@ -23,12 +23,12 @@ const Home = () => {
       {/* <O_projektu /> */}
       {/* <Iskustva /> */}
       {/* <Radionice /> */}
-      {/* <Faq /> */}
+      <Faq />
       {/* <Agenda /> */}
       {/* <SlikeTima /> */}
-      {/* <Partneri /> */}
-      {/* <PrijavaT /> */}
-      {/* <Footer /> */}
+      <Partneri />
+      <PrijavaT />
+      <Footer />
     </div>
   );
 };
