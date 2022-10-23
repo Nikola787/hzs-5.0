@@ -69,7 +69,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
-
   background: linear-gradient(
         266.26deg,
         #00ffa3 -37.67%,
@@ -110,4 +109,37 @@
   box-shadow: -37px 37px 74px 0px rgba(14, 15, 15, 0.2);
   box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
   box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset;
+}
+
+@media screen and (max-width: 960px) {
+  .dugme-prijava {
+    font-size: 30px;
+  }
+  .prijavaT-box {
+    width: 70%;
+  }
+  .dugme-prijava {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .prijavaT-box {
+    width: 90%;
+  }
+  .dugme-prijava {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dugme-prijava {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dugme-prijava {
+    font-size: 20px;
+  }
 }

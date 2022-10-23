@@ -23,7 +23,7 @@ const Home = () => {
       <O_projektu />
       {/* <Iskustva /> */}
       <Radionice />
-      <Agenda />
+      {/* <Agenda /> */}
       {/* <Faq /> */}
       {/* <SlikeTima /> */}
       <Partneri />
