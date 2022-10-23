@@ -4,6 +4,8 @@
     padding: 5rem 0;
     background-color: #181919;
     z-index: -1;
+    background-image: url("../../../assets/Agenda\ -\ pozadina.png");
+    background-size: 100% 100%;
 }
 
 .agenda .title {
@@ -37,7 +39,7 @@
 .sixth {
     border-radius: 20px;
     background-color: #181414;
-    padding: 2rem .3rem;
+    padding: 2rem 0rem;
 }
 
 .agenda-first,
@@ -51,8 +53,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid #00FFA3;
-    padding: 2rem;
+    /* border: 2px solid #00FFA3; */
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
 }
 
 .ag-fi-date,
@@ -140,6 +143,11 @@
 
 /* extra mali mobilni */
 @media screen and (max-width: 340px) {
+
+    .agenda {
+        background-image: none;
+    }
+
     .agenda-content {
         display: flex;
         flex-direction: column;
@@ -196,9 +204,9 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 30vh;
+        height: 14vh;
         border: 2px solid #00FFA3;
-        padding: .1rem;
+        padding: 0rem;
     }
 
     .ag-fi-date,
@@ -217,7 +225,7 @@
     .ag-fo-date p,
     .ag-fv-date p,
     .ag-sh-date p {
-        font-size: .9rem;
+        font-size: 1.3rem;
         color: #00FFA3;
         text-align: left;
     }
@@ -240,7 +248,7 @@
         color: #FFFFFF;
         text-align: left;
         font-weight: 600;
-        font-size: .7rem;
+        font-size: 1rem;
         margin-bottom: .3rem;
         margin-top: .3rem;
     }
@@ -272,10 +280,14 @@
         width: 100%;
         align-items: flex-end;
     }
+
 }
 
 /* Normalni mobilni */
 @media screen and (min-width: 340px) {
+    .agenda {
+        background-image: none;
+    }
 
     .agenda-content {
         display: flex;
@@ -334,7 +346,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 30vh;
+        height: 14vh;
         border: 2px solid #00FFA3;
         padding: .1rem;
     }
@@ -357,7 +369,7 @@
     .ag-sh-date p {
         color: #00FFA3;
         text-align: left;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .ag-fi-title,
@@ -379,7 +391,7 @@
         text-align: left;
         font-weight: 600;
 
-        font-size: .8rem;
+        font-size: 1rem;
         margin-bottom: .3rem;
         margin-top: .3rem;
     }
@@ -415,6 +427,9 @@
 
 /* veliki telefoni i mali tableti */
 @media screen and (min-width: 425px) {
+    .agenda {
+        background-image: none;
+    }
 
 
     .agenda-content {
@@ -426,7 +441,7 @@
     .agenda .title {
         font-weight: 100;
         color: #FFFFFF;
-        font-size: 2.2rem;
+        font-size: 2.8rem;
         padding-left: 2.9rem;
         margin-bottom: 1rem;
     }
@@ -435,9 +450,9 @@
         content: "";
         width: 7px;
         background-color: #00FFA3;
-        height: 2rem;
+        height: 2.5rem;
         position: absolute;
-        top: 5.5rem;
+        top: 5.7rem;
         left: 2rem;
     }
 
@@ -473,7 +488,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 30vh;
+        height: 14vh;
         border: 2px solid #00FFA3;
         padding: .1rem;
     }
@@ -531,7 +546,7 @@
         color: #FFFFFF;
         font-weight: 100;
         text-align: left;
-        font-size: .7rem;
+        font-size: .8rem;
         padding-left: .5rem;
     }
 
@@ -553,6 +568,11 @@
 
 /* Veliki tableti*/
 @media screen and (min-width:660px) {
+
+    .agenda {
+        background-image: none;
+    }
+
     .agenda-content {
         display: flex;
         flex-direction: column;
@@ -562,8 +582,8 @@
     .agenda .title {
         font-weight: 100;
         color: #FFFFFF;
-        font-size: 2.2rem;
-        padding-left: 2.9rem;
+        font-size: 4rem;
+        padding-left: 5rem;
         margin-bottom: 1rem;
     }
 
@@ -571,10 +591,10 @@
         content: "";
         width: 7px;
         background-color: #00FFA3;
-        height: 2rem;
+        height: 3rem;
         position: absolute;
-        top: 5.5rem;
-        left: 2rem;
+        top: 6.4rem;
+        left: 3.5rem;
     }
 
     .first,
@@ -609,7 +629,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 30vh;
+        height: 20vh;
         border: 2px solid #00FFA3;
         padding: .1rem;
     }
@@ -632,7 +652,7 @@
     .ag-sh-date p {
         color: #00FFA3;
         text-align: left;
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
     .ag-fi-title,
@@ -654,7 +674,7 @@
         text-align: left;
         font-weight: 600;
 
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: .3rem;
         margin-top: .3rem;
     }
@@ -695,6 +715,8 @@
         padding: 5rem 0;
         background-color: #181919;
         z-index: -1;
+        background-image: url("../../../assets/Agenda\ -\ pozadina.png");
+        background-size: 100% 100%;
     }
 
     .agenda .title {
@@ -743,7 +765,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 2px solid #00FFA3;
+        border: none;
         padding: 2rem;
     }
 
