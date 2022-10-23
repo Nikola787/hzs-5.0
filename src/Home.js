@@ -11,7 +11,8 @@ const Home = () => {
   return (
     <div>
       {/* <Animacija /> */}
-      <Gradijent />
+      {/* <Gradijent /> */}
+      <Prijava />
     </div>
   );
 };
