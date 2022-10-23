@@ -20,9 +20,9 @@ const Home = () => {
       <Navbar />
       <Gradijent />
       <Tajmer />
-      <O_projektu />
+      {/* <O_projektu /> */}
       {/* <Iskustva /> */}
-      <Radionice />
+      {/* <Radionice /> */}
       {/* <Agenda /> */}
       {/* <Faq /> */}
       {/* <SlikeTima /> */}
