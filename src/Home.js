@@ -17,14 +17,14 @@ const Home = () => {
   return (
     <div>
       {/* <Animacija /> */}
-      {/* <Navbar /> */}
-      {/* <Gradijent /> */}
-      {/* <Tajmer /> */}
-      {/* <O_projektu /> */}
+      <Navbar />
+      <Gradijent />
+      <Tajmer />
+      <O_projektu />
       {/* <Iskustva /> */}
-      {/* <Radionice /> */}
+      <Radionice />
+      <Agenda />
       <Faq />
-      {/* <Agenda /> */}
       {/* <SlikeTima /> */}
       <Partneri />
       <PrijavaT />
