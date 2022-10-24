@@ -37,7 +37,6 @@ const Prijava = () => {
     console.log(pitanje5);
     console.log(pitanje6);
     console.log(pitanje7);
-
   }, [clan1, clan2, clan3, clan4]);
 
   const openModal = (poruka) => {
@@ -202,7 +201,7 @@ const Prijava = () => {
             <label className="label-text-it">
               <input
                 type="text"
-                placeholder="Green day (primer teksta)"
+                placeholder="Green day"
                 required
                 onChange={(e) => setPitanje1(e.target.value)}
               />
@@ -225,9 +224,7 @@ const Prijava = () => {
               />
               <span className="checkmark" />
             </label>
-          </div>
 
-          <div className="radio-box">
             <label className="radio-btn">
               Preko prijatelja
               <input
@@ -237,9 +234,7 @@ const Prijava = () => {
               />
               <span className="checkmark" />
             </label>
-          </div>
 
-          <div className="radio-box">
             <label className="radio-btn">
               Preko profesora
               <input
@@ -249,9 +244,7 @@ const Prijava = () => {
               />
               <span className="checkmark" />
             </label>
-          </div>
 
-          <div className="radio-box">
             <label className="radio-btn">
               Preko televizije
               <input
@@ -261,9 +254,7 @@ const Prijava = () => {
               />
               <span className="checkmark" />
             </label>
-          </div>
 
-          <div className="radio-box">
             <label className="radio-btn">
               Preko portala
               <input
