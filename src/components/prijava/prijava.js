@@ -179,7 +179,7 @@ const Prijava = () => {
 
   return (
     <div>
-      <div className="ceo">
+      <div className="ceo-f">
         <div className="naslov">
           <div className="naslov-tekst">
             <h1>FORMA ZA PRIJAVU</h1>
