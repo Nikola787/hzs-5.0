@@ -249,10 +249,16 @@ hr.linija-p {
 }
 
 .dugme {
+
+
+
   height: 80px;
   width: 20%;
 
   margin-bottom: 8%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 
   font-size: 2em;
   font-family: "Manrope";
