@@ -47,13 +47,21 @@ const Tajmer = () => {
   return (
     <div>
       <div class="wrapper">
-        <label id="dani" for="html">
-          dani
-        </label>
-        <p id="demo">{tajm}</p>
-        <label id="sati" for="html">
-          sati
-        </label>
+        <p id="timer-text">
+          <span className="timer-span">Vreme </span>
+          <span className="timer-span">do </span>
+          <span className="timer-span">zatvaranja </span>
+          <span className="timer-span">prijava </span>
+        </p>
+        <div className="timer">
+          <label id="dani" for="html">
+            dani
+          </label>
+          <p id="demo">{tajm}</p>
+          <label id="sati" for="html">
+            sati
+          </label>
+        </div>
       </div>
     </div>
   );
