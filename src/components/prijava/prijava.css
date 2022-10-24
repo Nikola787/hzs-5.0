@@ -513,7 +513,7 @@ hr.linija-p {
 }
 
 .unos-ikona img {
-  height: 50px;
+  height: 40.5px;
 }
 
 @media screen and (max-width: 1920px) {
@@ -591,7 +591,7 @@ hr.linija-p {
   }
 
   .unos-ikona img {
-    height: 44px;
+    height: 38px;
   }
 
   /* Create a custom checkbox */
@@ -737,7 +737,7 @@ hr.linija-p {
   }
 
   .unos-ikona img {
-    height: 31px;
+    height: 24px;
   }
 
   .label-text input {
