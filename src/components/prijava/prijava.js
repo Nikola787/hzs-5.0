@@ -7,11 +7,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const Prijava = () => {
-  const handleClick = () => {
-    console.log("this is:", this);
-    posaljiPrijavu();
-  };
-
   const [clan1, setClan1] = useState({});
   const [clan2, setClan2] = useState({});
   const [clan3, setClan3] = useState({});
@@ -174,6 +169,7 @@ const Prijava = () => {
       clanovi: [clan1, clan2, clan3, clan4],
     };
 
+    console.log(prijava);
     postPrijava(prijava);
   };
 
@@ -336,7 +332,7 @@ const Prijava = () => {
           </label>
         </div>
 
-        <button type="submit" className="dugme" onClick={(e) => handleClick()}>
+        <button type="submit" className="dugme" onClick={posaljiPrijavu}>
           Pošalji prijavu
         </button>
       </div>

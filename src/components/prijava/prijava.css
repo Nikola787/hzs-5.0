@@ -302,7 +302,6 @@ hr.linija-p {
 }
 
 .dugme::after {
-
   border-width: 3px;
   border-style: solid;
   border-color: transparent;
@@ -312,29 +311,30 @@ hr.linija-p {
   position: absolute;
   content: "";
   top: -5px;
-  left: -12px;
+  left: -48px;
   right: 0;
   z-index: -10;
   height: 110%;
-  width: 110%;
+  width: 120%;
   transform: scale(0.9) translateZ(0);
   filter: blur(15px);
-  background:   linear-gradient(120.39deg, #C3B0FF 23.45%, rgba(190, 171, 248, 0.975) 59.96%, rgba(24, 25, 25, 0.2) 104.96%);
+  background: linear-gradient(
+    120.39deg,
+    #c3b0ff 23.45%,
+    rgba(190, 171, 248, 0.975) 59.96%,
+    rgba(24, 25, 25, 0.2) 104.96%
+  );
   background-size: 200% 200%;
   animation: animateGlow 2.25s linear infinite;
-
-  
-
-
 }
 
 @keyframes animateGlow {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 
   100% {
-      background-position: 200% 50%;
+    background-position: 200% 50%;
   }
 }
 
@@ -494,7 +494,7 @@ hr.linija-p {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
-  font-size: 35px;
+  font-size: 20px;
 
   color: #ffffff;
 }
@@ -511,7 +511,7 @@ hr.linija-p {
 /* Create a custom checkbox */
 .checkmark-p {
   position: absolute;
-  top: 12px;
+  top: 2px;
   left: 0;
   height: 25px;
   width: 25px;
@@ -627,7 +627,7 @@ hr.linija-p {
     font-size: 25px;
   }
   .checkbox-p {
-    font-size: 20px;
+    font-size: 15px;
     margin-right: auto;
     margin-left: 2.3%;
   }
@@ -639,7 +639,7 @@ hr.linija-p {
   /* Create a custom checkbox */
   .checkmark-p {
     position: absolute;
-    top: 3px;
+    top: 2px;
     left: 8px;
     height: 20px;
     width: 20px;
@@ -693,7 +693,6 @@ hr.linija-p {
   }
 
   .checkbox-p {
-    font-size: 20px;
     margin-right: auto;
     margin-left: 11%;
   }
@@ -772,9 +771,9 @@ hr.linija-p {
     font-size: 20px;
   }
   .checkbox-p {
-    font-size: 20px;
+    font-size: 15px;
     margin-right: auto;
-    margin-left: 2.3%;
+    margin-left: 2%;
   }
 
   .unos-ikona img {
@@ -792,7 +791,7 @@ hr.linija-p {
   /* Create a custom checkbox */
   .checkmark-p {
     position: absolute;
-    top: 4px;
+    top: 1px;
     left: 8px;
     height: 20px;
     width: 20px;
