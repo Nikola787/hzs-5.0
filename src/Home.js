@@ -12,25 +12,28 @@ import O_projektu from "./components/o_projektu/o_projektu.js";
 import Iskustva from "./components/iskustva/iskustva.js";
 import Partneri from "./components/partneri/partneri.js";
 import PrijavaT from "./components/prijava_tekst/PrijavaT.js";
+import Prijava from "./components/prijava//prijava.js";
 
 const Home = () => {
   return (
     <div>
       {/* <Animacija /> */}
       {/* <Gradijent /> */}
-      <Prijava />
-      <Navbar />
+      {/* <Navbar />
       <Gradijent />
-      <Tajmer />
+      <Tajmer /> */}
       {/* <O_projektu /> */}
       {/* <Iskustva /> */}
       {/* <Radionice /> */}
       {/* <Agenda /> */}
       {/* <Faq /> */}
       {/* <SlikeTima /> */}
-      <Partneri />
+      {/* <Partneri />
       <PrijavaT />
-      <Footer />
+      <Footer /> */}
+
+      <Prijava />
+
     </div>
   );
 };
