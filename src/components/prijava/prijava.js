@@ -271,7 +271,7 @@ const Prijava = () => {
             <label className="otvoreno-text">
               <textarea
                 type="text"
-                placeholder="Primer teksta koji se unosi"
+                placeholder="Napišite odgovor ovde"
                 onChange={(e) => setPitanje3(e.target.value)}
               />
             </label>
@@ -286,7 +286,7 @@ const Prijava = () => {
             <label className="otvoreno-text">
               <textarea
                 type="text"
-                placeholder="Primer teksta koji se unosi"
+                placeholder="Napišite odgovor ovde"
                 onChange={(e) => setPitanje4(e.target.value)}
               />
             </label>
@@ -300,7 +300,7 @@ const Prijava = () => {
             <label className="otvoreno-text">
               <textarea
                 type="text"
-                placeholder="Primer teksta koji se unosi"
+                placeholder="Napišite odgovor ovde"
                 onChange={(e) => setPitanje5(e.target.value)}
               />
             </label>
@@ -314,7 +314,7 @@ const Prijava = () => {
             <label className="otvoreno-text">
               <textarea
                 type="text"
-                placeholder="Primer teksta koji se unosi"
+                placeholder="Napišite odgovor ovde"
                 onChange={(e) => setPitanje6(e.target.value)}
               />
             </label>

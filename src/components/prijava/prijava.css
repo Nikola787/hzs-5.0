@@ -250,7 +250,7 @@ hr.linija-p {
 
 .dugme {
   height: 80px;
-  width: 25%;
+  width: 20%;
 
   margin-bottom: 8%;
 
@@ -259,7 +259,7 @@ hr.linija-p {
   font-style: normal;
   font-weight: 200;
   color: #ffffff;
-  opacity: 1;
+  opacity: 0, 8;
 
   background: linear-gradient(
         265.16deg,
@@ -294,48 +294,6 @@ hr.linija-p {
   box-shadow: -37px 37px 74px 0px rgba(14, 15, 15, 0.2);
   box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
   box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset;
-
-  background: hsl(0, -3%, 14%);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
-  cursor: pointer;
-  letter-spacing: 2px;
-}
-
-.dugme::after {
-  border-width: 3px;
-  border-style: solid;
-  border-color: transparent;
-  border-radius: 60px;
-  opacity: 0.7;
-
-  position: absolute;
-  content: "";
-  top: -5px;
-  left: -48px;
-  right: 0;
-  z-index: -10;
-  height: 110%;
-  width: 120%;
-  transform: scale(0.9) translateZ(0);
-  filter: blur(15px);
-  background: linear-gradient(
-    120.39deg,
-    #c3b0ff 23.45%,
-    rgba(190, 171, 248, 0.975) 59.96%,
-    rgba(24, 25, 25, 0.2) 104.96%
-  );
-  background-size: 200% 200%;
-  animation: animateGlow 2.25s linear infinite;
-}
-
-@keyframes animateGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  100% {
-    background-position: 200% 50%;
-  }
 }
 
 /* DUGME */
@@ -526,7 +484,7 @@ hr.linija-p {
 
 /* When the checkbox is checked, add a blue background */
 .checkbox-p input:checked ~ .checkmark-p {
-  background-color: #2196f3;
+  background-color:  #C3B0FF;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -543,8 +501,8 @@ hr.linija-p {
 
 /* Style the checkmark/indicator */
 .checkbox-p .checkmark-p:after {
-  left: 9px;
-  top: 5px;
+  left: 8px;
+  top: 3px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -560,8 +518,18 @@ hr.linija-p {
 
 @media screen and (max-width: 1920px) {
 }
+
 @media screen and (max-width: 1100px) {
   /*od ovog pointa krece mobilna verzija*/
+  .radio-btn .checkmark:after {
+    top: 6.5px;
+    left: 6.5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
   .naslov-tekst h1 {
     font-size: 40px;
     border-left: 10px solid #c3b0ff;
@@ -689,7 +657,7 @@ hr.linija-p {
   /* Style the checkmark/indicator */
   .checkbox-p .checkmark-p:after {
     left: 6px;
-    top: 2px;
+    top: 1px;
   }
 
   .checkbox-p {
