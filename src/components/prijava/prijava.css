@@ -317,7 +317,7 @@ hr.linija-p {
           #01cff3,
           #c4afaf);
   background-size: 200% 200%;
-  animation: animateGlow 1.7s linear infinite;
+  -webkit-animation: animateGlow 1.7s linear infinite;
 }
 
 @keyframes animateGlow {
