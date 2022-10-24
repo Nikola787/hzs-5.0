@@ -1,101 +1,119 @@
-.ceo{
-    background-color: black;
-    /* height: 1000px; */
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 200;
-    
-   
+.ceo-f {
+  background-color: black;
+  /* height: 1000px; */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
 }
-.rectangle{
-    float: left;
-    background: #00FFA3;
-    width: 15px;
-    height: 65px;
-    margin-top: 6%;
+.rectangle-f {
+  float: left;
+  background: #00ffa3;
+  width: 15px;
+  height: 65px;
+  margin-top: 6%;
 }
 
-.tekst_naslov{
+.tekst_naslov-f {
+  margin-left: 1.5%;
+  margin-top: 2.5%;
+  float: right;
+  font-size: 80px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  line-height: 164px;
+  color: #ffffff;
+}
+.naslov-f {
+  margin-left: 8%;
+
+  display: flex;
+}
+.body {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  background-color: purple;
+}
+.wrapper-f {
+  margin-top: 0em;
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+  justify-content: flex-start;
+  /* align-items: center; */
+  margin-left: 11%;
+}
+.accordion-f {
+  width: 51%;
+}
+.item-f {
+  margin-bottom: 5%;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+}
+.title-f {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+}
+
+.title-f h2 {
+  margin-bottom: -0.1%;
+}
+
+.content {
+  color: #ffffff;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.span-f {
+  display: inline-block;
+  transform: scale(3);
+}
+.title-f h2{
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 340px) {
+
+  .tekst_naslov-f {
     margin-left: 1.5%;
     margin-top: 2.5%;
     float: right;
-    font-size: 80px;
-    font-family: 'Manrope';
+    font-size: 20px;
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 200;
     line-height: 164px;
-    color: #FFFFFF;
-   
-}
-.naslov{
-    margin-left: 8%;
-    
-    display: flex;
-}
-.body{
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
-    background-color: purple;
-}
-.wrapper{
-    margin-top: 0em;
-    display: flex;
-    height: 50vh;
-    width: 100vw;
-    justify-content: flex-start;
-    /* align-items: center; */
-    margin-left: 11%;
-}
-.accordion{
-    width: 500px;
-}
-.item{
-    margin-bottom: 5%;
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
-}
-.title{
-    color:#FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-}
-
-.title h2 {
-    margin-bottom: -0.1%;
-    
-}
-
-.content{
-    color: #FFFFFF;
-    overflow : hidden;
-    max-height: 0;
-    transition: all 0.5s cubic-bezier(0,1,0,1);
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    text-align: left;
-}
-
-.content.show{
-    height: auto;
-    max-height: 9999px;
-    transition: all 0.5s cubic-bezier(1,0,1,0);
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    text-align: left;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-span{
-    display: inline-block;
-    transform: scale(4);
+    color: #ffffff;
+  }
+  
 }
