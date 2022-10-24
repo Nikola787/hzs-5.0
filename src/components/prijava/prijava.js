@@ -332,7 +332,7 @@ const Prijava = () => {
           </label>
         </div>
 
-        <button type="submit" className="dugme" onClick={posaljiPrijavu}>
+        <button type="submit" className="dugmee" onClick={posaljiPrijavu}>
           Pošalji prijavu
         </button>
       </div>
