@@ -17,6 +17,8 @@ const Home = () => {
   return (
     <div>
       {/* <Animacija /> */}
+      {/* <Gradijent /> */}
+      <Prijava />
       <Navbar />
       <Gradijent />
       <Tajmer />
