@@ -188,7 +188,7 @@ const Prijava = () => {
         <Clan onChange={onClan2} />
         <div className="clan">Član 3</div>
         <Clan onChange={onClan3} />
-        <div className="clan">Član 4</div>
+        <div className="clan">Član 4 (opciono)</div>
         <Clan onChange={onClan4} />
 
         <div className="box-pitanja">
