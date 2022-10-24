@@ -259,7 +259,7 @@ hr.linija-p {
   font-style: normal;
   font-weight: 200;
   color: #ffffff;
-  opacity: 0, 8;
+  opacity: 1;
 
   background: linear-gradient(
         265.16deg,
@@ -294,6 +294,48 @@ hr.linija-p {
   box-shadow: -37px 37px 74px 0px rgba(14, 15, 15, 0.2);
   box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
   box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset;
+
+  background: hsl(0, -3%, 14%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.dugme::after {
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 60px;
+  opacity: 0.7;
+
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -12px;
+  right: 0;
+  z-index: -10;
+  height: 110%;
+  width: 110%;
+  transform: scale(0.9) translateZ(0);
+  filter: blur(15px);
+  background:   linear-gradient(120.39deg, #C3B0FF 23.45%, rgba(190, 171, 248, 0.975) 59.96%, rgba(24, 25, 25, 0.2) 104.96%);
+  background-size: 200% 200%;
+  animation: animateGlow 2.25s linear infinite;
+
+  
+
+
+}
+
+@keyframes animateGlow {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  100% {
+      background-position: 200% 50%;
+  }
 }
 
 /* DUGME */
@@ -660,7 +702,6 @@ hr.linija-p {
     font-size: 20px;
     width: 30%;
   }
-
 }
 
 @media screen and (max-width: 480px) {
