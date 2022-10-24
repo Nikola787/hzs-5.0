@@ -294,7 +294,7 @@ hr.linija-p {
   box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
   box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset; */
 
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 
 }
 
@@ -310,13 +310,13 @@ hr.linija-p {
   height: 100%;
   width: 110%;
   -webkit-transform: scale(0.9) translateZ(0);
-  filter: blur(15px);
+  -webkit-filter: blur(15px);
   background: linear-gradient(to left,
           #020024,
           #9245d1,
           #01cff3,
           #c4afaf);
-  background-size: 200% 200%;
+  -webkit-background-size: 200% 200%;
   -webkit-animation: animateGlow 1.7s linear infinite;
 }
 
