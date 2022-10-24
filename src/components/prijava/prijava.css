@@ -232,8 +232,8 @@ hr.linija-p {
   margin-top: 3%;
 
   border-radius: 3px;
-  height: 89%;
-  width: 39vw;
+  height: 92%;
+  width: 95%;
   outline: none;
 
   color: white;
@@ -528,6 +528,9 @@ hr.linija-p {
   .box-pitanja {
     width: 65%;
   }
+  .otvoreno-text textarea {
+    margin-top: 4%;
+  }
 }
 @media screen and (max-width: 960px) {
   .naslov-tekst h1 {
@@ -549,6 +552,8 @@ hr.linija-p {
     font-size: 25px;
   }
   .otvoreno-text textarea {
+    width: 90%;
+    margin-top: 5%;
     font-size: 10px;
   }
   .otvoreno-text textarea::placeholder {
@@ -592,6 +597,14 @@ hr.linija-p {
   .box-pitanja{
     width: 75%;
   }
+  .otvoreno-text textarea {
+    width: 90%;
+    margin-top: 7%;
+    font-size: 10px;
+  }
+  .unos-ikona img {
+    height: 31px;
+  }
 }
 @media screen and (max-width: 480px) {
   /*od ovog pointa krece mobilna verzija*/
@@ -609,8 +622,21 @@ hr.linija-p {
   .box-pitanja{
     width: 85%;
   }
+  .otvoreno-text textarea {
+    width: 90%;
+    margin-top: 9%;
+    font-size: 10px;
+  }
   
 
 }
 @media screen and (max-width: 340px) {
+  .otvoreno-text textarea {
+    width: 88%;
+    margin-top: 15%;
+    font-size: 10px;
+  }
+  .unos-ikona img {
+    height: 30px;
+  }
 }
