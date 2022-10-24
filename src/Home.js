@@ -20,18 +20,18 @@ const Home = () => {
       {/* <Animacija /> */}
       {/* <Gradijent /> */}
       <Prijava />
-      <Navbar />
-      <Gradijent />
-      <Tajmer />
+      {/* <Navbar /> */}
+      {/* <Gradijent /> */}
+      {/* <Tajmer /> */}
       {/* <O_projektu /> */}
       {/* <Iskustva /> */}
       {/* <Radionice /> */}
       {/* <Agenda /> */}
       {/* <Faq /> */}
       {/* <SlikeTima /> */}
-      <Partneri />
-      <PrijavaT />
-      <Footer />
+      {/* <Partneri /> */}
+      {/* <PrijavaT /> */}
+      {/* <Footer /> */}
     </div>
   );
 };
