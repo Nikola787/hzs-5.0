@@ -10,21 +10,30 @@ import Footer from "./components/footer/footer";
 import Faq from "./components/faq/faq.js";
 import O_projektu from "./components/o_projektu/o_projektu.js";
 import Iskustva from "./components/iskustva/iskustva.js";
-import Prijava from "./components/prijava/prijava.js";
+import Partneri from "./components/partneri/partneri.js";
+import PrijavaT from "./components/prijava_tekst/PrijavaT.js";
+import Prijava from "./components/prijava//prijava.js";
 
 const Home = () => {
   return (
     <div>
       {/* <Animacija /> */}
-      <Navbar />
+      {/* <Gradijent /> */}
+      {/* <Navbar />
       <Gradijent />
-      <Tajmer />
+      <Tajmer /> */}
       {/* <O_projektu /> */}
-      <Iskustva />
-      <Radionice />
-      <Agenda />
-      <Footer />
-      {/* <Prijava /> */}
+      {/* <Iskustva /> */}
+      {/* <Radionice /> */}
+      {/* <Agenda /> */}
+      {/* <Faq /> */}
+      {/* <SlikeTima /> */}
+      {/* <Partneri />
+      <PrijavaT />
+      <Footer /> */}
+
+      <Prijava />
+
     </div>
   );
 };
