@@ -6,12 +6,10 @@ import Clan from "./Clan.js";
 import { useState } from "react";
 import { useEffect } from "react";
 
-
 const Prijava = () => {
-
   const handleClick = () => {
-    console.log('this is:', this);
-    posaljiPrijavu()
+    console.log("this is:", this);
+    posaljiPrijavu();
   };
 
   const [clan1, setClan1] = useState({});
@@ -39,6 +37,7 @@ const Prijava = () => {
     console.log(pitanje5);
     console.log(pitanje6);
     console.log(pitanje7);
+
   }, [clan1, clan2, clan3, clan4]);
 
   const openModal = (poruka) => {
@@ -141,7 +140,6 @@ const Prijava = () => {
   };
 
   const postPrijava = async (prijava) => {
-
     console.log("Post zahtev za prijava");
     console.log(prijava);
 
@@ -174,7 +172,6 @@ const Prijava = () => {
       pitanje4: pitanje4,
       pitanje5: pitanje5,
       pitanje6: pitanje6,
-      pitanje7: pitanje7,
       clanovi: [clan1, clan2, clan3, clan4],
     };
 
@@ -200,83 +197,81 @@ const Prijava = () => {
         <Clan onChange={onClan4} />
 
         <div className="box-pitanja">
+          <div className="unos-tekst-it">
+            Ime tima:
+            <label className="label-text-it">
+              <input
+                type="text"
+                placeholder="Green day (primer teksta)"
+                required
+                onChange={(e) => setPitanje1(e.target.value)}
+              />
+            </label>
+          </div>
+          <hr className="linija-p" />
+
           <div className="pitanje">
             Kako ste saznali za Hakaton za srednjoškolce?
           </div>
-          <div className="linija"></div>
+          <hr className="linija-p" />
 
           <div className="radio-box">
             <label className="radio-btn">
+              Preko društvenih mreža
               <input
                 type="radio"
                 name="mreze"
-                onChange={(e) => setPitanje1("prva opcija")}
+                onChange={(e) => setPitanje2("Preko društvenih mreža")}
               />
               <span className="checkmark" />
             </label>
-            <div className="odgovor">Preko društvenih mreža</div>
-          </div>
-
-          <div className="radio-box">
-            <label className="radio-btn">
-              <input
-                type="radio"
-                name="mreze"
-                onChange={(e) => setPitanje1("druga opcija")}
-              />
-              <span className="checkmark" />
-            </label>
-            <div className="odgovor">Preko društvenih mreža</div>
           </div>
 
           <div className="radio-box">
             <label className="radio-btn">
+              Preko prijatelja
               <input
                 type="radio"
                 name="mreze"
-                onChange={(e) => setPitanje1("treca opcija")}
+                onChange={(e) => setPitanje2("Preko prijatelja")}
               />
               <span className="checkmark" />
             </label>
-            <div className="odgovor">Preko društvenih mreža</div>
           </div>
 
           <div className="radio-box">
             <label className="radio-btn">
+              Preko profesora
               <input
                 type="radio"
                 name="mreze"
-                onChange={(e) => setPitanje1("cetvrta opcija")}
+                onChange={(e) => setPitanje2("Preko profesora")}
               />
               <span className="checkmark" />
             </label>
-            <div className="odgovor">Preko društvenih mreža</div>
           </div>
 
           <div className="radio-box">
             <label className="radio-btn">
+              Preko televizije
               <input
                 type="radio"
                 name="mreze"
-                onChange={(e) => setPitanje1("peta opcija")}
+                onChange={(e) => setPitanje2("Preko televizije")}
               />
               <span className="checkmark" />
             </label>
-            <div className="odgovor">Preko društvenih mreža</div>
           </div>
 
-          <div className="pitanje">
-            Da li ste nekada učestvovali na takmičenjima u programiranju?
-            Ukoliko jeste, opišite vaša iskustva.
-          </div>
-          <div className="linija"></div>
-          <div className="otvoreno-pitanje">
-            <label className="otvoreno-text">
-              <textarea
-                type="text"
-                placeholder="Primer teksta koji se unosi"
-                onChange={(e) => setPitanje2(e.target.value)}
+          <div className="radio-box">
+            <label className="radio-btn">
+              Preko portala
+              <input
+                type="radio"
+                name="mreze"
+                onChange={(e) => setPitanje2("Preko portala")}
               />
+              <span className="checkmark" />
             </label>
           </div>
 
@@ -284,7 +279,7 @@ const Prijava = () => {
             Da li ste nekada učestvovali na takmičenjima u programiranju?
             Ukoliko jeste, opišite vaša iskustva.
           </div>
-          <div className="linija"></div>
+          <hr className="linija-p"></hr>
           <div className="otvoreno-pitanje">
             <label className="otvoreno-text">
               <textarea
@@ -295,8 +290,11 @@ const Prijava = () => {
             </label>
           </div>
 
-          <div className="pitanje">Zašto baš vaš tim?</div>
-          <div className="linija"></div>
+          <div className="pitanje">
+            Zašto baš vaš tim? (na koji način se razlikujete od drugih, koje su
+            vaše vrline, prednosti itd...)
+          </div>
+          <hr className="linija-p"></hr>
           <div className="otvoreno-pitanje">
             <label className="otvoreno-text">
               <textarea
@@ -308,10 +306,9 @@ const Prijava = () => {
           </div>
 
           <div className="pitanje">
-            Šta biste radili da u toku takmičenja jedan član vašeg tima želi da
-            odustane?
+            Koja oblast u IT svetu vas najviše interesuje i zbog čega?
           </div>
-          <div className="linija"></div>
+          <hr className="linija-p"></hr>
           <div className="otvoreno-pitanje">
             <label className="otvoreno-text">
               <textarea
@@ -325,7 +322,7 @@ const Prijava = () => {
           <div className="pitanje">
             Šta je najveća slabost vašeg tima i šta činite da je otklonite?
           </div>
-          <div className="linija"></div>
+          <hr className="linija-p"></hr>
           <div className="otvoreno-pitanje">
             <label className="otvoreno-text">
               <textarea
@@ -336,52 +333,19 @@ const Prijava = () => {
             </label>
           </div>
 
-          <div className="pitanje">
-            Koji je glavni razlog vašeg prijavljivanja za HZS?
-          </div>
-          <div className="linija"></div>
-
-          <div className="radio-box">
-            <label className="radio-btn">
-              <input
-                type="radio"
-                name="mreze"
-                onChange={(e) => setPitanje7("prva opcija sedmo")}
-              />
-              <span className="checkmark" />
-            </label>
-            <div className="odgovor">Preko društvenih mreža</div>
-          </div>
-
-          <div className="radio-box">
-            <label className="radio-btn">
-              <input
-                type="radio"
-                name="mreze"
-                onChange={(e) => setPitanje7("druga opcija sedmo")}
-              />
-              <span className="checkmark" />
-            </label>
-            <div className="odgovor">Preko društvenih mreža</div>
-          </div>
-
-          <div className="radio-box">
-            <label className="radio-btn">
-              <input
-                type="radio"
-                name="mreze"
-                onChange={(e) => setPitanje7("treca opcija sedmo")}
-              />
-              <span className="checkmark" />
-            </label>
-            <div className="odgovor">Preko društvenih mreža</div>
-          </div>
+          <label class="checkbox-p">
+            Saglasni smo da smo pročitali i da smo upoznati sa pravilnikom
+            takmičenja
+            <input
+              type="checkbox"
+              required
+              onChange={(e) => setPitanje7("1")}
+            />
+            <span className="checkmark-p"></span>
+          </label>
         </div>
 
-        <button
-          className="dugme"
-          onClick={(e) => handleClick()}
-        >
+        <button className="dugme" onClick={(e) => handleClick()}>
           Pošalji prijavu
         </button>
       </div>
