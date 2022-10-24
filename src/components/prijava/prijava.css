@@ -294,8 +294,7 @@ hr.linija-p {
   box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
   box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset; */
 
-  -webkit-backdrop-filter: blur(20px);
-
+  backdrop-filter: blur(20px);
 }
 
 .dugme::after {
@@ -309,24 +308,20 @@ hr.linija-p {
   z-index: -1;
   height: 100%;
   width: 110%;
-  -webkit-transform: scale(0.9) translateZ(0);
-  -webkit-filter: blur(15px);
-  background: linear-gradient(to left,
-          #020024,
-          #9245d1,
-          #01cff3,
-          #c4afaf);
-  -webkit-background-size: 200% 200%;
-  -webkit-animation: animateGlow 1.7s linear infinite;
+  transform: scale(0.9) translateZ(0);
+  filter: blur(15px);
+  background: linear-gradient(to left, #020024, #9245d1, #01cff3, #c4afaf);
+  background-size: 200% 200%;
+  animation: animateGlow 1.7s linear infinite;
 }
 
 @keyframes animateGlow {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 
   100% {
-      background-position: 200% 50%;
+    background-position: 200% 50%;
   }
 }
 
@@ -518,7 +513,7 @@ hr.linija-p {
 
 /* When the checkbox is checked, add a blue background */
 .checkbox-p input:checked ~ .checkmark-p {
-  background-color:  #C3B0FF;
+  background-color: #c3b0ff;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -613,27 +608,7 @@ hr.linija-p {
   .dugme {
     font-size: 22px;
   }
-  .dugme::after {
-    position: absolute;
-    content: "";
-    top: 2px;
-    left: -15px;
-    border-radius: 20px;
-  
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 110%;
-    transform: scale(0.9) translateZ(0);
-    filter: blur(15px);
-    background: linear-gradient(to left,
-            #020024,
-            #9245d1,
-            #01cff3,
-            #c4afaf);
-    background-size: 200% 200%;
-    animation: animateGlow 1.7s linear infinite;
-  }
+
   .radio-btn {
     font-size: 25px;
   }
