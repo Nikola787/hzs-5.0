@@ -50,7 +50,7 @@
 .agenda-fourth,
 .agenda-fifth,
 .agenda-sixth {
-    height: 75vh;
+    height: 73vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,26 +142,11 @@
 }
 
 /* extra mali mobilni */
-@media screen and (max-width: 480px) {
-  .agenda-content {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .agenda .title {
-    font-weight: 100;
-    color: #ffffff;
-    font-size: 2.2rem;
-    padding-left: 2.9rem;
-    margin-bottom: 1rem;
-  }
-
-/* extra mali mobilni */
 @media screen and (max-width: 340px) {
 
     .agenda {
-        background-image: none;
+            background-image: url("../../../assets/Frame\(1\).png");
+                background-size: 100% 100%;
         height: auto;
     }
 
@@ -303,7 +288,8 @@
 /* Normalni mobilni */
 @media screen and (min-width: 340px) {
     .agenda {
-        background-image: none;
+            background-image: url("../../../assets/Frame\(1\).png");
+                background-size: 100% 100%;
         height: auto;
     }
 
@@ -445,8 +431,10 @@
 
 /* veliki telefoni i mali tableti */
 @media screen and (min-width: 425px) {
+
     .agenda {
-        background-image: none;
+            background-image: url("../../../assets/Frame\(1\).png");
+                background-size: 100% 100%;
         height: auto;
     }
 
@@ -596,7 +584,8 @@
 @media screen and (min-width:660px) {
 
     .agenda {
-        background-image: none;
+            background-image: url("../../../assets/Frame\(1\).png");
+                background-size: 100% 100%;
         height: auto;
     }
 
@@ -787,7 +776,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 75vh;
+        height: 73vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
