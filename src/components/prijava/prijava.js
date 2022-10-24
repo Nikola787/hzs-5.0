@@ -336,7 +336,7 @@ const Prijava = () => {
           </label>
         </div>
 
-        <button className="dugme" onClick={(e) => handleClick()}>
+        <button type="submit" className="dugme" onClick={(e) => handleClick()}>
           Pošalji prijavu
         </button>
       </div>
