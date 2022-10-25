@@ -1,7 +1,7 @@
 .p-ceo {
-  background-image: url("./assets/prijavaTpozadina.png");
-  background-size: cover;
-  background-repeat: repeat-y;
+  background-image: url("./assets/cekamoPrijavuPozadina.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   margin-top: 4%;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .prijavaT-box {
-  margin-top: 10%;
+  margin-top: 12%;
   width: 60%;
 
   background: linear-gradient(#181919, #181919) padding-box,
@@ -61,8 +61,8 @@
 .dugme-prijava {
   width: 22%;
   height: 12%;
-  margin-top: -2%;
-  margin-bottom: 10%;
+  margin-top: -20%;
+  margin-bottom: 14%;
 
   cursor: pointer;
   position: relative;
