@@ -7,7 +7,6 @@ import "./o_projektu.css";
 const o_projektu = () => {
   return (
     <div className="ceo">
-      <div className="prostor"></div>
       <div className="o-projektu">
         <div className="levi-deo">
           <div className="naslov-o">
@@ -49,21 +48,21 @@ const o_projektu = () => {
         <div className="desni-deo"></div>
         <div className="statistika-box">
           <div className="statistika-jedan-box">
-            <img  alt="" className="slika-stat1" />
+            <img alt="" className="slika-stat1" />
             <div className="tekst-stat1">
               <div className="broj1">175+</div>
               <div className="tekstic1">Prijavljenih timova</div>
             </div>
           </div>
           <div className="statistika-dva-box">
-            <img  alt="" className="slika-stat2" />
+            <img alt="" className="slika-stat2" />
             <div className="tekst-stat1">
               <div className="broj1">25+</div>
               <div className="tekstic1">Razlicitih gradova</div>
             </div>
           </div>
           <div className="statistika-tri-box">
-            <img  alt="" className="slika-stat3" />
+            <img alt="" className="slika-stat3" />
             <div className="tekst-stat1">
               <div className="broj1">710+</div>
               <div className="tekstic1">Takmičara</div>

@@ -17,22 +17,20 @@ import Prijava from "./components/prijava//prijava.js";
 const Home = () => {
   return (
     <div>
-
-      <Navbar />
-      <Gradijent />
-      <Tajmer />
-      <O_projektu />
-      <Iskustva /> 
-      <Radionice />
-      <Agenda />
-      {/* <Faq /> */}
+      {/* <Navbar /> */}
+      {/* <Gradijent /> */}
+      {/* <Tajmer /> */}
+      {/* <O_projektu /> */}
+      {/* <Iskustva />  */}
+      {/* <Radionice /> */}
+      {/* <Agenda /> */}
+      <Faq />
       {/* <SlikeTima /> */}
-      <Partneri />
-      <PrijavaT />
-      <Footer />
+      {/* <Partneri /> */}
+      {/* <PrijavaT /> */}
+      {/* <Footer /> */}
 
       {/* <Prijava /> */}
-
     </div>
   );
 };
