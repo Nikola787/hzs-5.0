@@ -18,12 +18,12 @@ const Home = () => {
   return (
     <div>
 
-      <Navbar />
-      <Gradijent />
+      {/* <Navbar /> */}
+      {/* <Gradijent /> */}
       <Tajmer />
-      <O_projektu />
+      {/* <O_projektu /> */}
       <Iskustva /> 
-      <Radionice />
+      {/* <Radionice /> */}
       <Agenda />
       {/* <Faq /> */}
       {/* <SlikeTima /> */}
