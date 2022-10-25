@@ -1,10 +1,8 @@
+
 .ceo-fo {
   background-image: url("./assets/pozadina_forma.png");
   background-size: 100% 100%;
   background-repeat: repeat-y;
-  /* background-repeat: repeat;
-    background-size: contain;
-    height: 1920px; */
 }
 
 .naslov {
@@ -283,21 +281,50 @@ hr.linija-p {
   border-color: transparent;
   border-radius: 60px;
 
-  box-shadow: inset 1px 1px 2px rgba(34, 35, 35, 0.3),
+  /* box-shadow: inset 1px 1px 2px rgba(34, 35, 35, 0.3),
     inset -1px -1px 2px rgba(14, 15, 15, 0.5);
   filter: drop-shadow(-37px 37px 74px rgba(14, 15, 15, 0.2))
     drop-shadow(37px -37px 74px rgba(14, 15, 15, 0.2))
     drop-shadow(-37px -37px 74px rgba(34, 35, 35, 0.9))
     drop-shadow(37px 37px 93px rgba(14, 15, 15, 0.9));
-  backdrop-filter: blur(20px);
 
   box-shadow: 37px 37px 93px 0px rgba(14, 15, 15, 0.9);
   box-shadow: -37px -37px 74px 0px rgba(34, 35, 35, 0.9);
   box-shadow: 37px -37px 74px 0px rgba(14, 15, 15, 0.2);
   box-shadow: -37px 37px 74px 0px rgba(14, 15, 15, 0.2);
   box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
-  box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset;
+  box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset; */
+
+  backdrop-filter: blur(20px);
 }
+
+.dugme::after {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -15px;
+  border-radius: 20px;
+
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 110%;
+  /* transform: scale(0.9) translateZ(0);
+  filter: blur(15px);
+  background: linear-gradient(to left, #020024, #9245d1, #01cff3, #c4afaf);
+  background-size: 200% 200%;
+  animation: animateGlow 1.7s linear infinite; */
+}
+
+/* @keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+} */
 
 /* DUGME */
 
@@ -455,7 +482,7 @@ hr.linija-p {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
-  font-size: 35px;
+  font-size: 20px;
 
   color: #ffffff;
 }
@@ -472,7 +499,7 @@ hr.linija-p {
 /* Create a custom checkbox */
 .checkmark-p {
   position: absolute;
-  top: 12px;
+  top: 2px;
   left: 0;
   height: 25px;
   width: 25px;
@@ -487,7 +514,7 @@ hr.linija-p {
 
 /* When the checkbox is checked, add a blue background */
 .checkbox-p input:checked ~ .checkmark-p {
-  background-color: #2196f3;
+  background-color: #c3b0ff;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -504,8 +531,8 @@ hr.linija-p {
 
 /* Style the checkmark/indicator */
 .checkbox-p .checkmark-p:after {
-  left: 9px;
-  top: 5px;
+  left: 8px;
+  top: 3px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -516,98 +543,23 @@ hr.linija-p {
 }
 
 .unos-ikona img {
-  height: 50px;
+  height: 40.5px;
 }
 
 @media screen and (max-width: 1920px) {
 }
-@media screen and (max-width: 1200px) {
-  .box-clan {
-    width: 65%;
-  }
-  .box-pitanja {
-    width: 65%;
-  }
-  .otvoreno-text textarea {
-    margin-top: 4%;
-  }
-}
-@media screen and (max-width: 960px) {
-  .naslov-tekst h1 {
-    font-size: 50px;
-  }
-  .naslov-tekst {
-    font-size: 50px;
-  }
-  .clan {
-    font-size: 30px;
-  }
-  .label-text input {
-    font-size: 20px;
-  }
-  .label-text input::placeholder {
-    font-size: 20px;
-  }
-  .pitanje {
-    font-size: 25px;
-  }
-  .otvoreno-text textarea {
-    width: 90%;
-    margin-top: 5%;
-    font-size: 10px;
-  }
-  .otvoreno-text textarea::placeholder {
-    font-size: 10px;
-  }
-  .dugme {
-    font-size: 20px;
-  }
-  .radio-btn {
-    font-size: 25px;
-  }
-  .odgovor {
-    font-size: 25px;
-  }
-  .unos-tekst-it {
-    font-size: 25px;
-  }
-  .label-text-it input {
-    font-size: 20px;
-  }
-  .label-text-it input::placeholder {
-    font-size: 20px;
-  }
-  .checkbox-p {
-    font-size: 25px;
-  }
-  .checkmark-p {
-    top: 5px;
-  }
-  .unos-ikona img {
-    height: 35px;
-  }
-  .pitanje {
-    font-size: 25px;
-  }
-}
-@media screen and (max-width: 620px) {
-  .box-clan{
-    width: 75%;
-  }
-  .box-pitanja{
-    width: 75%;
-  }
-  .otvoreno-text textarea {
-    width: 90%;
-    margin-top: 7%;
-    font-size: 10px;
-  }
-  .unos-ikona img {
-    height: 31px;
-  }
-}
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 1100px) {
   /*od ovog pointa krece mobilna verzija*/
+  .radio-btn .checkmark:after {
+    top: 6.5px;
+    left: 6.5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
   .naslov-tekst h1 {
     font-size: 40px;
     border-left: 10px solid #c3b0ff;
@@ -616,10 +568,154 @@ hr.linija-p {
   .naslov-tekst {
     font-size: 50px;
   }
-  .box-clan{
+  .box-clan {
+    width: 80%;
+  }
+  .box-pitanja {
     width: 85%;
   }
-  .box-pitanja{
+  .otvoreno-text textarea {
+    width: 90%;
+    margin-top: 9%;
+    font-size: 20px;
+  }
+  .unos {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 15%;
+  }
+  .clan {
+    margin-top: 8%;
+    margin-left: 25.5%;
+    text-align: left;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .pitanje {
+    font-size: 25px;
+  }
+  .otvoreno-text textarea {
+    width: 90%;
+    margin-top: 5%;
+    font-size: 22px;
+  }
+  .otvoreno-text textarea::placeholder {
+    font-size: 22px;
+  }
+  .dugme {
+    font-size: 22px;
+  }
+
+  .radio-btn {
+    font-size: 25px;
+  }
+  .odgovor {
+    font-size: 22px;
+  }
+  .unos-tekst-it {
+    font-size: 25px;
+  }
+  .label-text-it input {
+    font-size: 25px;
+  }
+  .label-text-it input::placeholder {
+    font-size: 25px;
+  }
+  .checkbox-p {
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: 2.3%;
+  }
+
+  .unos-ikona img {
+    height: 38px;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark-p {
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    height: 20px;
+    width: 20px;
+
+    border: 1px solid #c3b0ff;
+  }
+
+  hr.linija-p {
+    background: #c3b0ff;
+    border-color: #c3b0ff;
+
+    width: 78%;
+    height: 0.08%;
+    margin: 5% auto 7% auto;
+  }
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .radio-box {
+    margin-bottom: 11%;
+  }
+  .otvoreno-pitanje {
+    margin-bottom: 11%;
+  }
+  .otvoreno-pitanje textarea {
+    margin-bottom: 18%;
+  }
+  .otvoreno-text textarea {
+    margin-top: 4%;
+
+    border-radius: 15px;
+    height: 90%;
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .otvoreno-text textarea::placeholder {
+    font-size: 15px;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkbox-p .checkmark-p:after {
+    left: 6px;
+    top: 1px;
+  }
+
+  .checkbox-p {
+    margin-right: auto;
+    margin-left: 11%;
+  }
+
+  .dugme {
+    font-size: 20px;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*od ovog pointa krece mobilna verzija*/
+  .naslov-tekst h1 {
+    font-size: 30px;
+    border-left: 10px solid #c3b0ff;
+    line-height: 30px;
+  }
+  .naslov-tekst {
+    font-size: 40px;
+  }
+  .box-clan {
+    width: 90%;
+  }
+  .box-pitanja {
     width: 85%;
   }
   .otvoreno-text textarea {
@@ -627,16 +723,120 @@ hr.linija-p {
     margin-top: 9%;
     font-size: 10px;
   }
-  
+  .unos {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 15%;
+  }
+  .clan {
+    margin-top: 8%;
+    margin-left: 25.5%;
+    text-align: left;
 
-}
-@media screen and (max-width: 340px) {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 25px;
+    color: #ffffff;
+  }
+  .pitanje {
+    font-size: 20px;
+  }
   .otvoreno-text textarea {
-    width: 88%;
-    margin-top: 15%;
-    font-size: 10px;
+    width: 90%;
+    margin-top: 5%;
+    font-size: 18px;
   }
+  .otvoreno-text textarea::placeholder {
+    font-size: 18px;
+  }
+  .dugme {
+    font-size: 20px;
+    width: 55%;
+  }
+  .radio-btn {
+    font-size: 20px;
+  }
+  .odgovor {
+    font-size: 20px;
+  }
+  .unos-tekst-it {
+    font-size: 20px;
+  }
+  .label-text-it input {
+    font-size: 20px;
+  }
+  .label-text-it input::placeholder {
+    font-size: 20px;
+  }
+  .checkbox-p {
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: 2%;
+  }
+
   .unos-ikona img {
-    height: 30px;
+    height: 24px;
   }
+
+  .label-text input {
+    font-size: 20px;
+  }
+
+  .label-text input::placeholder {
+    font-size: 20px;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark-p {
+    position: absolute;
+    top: 1px;
+    left: 8px;
+    height: 20px;
+    width: 20px;
+
+    border: 1px solid #c3b0ff;
+  }
+
+  hr.linija-p {
+    background: #c3b0ff;
+    border-color: #c3b0ff;
+
+    width: 78%;
+    height: 0.08%;
+    margin: 5% auto 10% auto;
+  }
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .radio-box {
+    margin-bottom: 18%;
+  }
+  .otvoreno-pitanje {
+    margin-bottom: 18%;
+  }
+  .otvoreno-pitanje textarea {
+    margin-bottom: 18%;
+  }
+  .otvoreno-text textarea {
+    margin-top: 6%;
+
+    border-radius: 15px;
+    height: 90%;
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .otvoreno-text textarea::placeholder {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 340px) {
 }

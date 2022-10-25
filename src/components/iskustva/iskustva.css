@@ -1,9 +1,81 @@
-.iskustva-deo {
-    background: #181919;
-    height: 1000px;
-    width: 100%;
+.iskustva-d {
+  margin: 1% 8% 5% 8%;
 }
 
-.slika-iskustva {
-    width: 100%;
+.iskustva-deo {
+  background-image: url("./assets/iskustva_d.png");
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.naslov-i {
+  display: flex;
+  margin-left: 5%;
+  padding-top: 1%;
+}
+
+.naslov-tekst-i h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  border-left: 15px solid #00ffa3;
+  padding-left: 20px;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.naslov-tekst-i {
+  margin-top: 4%;
+  margin-left: 1%;
+  margin-bottom: 4%;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 123px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 960px) {
+  .iskustva-deo {
+    background-image: url("./assets/iskustva_t.png");
+    background-size: 100% 100%;
+    height: 100vh;
+  }
+
+  .naslov-tekst-i h1 {
+    font-size: 50px;
+    line-height: 40px;
+    padding-left: 15px;
+    border-left: 12px solid #00ffa3;
+  }
+}
+
+@media screen and (max-width: 620px) {
+}
+
+@media screen and (max-width: 480px) {
+  .iskustva-deo {
+    background-image: url("./assets/iskustva_m.png");
+    background-size: 100% 100%;
+    height: 100vh;
+  }
+
+  .naslov-tekst-i h1 {
+    font-size: 40px;
+    line-height: 35px;
+    padding-left: 12px;
+    border-left: 10px solid #00ffa3;
+  }
 }

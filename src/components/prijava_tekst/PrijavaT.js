@@ -1,7 +1,11 @@
 import React from "react";
 import "./prijavaT.css";
+import { useNavigate } from 'react-router';
 
 const PrijavaT = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="p-ceo">
       <div className="prijavaT-ceo">
@@ -19,7 +23,7 @@ const PrijavaT = () => {
           </p>
         </div>
       </div>
-      <button className="dugme-prijava">PRIJAVI SE</button>
+      <button className="dugme-prijava" onClick={() => navigate('/prijava')}>PRIJAVI SE</button>
     </div>
   );
 };

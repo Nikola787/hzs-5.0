@@ -59,7 +59,7 @@ const radionice = () => {
           </p>
         </div>
       </div>
-      <div className="radionica3-container">
+      <div className="radionica1-container">
         <div className="radionica1-levo-container">
           <h1 className="redni-broj">001</h1>
           <h1 className="naziv-radionice">BACK-END</h1>
@@ -86,7 +86,7 @@ const radionice = () => {
           </p>
         </div>
       </div>
-      <div className="radionica4-container">
+      <div className="radionica2-container">
         <div className="radionica2-levo-container">
           <div className="prvi-deo">
             <h1 className="ime-predavaca">Pavle Prica</h1>
