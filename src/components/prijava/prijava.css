@@ -308,14 +308,14 @@ hr.linija-p {
   z-index: -1;
   height: 100%;
   width: 110%;
-  transform: scale(0.9) translateZ(0);
+  /* transform: scale(0.9) translateZ(0);
   filter: blur(15px);
   background: linear-gradient(to left, #020024, #9245d1, #01cff3, #c4afaf);
   background-size: 200% 200%;
-  animation: animateGlow 1.7s linear infinite;
+  animation: animateGlow 1.7s linear infinite; */
 }
 
-@keyframes animateGlow {
+/* @keyframes animateGlow {
   0% {
     background-position: 0% 50%;
   }
@@ -323,7 +323,7 @@ hr.linija-p {
   100% {
     background-position: 200% 50%;
   }
-}
+} */
 
 /* DUGME */
 
