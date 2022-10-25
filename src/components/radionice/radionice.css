@@ -8,19 +8,19 @@
   display: flex;
   flex-direction: column;
   background-image: url(../../images/Radionice.png);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-color: #181919;
 }
 
 .radionica1-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
 }
 
 .radionica1-levo-container {
   display: flex;
-  margin-top: 11%;
-  margin-left: 2%;
   width: 35%;
   flex-direction: column;
 }
@@ -29,7 +29,7 @@
   border-left: 0.9vw #00ffa3 solid;
   padding-left: 3%;
   padding-bottom: 1%;
-  margin-left: -6%;
+  margin-left: -7%;
   font-size: 7vw;
   font-family: "Manrope";
   font-weight: 500;
@@ -55,8 +55,7 @@
 
 .radionica1-desno-container {
   display: flex;
-  margin-top: 6%;
-  max-width: 45%;
+  width: 45%;
   flex-direction: column;
 }
 
@@ -70,8 +69,6 @@
   border: #00ffa3 3px solid;
   border-radius: 50%;
   width: 30vw;
-  height: auto;
-  margin-top: 1.55%;
 }
 
 .radionica1-desno-container .ime-predavaca {
@@ -80,6 +77,7 @@
   font-size: 2.7vw;
   font-family: "Manrope";
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .radionica1-desno-container .predavac-opis {
@@ -94,7 +92,7 @@
 .radionica2-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 12%;
+  margin-top: 10%;
 }
 
 .radionica2-levo-container {
@@ -115,6 +113,7 @@
   font-size: 3vw;
   font-family: "Manrope";
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .radionica2-levo-container .slika_leva {
@@ -138,7 +137,7 @@
   display: flex;
   flex-direction: column;
   max-width: 35%;
-  margin-top: 4%;
+  padding-left: 2%;
 }
 
 .radionica2-desno-container .redni-broj {
@@ -146,7 +145,7 @@
   border-left: 0.9vw solid #00ffa3;
   padding-left: 3%;
   padding-bottom: 1%;
-  margin-left: -6%;
+  margin-left: -7%;
   font-size: 7vw;
   font-family: "Manrope";
   font-weight: 500;
@@ -170,170 +169,106 @@
   text-align: left;
 }
 
-.radionica3-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 8%;
-}
-.radionica4-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 12%;
-}
-
 @media screen and (max-width: 340px) {
 }
 @media screen and (max-width: 480px) {
-  .radionica4-container,
-  .radionica2-container {
-    flex-direction: column-reverse;
+  .radionice-wrapper {
+    background-image: url(../../images/RadioniceMobilni.png);
+    background-size: 100% 100%;
   }
-  .radionica3-container,
   .radionica1-container {
     flex-direction: column;
+    align-items: flex-start;
   }
-
-  .radionice-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 400vh;
-    background-image: url(../../images/RadioniceMobilni.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+  .radionica2-container {
+    flex-direction: column-reverse;
   }
 
   .radionica1-desno-container .prvi-deo {
     flex-direction: row-reverse;
-    justify-content: flex-start;
   }
-  .radionica2-levo-container .prvi-deo {
-    justify-content: flex-end;
-  }
-
   .radionica1-desno-container .predavac-opis {
     text-align: start;
   }
-
   .radionica1-desno-container .slika_desna,
   .radionica2-levo-container .slika_leva {
     border: #00ffa3 1px solid;
     width: 46vw;
   }
-
-  .radionica2-levo-container .slika_leva {
-    margin-right: 0;
-  }
-
   .radionica1-levo-container .redni-broj {
-    /* display: flex;
-    padding-left: 3%;
-    padding-bottom: 1%;
-    margin-left: -6%;
-    font-family: "Manrope";
-    font-weight: 500;
-    color: #ffffff;
-    line-height: 70%; */
-    margin-left: 5%;
-    border-left: 2vw #00ffa3 solid;
-    font-size: 22vw;
+    border-left: 2.5vw #00ffa3 solid;
+    font-size: 20vw;
+    padding-left: 1%;
+    margin-left: 0;
+    line-height: 60%;
   }
   .radionica2-desno-container .redni-broj {
-    /* display: flex;
-    padding-left: 3%;
-    padding-bottom: 1%;
-    margin-left: -6%;
-    font-family: "Manrope";
-    font-weight: 500;
-    color: #ffffff;
-    line-height: 70%; */
-    margin-left: 5%;
-    border-left: 2vw #00ffa3 solid;
-    font-size: 22vw;
+    border-left: 2.5vw #00ffa3 solid;
+    font-size: 20vw;
+    padding-left: 1%;
+    margin-left: 0;
+    line-height: 60%;
   }
   .radionica1-levo-container .naziv-radionice {
-    /* display: flex;
-    font-family: "Manrope";
-    color: #00ffa3;
-    font-weight: 200; */
     white-space: nowrap;
-    font-size: 17vw;
-    padding-left: 17%;
+    font-size: 15vw;
+    padding-top: 3%;
+    padding-left: 5%;
   }
   .radionica2-desno-container .naziv-radionice {
-    /* display: flex;
-    font-family: "Manrope";
-    color: #00ffa3;
-    font-weight: 200; */
     white-space: nowrap;
-    font-size: 17vw;
-    padding-left: 17%;
+    font-size: 15vw;
+    /* padding-left: 17%; */
   }
   .radionica1-levo-container .radionica-opis {
-    /* font-family: "Manrope";
-    color: #ffffff;
-    font-weight: 400;
-    text-align: left; */
     font-size: 4vw;
     width: 80vw;
-    padding-left: 17%;
+    padding-left: 5%;
   }
   .radionica2-desno-container .radionica-opis {
-    /* font-family: "Manrope";
-    color: #ffffff;
-    font-size: 2vw;
-    font-weight: 400;
-    text-align: left; */
     font-size: 4vw;
     width: 80vw;
-    padding-left: 17%;
-  }
-  .radionica1-desno-container {
-    max-width: 90%;
-  }
-  .radionica2-levo-container {
-    max-width: 90%;
+    /* padding-left: 17%; */
   }
   .radionica1-desno-container .ime-predavaca {
-    /* display: flex;
-    color: #ffffff;
-    font-family: "Manrope";
-    font-weight: 400; */
     white-space: nowrap;
     font-size: 7vw;
     color: #00ffa3;
   }
   .radionica2-levo-container .ime-predavaca {
-    /* display: flex;
-    color: #ffffff;
-    font-size: 2.7vw;
-    font-family: "Manrope";
-    font-weight: 400; */
     white-space: nowrap;
     font-size: 7vw;
     color: #00ffa3;
   }
   .radionica1-desno-container .predavac-opis {
-    /* font-family: "Manrope";
-    color: #ffffff;
-    font-weight: 400;
-    text-align: right;
-    padding-top: 2%; */
     padding-top: 4%;
     font-size: 4vw;
     padding-left: 10%;
   }
   .radionica2-levo-container .predavac-opis {
-    /* font-family: "Manrope";
-    color: #ffffff;
-    font-size: 2vw;
-    font-weight: 400;
-    text-align: right;
-    padding-top: 2%; */
     padding-top: 4%;
     font-size: 4vw;
     padding-left: 10%;
   }
+  .radionica1-desno-container {
+    width: 100%;
+    padding-bottom: 12%;
+  }
+  .radionica2-levo-container {
+    max-width: 100%;
+  }
+
+  .radionica1-levo-container {
+    width: 100%;
+    margin-left: 7%;
+  }
+
+  .radionica1-desno-container .prvi-deo {
+    justify-content: center;
+  }
+  /* 
+
+  */
   /*od ovog pointa krece mobilna verzija */
 }
 
