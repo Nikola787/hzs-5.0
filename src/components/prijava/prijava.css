@@ -313,7 +313,7 @@ hr.linija-p {
   width: 110%;
   transform: scale(0.9) translateZ(0);
   filter: blur(15px);
-  background: linear-gradient(to left, #020024, #9245d1, #01cff3, #c4afaf);
+  background: linear-gradient(to left, #020024, #9245d1, #c3b0ff, #c4afaf);
   background-size: 200% 200%;
   animation: animateGlow 2.2s linear infinite;
 
