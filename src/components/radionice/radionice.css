@@ -179,34 +179,67 @@
   .radionica1-container {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 0;
   }
   .radionica2-container {
     flex-direction: column-reverse;
+    margin-top: 0;
   }
 
+  .radionica1-levo-container {
+    width: 100%;
+    margin-left: 0;
+    margin-left: 7%;
+  }
+  .radionica1-desno-container {
+    width: 100%;
+    align-items: center;
+    margin-top: 6%;
+  }
+  .radionica2-levo-container {
+    max-width: 80%;
+    margin-left: 0;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 5%;
+  }
+
+  .radionica2-desno-container {
+    margin-left: 13.5%;
+    margin-bottom: 5%;
+    padding-left: 0;
+    max-width: 100%;
+  }
   .radionica1-desno-container .prvi-deo {
     flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 80%;
   }
-  .radionica1-desno-container .predavac-opis {
-    text-align: start;
+  .radionica2-levo-container .prvi-deo {
+    justify-content: space-between;
   }
   .radionica1-desno-container .slika_desna,
   .radionica2-levo-container .slika_leva {
     border: #00ffa3 1px solid;
-    width: 46vw;
+    width: 40vw;
   }
+  .radionica2-levo-container .slika_leva {
+    margin-right: 0;
+  }
+
   .radionica1-levo-container .redni-broj {
     border-left: 2.5vw #00ffa3 solid;
-    font-size: 20vw;
+    font-size: 18vw;
     padding-left: 1%;
     margin-left: 0;
+    margin-top: 5%;
     line-height: 60%;
   }
   .radionica2-desno-container .redni-broj {
     border-left: 2.5vw #00ffa3 solid;
-    font-size: 20vw;
+    font-size: 18vw;
     padding-left: 1%;
-    margin-left: 0;
+    margin-top: 10%;
     line-height: 60%;
   }
   .radionica1-levo-container .naziv-radionice {
@@ -218,17 +251,18 @@
   .radionica2-desno-container .naziv-radionice {
     white-space: nowrap;
     font-size: 15vw;
-    /* padding-left: 17%; */
+    padding-top: 4%;
   }
+
   .radionica1-levo-container .radionica-opis {
+    text-align: start;
     font-size: 4vw;
     width: 80vw;
     padding-left: 5%;
   }
   .radionica2-desno-container .radionica-opis {
     font-size: 4vw;
-    width: 80vw;
-    /* padding-left: 17%; */
+    width: 85%;
   }
   .radionica1-desno-container .ime-predavaca {
     white-space: nowrap;
@@ -241,31 +275,18 @@
     color: #00ffa3;
   }
   .radionica1-desno-container .predavac-opis {
-    padding-top: 4%;
+    text-align: start;
+    padding-top: 0%;
     font-size: 4vw;
-    padding-left: 10%;
+    margin: 2% 0;
+    width: 80%;
   }
   .radionica2-levo-container .predavac-opis {
-    padding-top: 4%;
+    padding-top: 0%;
+    margin: 2% 0;
     font-size: 4vw;
-    padding-left: 10%;
-  }
-  .radionica1-desno-container {
-    width: 100%;
-    padding-bottom: 12%;
-  }
-  .radionica2-levo-container {
-    max-width: 100%;
   }
 
-  .radionica1-levo-container {
-    width: 100%;
-    margin-left: 7%;
-  }
-
-  .radionica1-desno-container .prvi-deo {
-    justify-content: center;
-  }
   /*od ovog pointa krece mobilna verzija */
 }
 
