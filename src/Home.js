@@ -19,16 +19,16 @@ const Home = () => {
     <div>
       <Navbar />
       <Gradijent />
-      <Tajmer />
-      <O_projektu />
+      {/* <Tajmer /> */}
+      {/* <O_projektu /> */}
       <Iskustva /> 
-      <Radionice />
+      {/* <Radionice /> */}
       <Agenda />
       {/* <Faq /> */}
       <SlikeTima />
       <Partneri />
       <PrijavaT />
-      <Footer />
+      {/* <Footer /> */}
 
       {/* <Prijava /> */}
     </div>
