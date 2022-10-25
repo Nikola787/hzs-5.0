@@ -142,6 +142,10 @@
   }
 }
 
+.dugme-prijava:hover {
+  background: rgb(49, 200, 145);
+}
+
 @media screen and (max-width: 960px) {
   .dugme-prijava {
     margin-top: -10%;
