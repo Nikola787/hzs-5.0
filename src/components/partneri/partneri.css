@@ -21,7 +21,14 @@
   margin-bottom: 3%;
 }
 
+.partner img {
+  z-index: -100;
+}
+
 .partner {
+
+  z-index: -10;
+
   display: flex;
   /* align-items: center; */
   justify-content: center;
@@ -50,6 +57,7 @@
 .linija img {
   width: 100%;
 }
+
 
 @media screen and (max-width: 1920px) {
   .ceo-partneri h1 {
