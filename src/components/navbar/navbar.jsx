@@ -1,9 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { debounce } from "../../utilities/helpers";
 import "./navbar.css";
-const navbar = () => {
+import menuItems from "./MenuItems";
+import { HashLink } from "react-router-hash-link";
+import { Twirl as Hamburger } from "hamburger-react";
+
+const Navbar = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [active, setActive] = useState(false);
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 70) ||
+        currentScrollPos < 10
+    );
+
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
+
+  const navbarStyles = {
+    position: "fixed",
+    textAlign: "center",
+    transition: "top 0.4s",
+  };
+
+  const handleClick = () => {
+    setActive(!active);
+  };
+
   return (
-    <div>
-      <div className="navbar">
+    <div style={{ ...navbarStyles, top: visible ? "0" : "-6rem" }}>
+      <nav className="navbar">
         <div className="navbar-logo">
           <svg
             width="100"
@@ -126,31 +162,27 @@ const navbar = () => {
             />
           </svg>
         </div>
-        <div className="navbar-pages">
-          <ul className="list">
-            <li>
-              <a href="#">O PROJEKTU</a>
-            </li>
-            <li>
-              <a href="#">ISKUSTVA</a>
-            </li>
-            <li>
-              <a href="#">RADIONICE</a>
-            </li>
-            <li>
-              <a href="#">PITANJA</a>
-            </li>
-            <li>
-              <a href="#">TIM</a>
-            </li>
-            <li id="log-in">
-              <a href="#">PRIJAVI SE</a>
-            </li>
-          </ul>
+        <div className="menu-icon" onClick={handleClick}>
+          <Hamburger toggled={active} toggle={setActive} />
         </div>
-      </div>
+        <ul className={active ? "nav-menu active" : "nav-menu"}>
+          {menuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <HashLink
+                  to={item.url}
+                  className={item.cName}
+                  onClick={handleClick}
+                >
+                  {item.title}
+                </HashLink>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
     </div>
   );
 };
 
-export default navbar;
+export default Navbar;
