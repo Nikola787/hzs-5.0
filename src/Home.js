@@ -17,7 +17,6 @@ import Prijava from "./components/prijava//prijava.js";
 const Home = () => {
   return (
     <div>
-
       <Navbar />
       <Gradijent />
       <Tajmer />
@@ -32,7 +31,6 @@ const Home = () => {
       <Footer />
 
       {/* <Prijava /> */}
-
     </div>
   );
 };
