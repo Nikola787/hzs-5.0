@@ -22,13 +22,13 @@ const Home = () => {
       {/* <Tajmer /> */}
       {/* <O_projektu /> */}
       <Iskustva /> 
-      {/* <Radionice /> */}
+      <Radionice />
       <Agenda />
       {/* <Faq /> */}
       <SlikeTima />
       <Partneri />
       <PrijavaT />
-      {/* <Footer /> */}
+      <Footer />
 
       {/* <Prijava /> */}
     </div>
