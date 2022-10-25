@@ -261,7 +261,7 @@ hr.linija-p {
   font-style: normal;
   font-weight: 200;
   color: #ffffff;
-  opacity: 0, 8;
+  opacity: 1;
 
   background: linear-gradient(
         265.16deg,
@@ -314,7 +314,9 @@ hr.linija-p {
   filter: blur(15px);
   background: linear-gradient(to left, #020024, #9245d1, #01cff3, #c4afaf);
   background-size: 200% 200%;
-  animation: animateGlow 1.7s linear infinite;
+  animation: animateGlow 2.2s linear infinite;
+  
+  opacity: 0.5;
 }
 
 @keyframes animateGlow {
