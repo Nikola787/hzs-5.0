@@ -10,12 +10,12 @@ const PrijavaT = () => {
           <br />
           <br />
           <p>
-            Hakaton za srednjoškolce je jedinstvena prilika da se susretneš sa
-            IT-jem i programiranjem na drugačiji način nego na časovima u školi.
-            Bićeš iznenađen šta sve možeš da postigneš za samo 24 sata i koliki
-            napredak možeš da ostvariš zajedno sa svojim timom. Zato ne čekaj,
-            već popuni formu na sajtu i postani deo Hakatona za srednjoškolce
-            4.0!
+            Hakaton za srednjoškolce je savršena prilika da se upustiš u svet
+            programiranja i IT-ja, kao i da usavršiš svoje prezentacione
+            veštine. Pored toga što ćeš dobiti znanje i bogato iskustvo,
+            upoznaćeš ljude sa sličnim interesovanjima i ciljevima. Zato oformi
+            tim i upusti se u nezaboravnu, dvadesetčetvoročasovnu pustolovinu.
+            Nestrpljivo očekujemo tvoju prijavu!
           </p>
         </div>
       </div>

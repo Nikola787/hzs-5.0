@@ -36,7 +36,7 @@
   font-size: 32px;
   line-height: 44px;
   color: #ffffff;
-  background-color: purple;
+  background-color: rgb(129, 16, 129);
 }
 .wrapper-f {
   margin-top: 0em;
@@ -48,11 +48,12 @@
   margin-left: 11%;
 }
 .accordion-f {
-  width: 500px;
+  width: 51%;
 }
 .item-f {
   margin-bottom: 5%;
   border-bottom: 1px solid rgba(255, 255, 255, 1);
+
 }
 .title-f {
   color: #ffffff;
@@ -62,7 +63,7 @@
   cursor: pointer;
   font-family: "Manrope";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .title-f h2 {
@@ -93,5 +94,26 @@
 }
 .span-f {
   display: inline-block;
-  transform: scale(4);
+  transform: scale(3);
+}
+.title-f h2{
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 340px) {
+
+  .tekst_naslov-f {
+    margin-left: 1.5%;
+    margin-top: 2.5%;
+    float: right;
+    font-size: 20px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    line-height: 164px;
+    color: #ffffff;
+  }
+  
 }
