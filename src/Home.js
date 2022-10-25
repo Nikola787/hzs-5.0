@@ -14,16 +14,7 @@ import Iskustva from "./components/iskustva/iskustva.js";
 const Home = () => {
   return (
     <div>
-      {/* <Animacija /> */}
-      <Navbar />
-      <Gradijent />
-      <Tajmer />
-      <O_projektu />
-      <Iskustva />
       <Radionice />
-      <Agenda />
-      <SlikeTima />
-      <Footer />
     </div>
   );
 };
