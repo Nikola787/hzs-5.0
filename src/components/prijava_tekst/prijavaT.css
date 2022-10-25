@@ -111,6 +111,36 @@
   box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset;
 }
 
+.dugme-prijava::after {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -15px;
+  border-radius: 20px;
+
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 110%;
+  transform: scale(0.9) translateZ(0);
+  filter: blur(15px);
+  background: linear-gradient(to left, rgb(72, 255, 188), rgb(29, 188, 130), rgb(76, 234, 176), rgb(49, 200, 145));
+  background-size: 200% 200%;
+  animation: animateGlow 2.1s linear infinite;
+  
+  opacity: 0.5;
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .dugme-prijava {
     margin-top: -10%;
