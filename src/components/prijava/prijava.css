@@ -252,6 +252,8 @@ hr.linija-p {
   height: 80px;
   width: 20%;
 
+  position: relative;
+
   margin-bottom: 8%;
 
   font-size: 2em;
@@ -306,8 +308,8 @@ hr.linija-p {
 
   right: 0;
   z-index: -1;
-  height: 20%;
-  width: 20%;
+  height: 100%;
+  width: 110%;
   transform: scale(0.9) translateZ(0);
   filter: blur(15px);
   background: linear-gradient(to left, #020024, #9245d1, #01cff3, #c4afaf);
