@@ -25,10 +25,10 @@ const Home = () => {
       <Radionice />
       <Agenda />
       {/* <Faq /> */}
-      {/* <SlikeTima /> */}
-      {/* <Partneri /> */}
-      {/* <PrijavaT /> */}
-      {/* <Footer /> */}
+      <SlikeTima />
+      <Partneri />
+      <PrijavaT />
+      <Footer />
 
       {/* <Prijava /> */}
     </div>
