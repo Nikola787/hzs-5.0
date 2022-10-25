@@ -4,29 +4,33 @@
     padding: 5rem 0;
     background-color: #181919;
     z-index: -1;
+    background-image: url("../../../assets/Agenda\ -\ pozadina.png");
+    background-size: 100% 100%;
+    height: 90vh;
 }
 
+
 .agenda .title {
-    font-size: 5rem;
-    text-align: left;
-    padding-left: 10rem;
-    font-weight: 100;
-    color: #FFFFFF;
+  font-size: 5rem;
+  text-align: left;
+  padding-left: 10rem;
+  font-weight: 100;
+  color: #ffffff;
 }
 
 .agenda .title::before {
-    content: "";
-    height: 3.7rem;
-    width: 10px;
-    background-color: #00FFA3;
-    position: absolute;
-    top: 6.8rem;
-    left: 8.4rem;
+  content: "";
+  height: 3.7rem;
+  width: 10px;
+  background-color: #00ffa3;
+  position: absolute;
+  top: 6.8rem;
+  left: 8.4rem;
 }
 
 .agenda-content {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .first,
@@ -37,7 +41,7 @@
 .sixth {
     border-radius: 20px;
     background-color: #181414;
-    padding: 2rem .3rem;
+    padding: 2rem 0rem;
 }
 
 .agenda-first,
@@ -51,8 +55,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid #00FFA3;
-    padding: 2rem;
+    /* border: 2px solid #00FFA3; */
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
 }
 
 .ag-fi-date,
@@ -61,8 +66,8 @@
 .ag-fo-date,
 .ag-fv-date,
 .ag-sh-date {
-    font-size: 1rem;
-    width: 100%;
+  font-size: 1rem;
+  width: 100%;
 }
 
 .ag-fi-date p,
@@ -71,9 +76,9 @@
 .ag-fo-date p,
 .ag-fv-date p,
 .ag-sh-date p {
-    font-size: 1.7rem;
-    color: #00FFA3;
-    text-align: left;
+  font-size: 1.7rem;
+  color: #00ffa3;
+  text-align: left;
 }
 
 .ag-fi-title,
@@ -82,7 +87,7 @@
 .ag-fo-title,
 .ag-fv-title,
 .ag-sh-title {
-    width: 100%;
+  width: 100%;
 }
 
 .ag-fi-title p,
@@ -91,12 +96,12 @@
 .ag-fo-title p,
 .ag-fv-title p,
 .ag-sh-title p {
-    font-size: 1.4rem;
-    color: #FFFFFF;
-    margin-bottom: .5rem;
-    margin-top: .5rem;
-    text-align: left;
-    font-weight: 600;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  font-weight: 600;
 }
 
 .ag-fi-text p,
@@ -105,41 +110,62 @@
 .ag-fo-text p,
 .ag-fv-text p,
 .ag-sh-text p {
-    font-size: 1rem;
-    color: #FFFFFF;
-    font-weight: 100;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 100;
 
-    text-align: left;
+  text-align: left;
 }
 
 .agenda-first {
-    padding-top: 50%;
+  padding-top: 50%;
 }
 
 .agenda-second {
-    padding-bottom: 50%;
+  padding-bottom: 50%;
 }
 
 .agenda-third {
-    padding-top: 50%;
+  padding-top: 50%;
 }
 
 .agenda-fourth {
-    padding-bottom: 50%;
+  padding-bottom: 50%;
 }
 
 .agenda-fifth {
-    padding-top: 50%;
+  padding-top: 50%;
 }
 
 .agenda-sixth {
-    padding-bottom: 50%;
+  padding-bottom: 50%;
 }
 
+/* extra mali mobilni */
+@media screen and (max-width: 480px) {
+  .agenda-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 
+  .agenda .title {
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 2.2rem;
+    padding-left: 2.9rem;
+    margin-bottom: 1rem;
+  }
+}
 
 /* extra mali mobilni */
 @media screen and (max-width: 340px) {
+
+    .agenda {
+        background-image: none;
+        height: auto;
+    }
+
     .agenda-content {
         display: flex;
         flex-direction: column;
@@ -196,9 +222,9 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 30vh;
+        height: 14vh;
         border: 2px solid #00FFA3;
-        padding: .1rem;
+        padding: 0rem;
     }
 
     .ag-fi-date,
@@ -217,7 +243,7 @@
     .ag-fo-date p,
     .ag-fv-date p,
     .ag-sh-date p {
-        font-size: .9rem;
+        font-size: 1.3rem;
         color: #00FFA3;
         text-align: left;
     }
@@ -240,7 +266,7 @@
         color: #FFFFFF;
         text-align: left;
         font-weight: 600;
-        font-size: .7rem;
+        font-size: 1rem;
         margin-bottom: .3rem;
         margin-top: .3rem;
     }
@@ -272,10 +298,15 @@
         width: 100%;
         align-items: flex-end;
     }
+
 }
 
 /* Normalni mobilni */
 @media screen and (min-width: 340px) {
+    .agenda {
+        background-image: none;
+        height: auto;
+    }
 
     .agenda-content {
         display: flex;
@@ -334,7 +365,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 30vh;
+        height: 14vh;
         border: 2px solid #00FFA3;
         padding: .1rem;
     }
@@ -357,7 +388,7 @@
     .ag-sh-date p {
         color: #00FFA3;
         text-align: left;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .ag-fi-title,
@@ -379,7 +410,7 @@
         text-align: left;
         font-weight: 600;
 
-        font-size: .8rem;
+        font-size: 1rem;
         margin-bottom: .3rem;
         margin-top: .3rem;
     }
@@ -415,7 +446,18 @@
 
 /* veliki telefoni i mali tableti */
 @media screen and (min-width: 425px) {
+    .agenda {
+        background-image: none;
+        height: auto;
+    }
 
+  .agenda .title {
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 2.2rem;
+    padding-left: 2.9rem;
+    margin-bottom: 1rem;
+  }
 
     .agenda-content {
         display: flex;
@@ -426,7 +468,7 @@
     .agenda .title {
         font-weight: 100;
         color: #FFFFFF;
-        font-size: 2.2rem;
+        font-size: 2.8rem;
         padding-left: 2.9rem;
         margin-bottom: 1rem;
     }
@@ -435,9 +477,9 @@
         content: "";
         width: 7px;
         background-color: #00FFA3;
-        height: 2rem;
+        height: 2.5rem;
         position: absolute;
-        top: 5.5rem;
+        top: 5.7rem;
         left: 2rem;
     }
 
@@ -473,7 +515,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 30vh;
+        height: 14vh;
         border: 2px solid #00FFA3;
         padding: .1rem;
     }
@@ -531,7 +573,7 @@
         color: #FFFFFF;
         font-weight: 100;
         text-align: left;
-        font-size: .7rem;
+        font-size: .8rem;
         padding-left: .5rem;
     }
 
@@ -553,6 +595,12 @@
 
 /* Veliki tableti*/
 @media screen and (min-width:660px) {
+
+    .agenda {
+        background-image: none;
+        height: auto;
+    }
+
     .agenda-content {
         display: flex;
         flex-direction: column;
@@ -562,8 +610,8 @@
     .agenda .title {
         font-weight: 100;
         color: #FFFFFF;
-        font-size: 2.2rem;
-        padding-left: 2.9rem;
+        font-size: 4rem;
+        padding-left: 5rem;
         margin-bottom: 1rem;
     }
 
@@ -571,10 +619,10 @@
         content: "";
         width: 7px;
         background-color: #00FFA3;
-        height: 2rem;
+        height: 3rem;
         position: absolute;
-        top: 5.5rem;
-        left: 2rem;
+        top: 6.4rem;
+        left: 3.5rem;
     }
 
     .first,
@@ -609,7 +657,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 30vh;
+        height: 20vh;
         border: 2px solid #00FFA3;
         padding: .1rem;
     }
@@ -632,7 +680,7 @@
     .ag-sh-date p {
         color: #00FFA3;
         text-align: left;
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
     .ag-fi-title,
@@ -654,7 +702,7 @@
         text-align: left;
         font-weight: 600;
 
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: .3rem;
         margin-top: .3rem;
     }
@@ -695,12 +743,14 @@
         padding: 5rem 0;
         background-color: #181919;
         z-index: -1;
+        background-image: url("../../../assets/Agenda\ -\ pozadina.png");
+        background-size: 100% 100%;
     }
 
     .agenda .title {
         font-size: 5rem;
         text-align: left;
-        padding-left: 10rem;
+        padding-left: 5rem;
         font-weight: 100;
         color: #FFFFFF;
     }
@@ -712,7 +762,7 @@
         background-color: #00FFA3;
         position: absolute;
         top: 6.8rem;
-        left: 8.4rem;
+        left: 3.4rem;
     }
 
     .agenda-content {
@@ -743,7 +793,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 2px solid #00FFA3;
+        border: none;
         padding: 2rem;
     }
 
@@ -827,3 +877,4 @@
         padding-bottom: 50%;
     }
 }
+

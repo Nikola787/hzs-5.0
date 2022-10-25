@@ -45,7 +45,7 @@ const Clan = (props) => {
 
           <div className="unos">
             <div className="unos-ikona">
-              <img src={Ikona2} alt="Ikona1" height={"50px"} />
+              <img src={Ikona2} alt="Ikona1" />
             </div>
             <div className="unos-tekst">
               <label className="label-text">
@@ -61,7 +61,7 @@ const Clan = (props) => {
 
           <div className="unos">
             <div className="unos-ikona">
-              <img src={Ikona1} alt="Ikona1" height={"50px"} />
+              <img src={Ikona1} alt="Ikona1" />
             </div>
             <div className="unos-tekst">
               <label className="label-text">
@@ -77,7 +77,7 @@ const Clan = (props) => {
 
           <div className="unos">
             <div className="unos-ikona">
-              <img src={Ikona5} alt="Ikona1" height={"50px"} />
+              <img src={Ikona5} alt="Ikona1"  />
             </div>
             <div className="unos-tekst">
               <label className="label-text">
@@ -92,7 +92,7 @@ const Clan = (props) => {
           </div>
           <div className="unos">
             <div className="unos-ikona">
-              <img src={Ikona4} alt="Ikona1" height={"50px"} />
+              <img src={Ikona4} alt="Ikona1" />
             </div>
             <div className="unos-tekst">
               <label className="label-text">
@@ -107,13 +107,13 @@ const Clan = (props) => {
           </div>
           <div className="unos">
             <div className="unos-ikona">
-              <img src={Ikona3} alt="Ikona1" height={"50px"} />
+              <img src={Ikona3} alt="Ikona1"  />
             </div>
             <div className="unos-tekst">
               <label className="label-text">
                 <input
                   type="text"
-                  placeholder="E-mail"
+                  placeholder="Imejl"
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
