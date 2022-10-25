@@ -5,7 +5,7 @@ const PrijavaT = () => {
   return (
     <div className="p-ceo">
       <div className="prijavaT-ceo">
-        <div className="prijavaT-box">
+        <div className="prijavaT-boxx">
           <h1>Čekamo tvoju prijavu!</h1>
           <br />
           <br />
