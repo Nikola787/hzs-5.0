@@ -1,6 +1,7 @@
 import React from "react";
 import Animacija from "./components/animacija/animacija.js";
 import Radionice from "./components/radionice/radionice.jsx";
+import Prijava from "./components/prijava/prijava.js";
 import Navbar from "./components/navbar/navbar";
 import Tajmer from "./components/tajmer/tajmer.jsx";
 import SlikeTima from "./components/slike_tima/slike_tima.jsx";
@@ -20,7 +21,10 @@ const Home = () => {
 
       {/* <Navbar /> */}
       {/* <Gradijent /> */}
-      <Tajmer />
+      <Prijava />
+      {/* <Navbar /> */}
+      {/* <Gradijent /> */}
+      {/* <Tajmer /> */}
       {/* <O_projektu /> */}
       <Iskustva /> 
       {/* <Radionice /> */}
