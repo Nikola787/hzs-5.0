@@ -26,9 +26,9 @@ const Home = () => {
       <Agenda />
       {/* <Faq /> */}
       {/* <SlikeTima /> */}
-      <Partneri />
-      <PrijavaT />
-      <Footer />
+      {/* <Partneri /> */}
+      {/* <PrijavaT /> */}
+      {/* <Footer /> */}
 
       {/* <Prijava /> */}
     </div>
