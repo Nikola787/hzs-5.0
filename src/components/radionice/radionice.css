@@ -179,7 +179,7 @@
   .radionica1-container {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 0;
+    margin-top: 5%;
   }
   .radionica2-container {
     flex-direction: column-reverse;
@@ -187,14 +187,14 @@
   }
 
   .radionica1-levo-container {
-    width: 100%;
+    max-width: 100%;
     margin-left: 0;
     margin-left: 7%;
   }
   .radionica1-desno-container {
     width: 100%;
     align-items: center;
-    margin-top: 6%;
+    margin-top: 5%;
   }
   .radionica2-levo-container {
     max-width: 80%;
@@ -239,26 +239,26 @@
     border-left: 2.5vw #00ffa3 solid;
     font-size: 18vw;
     padding-left: 1%;
-    margin-top: 10%;
+    margin-top: 12%;
     line-height: 60%;
   }
   .radionica1-levo-container .naziv-radionice {
     white-space: nowrap;
     font-size: 15vw;
-    padding-top: 3%;
-    padding-left: 5%;
+    padding-top: 5%;
+    padding-left: 12%;
   }
   .radionica2-desno-container .naziv-radionice {
     white-space: nowrap;
     font-size: 15vw;
-    padding-top: 4%;
+    padding-top: 3%;
   }
 
   .radionica1-levo-container .radionica-opis {
     text-align: start;
     font-size: 4vw;
     width: 80vw;
-    padding-left: 5%;
+    padding-left: 12%;
   }
   .radionica2-desno-container .radionica-opis {
     font-size: 4vw;
@@ -278,7 +278,7 @@
     text-align: start;
     padding-top: 0%;
     font-size: 4vw;
-    margin: 2% 0;
+    margin: 3% 0;
     width: 80%;
   }
   .radionica2-levo-container .predavac-opis {
