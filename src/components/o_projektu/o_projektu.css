@@ -45,6 +45,7 @@
   border-color: transparent;
   border-radius: 50px;
 
+
   backdrop-filter: blur(20px);
 
   /* Note: backdrop-filter has minimal browser support */

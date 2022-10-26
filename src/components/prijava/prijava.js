@@ -6,6 +6,8 @@ import Clan from "./Clan.js";
 import { useState } from "react";
 import { useEffect } from "react";
 
+import Pravilnik from "../pravila.pdf";
+
 const Prijava = () => {
   const [clan1, setClan1] = useState({});
   const [clan2, setClan2] = useState({});
@@ -320,9 +322,12 @@ const Prijava = () => {
             </label>
           </div>
 
-          <label class="checkbox-p">
-            Saglasni smo da smo pročitali i da smo upoznati sa pravilnikom
-            takmičenja
+          <label className="checkbox-p">
+            Saglasni smo da smo pročitali i da smo upoznati sa &nbsp;
+            <a href={Pravilnik} target="_blank" rel="noopener noreferrer">
+              pravilnikom 
+            </a> &nbsp;takmičenja
+            
             <input
               type="checkbox"
               required
