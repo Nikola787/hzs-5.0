@@ -5,18 +5,12 @@ import Radionice from "./components/radionice/radionice.jsx";
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <Gradijent />
       {/* <Tajmer /> */}
       {/* <O_projektu /> */}
-      <Iskustva /> 
-      {/* <Radionice /> */}
-      <Agenda />
+
+      <Radionice />
+
       {/* <Faq /> */}
-      <SlikeTima />
-      <Partneri />
-      <PrijavaT />
-      <Footer />
 
       {/* <Prijava /> */}
     </div>
