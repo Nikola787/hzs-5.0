@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    order: 0;
 }
 
 .left-footer {
@@ -28,11 +29,11 @@
     color: #ffffff;
 }
 
-.site{
+.site {
     font-weight: 500;
 }
 
-.fonis{
+.fonis {
     text-decoration: none;
     color: #ffffff;
     font-weight: 100;
@@ -67,7 +68,7 @@
     text-align: right;
 }
 
-img{
+.fonis-footer {
     margin-top: .5rem;
 }
 
@@ -79,12 +80,415 @@ img{
     color: #ffffff;
 }
 
-.right-footer .rtext .adress{
+.right-footer .rtext .adress {
     font-weight: 500;
     font-size: 1.2rem;
 }
 
-.right-footer .rtext .faqulty-text, .right-footer .rtext .adress-text{
+.right-footer .rtext .faqulty-text,
+.right-footer .rtext .adress-text {
     font-weight: 100;
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 340px) {
+    .footer {
+        padding: 1rem;
+        background-color: #181919;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top: 5px solid green;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .ltext {
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    .site {
+        font-weight: 500;
+    }
+
+    .fonis {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .left-icons {
+        display: flex;
+        font-size: 2rem;
+        color: white;
+        margin-top: .3rem;
+    }
+
+    .left-icons .insta a,
+    .left-icons .fb a,
+    .left-icons .linkedin a {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .center-footer {
+        order: -1;
+    }
+
+    .ctext {
+        font-size: 1.2rem;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    .rtext .adress,
+    .rtext .faqulty-text,
+    .rtext .adress-text {
+        text-align: center;
+    }
+
+    .fonis-footer {
+        margin: .6rem;
+        width: 7rem;
+    }
+
+    .right-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+
+    .right-footer .rtext .adress {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .right-footer .rtext .faqulty-text,
+    .right-footer .rtext .adress-text {
+        font-weight: 100;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 341px) {
+    .footer {
+        padding: 1rem;
+        background-color: #181919;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top: 5px solid green;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .ltext {
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    .site {
+        font-weight: 500;
+    }
+
+    .fonis {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .left-icons {
+        display: flex;
+        font-size: 2rem;
+        color: white;
+        margin-top: .3rem;
+    }
+
+    .left-icons .insta a,
+    .left-icons .fb a,
+    .left-icons .linkedin a {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .center-footer {
+        order: -1;
+    }
+
+    .ctext {
+        font-size: 1.2rem;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    .rtext .adress,
+    .rtext .faqulty-text,
+    .rtext .adress-text {
+        text-align: center;
+    }
+
+    .fonis-footer {
+        margin: .6rem;
+        width: 7rem;
+    }
+
+    .right-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+
+    .right-footer .rtext .adress {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .right-footer .rtext .faqulty-text,
+    .right-footer .rtext .adress-text {
+        font-weight: 100;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .footer {
+        background-color: #181919;
+        height: 17vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 5px solid green;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-family: Manrope;
+    }
+
+    .ltext {
+        font-size: .8rem;
+    }
+
+    .fonis {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .left-icons {
+        font-size: 1.5rem;
+        margin-top: .5rem;
+    }
+
+    .left-icons .insta a,
+    .left-icons .fb a,
+    .left-icons .linkedin a {
+        margin-right: .6rem;
+    }
+
+    .center-footer {
+        order: 0;
+    }
+
+    .ctext {
+        font-size: .8rem;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    .fonis-footer {
+        margin-top: .7rem;
+        width: 5rem;
+    }
+
+    .rtext .adress,
+    .rtext .faqulty-text,
+    .rtext .adress-text {
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    .right-footer .rtext .adress {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .right-footer .rtext .faqulty-text,
+    .right-footer .rtext .adress-text {
+        font-weight: 100;
+        font-size: .5rem;
+    }
+}
+
+@media screen and (min-width:660px) {
+
+    .footer {
+        background-color: #181919;
+        height: 17vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 5px solid green;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-family: Manrope;
+    }
+
+    .ltext {
+        font-size: 1rem;
+    }
+
+    .fonis {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .center-footer {
+        order: 0;
+    }
+
+    .left-icons {
+        font-size: 2rem;
+        margin-top: .5rem;
+    }
+
+    .left-icons .insta a,
+    .left-icons .fb a,
+    .left-icons .linkedin a {
+        margin-right: .6rem;
+    }
+
+    .ctext {
+        font-size: 1.2rem;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    .fonis-footer {
+        margin-top: .7rem;
+        width: 6rem;
+    }
+
+    .right-footer .rtext .adress {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .rtext .adress,
+    .rtext .faqulty-text,
+    .rtext .adress-text {
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    .right-footer .rtext .faqulty-text,
+    .right-footer .rtext .adress-text {
+        font-weight: 100;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width:960px) {
+
+    .footer {
+        background-color: #181919;
+        height: 17vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 5px solid green;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-family: Manrope;
+    }
+
+    .center-footer {
+        grid-column: 2/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 0;
+    }
+
+    .left-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ltext {
+        font-size: 1.2rem;
+        color: #ffffff;
+    }
+
+    .site {
+        font-weight: 500;
+    }
+
+    .fonis {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .left-icons {
+        display: flex;
+        font-size: 3rem;
+        color: white;
+        margin-top: .3rem;
+    }
+
+    .left-icons .insta a,
+    .left-icons .fb a,
+    .left-icons .linkedin a {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .ctext {
+        font-size: 1.8rem;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    .rtext .adress,
+    .rtext .faqulty-text,
+    .rtext .adress-text {
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    .fonis-footer {
+        margin-top: .5rem;
+        width: 10rem;
+    }
+
+    .right-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+
+    .right-footer .rtext .adress {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .right-footer .rtext .faqulty-text,
+    .right-footer .rtext .adress-text {
+        font-weight: 100;
+        font-size: 1.2rem;
+    }
 }

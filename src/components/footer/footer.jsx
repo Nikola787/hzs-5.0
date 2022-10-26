@@ -39,7 +39,7 @@ const footer = () => {
             <p className="ctext">Napravljeno sa ❤️ od strane HZS tima</p>
           </div>
           <div className="center-img">
-            <img src={MyImage} width={150} alt="" />
+            <img className="fonis-footer" src={MyImage} width={150} alt="" />
           </div>
         </div>
         <div className="right-footer">
