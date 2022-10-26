@@ -14,9 +14,14 @@ const Faq = () => {
 
   return (
     <div className="ceo-f">
-      <div className="naslov-f">
+      {/* <div className="naslov-f">
         <div className="rectangle-f"></div>
         <div className="tekst_naslov-f">ČESTO POSTAVLJANA PITANJA</div>
+      </div> */}
+      <div className="naslov-f">
+        <div className="naslov-tekst-f">
+          <h1>ČESTO POSTAVLJANA PITANJA</h1>
+        </div>
       </div>
       <div className="wrapper-f">
         <div className="accordion-f">
