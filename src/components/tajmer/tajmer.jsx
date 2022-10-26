@@ -1,5 +1,8 @@
 import "./tajmer.css";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function getTime(countDownDate) {
   let now = new Date().getTime();
@@ -37,6 +40,26 @@ function getTime(countDownDate) {
 
 const Tajmer = () => {
   const [tajm, setTajm] = useState(0);
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: "0",
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({ x: "-60vw" });
+    }
+  }, [inView]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -46,7 +69,7 @@ const Tajmer = () => {
 
   return (
     <div>
-      <div class="wrapper">
+      <motion.div class="wrapper" animate={animation} ref={ref}>
         <p id="timer-text">
           <span className="timer-span">Vreme </span>
           <span className="timer-span">do </span>
@@ -62,7 +85,7 @@ const Tajmer = () => {
             sati
           </label>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
