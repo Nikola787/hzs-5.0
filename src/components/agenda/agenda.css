@@ -6,31 +6,31 @@
     z-index: -1;
     background-image: url("../../../assets/Agenda\ -\ pozadina.png");
     background-size: 100% 100%;
-    height: 90vh;
+    height: 100%;
 }
 
 
 .agenda .title {
-  font-size: 5rem;
-  text-align: left;
-  padding-left: 10rem;
-  font-weight: 100;
-  color: #ffffff;
+    font-size: 5rem;
+    text-align: left;
+    padding-left: 10rem;
+    font-weight: 100;
+    color: #ffffff;
 }
 
 .agenda .title::before {
-  content: "";
-  height: 3.7rem;
-  width: 10px;
-  background-color: #00ffa3;
-  position: absolute;
-  top: 6.8rem;
-  left: 8.4rem;
+    content: "";
+    height: 3.7rem;
+    width: 10px;
+    background-color: #00ffa3;
+    position: absolute;
+    top: 6.8rem;
+    left: 8.4rem;
 }
 
 .agenda-content {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .first,
@@ -40,8 +40,10 @@
 .fifth,
 .sixth {
     border-radius: 20px;
-    background-color: #181414;
     padding: 2rem 0rem;
+    background: linear-gradient(180.6deg, rgba(24, 25, 25, 0.316) 27%, rgba(24, 25, 25, 0) 109.32%);
+    box-shadow: 0px 4px 15px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
 }
 
 .agenda-first,
@@ -50,7 +52,7 @@
 .agenda-fourth,
 .agenda-fifth,
 .agenda-sixth {
-    height: 75vh;
+    height: 73vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,8 +68,8 @@
 .ag-fo-date,
 .ag-fv-date,
 .ag-sh-date {
-  font-size: 1rem;
-  width: 100%;
+    font-size: 1rem;
+    width: 100%;
 }
 
 .ag-fi-date p,
@@ -76,9 +78,9 @@
 .ag-fo-date p,
 .ag-fv-date p,
 .ag-sh-date p {
-  font-size: 1.7rem;
-  color: #00ffa3;
-  text-align: left;
+    font-size: 1.7rem;
+    color: #00ffa3;
+    text-align: left;
 }
 
 .ag-fi-title,
@@ -87,7 +89,7 @@
 .ag-fo-title,
 .ag-fv-title,
 .ag-sh-title {
-  width: 100%;
+    width: 100%;
 }
 
 .ag-fi-title p,
@@ -96,12 +98,12 @@
 .ag-fo-title p,
 .ag-fv-title p,
 .ag-sh-title p {
-  font-size: 1.4rem;
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  text-align: left;
-  font-weight: 600;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: left;
+    font-weight: 600;
 }
 
 .ag-fi-text p,
@@ -110,60 +112,46 @@
 .ag-fo-text p,
 .ag-fv-text p,
 .ag-sh-text p {
-  font-size: 1rem;
-  color: #ffffff;
-  font-weight: 100;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 100;
 
-  text-align: left;
+    text-align: left;
 }
 
 .agenda-first {
-  padding-top: 50%;
+    padding-top: 50%;
 }
 
 .agenda-second {
-  padding-bottom: 50%;
+    padding-bottom: 50%;
 }
 
 .agenda-third {
-  padding-top: 50%;
+    padding-top: 50%;
 }
 
 .agenda-fourth {
-  padding-bottom: 50%;
+    padding-bottom: 50%;
 }
 
 .agenda-fifth {
-  padding-top: 50%;
+    padding-top: 50%;
 }
 
 .agenda-sixth {
-  padding-bottom: 50%;
-}
-
-/* extra mali mobilni */
-@media screen and (max-width: 480px) {
-  .agenda-content {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .agenda .title {
-    font-weight: 100;
-    color: #ffffff;
-    font-size: 2.2rem;
-    padding-left: 2.9rem;
-    margin-bottom: 1rem;
-  }
+    padding-bottom: 50%;
 }
 
 /* extra mali mobilni */
 @media screen and (max-width: 340px) {
 
     .agenda {
-        background-image: none;
+        background-image: url("../../../assets/Frame\(1\).png");
+        background-size: 100% 100%;
         height: auto;
+        background-size: cover;
+        background-position: center;
     }
 
     .agenda-content {
@@ -181,9 +169,7 @@
     }
 
     .agenda .title::before {
-        content: "";
         width: 7px;
-        background-color: #00FFA3;
         height: 2rem;
         position: absolute;
         top: 5.5rem;
@@ -196,12 +182,8 @@
     .fourth,
     .fifth,
     .sixth {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 50vw;
-        padding: .5rem .5rem;
+        padding:0.3rem .5rem;
     }
 
     .second .ag-sc-date p,
@@ -233,7 +215,6 @@
     .ag-fo-date,
     .ag-fv-date,
     .ag-sh-date {
-        font-size: 1rem;
         width: 100%;
     }
 
@@ -243,9 +224,7 @@
     .ag-fo-date p,
     .ag-fv-date p,
     .ag-sh-date p {
-        font-size: 1.3rem;
-        color: #00FFA3;
-        text-align: left;
+        font-size: .9rem;
     }
 
     .ag-fi-title,
@@ -263,12 +242,9 @@
     .ag-fo-title p,
     .ag-fv-title p,
     .ag-sh-title p {
-        color: #FFFFFF;
-        text-align: left;
-        font-weight: 600;
-        font-size: 1rem;
+        font-size: .8rem;
         margin-bottom: .3rem;
-        margin-top: .3rem;
+        margin-top: .2rem;
     }
 
     .ag-fi-text p,
@@ -277,11 +253,7 @@
     .ag-fo-text p,
     .ag-fv-text p,
     .ag-sh-text p {
-
-        font-size: .5rem;
-        color: #FFFFFF;
-        font-weight: 100;
-        text-align: left;
+        font-size: .5rem
     }
 
     .agenda-first,
@@ -289,7 +261,6 @@
     .agenda-fifth {
         width: 100%;
         align-items: flex-start;
-        text-align: left;
     }
 
     .agenda-second,
@@ -302,9 +273,10 @@
 }
 
 /* Normalni mobilni */
-@media screen and (min-width: 340px) {
+@media screen and (min-width: 341px) {
     .agenda {
-        background-image: none;
+        background-image: url("../../../assets/Frame\(1\).png");
+        background-size: 100% 100%;
         height: auto;
     }
 
@@ -315,17 +287,13 @@
     }
 
     .agenda .title {
-        font-weight: 100;
-        color: #FFFFFF;
         font-size: 2.2rem;
         padding-left: 2.9rem;
         margin-bottom: 1rem;
     }
 
     .agenda .title::before {
-        content: "";
         width: 7px;
-        background-color: #00FFA3;
         height: 2rem;
         position: absolute;
         top: 5.5rem;
@@ -338,13 +306,8 @@
     .fourth,
     .fifth,
     .sixth {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
         width: 50vw;
-        padding: .5rem .5rem;
+        padding: .3rem .5rem;
     }
 
     .second .ag-sc-date p,
@@ -367,7 +330,7 @@
     .agenda-sixth {
         height: 14vh;
         border: 2px solid #00FFA3;
-        padding: .1rem;
+        padding: 0rem;
     }
 
     .ag-fi-date,
@@ -376,7 +339,6 @@
     .ag-fo-date,
     .ag-fv-date,
     .ag-sh-date {
-        font-size: 1rem;
         width: 100%;
     }
 
@@ -386,9 +348,8 @@
     .ag-fo-date p,
     .ag-fv-date p,
     .ag-sh-date p {
-        color: #00FFA3;
         text-align: left;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .ag-fi-title,
@@ -406,11 +367,8 @@
     .ag-fo-title p,
     .ag-fv-title p,
     .ag-sh-title p {
-        color: #FFFFFF;
         text-align: left;
-        font-weight: 600;
-
-        font-size: 1rem;
+        font-size: .7rem;
         margin-bottom: .3rem;
         margin-top: .3rem;
     }
@@ -424,7 +382,7 @@
         color: #FFFFFF;
         font-weight: 100;
         text-align: left;
-        font-size: .6rem;
+        font-size: .5rem;
         padding-left: .5rem;
     }
 
@@ -433,7 +391,6 @@
     .agenda-fifth {
         width: 100%;
         align-items: flex-start;
-        text-align: left;
     }
 
     .agenda-second,
@@ -446,18 +403,19 @@
 
 /* veliki telefoni i mali tableti */
 @media screen and (min-width: 425px) {
+
     .agenda {
-        background-image: none;
+        background-image: url("../../../assets/Frame\(1\).png");
+        background-size: 100% 100%;
         height: auto;
     }
 
-  .agenda .title {
-    font-weight: 100;
-    color: #ffffff;
-    font-size: 2.2rem;
-    padding-left: 2.9rem;
-    margin-bottom: 1rem;
-  }
+    .agenda .title {
+        color: #ffffff;
+        font-size: 2.2rem;
+        padding-left: 2.9rem;
+        margin-bottom: 1rem;
+    }
 
     .agenda-content {
         display: flex;
@@ -467,7 +425,6 @@
 
     .agenda .title {
         font-weight: 100;
-        color: #FFFFFF;
         font-size: 2.8rem;
         padding-left: 2.9rem;
         margin-bottom: 1rem;
@@ -489,12 +446,8 @@
     .fourth,
     .fifth,
     .sixth {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 50vw;
-        padding: .5rem .5rem;
+        padding: .2rem .5rem;
     }
 
     .second .ag-sc-date p,
@@ -515,7 +468,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 14vh;
+        height: 17vh;
         border: 2px solid #00FFA3;
         padding: .1rem;
     }
@@ -526,7 +479,6 @@
     .ag-fo-date,
     .ag-fv-date,
     .ag-sh-date {
-        font-size: 1rem;
         width: 100%;
     }
 
@@ -538,7 +490,7 @@
     .ag-sh-date p {
         color: #00FFA3;
         text-align: left;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .ag-fi-title,
@@ -559,7 +511,7 @@
         color: #FFFFFF;
         text-align: left;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: .8rem;
         margin-bottom: .3rem;
         margin-top: .3rem;
     }
@@ -573,7 +525,7 @@
         color: #FFFFFF;
         font-weight: 100;
         text-align: left;
-        font-size: .8rem;
+        font-size: .7rem;
         padding-left: .5rem;
     }
 
@@ -597,7 +549,8 @@
 @media screen and (min-width:660px) {
 
     .agenda {
-        background-image: none;
+        background-image: url("../../../assets/Frame\(1\).png");
+        background-size: 100% 100%;
         height: auto;
     }
 
@@ -631,12 +584,9 @@
     .fourth,
     .fifth,
     .sixth {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      
         width: 40vw;
-        padding: .5rem .5rem;
+        padding: .3rem .5rem;
     }
 
     .second .ag-sc-date p,
@@ -668,7 +618,6 @@
     .ag-fo-date,
     .ag-fv-date,
     .ag-sh-date {
-        font-size: 1rem;
         width: 100%;
     }
 
@@ -680,7 +629,7 @@
     .ag-sh-date p {
         color: #00FFA3;
         text-align: left;
-        font-size: 2.2rem;
+        font-size: 1.4rem;
     }
 
     .ag-fi-title,
@@ -702,7 +651,7 @@
         text-align: left;
         font-weight: 600;
 
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         margin-bottom: .3rem;
         margin-top: .3rem;
     }
@@ -716,7 +665,7 @@
         color: #FFFFFF;
         font-weight: 100;
         text-align: left;
-        font-size: 1rem;
+        font-size: .9rem;
         padding-left: .5rem;
     }
 
@@ -745,6 +694,7 @@
         z-index: -1;
         background-image: url("../../../assets/Agenda\ -\ pozadina.png");
         background-size: 100% 100%;
+       height: 100% !important;
     }
 
     .agenda .title {
@@ -777,9 +727,11 @@
     .fifth,
     .sixth {
         border-radius: 20px;
-        background-color: #181414;
         padding: 2rem .3rem;
         width: 100%;
+        background: linear-gradient(180.6deg, rgba(24, 25, 25, 0.316) 27%, rgba(24, 25, 25, 0) 109.32%);
+        box-shadow: 0px 4px 15px -1px rgba(0, 0, 0, 0.25);
+
     }
 
     .agenda-first,
@@ -788,7 +740,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 75vh;
+        height: 73vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -877,4 +829,3 @@
         padding-bottom: 50%;
     }
 }
-
