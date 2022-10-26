@@ -162,9 +162,6 @@ const Partneri = (props) => {
           height="9em"
         />
       </div>
-      <div className="linija">
-        <img src={Linija} alt="linija" />
-      </div>
     </div>
   );
 };

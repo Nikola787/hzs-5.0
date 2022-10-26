@@ -7,11 +7,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const Prijava = () => {
-  const handleClick = () => {
-    console.log("this is:", this);
-    posaljiPrijavu();
-  };
-
   const [clan1, setClan1] = useState({});
   const [clan2, setClan2] = useState({});
   const [clan3, setClan3] = useState({});
@@ -37,7 +32,6 @@ const Prijava = () => {
     console.log(pitanje5);
     console.log(pitanje6);
     console.log(pitanje7);
-
   }, [clan1, clan2, clan3, clan4]);
 
   const openModal = (poruka) => {
@@ -175,12 +169,13 @@ const Prijava = () => {
       clanovi: [clan1, clan2, clan3, clan4],
     };
 
+    console.log(prijava);
     postPrijava(prijava);
   };
 
   return (
     <div>
-      <div className="ceo">
+      <div className="ceo-fo">
         <div className="naslov">
           <div className="naslov-tekst">
             <h1>FORMA ZA PRIJAVU</h1>
@@ -193,7 +188,7 @@ const Prijava = () => {
         <Clan onChange={onClan2} />
         <div className="clan">Član 3</div>
         <Clan onChange={onClan3} />
-        <div className="clan">Član 4</div>
+        <div className="clan">Član 4 (opciono)</div>
         <Clan onChange={onClan4} />
 
         <div className="box-pitanja">
@@ -202,7 +197,7 @@ const Prijava = () => {
             <label className="label-text-it">
               <input
                 type="text"
-                placeholder="Green day (primer teksta)"
+                placeholder="Green day"
                 required
                 onChange={(e) => setPitanje1(e.target.value)}
               />
@@ -225,9 +220,7 @@ const Prijava = () => {
               />
               <span className="checkmark" />
             </label>
-          </div>
 
-          <div className="radio-box">
             <label className="radio-btn">
               Preko prijatelja
               <input
@@ -237,9 +230,7 @@ const Prijava = () => {
               />
               <span className="checkmark" />
             </label>
-          </div>
 
-          <div className="radio-box">
             <label className="radio-btn">
               Preko profesora
               <input
@@ -249,9 +240,7 @@ const Prijava = () => {
               />
               <span className="checkmark" />
             </label>
-          </div>
 
-          <div className="radio-box">
             <label className="radio-btn">
               Preko televizije
               <input
@@ -261,9 +250,7 @@ const Prijava = () => {
               />
               <span className="checkmark" />
             </label>
-          </div>
 
-          <div className="radio-box">
             <label className="radio-btn">
               Preko portala
               <input
@@ -284,7 +271,7 @@ const Prijava = () => {
             <label className="otvoreno-text">
               <textarea
                 type="text"
-                placeholder="Primer teksta koji se unosi"
+                placeholder="Napišite odgovor ovde"
                 onChange={(e) => setPitanje3(e.target.value)}
               />
             </label>
@@ -299,7 +286,7 @@ const Prijava = () => {
             <label className="otvoreno-text">
               <textarea
                 type="text"
-                placeholder="Primer teksta koji se unosi"
+                placeholder="Napišite odgovor ovde"
                 onChange={(e) => setPitanje4(e.target.value)}
               />
             </label>
@@ -313,7 +300,7 @@ const Prijava = () => {
             <label className="otvoreno-text">
               <textarea
                 type="text"
-                placeholder="Primer teksta koji se unosi"
+                placeholder="Napišite odgovor ovde"
                 onChange={(e) => setPitanje5(e.target.value)}
               />
             </label>
@@ -327,7 +314,7 @@ const Prijava = () => {
             <label className="otvoreno-text">
               <textarea
                 type="text"
-                placeholder="Primer teksta koji se unosi"
+                placeholder="Napišite odgovor ovde"
                 onChange={(e) => setPitanje6(e.target.value)}
               />
             </label>
@@ -345,7 +332,7 @@ const Prijava = () => {
           </label>
         </div>
 
-        <button className="dugme" onClick={(e) => handleClick()}>
+        <button type="submit" className="dugme" onClick={posaljiPrijavu}>
           Pošalji prijavu
         </button>
       </div>
