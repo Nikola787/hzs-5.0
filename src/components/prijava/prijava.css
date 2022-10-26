@@ -1,4 +1,3 @@
-
 .ceo-fo {
   background-image: url("./assets/pozadina_forma.png");
   background-size: 100% 100%;
@@ -253,14 +252,17 @@ hr.linija-p {
   height: 80px;
   width: 20%;
 
+  position: relative;
+
   margin-bottom: 8%;
+  cursor: pointer;
 
   font-size: 2em;
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
   color: #ffffff;
-  opacity: 0, 8;
+  opacity: 1;
 
   background: linear-gradient(
         265.16deg,
@@ -309,14 +311,16 @@ hr.linija-p {
   z-index: -1;
   height: 100%;
   width: 110%;
-  /* transform: scale(0.9) translateZ(0);
+  transform: scale(0.9) translateZ(0);
   filter: blur(15px);
-  background: linear-gradient(to left, #020024, #9245d1, #01cff3, #c4afaf);
+  background: linear-gradient(to left, #8d88e3, #4e51c2, #cfbfff);
   background-size: 200% 200%;
-  animation: animateGlow 1.7s linear infinite; */
+  animation: animateGlow 2.2s linear infinite;
+
+  opacity: 0.5;
 }
 
-/* @keyframes animateGlow {
+@keyframes animateGlow {
   0% {
     background-position: 0% 50%;
   }
@@ -324,7 +328,11 @@ hr.linija-p {
   100% {
     background-position: 200% 50%;
   }
-} */
+}
+
+.dugme:hover {
+  background: #9245d1;
+}
 
 /* DUGME */
 

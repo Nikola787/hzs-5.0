@@ -40,7 +40,7 @@ const Faq = () => {
 };
 const dataF = [
   {
-    questionF: "Question 1",
+    questionF: "Koja je tema hakatona za srednjskolce?",
     answerF:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
   },
