@@ -10,11 +10,13 @@ import O_projektu from "./components/o_projektu/o_projektu.js";
 import Iskustva from "./components/iskustva/iskustva.js";
 import Partneri from "./components/partneri/partneri.js";
 import PrijavaT from "./components/prijava_tekst/PrijavaT.js";
+import Navbar from './components/navbar/navbar.jsx'
+import Footer from './components/footer/footer.jsx'
 
 const Home = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Gradijent />
       {/* <Tajmer /> */}
       {/* <O_projektu /> */}
@@ -25,7 +27,7 @@ const Home = () => {
       {/* <SlikeTima /> */}
       <Partneri />
       <PrijavaT />
-      {/* <Footer /> */}
+      <Footer />
 
       {/* <Prijava /> */}
     </div>
