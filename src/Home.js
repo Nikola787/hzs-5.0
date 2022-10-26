@@ -4,7 +4,7 @@ import Radionice from "./components/radionice/radionice.jsx";
 import Tajmer from "./components/tajmer/tajmer.jsx";
 // import SlikeTima from "./components/slike_tima/slike_tima.jsx";
 import Gradijent from "./components/gradijent/gradijent.js";
-// import Agenda from "./components/agenda/agenda.jsx";
+import Agenda from "./components/agenda/agenda.jsx";
 import Faq from "./components/faq/faq.js";
 import O_projektu from "./components/o_projektu/o_projektu.js";
 import Iskustva from "./components/iskustva/iskustva.js";
@@ -18,16 +18,16 @@ const Home = () => {
     <div>
       <Navbar />
       <Gradijent />
-      {/* <Tajmer /> */}
+      <Tajmer />
       {/* <O_projektu /> */}
-      <Iskustva /> 
+      {/* <Iskustva />  */}
       <Radionice />
-      {/* <Agenda /> */}
-      <Faq />
+      <Agenda />
+      {/* <Faq /> */}
       {/* <SlikeTima /> */}
       <Partneri />
       <PrijavaT />
-      <Footer />
+      {/* <Footer /> */}
 
       {/* <Prijava /> */}
     </div>
