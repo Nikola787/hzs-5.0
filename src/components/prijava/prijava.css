@@ -1,3 +1,13 @@
+/* obavezna polja */
+.error-input-active {
+  outline: 2px solid #f9711d;
+}
+
+
+
+
+
+
 .ceo-fo {
   background-image: url("./assets/pozadina_forma.png");
   background-size: 100% 100%;
@@ -550,8 +560,12 @@ hr.linija-p {
   transform: rotate(45deg);
 }
 
+.unos-ikona {
+  display: flex;
+}
 .unos-ikona img {
   height: 40.5px;
+  align-self: flex-end;
 }
 
 @media screen and (max-width: 1920px) {

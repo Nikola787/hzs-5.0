@@ -12,7 +12,6 @@ const PrijavaT = () => {
         <div className="prijavaT-box">
           <h1>Čekamo tvoju prijavu!</h1>
           <br />
-          <br />
           <p>
             Hakaton za srednjoškolce je savršena prilika da se upustiš u svet
             programiranja i IT-ja, kao i da usavršiš svoje prezentacione
