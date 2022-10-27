@@ -11,12 +11,12 @@
   height: 100vh;
 }
 
-.navbar {
+.navbar-st {
   justify-content: center;
   padding: 2%;
 }
 
-.navbar ul {
+.navbar-st ul {
   list-style: none;
   display: flex;
   gap: 2%;
@@ -24,7 +24,7 @@
   width: 70vw;
 }
 
-.navbar ul li {
+.navbar-st ul li {
   width: 7vw;
   height: 4vw;
   padding-top: 1.3%;
@@ -37,14 +37,14 @@
   user-select: none;
 }
 
-.navbar ul li:hover {
+.navbar-st ul li:hover {
   background-color: #00ffa3;
   color: #333333;
   opacity: 0.5;
   transition: 0.5s;
 }
 
-.navbar ul li:active {
+.navbar-st ul li:active {
   background-color: #00ffa3;
   color: #333333;
 }

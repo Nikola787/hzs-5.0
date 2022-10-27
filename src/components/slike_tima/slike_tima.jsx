@@ -12,7 +12,7 @@ import { DataSlider } from "./ImageSlider/DataSlider";
 const slike_tima = () => {
   return (
     <div className="slike-tima-wrapper">
-      <div className="navbar">
+      <div className="navbar-st">
         <ul>
           <li>CORE</li>
           <li>IT</li>
