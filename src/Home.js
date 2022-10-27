@@ -20,7 +20,7 @@ const Home = () => {
       <Gradijent />
       <Tajmer />
       {/* <O_projektu /> */}
-      <Iskustva />
+      {/* <Iskustva /> */}
       {/* <Iskustva />  */}
       <Radionice />
       <Agenda />
@@ -28,7 +28,7 @@ const Home = () => {
       {/* <SlikeTima /> */}
       <Partneri />
       <PrijavaT />
-      {/* <Footer /> */}
+      <Footer />
 
       {/* <Prijava /> */}
     </div>
