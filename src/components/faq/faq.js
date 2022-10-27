@@ -45,22 +45,22 @@ const Faq = () => {
 };
 const dataF = [
   {
-    questionF: "Koja je tema hakatona za srednjskolce?",
+    questionF: "Ko se može prijaviti za Hakaton?",
     answerF:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
   },
   {
-    questionF: "Question 2",
+    questionF: "Ko se može prijaviti za Hakaton?",
     answerF:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
   },
   {
-    questionF: "Question 3",
+    questionF: "Ko se može prijaviti za Hakaton?",
     answerF:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
   },
   {
-    questionF: "Question 4",
+    questionF: "Ko se može prijaviti za Hakaton?",
     answerF:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus pariatur officia voluptate, iste itaque laboriosam facilis officiis velit enim quam odit suscipit dignissimos et molestiae autem dolores numquam impedit!",
   },

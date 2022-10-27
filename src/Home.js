@@ -22,12 +22,12 @@ const Home = () => {
       <VideoA />
       <Navbar />
       {/* <Gradijent /> */}
-      <Tajmer />
+      {/* <Tajmer /> */}
       {/* <O_projektu /> */}
       {/* <Iskustva /> */}
       <Radionice />
       <Agenda />
-      {/* <Faq /> */}
+      <Faq />
       {/* <SlikeTima /> */}
       <Partneri />
       <PrijavaT />
