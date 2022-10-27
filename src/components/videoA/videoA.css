@@ -56,10 +56,10 @@
 
 .crniDeo {
   position: absolute;
-  top: 0;
+  top: -20%;
   left: 0;
   width: 150%;
-  height: 350%;
+  height: 150%;
   background-color: #181919;
   animation: animatetopLayer 1s linear 1;
   animation-fill-mode: forwards;
