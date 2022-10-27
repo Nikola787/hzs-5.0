@@ -6,8 +6,8 @@ const videoA = () => {
     <div>
       <div className="ceo-vA">
         <div className="box">
-            <div className="lightbar"></div>
-            <div className="topLayer"></div>
+          <div className="lightbar"></div>
+          <div className="crniDeo"></div>
           <h2>HAKATON ZA SREDNJOŠKOLCE</h2>
         </div>
       </div>
