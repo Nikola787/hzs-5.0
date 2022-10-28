@@ -1,23 +1,21 @@
 .dveSekcije {
-  background-image: url("./assets/O\ projektu\ POZADINA-01.png");
+  /* background-image: url("./assets/O\ projektu\ POZADINA-01.png"); */
   background-size: 100% 100%;
 }
 
-.iskustva-d {
-  margin: 1% 8% 5% 8%;
-}
 
 .iskustva-deo {
   background-image: url("./assets/iskustva_d.png");
   background-size: 100% 100%;
-  margin-top: 5%;
+  margin: 2% auto 5% auto;
   height: 50vw;
   width: 80vw;
 }
 
 .naslov-i {
   display: flex;
-  margin-left: 5%;
+  margin-top: 8%;
+  margin-left: 13%;
   padding-top: 1%;
 }
 
@@ -52,14 +50,23 @@
 }
 
 @media screen and (max-width: 1200px) {
-}
-
-@media screen and (max-width: 1200px) {
   .iskustva-deo {
-    background-image: url("./assets/iskustva_d.png");
-    background-size: 100% 100%;
     height: 60vw;
     width: 90vw;
+  }
+
+  .naslov-tekst-i h1 {
+    font-size: 50px;
+    line-height: 40px;
+    padding-left: 15px;
+    border-left: 12px solid #00ffa3;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .iskustva-deo {
+    height: 65vw;
+    width: 95vw;
   }
 
   .naslov-tekst-i h1 {
@@ -73,17 +80,14 @@
 @media screen and (max-width: 660px) {
   .iskustva-deo {
     background-image: url("./assets/iskustva_m.png");
-    background-size: 100% 100%;
-    height: 160vw;
+    height: 120vw;
     width: 60vw;
-
-    margin-left: 10%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .dveSekcije {
-    background-image: url("./assets/OI_mobilni_p.png");
+    /* background-image: url("./assets/OI_mobilni_p.png"); */
     background-size: 100% 100%;
   }
 

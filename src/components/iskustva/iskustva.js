@@ -7,7 +7,7 @@ import OP from "../o_projektu/o_projektu.js";
 const iskustva = () => {
   return (
     <div className="dveSekcije">
-      <OP />
+      {/* <OP /> */}
       <div className="iskustva-d">
         <div className="naslov-i">
           <div className="naslov-tekst-i">
