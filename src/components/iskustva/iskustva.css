@@ -80,8 +80,8 @@
 @media screen and (max-width: 660px) {
   .iskustva-deo {
     background-image: url("./assets/iskustva_m.png");
-    height: 120vw;
-    width: 60vw;
+    height: 200vw;
+    width: 100vw;
   }
 }
 
