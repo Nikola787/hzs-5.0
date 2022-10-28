@@ -13,19 +13,22 @@ import PrijavaT from "./components/prijava_tekst/PrijavaT.js";
 import Navbar from "./components/navbar/navbar.jsx";
 import Footer from "./components/footer/footer.jsx";
 
+import VideoA from "./components/videoA/videoA.js"
+
 const Home = () => {
   return (
     <div>
+
+      <VideoA />
       <Navbar />
-      <Gradijent />
-      <Tajmer />
-      {/* <O_projektu /> */}
+      {/* <Gradijent /> */}
+      {/* <Tajmer /> */}
+      <O_projektu />
       <Iskustva />
-      {/* <Iskustva />  */}
       <Radionice />
       <Agenda />
       <Faq />
-      <SlikeTima />
+      {/* <SlikeTima /> */}
       <Partneri />
       <PrijavaT />
       <Footer />

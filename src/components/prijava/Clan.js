@@ -11,6 +11,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const Clan = (props) => {
+
   const [imePrezime, setImePrezime] = useState("");
   const [grad, setGrad] = useState("");
   const [srednjaSkola, setSrednjaSkola] = useState("");
@@ -37,6 +38,7 @@ const Clan = (props) => {
                   type="text"
                   placeholder="Ime i prezime"
                   onChange={(e) => setImePrezime(e.target.value)}
+                  style = {{borderBottom: imePrezime === '' && props.error ? '2px solid red' : '2px solid #c3b0ff'}}
                   required
                 />
               </label>
@@ -53,6 +55,8 @@ const Clan = (props) => {
                   type="text"
                   placeholder="Grad"
                   onChange={(e) => setGrad(e.target.value)}
+                  style = {{borderBottom: grad === '' && props.error ? '2px solid red' : '2px solid #c3b0ff'}}
+
                   required
                 />
               </label>
@@ -69,6 +73,8 @@ const Clan = (props) => {
                   type="text"
                   placeholder="Srednja škola"
                   onChange={(e) => setSrednjaSkola(e.target.value)}
+                  style = {{borderBottom: srednjaSkola === '' && props.error ? '2px solid red' : '2px solid #c3b0ff'}}
+
                   required
                 />
               </label>
@@ -85,6 +91,8 @@ const Clan = (props) => {
                   type="text"
                   placeholder="Razred"
                   onChange={(e) => setRazred(e.target.value)}
+                  style = {{borderBottom: razred === '' && props.error ? '2px solid red' : '2px solid #c3b0ff'}}
+
                   required
                 />
               </label>
@@ -100,6 +108,8 @@ const Clan = (props) => {
                   type="text"
                   placeholder="Broj telefona"
                   onChange={(e) => setBrojTelefona(e.target.value)}
+                  style = {{borderBottom: brojTelefona === '' && props.error ? '2px solid red' : '2px solid #c3b0ff'}}
+
                   required
                 />
               </label>
@@ -115,6 +125,8 @@ const Clan = (props) => {
                   type="text"
                   placeholder="Imejl"
                   onChange={(e) => setEmail(e.target.value)}
+                  style = {{borderBottom: email === '' && props.error ? '2px solid red' : '2px solid #c3b0ff'}}
+
                   required
                 />
               </label>
