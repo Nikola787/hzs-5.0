@@ -106,7 +106,7 @@ const Slike_tima = () => {
             />
           </div>
           <p className="opis-tima">
-            Team za dizajn, u saradnji sa timom za odnose sa javnošću, na
+            Tim za dizajn, u saradnji sa timom za odnose sa javnošću, na
             kreativan način osmišljava vizuelni identitet projekta. Svoju
             originalnost i veštine izražava kroz stvaranje objava za društvene
             mreže, koje za cilj imaju da ti na najzanimljiviji način prenesu
