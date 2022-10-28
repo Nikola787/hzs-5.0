@@ -11,23 +11,22 @@
   height: 100vh;
 }
 
-.navbar {
+.navbar-st {
   justify-content: center;
-  padding: 2%;
+  padding: 2% 0;
 }
 
-.navbar ul {
+.navbar-st ul {
   list-style: none;
   display: flex;
   gap: 2%;
   justify-content: center;
-  width: 70vw;
 }
 
-.navbar ul li {
+.navbar-st ul li {
   width: 7vw;
   height: 4vw;
-  padding-top: 1.3%;
+  padding-top: 1%;
   font-weight: 300;
   color: #00ffa3;
   font-family: "Manrope";
@@ -37,14 +36,14 @@
   user-select: none;
 }
 
-.navbar ul li:hover {
+.navbar-st ul li:hover {
   background-color: #00ffa3;
   color: #333333;
   opacity: 0.5;
   transition: 0.5s;
 }
 
-.navbar ul li:active {
+.navbar-st ul li:active {
   background-color: #00ffa3;
   color: #333333;
 }
@@ -65,36 +64,6 @@
   position: relative;
 }
 
-/* .slike-tima-levo .gornji-deo {
-  display: flex;
-  align-items: center;
-}
-
-.gornji-deo .slika-strela-levo {
-  cursor: pointer;
-  object-fit: contain;
-  width: 6vw;
-}
-
-.gornji-deo .slika-roditelj {
-  position: relative;
-}
-
-
-.slike-tima-levo .slika-koordinatora {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50.4%);
-  width: 19.5vw;
-  height: 84.7%;
-  object-fit: cover;
-}
-
-.gornji-deo .slika-strela-desno {
-  cursor: pointer;
-  width: 6vw;
-} */
 .slika-bordera {
   position: absolute;
   top: 50%;
@@ -221,22 +190,21 @@
     padding-bottom: 0%;
   }
 
-  .navbar {
-    padding: 4%;
+  .navbar-st {
+    padding: 4% 0;
   }
 
-  .navbar ul {
-    gap: 2%;
+  .navbar-st ul {
+    gap: 1%;
     width: 100vw;
   }
 
-  .navbar ul li {
+  .navbar-st ul li {
     width: 13vw;
     height: 9vw;
     padding-top: 2.9%;
     font-size: 2.5vw;
   }
-  /* ..................................... */
   .slika-bordera {
     width: 50vw;
   }
