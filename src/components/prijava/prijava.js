@@ -26,6 +26,9 @@ const Prijava = () => {
   const [modalMessage, setModalMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
+  const [error,setIsError] = useState(false);
+
+
   function validateEmail(email) {
     const re =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -167,6 +170,12 @@ const Prijava = () => {
   };
 
   const posaljiPrijavu = () => {
+
+    if (clan1.imePrezime === '' || clan2.imePrezime === '' || clan3.imePrezime === '' || clan1.grad === '' || clan2.grad === '' || clan3.grad === '') {
+      setIsError(true);
+      
+      return;
+    }
     let prijava = {
       pitanje1: pitanje1,
       pitanje2: pitanje2,
@@ -192,13 +201,13 @@ const Prijava = () => {
         </div>
 
         <div className="clan">Član 1</div>
-        <Clan onChange={onClan1} />
+        <Clan onChange={onClan1} error = {error} />
         <div className="clan">Član 2</div>
-        <Clan onChange={onClan2} />
+        <Clan onChange={onClan2} error = {error}/>
         <div className="clan">Član 3</div>
-        <Clan onChange={onClan3} />
+        <Clan onChange={onClan3} error = {error}/>
         <div className="clan">Član 4 (opciono)</div>
-        <Clan onChange={onClan4} />
+        <Clan onChange={onClan4} error = {error}/>
 
         <div className="box-pitanja">
           <div className="unos-tekst-it">
