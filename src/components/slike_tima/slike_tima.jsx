@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Slike_tima.css";
+import "./slike_tima.css";
 import SLikaBordera1 from "../../images/Slike tima - okvir za sliku tima.png";
 import SlikaGrupna from "../../images/Grupna.png";
 import StrelaLevo from "../../images/LeftArrow.png";
@@ -7,7 +7,7 @@ import StrelaDesno from "../../images/RightArrow.png";
 import SlikaBordera from "../../images/Slike tima - okvir za koordinatora.png";
 import { DataSlider } from "./DataSlider";
 
-const Slike_tima = () => {
+const slike_tima = () => {
   const [people] = useState(DataSlider);
   const [index, setIndex] = useState(0);
   const [current, setCurrent] = useState(0);
@@ -119,4 +119,4 @@ const Slike_tima = () => {
   );
 };
 
-export default Slike_tima;
+export default slike_tima;
