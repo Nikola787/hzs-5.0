@@ -1,15 +1,46 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./slike_tima.css";
+import SLikaBordera1 from "../../images/Slike tima - okvir za sliku tima.png";
+import SlikaGrupna from "../../images/Grupna.png";
 import StrelaLevo from "../../images/LeftArrow.png";
 import StrelaDesno from "../../images/RightArrow.png";
 import SlikaBordera from "../../images/Slike tima - okvir za koordinatora.png";
-import SlikaKoordinatora from "../../images/5-3.jpg";
-import SLikaBordera1 from "../../images/Slike tima - okvir za sliku tima.png";
-import SlikaGrupna from "../../images/Grupna.png";
-import ImageSlider from "./ImageSlider/ImageSlider";
-import { DataSlider } from "./ImageSlider/DataSlider";
+import { DataSlider } from "./DataSlider";
 
-const slike_tima = () => {
+const Slike_tima = () => {
+  const [people] = useState(DataSlider);
+  const [index, setIndex] = useState(0);
+  const [current, setCurrent] = useState(0);
+  const length = people.length;
+
+  useEffect(() => {
+    const lastIndex = people.length - 1;
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, people]);
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 1000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+  if (!Array.isArray(people) || people.length <= 0) {
+    return null;
+  }
   return (
     <div className="slike-tima-wrapper">
       <div className="navbar-st">
@@ -25,32 +56,37 @@ const slike_tima = () => {
       </div>
       <div className="slike-tima-container">
         <div className="slike-tima-levo">
-          {/* <div className="gornji-deo">
+          <section className="slider">
             <img
-              className="slika-strela-levo"
+              className="left-arrow"
               src={StrelaLevo}
-              alt="Strelica leva oko slike koordinatora"
+              alt="Slika strele"
+              onClick={prevSlide}
             />
-            <div className="slika-roditelj">
-              <img
-                className="slika-bordera"
-                src={SlikaBordera}
-                alt="Okvir za sliku koordinatora"
-              />
-              <img
-                className="slika-koordinatora"
-                src={SlikaKoordinatora}
-                alt="Slika koordinatora"
-              />
-            </div>
             <img
-              className="slika-strela-desno"
+              className="right-arrow"
               src={StrelaDesno}
-              alt="Strelica desna oko slike koordinatora"
+              alt="Slika strele"
+              onClick={nextSlide}
             />
-          </div> */}
-
-          <ImageSlider slides={DataSlider} />
+            <img
+              className="slika-bordera"
+              src={SlikaBordera}
+              alt="Okvir za sliku koordinatora"
+            />
+            {DataSlider.map((data, index) => {
+              return (
+                <div
+                  className={index === current ? "slide-active" : "slide"}
+                  key={index}
+                >
+                  {index === current && (
+                    <img src={data.image} alt="group" className="image" />
+                  )}
+                </div>
+              );
+            })}
+          </section>
           <div className="opis-slike">
             <h1 className="ime-koordinatora">Vladislav Vidović</h1>
             <h3 className="funkcija-koordinatora">Koordinator projekta</h3>
@@ -83,4 +119,4 @@ const slike_tima = () => {
   );
 };
 
-export default slike_tima;
+export default Slike_tima;

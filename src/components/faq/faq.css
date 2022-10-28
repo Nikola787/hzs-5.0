@@ -1,4 +1,5 @@
 .ceo-f {
+  margin-top: 6%;
   background-color: #181919;
   /* height: 1000px; */
   font-family: "Manrope";
@@ -12,17 +13,18 @@
   padding-top: 1%;
 }
 
+
 .naslov-tekst-f h1 {
   margin: 0;
   padding: 0;
-  line-height: 4vw;
+  line-height: 3.5vw;
   border-left: 1vw solid #00ffa3;
   padding-left: 1vw;
 
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
-  font-size: 5vw;
+  font-size: 4vw;
   color: #ffffff;
 }
 
@@ -34,6 +36,7 @@
 .accordion-f {
   margin-left: 8%;
   margin-top: 5%;
+  margin-bottom: 8%;
 }
 .item-f {
   width: 80vw;
@@ -51,11 +54,11 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .title-f h2 {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .content {
@@ -68,7 +71,7 @@
   font-weight: 400;
   text-align: left;
 
-  font-size: 2vw;
+  font-size: 1.5vw;
 
 }
 
@@ -79,7 +82,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 1.5vw;
 
   /* text-align: left; */
   /* margin-top: 5px; */
@@ -105,6 +108,40 @@
 
 }
 @media screen and (max-width: 960px) {
+  .naslov-tekst-f h1 {
+    text-align: left;
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+
+  .title-f {
+    text-align: left;
+    font-size: 4vw;
+  }
+
+  .title-f h2 {
+    text-align: left;
+    font-size: 4vw;
+  }
+
+  .content {
+    text-align: left;
+    font-size: 4vw;
+  }
+
+  .content.show {
+    text-align: left;
+    font-size: 4vw;
+  }
+
+  .span-f {
+    margin-top: 4vw;
+  }
+
+  .naslov-f {
+    margin-bottom: 12%;
+  }
+
 }
 
 @media screen and (max-width: 650px) {
