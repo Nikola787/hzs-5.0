@@ -98,7 +98,7 @@ body {
     height: 100vh;
     position: absolute;
     top: 5rem;
-    left: -100%;
+    transform: translateX(-100%);
     opacity: 1;
     transition: all 0.5s ease;
     overflow-y: hidden;
@@ -107,12 +107,11 @@ body {
 
   .nav-menu.active {
     background: #181919;
-    left: 0;
+    transform: translateX(0);
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
     position: fixed;
-    left: 0;
   }
 
   .nav-links {
