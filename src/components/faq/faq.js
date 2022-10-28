@@ -28,7 +28,7 @@ const Faq = () => {
           {dataF.map((item, i) => (
             <div className="item-f">
               <div className="title-f" onClick={() => toggle(i)}>
-                <h2 style={{ color: selected === i ? "#00ffa3" : "#FFFFFF" }}>
+                <h2 style={{ color: selected === i ? "#00ffa3" : "#FFFFFF", fontWeight: selected === i ? "bold" : "400" }}>
                   {item.questionF}
                 </h2>
                 <span className="span-f">{selected === i ? "-" : "+"}</span>

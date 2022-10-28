@@ -146,7 +146,7 @@ const Prijava = () => {
     console.log(prijava);
 
     try {
-      const response = await fetch("heroku link ...", {
+      const response = await fetch("https://hzs5.herokuapp.com/prijave/api", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -174,6 +174,7 @@ const Prijava = () => {
       pitanje4: pitanje4,
       pitanje5: pitanje5,
       pitanje6: pitanje6,
+      pitanje7: pitanje7,
       clanovi: [clan1, clan2, clan3, clan4],
     };
 
