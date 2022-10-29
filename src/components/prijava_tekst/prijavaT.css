@@ -180,31 +180,31 @@
     width: 40%;
   }
   .prijavaT-box p {
-    font-size: 10px;
+    font-size: 3vw;
 
   }
   .prijavaT-box h1 {
-    font-size: 20px;
+    font-size: 4vw;
   }
 }
 
 @media screen and (max-width: 480px) {
   .dugme-prijava {
-    margin-top: -10%;
-    font-size: 20px;
+    margin-top: -5%;
+    font-size: 5vw;
   }
   .prijavaT-box p {
-    font-size: 10px;
+    font-size: 4vw;
 
   }
   .prijavaT-box h1 {
-    font-size: 15px;
+    font-size: 5vw;
   }
 
 }
 
 @media screen and (max-width: 400px) {
   .dugme-prijava {
-    font-size: 20px;
+    font-size: 4vw;
   }
 }
