@@ -2,7 +2,7 @@ import React from "react";
 import "./iskustva.css";
 import Slika from "./slika.png";
 
-import OP from "../o_projektu/o_projektu.js";
+import OP from "../o_projektu/O_projektu.js";
 
 const iskustva = () => {
   return (

@@ -113,9 +113,9 @@ const Partneri = (props) => {
       <div className="dveSekcijeP">
         <Slike_tima />
 
-        
         <div className="pokrovitelj">
           <h1 className="pokrovitelj-naslov">POKROVITELJ TAKMIČENJA</h1>
+
           <Partner
             partnerSlika={Slika}
             partnerIme="Partner"
@@ -125,9 +125,10 @@ const Partneri = (props) => {
             link="http://fonis.rs/"
           ></Partner>
         </div>
-
       </div>
-
+      <div className="linija">
+        <img src={Linija} alt="linija" />
+      </div>
       <h1>GODIŠNJI PARTNERI</h1>
       <div className="linija">
         <img src={Linija} alt="linija" />

@@ -23,7 +23,7 @@
 }
 
 .pokrovitelj {
-  margin-top: 8%;
+  margin-top: 12%;
   margin-bottom: 3%;
 }
 
@@ -113,6 +113,14 @@
     font-weight: 200;
     font-size: 7vw;
     color: #ffffff;
+  }
+
+  .dveSekcijeP {
+    background-image: url("./assets/slikeT_tel.png");
+  }
+
+  .pokrovitelj {
+    margin-top: 18%;
   }
 }
 @media screen and (max-width: 340px) {

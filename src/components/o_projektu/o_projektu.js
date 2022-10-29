@@ -9,7 +9,12 @@ import Pravilnik from "../pravila.pdf";
 import CountUp from "react-countup";
 import VisibilitySensor from 'react-visibility-sensor';
 
-const o_projektu = () => {
+import { useNavigate } from 'react-router';
+
+const O_projektu = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="ceo">
       <div className="prostor"></div>
@@ -53,7 +58,7 @@ const o_projektu = () => {
               .
             </p>
           </div>
-          <button className="dugme-prijava-o">PRIJAVI SE</button>
+          <button className="dugme-prijava-o" onClick={() => navigate('/prijava')}>PRIJAVI SE</button>
         </div>
         <div className="desni-deo"></div>
         <div className="statistika-box">
@@ -84,4 +89,4 @@ const o_projektu = () => {
   );
 };
 
-export default o_projektu;
+export default O_projektu;
