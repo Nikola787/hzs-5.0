@@ -23,12 +23,12 @@ const Home = () => {
       <Navbar />
       {/* <Gradijent /> */}
       {/* <Tajmer /> */}
-      <O_projektu />
+      {/* <O_projektu /> */}
       <Iskustva />
       <Radionice />
       <Agenda />
       <Faq />
-      <SlikeTima />
+      {/* <SlikeTima /> */}
       <Partneri />
       <PrijavaT />
       <Footer />

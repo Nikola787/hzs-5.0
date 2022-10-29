@@ -1,5 +1,5 @@
 .dveSekcije {
-  /* background-image: url("./assets/O\ projektu\ POZADINA-01.png"); */
+  background-image: url("./assets/O\ projektu\ POZADINA-01.png");
   background-size: 100% 100%;
 }
 
@@ -14,7 +14,7 @@
 
 .naslov-i {
   display: flex;
-  margin-top: 8%;
+  margin-top: 3%;
   margin-left: 13%;
   padding-top: 1%;
 }
@@ -24,13 +24,13 @@
   padding: 0;
   
   line-height: 4vw;
-  border-left: 0.7vw solid #00ffa3;
+  border-left: 1vw solid #00ffa3;
   padding-left: 1vw;
 
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
-  font-size: 4vw;
+  font-size: 5vw;
   color: #ffffff;
 }
 
@@ -66,6 +66,18 @@
     height: 200vw;
     width: 90vw;
   }
+
+  .naslov-i h1 {
+    margin-top: 10vw;
+    margin-left: -6vw;
+
+    font-size: 13vw;
+    line-height: 10vw;
+
+    margin-bottom: 8%;
+    border-left: 2vw solid #00ffa3;
+  }
+
 }
 
 @media screen and (max-width: 480px) {

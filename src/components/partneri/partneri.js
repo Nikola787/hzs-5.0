@@ -10,6 +10,8 @@ import PartneriSlider from "./PartneriSlider.js";
 import Slika from "./assets/slika.png";
 import Linija from "./assets/linija.png";
 
+import Slike_tima from "../slike_tima/Slike_tima";
+
 const Partneri = (props) => {
   const partneriSettings = {
     dots: false,
@@ -108,22 +110,29 @@ const Partneri = (props) => {
 
   return (
     <div className="ceo-partneri">
-      <div className="pokrovitelj">
-        <h1 className="pokrovitelj-naslov">POKROVITELJ TAKMIČENJA</h1>
-        <Partner
-          partnerSlika={Slika}
-          partnerIme="Partner"
-          width="16em"
-          height="9em"
-          pozadina="#C3B0FF"
-          link="http://fonis.rs/"
-        ></Partner>
+      <div className="dveSekcijeP">
+        <Slike_tima />
+
+        
+        <div className="pokrovitelj">
+          <h1 className="pokrovitelj-naslov">POKROVITELJ TAKMIČENJA</h1>
+          <Partner
+            partnerSlika={Slika}
+            partnerIme="Partner"
+            width="16em"
+            height="9em"
+            pozadina="#C3B0FF"
+            link="http://fonis.rs/"
+          ></Partner>
+        </div>
+
       </div>
 
       <h1>GODIŠNJI PARTNERI</h1>
       <div className="linija">
         <img src={Linija} alt="linija" />
       </div>
+
       <div className="partneri-box">
         <PartneriSlider
           partneri={partneriLista}
