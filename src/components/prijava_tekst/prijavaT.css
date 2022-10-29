@@ -126,9 +126,9 @@
   width: 110%;
   transform: scale(0.9) translateZ(0);
   filter: blur(15px);
-  background: linear-gradient(to left, rgb(72, 255, 188), rgb(29, 188, 130), rgb(76, 234, 176), rgb(49, 200, 145));
+  background: linear-gradient(to left, rgb(117, 251, 202), rgb(165, 47, 212), #C3B0FF, rgb(173, 150, 250));
   background-size: 200% 200%;
-  animation: animateGlow 2.1s linear infinite;
+  animation: animateGlow 2.2s linear infinite;
 
   opacity: 0.5;
 }
