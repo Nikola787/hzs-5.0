@@ -1,18 +1,20 @@
 .agenda {
     display: block;
     position: relative;
-    padding: 5rem 0;
     background-color: #181919;
     z-index: -1;
     background-image: url("../../../assets/Agenda\ -\ pozadina.png");
     background-size: 100% 100%;
-    height: 100%;
+    height: 100vh;
+    /* margin-top: 2rem; */
 }
 
 
+
 .agenda .title {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: left;
+    padding-top: 1rem;
     padding-left: 10rem;
     font-weight: 100;
     color: #ffffff;
@@ -24,7 +26,7 @@
     width: 10px;
     background-color: #00ffa3;
     position: absolute;
-    top: 6.8rem;
+    top: 6.4rem;
     left: 8.4rem;
 }
 
@@ -170,9 +172,9 @@
 
     .agenda .title::before {
         width: 7px;
-        height: 2rem;
+        height: 1.7rem;
         position: absolute;
-        top: 5.5rem;
+        top: 1.7rem;
         left: 2rem;
     }
 
@@ -294,9 +296,9 @@
 
     .agenda .title::before {
         width: 7px;
-        height: 2rem;
+        height: 1.7rem;
         position: absolute;
-        top: 5.5rem;
+        top: 1.8rem;
         left: 2rem;
     }
 
@@ -434,9 +436,9 @@
         content: "";
         width: 7px;
         background-color: #00FFA3;
-        height: 2.5rem;
+        height: 2.3rem;
         position: absolute;
-        top: 5.7rem;
+        top: 1.9rem;
         left: 2rem;
     }
 
@@ -574,7 +576,7 @@
         background-color: #00FFA3;
         height: 3rem;
         position: absolute;
-        top: 6.4rem;
+        top: 2.5rem;
         left: 3.5rem;
     }
 
@@ -689,12 +691,11 @@
     .agenda {
         display: block;
         position: relative;
-        padding: 5rem 0;
         background-color: #181919;
         z-index: -1;
         background-image: url("../../../assets/Agenda\ -\ pozadina.png");
         background-size: 100% 100%;
-       height: 100% !important;
+       height: 100vh !important;
     }
 
     .agenda .title {
@@ -711,7 +712,7 @@
         width: 10px;
         background-color: #00FFA3;
         position: absolute;
-        top: 6.8rem;
+        top: 3rem;
         left: 3.4rem;
     }
 
