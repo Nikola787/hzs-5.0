@@ -110,36 +110,32 @@
 @media screen and (max-width: 960px) {
   .naslov-tekst-f h1 {
     text-align: left;
-    font-size: 8vw;
-    line-height: 8vw;
+    font-size: 5vw;
+    line-height: 4vw;
   }
 
   .title-f {
     text-align: left;
-    font-size: 4vw;
+    font-size: 1.5vw;
   }
 
   .title-f h2 {
     text-align: left;
-    font-size: 4vw;
+    font-size: 1.5vw;
   }
 
   .content {
     text-align: left;
-    font-size: 4vw;
+    font-size: 1.5vw;
   }
 
   .content.show {
     text-align: left;
-    font-size: 4vw;
-  }
-
-  .span-f {
-    margin-top: 4vw;
+    font-size: 1.5vw;
   }
 
   .naslov-f {
-    margin-bottom: 12%;
+    margin-bottom: 6%;
   }
 
   .item-f {
@@ -156,11 +152,9 @@
 
 @media screen and (max-width: 660px) {
   .title-f h2 {
-    font-size: 6vw;
+    font-size: 1.5vw;
   }
-  .span-f {
-    margin-top: 9vw;
-  }
+
 }
 @media screen and (max-width: 480px) {
   /*od ovog pointa krece mobilna verzija*/
