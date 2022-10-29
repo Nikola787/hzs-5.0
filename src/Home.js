@@ -16,19 +16,19 @@ import Footer from "./components/footer/footer.jsx";
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <Gradijent />
-      <Tajmer />
-      {/* <O_projektu /> */}
-      <Iskustva />
-      {/* <Iskustva />  */}
-      <Radionice />
-      <Agenda />
-      <Faq />
-      <SlikeTima />
-      <Partneri />
-      <PrijavaT />
-      <Footer />
+      {/* <Navbar /> */}
+      {/* <Gradijent /> */}
+      {/* <Tajmer /> */}
+      <O_projektu />
+      {/* <Iskustva /> */}
+      {/* <Iskustva /> */}
+      {/* <Radionice /> */}
+      {/* <Agenda /> */}
+      {/* <Faq /> */}
+      {/* <SlikeTima /> */}
+      {/* <Partneri /> */}
+      {/* <PrijavaT /> */}
+      {/* <Footer /> */}
 
       {/* <Prijava /> */}
     </div>
