@@ -322,23 +322,26 @@
   }
 
   .statistika-box {
-    gap: 10vw;
+    /* gap: 10vw; */
     margin-top: 20vw;
   }
 
   .statistika-jedan-box {
+    margin-bottom: 10vw;
     padding: 4vw;
     width: 70vw;
   }
 
   .statistika-dva-box {
     padding: 4vw;
+    margin-bottom: 10vw;
 
     width: 70vw;
   }
 
   .statistika-tri-box {
     padding: 4vw;
+    margin-bottom: 10vw;
 
     width: 70vw;
   }
