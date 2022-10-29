@@ -70,12 +70,7 @@ const Tajmer = () => {
   return (
     <div>
       <motion.div class="wrapper" animate={animation} ref={ref}>
-        <p id="timer-text">
-          <span className="timer-span">Vreme </span>
-          <span className="timer-span">do </span>
-          <span className="timer-span">zatvaranja </span>
-          <span className="timer-span">prijava </span>
-        </p>
+        <p id="timer-text">Vreme do zatvaranja prijava</p>
         <div className="timer">
           <label id="dani" for="html">
             dani
