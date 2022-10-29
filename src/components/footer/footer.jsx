@@ -11,24 +11,24 @@ const footer = () => {
           <div className="left-text">
             <p className="ltext">
               <span className="site">Nas sajt: </span>
-              <a href="https://fonis.rs/" className="fonis">
+              <a href="https://fonis.rs/" target="_blank" className="fonis">
                 fonis.rs
               </a>
             </p>
           </div>
           <div className="left-icons">
             <div className="insta">
-              <a href="#">
+              <a href="https://www.instagram.com/fonis_fon/" target="_blank">
                 <FaInstagram />
               </a>
             </div>
             <div className="fb">
-              <a href="#">
+              <a href="https://www.facebook.com/fonis.rs/" target="_blank">
                 <FaFacebookF />
               </a>
             </div>
             <div className="linkedin">
-              <a href="#">
+              <a href="https://www.linkedin.com/company/fonis/mycompany/" target="_blank">
                 <FaLinkedinIn />
               </a>
             </div>
@@ -36,10 +36,10 @@ const footer = () => {
         </div>
         <div className="center-footer">
           <div className="center-text">
-            <p className="ctext">Napravljeno sa ❤️ od strane HZS tima</p>
+            <p className="ctext">Napravljeno sa  ❤  od strane HZS tima</p>
           </div>
           <div className="center-img">
-            <img className="fonis-footer" src={MyImage} width={150} alt="" />
+          <a href="https://fonis.rs/" target="_blank"> <img className="fonis-footer" src={MyImage} width={150} alt="fonis_logo"/> </a>
           </div>
         </div>
         <div className="right-footer">
