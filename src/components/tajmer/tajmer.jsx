@@ -1,7 +1,6 @@
 import "./tajmer.css";
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { useAnimation } from "framer-motion";
+import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function getTime(countDownDate) {
@@ -13,7 +12,21 @@ function getTime(countDownDate) {
   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  return `${days}d | ${hours}h ${minutes}m ${seconds}s`;
+
+  if (days < 10) {
+    days = "0" + days;
+  }
+  if (hours < 10) {
+    hours = "0" + hours;
+  }
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+
+  return `${days} | ${hours}:${minutes}:${seconds}`;
 }
 
 // function animate(obj, initVal, lastVal, duration) {
@@ -72,23 +85,15 @@ const Tajmer = () => {
   });
 
   return (
-    <div>
-      <motion.div class="wrapper" animate={animation} ref={ref}>
-        <p id="timer-text">
-          <span className="timer-span">DO </span>
-          <span className="timer-span">ZATVARANJA </span>
-          <span className="timer-span">PRIJAVA </span>
-        </p>
-        <div className="timer">
-          <label id="dani" for="html">
-            dani
-          </label>
-          <p id="demo">{tajm}</p>
-          <label id="sati" for="html">
-            sati
-          </label>
-        </div>
-      </motion.div>
+    <div className="wrapper-t">
+      <div className="timer-text">
+        <div className="timer-span">DO ZATVARANJA PRIJAVA</div>
+      </div>
+      <div className="timer">
+        <div className="dani">dana</div>
+        <div className="demo">{tajm}</div>
+        <div className="sati">sati</div>
+      </div>
     </div>
   );
 };

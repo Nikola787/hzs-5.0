@@ -9,12 +9,12 @@
   height: 100%;
 
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 .ceo-partneri {
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 .ceo-partneri h1 {

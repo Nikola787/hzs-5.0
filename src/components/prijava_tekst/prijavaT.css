@@ -5,7 +5,7 @@
   margin-top: 4%;
 
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 .prijavaT-ceo {
@@ -61,7 +61,6 @@
 }
 
 .dugme-prijava {
-
   width: 22%;
   height: 12%;
   margin-top: -20%;
@@ -73,28 +72,27 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
+  cursor: pointer;
+
   background: linear-gradient(
-        266.26deg,
-        rgba(24, 25, 25, 0) 170.57%,
-        rgba(24, 25, 25, 0) 170.57%
+        266.49deg,
+        #00ba76 -33.81%,
+        rgba(24, 25, 25, 0) 170.16%
       )
       padding-box,
-    linear-gradient(120.39deg, rgba(39, 249, 147, 0.2) 23.45%, #00ffa2 104.96%)
+    linear-gradient(120.39deg, #00d084 23.45%, rgba(24, 25, 25, 0.2) 104.96%)
       border-box;
 
-      border-width: 3px;
-      border-style: solid;
-      border-color: transparent;
-      border-radius: 50px;
-/* 
-  box-shadow: inset 1px 1px 2px rgba(34, 35, 35, 0.3),
-    inset -1px -1px 2px rgba(14, 15, 15, 0.5); */
-  /* filter: drop-shadow(-37px 37px 74px rgba(14, 15, 15, 0.2))
-    drop-shadow(37px -37px 74px rgba(14, 15, 15, 0.2))
-    drop-shadow(-37px -37px 74px rgba(34, 35, 35, 0.9))
-    drop-shadow(37px 37px 93px rgba(14, 15, 15, 0.9)); */
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50px;
 
-  backdrop-filter: blur(20px);
+  box-shadow: inset 1px 1px 2px rgba(34, 35, 35, 0.3),
+    inset -1px -1px 2px rgba(14, 15, 15, 0.5);
+
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
   /* Note: backdrop-filter has minimal browser support */
 
   font-family: "Manrope";

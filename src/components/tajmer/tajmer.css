@@ -1,7 +1,6 @@
-#timer-text {
+.timer-text {
   text-align: center;
-  font-size: 3rem;
-  margin-bottom: 3rem;
+  font-size: 4vw;
 
   font-family: "Manrope";
   font-style: normal;
@@ -9,25 +8,27 @@
   color: #ffff;
 }
 
-#dani {
-  margin-left: -18rem;
-  font-size: 1.5rem;
-  padding-top: 1rem;
+.dani {
+  font-size: 0.2w;
+  margin-left: -17vw;
+  margin-bottom: -1vw;
 }
 
-#sati {
-  font-size: 1.5rem;
-  margin-left: -2rem;
+.sati {
+  font-size: 1w;
+  margin-left: -8vw;
+  margin-top: -1vw;
 }
 
-.wrapper {
-  display: block;
+.wrapper-t {
+  display: flex;
+  justify-content: center;
+
   background-color: #181919;
   color: #00ffa3;
   position: relative;
-  height: 20vh;
-  padding-bottom: 50%;
-  z-index: -1;
+  margin-top: 20vh;
+  height: 60vh;
 }
 
 .timer {
@@ -40,7 +41,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
-  font-size: 48px;
+  font-size: 2vw;
   color: #ffff;
 }
 
@@ -50,28 +51,19 @@
   }
 }
 
-span .timer-span {
-  display: inline-block;
+.timer-span {
+
+  position: absolute;
+  left: 28vw;
+  top: 2vw;
+  
   opacity: 1;
   filter: blur(0px);
-  margin: 0.5rem;
+
+  animation: fade-out 2s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
 }
 
-.timer-span:nth-child(1) {
-  animation: fade-out 2s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-.timer-span:nth-child(2) {
-  animation: fade-out 2s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-.timer-span:nth-child(3) {
-  animation: fade-out 2s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-.timer-span:nth-child(4) {
-  animation: fade-out 2s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
 
 @keyframes fade-out {
   100% {
@@ -80,10 +72,10 @@ span .timer-span {
   }
 }
 
-#demo {
+.demo {
   max-width: 100%;
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 4vw;
   transform: scale(0.94);
   animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
 
@@ -111,8 +103,6 @@ span .timer-span {
   opacity: 0;
   filter: blur(4px);
   animation: fade-in 2s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-
-
 }
 
 @keyframes fade-in {
@@ -121,159 +111,3 @@ span .timer-span {
     filter: blur(0px);
   }
 }
-/* @media screen and (max-width: 340px){
-    #timer-text {
-            text-align: center;
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-        }
-    
-        #dani {
-            margin-left: -7rem;
-            font-size: .9rem;
-        }
-    
-        #sati {
-            font-size: .9rem;
-            margin-left: -1rem;
-        }
-    
-        .wrapper {
-            display: block;
-            background-color: #181919;
-            color: #00ffa3;
-            position: relative;
-            height: 60vh;
-            z-index: -1;
-        }
-    
-        .timer {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-        }
-    
-        #demo {
-            font-family: "Montserrat Medium";
-            max-width: 100%;
-            text-align: center;
-            font-size: 1.3rem;
-        }
-}
-@media screen and (min-width: 341px){
-    #timer-text {
-            text-align: center;
-            font-size: 1.7rem;
-            margin-bottom: 2rem;
-        }
-    
-        #dani {
-            margin-left: -9rem;
-            font-size: 1rem;
-        }
-    
-        #sati {
-            font-size: 1rem;
-            margin-left: -1.4rem;
-        }
-    
-        .wrapper {
-            display: block;
-            background-color: #181919;
-            color: #00ffa3;
-            position: relative;
-            height: 60vh;
-            z-index: -1;
-        }
-    
-        .timer {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-        }
-    
-        #demo {
-            font-family: "Montserrat Medium";
-            max-width: 100%;
-            text-align: center;
-            font-size: 1.6rem;
-        }
-}
-@media screen and (min-width: 425px){
-    #timer-text {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-    
-        #dani {
-            margin-left: -10rem;
-            font-size: 1rem;
-        }
-    
-        #sati {
-            font-size: 1rem;
-            margin-left: -1.7rem;
-        }
-    
-        .wrapper {
-            display: block;
-            background-color: #181919;
-            color: #00ffa3;
-            position: relative;
-            height: 60vh;
-            z-index: -1;
-        }
-    
-        .timer {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-        }
-    
-        #demo {
-            font-family: "Montserrat Medium";
-            max-width: 100%;
-            text-align: center;
-            font-size: 1.8rem;
-        }
-}
-@media screen and (min-width:660px){
-    #timer-text {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-    
-        #dani {
-            margin-left: -12rem;
-            font-size: 1.5rem;
-        }
-    
-        #sati {
-            font-size: 1.5rem;
-            margin-left: -2rem;
-        }
-    
-        .wrapper {
-            display: block;
-            background-color: #181919;
-            color: #00ffa3;
-            position: relative;
-            height: 60vh;
-            z-index: -1;
-        }
-    
-        .timer {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-        }
-    
-        #demo {
-            font-family: "Montserrat Medium";
-            max-width: 100%;
-            text-align: center;
-            font-size: 2.3rem;
-        }
-} */

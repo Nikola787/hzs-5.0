@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.ceo-nav {
+  position: relative;
+  z-index: 10;
+}
+
 body {
   --main-color: #181919;
   background-color: var(--main-color);
@@ -16,7 +21,6 @@ body {
   padding: 0rem 3rem;
   position: fixed;
   width: 100%;
-  z-index: 999;
   height: 5rem;
   display: flex;
   justify-content: space-around;

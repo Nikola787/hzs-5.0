@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <div style={{ ...navbarStyles, top: visible ? "0" : "-6rem" }}>
+    <div className = "ceo-nav" style={{ ...navbarStyles, top: visible ? "0" : "-6rem" }}>
       <nav className="navbar">
         <div className="navbar-logo">
           <svg

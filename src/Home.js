@@ -28,7 +28,6 @@ const Home = () => {
       <Radionice />
       <Agenda />
       <Faq />
-      {/* <SlikeTima /> */}
       <Partneri />
       <PrijavaT />
       <Footer />
