@@ -24,6 +24,7 @@
   font-weight: 200;
   font-size: 4vw;
   color: #ffffff;
+
 }
 
 .levi-prozor-box {
@@ -65,6 +66,9 @@
 }
 
 .statistika-jedan-box {
+
+  height: 12vw;
+
   background-color: white;
   /* height: 150px; */
   width: 20vw;
@@ -89,6 +93,9 @@
 }
 
 .statistika-dva-box {
+
+  height: 12vw;
+
   background-color: white;
   /* height: 150px; */
   width: 20vw;
@@ -113,6 +120,9 @@
 }
 
 .statistika-tri-box {
+
+  height: 12vw;
+
   background-color: white;
   /* height: 150px; */
   width: 20vw;
@@ -147,6 +157,9 @@
   font-weight: 200;
   font-size: 5vw;
   color: #ffffff;
+
+  /* text-shadow: 0 0 10px #00ffa3, 0 0 20px #00ffa3, 0 0 40px #00ffa3,
+  0 0 80px #00ffa3, 0 0 120px #00ffa3; */
 }
 .naslov-o {
   display: flex;
@@ -246,7 +259,7 @@
   justify-content: space-between;
   height: 6vw;
   width: 7vw;
-  margin-top: 1vw;
+  margin-top: 2vw;
 }
 
 .broj1 {
@@ -278,12 +291,12 @@
 .slika-stat2 {
   height: 6vw;
   width: 7vw;
-  margin-top: 1vw;
+  margin-top: 2vw;
 }
 .slika-stat3 {
   height: 6vw;
   width: 7vw;
-  margin-top: 0.7vw;
+  margin-top: 2vw;
 }
 
 @media screen and (max-width: 1920px) {

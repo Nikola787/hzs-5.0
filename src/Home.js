@@ -1,5 +1,5 @@
 import React from "react";
-import Animacija from "./components/animacija/animacija.js";
+// import Animacija from "./components/animacija/animacija.js";
 import Radionice from "./components/radionice/radionice.jsx";
 import Tajmer from "./components/tajmer/tajmer.jsx";
 import SlikeTima from "./components/slike_tima/Slike_tima.jsx";
