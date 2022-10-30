@@ -1,6 +1,9 @@
 .dveSekcije {
   background-image: url("./assets/O\ projektu\ POZADINA-01.png");
   background-size: 100% 100%;
+
+  position: relative;
+  z-index: -2;
 }
 
 

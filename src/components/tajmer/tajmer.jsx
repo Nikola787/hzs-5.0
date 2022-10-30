@@ -63,18 +63,21 @@ const Tajmer = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setTajm(() => getTime(new Date("Jan 5, 2024 15:37:25").getTime()));
+      setTajm(() => getTime(new Date("Nov 17, 2022 23:59:59").getTime()));
     }, 1000);
+
+    // var d = "12/12/1955 12:00:00 AM";
+    // d = d.split(" ")[0];
+    // console.log(d);
   });
 
   return (
     <div>
       <motion.div class="wrapper" animate={animation} ref={ref}>
         <p id="timer-text">
-          <span className="timer-span">Vreme </span>
-          <span className="timer-span">do </span>
-          <span className="timer-span">zatvaranja </span>
-          <span className="timer-span">prijava </span>
+          <span className="timer-span">DO </span>
+          <span className="timer-span">ZATVARANJA </span>
+          <span className="timer-span">PRIJAVA </span>
         </p>
         <div className="timer">
           <label id="dani" for="html">

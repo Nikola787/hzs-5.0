@@ -7,6 +7,14 @@
   background-image: url("./assets/slikeT_komp.png");
   background-size: 100% 100%;
   height: 100%;
+
+  position: relative;
+  z-index: -2;
+}
+
+.ceo-partneri {
+  position: relative;
+  z-index: -2;
 }
 
 .ceo-partneri h1 {
