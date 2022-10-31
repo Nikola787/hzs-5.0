@@ -7,16 +7,15 @@ import img3 from "./Group(2).png";
 import Pravilnik from "../pravila.pdf";
 
 import CountUp from "react-countup";
-import VisibilitySensor from 'react-visibility-sensor';
+import VisibilitySensor from "react-visibility-sensor";
 
-import { useNavigate } from 'react-router';
+import { useNavigate } from "react-router";
 
 const O_projektu = () => {
-
   const navigate = useNavigate();
 
   return (
-    <div className="ceo">
+    <div className="ceo" id="oHZSU">
       <div className="prostor"></div>
       <div className="o-projektu">
         <div className="levi-deo">
@@ -40,7 +39,7 @@ const O_projektu = () => {
               sve njihove nedoumice i usmere timove.
               <br />
               <br />
-              Odluku o tome ko su 3 najuspešnija tima, koja ujedno očekuju i 
+              Odluku o tome ko su 3 najuspešnija tima, koja ujedno očekuju i
               <b> vredne nagrade</b>, donosi <b>stručni žiri</b> nakon što svi
               timovi prezentuju svoja rešenja.
               <br />
@@ -58,7 +57,12 @@ const O_projektu = () => {
               .
             </p>
           </div>
-          <button className="dugme-prijava-o" onClick={() => navigate('/prijava')}>PRIJAVI SE</button>
+          <button
+            className="dugme-prijava-o"
+            onClick={() => navigate("/prijava")}
+          >
+            PRIJAVI SE
+          </button>
         </div>
         <div className="desni-deo"></div>
         <div className="statistika-box">

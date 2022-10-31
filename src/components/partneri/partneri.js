@@ -113,7 +113,7 @@ const Partneri = (props) => {
       <div className="dveSekcijeP">
         <Slike_tima />
 
-        <div className="pokrovitelj">
+        <div className="pokrovitelj" id="nasi-partneri">
           <h1 className="pokrovitelj-naslov">POKROVITELJ TAKMIČENJA</h1>
 
           <Partner

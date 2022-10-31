@@ -12,13 +12,11 @@ import Partneri from "./components/partneri/partneri.js";
 import PrijavaT from "./components/prijava_tekst/PrijavaT.js";
 import Navbar from "./components/navbar/navbar.jsx";
 import Footer from "./components/footer/footer.jsx";
-
-import VideoA from "./components/videoA/videoA.js"
+import VideoA from "./components/videoA/videoA.js";
 
 const Home = () => {
   return (
     <div>
-
       <VideoA />
       <Navbar />
       {/* <Gradijent /> */}

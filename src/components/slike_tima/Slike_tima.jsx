@@ -42,7 +42,7 @@ const Slike_tima = () => {
     return null;
   }
   return (
-    <div className="slike-tima-wrapper">
+    <div className="slike-tima-wrapper" id="tim">
       <div className="navbar-st">
         <ul>
           <li>CORE</li>
