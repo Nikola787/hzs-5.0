@@ -1,8 +1,32 @@
+.animacijaD {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #181919;
+  overflow: hidden;
+
+  margin-bottom: -50%;
+
+  /* background-image: url("../gradijent/FrameC.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 2900px; */
+}
+
 #video {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
+  position: relative;
+  width: 60vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-aspect-ratio: 16/9) {

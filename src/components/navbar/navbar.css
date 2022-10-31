@@ -141,7 +141,7 @@ body {
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 900px) {
   .navbar {
     z-index: 500;
     width: 100%;
