@@ -73,8 +73,6 @@
 .slider {
   position: relative;
   display: flex;
-  width: 5vw;
-  height: 50%;
   justify-content: center;
   align-items: center;
   z-index: 52;
@@ -91,7 +89,7 @@
 .left-arrow {
   position: absolute;
   top: 30%;
-  right: 250%;
+  right: 100%;
   width: 7vw;
   cursor: pointer;
   z-index: 10;
@@ -100,7 +98,7 @@
 .right-arrow {
   position: absolute;
   top: 30%;
-  left: 250%;
+  left: 100%;
   width: 7vw;
   cursor: pointer;
   z-index: 10;
@@ -214,13 +212,9 @@
   }
 
   .left-arrow {
-    top: 30%;
-    right: 420%;
     width: 15vw;
   }
   .right-arrow {
-    top: 30%;
-    left: 420%;
     width: 15vw;
   }
 
