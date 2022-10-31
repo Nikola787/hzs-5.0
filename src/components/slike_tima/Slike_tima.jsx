@@ -119,4 +119,4 @@ const Slike_tima = () => {
   );
 };
 
-export default slike_tima;
+export default Slike_tima;
