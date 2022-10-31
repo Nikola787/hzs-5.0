@@ -109,11 +109,11 @@ const Partneri = (props) => {
   ];
 
   return (
-    <div className="ceo-partneri" id="nasi-partneri">
+    <div className="ceo-partneri">
       <div className="dveSekcijeP">
         <Slike_tima />
 
-        <div className="pokrovitelj">
+        <div className="pokrovitelj" id="nasi-partneri">
           <h1 className="pokrovitelj-naslov">POKROVITELJ TAKMIČENJA</h1>
 
           <Partner
