@@ -7,7 +7,7 @@ import StrelaDesno from "../../images/RightArrow.png";
 import SlikaBordera from "../../images/Slike tima - okvir za koordinatora.png";
 import { DataSlider } from "./DataSlider";
 
-const slike_tima = () => {
+const Slike_tima = () => {
   const [people] = useState(DataSlider);
   const [index, setIndex] = useState(0);
   const [current, setCurrent] = useState(0);
