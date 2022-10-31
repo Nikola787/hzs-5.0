@@ -73,6 +73,8 @@
 .slider {
   position: relative;
   display: flex;
+  width: 5vw;
+  height: 50%;
   justify-content: center;
   align-items: center;
   z-index: 52;
@@ -89,7 +91,7 @@
 .left-arrow {
   position: absolute;
   top: 30%;
-  right: 100%;
+  right: 250%;
   width: 7vw;
   cursor: pointer;
   z-index: 10;
@@ -98,7 +100,7 @@
 .right-arrow {
   position: absolute;
   top: 30%;
-  left: 100%;
+  left: 250%;
   width: 7vw;
   cursor: pointer;
   z-index: 10;
@@ -181,14 +183,14 @@
     flex-direction: column;
   }
   .slike-tima-levo .opis-slike {
-    padding: 0%;
+    padding-top: 10%;
   }
   .slike-tima-container .slike-tima-levo {
     padding-bottom: 0%;
   }
 
   .navbar-st {
-    padding: 1% 0;
+    padding: 4% 0;
   }
 
   .navbar-st ul {
@@ -212,9 +214,13 @@
   }
 
   .left-arrow {
+    top: 20%;
+    right: 420%;
     width: 15vw;
   }
   .right-arrow {
+    top: 20%;
+    left: 420%;
     width: 15vw;
   }
 
