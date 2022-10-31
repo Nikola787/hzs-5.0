@@ -6,7 +6,6 @@
     background-image: url("../../../assets/Agenda\ -\ pozadina.png");
     background-size: 100% 100%;
     height: 100vh;
-    margin-top: 2rem;
 }
 
 
@@ -206,7 +205,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 14vh;
+        height: 15vh;
         border: 2px solid #00FFA3;
         padding: 0rem;
     }
@@ -330,7 +329,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 14vh;
+        height: 16vh;
         border: 2px solid #00FFA3;
         padding: 0rem;
     }
@@ -609,7 +608,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 20vh;
+        height: 24vh;
         border: 2px solid #00FFA3;
         padding: .1rem;
     }

@@ -11,15 +11,15 @@ const agenda = () => {
           <div className="agenda-first">
             <div className="first">
               <div className="ag-fi-date">
-                <p>4.11. - 18. 11.</p>
+                <p>3. 11</p>
               </div>
               <div className="ag-fi-title">
                 <p>Otvaranje prijava</p>
               </div>
               <div className="ag-fi-text">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                  labore!
+                  Od 3. novembra učesnici imaju dve nedelje da okupe svoj tim od
+                  tri ili četiri člana i popune prijavu na sajtu.
                 </p>
               </div>
             </div>
@@ -27,15 +27,16 @@ const agenda = () => {
           <div className="agenda-second">
             <div className="second">
               <div className="ag-sc-date">
-                <p>18. 11.</p>
+                <p>17. 11</p>
               </div>
               <div className="ag-sc-title">
                 <p>Zatvaranje prijava</p>
               </div>
               <div className="ag-sc-text">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                  labore!
+                  Nakon zatvaranja, sve prijave će biti pregledane i timovi će
+                  dobiti mejl sa rezultatima prvog kruga selekcije i daljim
+                  uputstvima.
                 </p>
               </div>
             </div>
@@ -43,15 +44,16 @@ const agenda = () => {
           <div className="agenda-third">
             <div className="third">
               <div className="ag-th-date">
-                <p>22.11.</p>
+                <p>22. 11</p>
               </div>
               <div className="ag-th-title">
                 <p>Online test</p>
               </div>
               <div className="ag-th-text">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                  labore!
+                  Timove koji prođu prvi krug selekcije čeka drugi krug - online
+                  provera informatičkog znanja nakon koje će najbolje plasirani
+                  timovi proći i u treći, poslednji krug.
                 </p>
               </div>
             </div>
@@ -59,15 +61,16 @@ const agenda = () => {
           <div className="agenda-fourth">
             <div className="fourth">
               <div className="ag-fo-date">
-                <p>27.11.</p>
+                <p>26. 11 - 27. 11</p>
               </div>
               <div className="ag-fo-title">
                 <p>Radionice</p>
               </div>
               <div className="ag-fo-text">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                  labore!
+                  U sklopu poslednjeg kruga selekcije biće održane radionice
+                  koje će našim učesnicima proširiti znanja i olakšati izradu
+                  domaćeg zadatka.
                 </p>
               </div>
             </div>
@@ -75,15 +78,16 @@ const agenda = () => {
           <div className="agenda-fifth">
             <div className="fifth">
               <div className="ag-fv-date">
-                <p>30.11. - 10. 12.</p>
+                <p>27. 11 - 1. 12</p>
               </div>
               <div className="ag-fv-title">
-                <p>Domaci</p>
+                <p>Domaći zadatak</p>
               </div>
               <div className="ag-fv-text">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                  labore!
+                  Treći krug selekcije predstavlja domaći zadatak u vidu
+                  projektnog rada. Nakon pregledanja domaćih zadataka biće
+                  odabrani takmičari hakatona.
                 </p>
               </div>
             </div>
@@ -91,15 +95,18 @@ const agenda = () => {
           <div className="agenda-sixth">
             <div className="sixth">
               <div className="ag-sh-date">
-                <p>15.12.</p>
+                <p>10. 12 - 11. 12</p>
               </div>
               <div className="ag-sh-title">
                 <p>Hakaton</p>
               </div>
               <div className="ag-sh-text">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                  labore!
+                  Na samom takmičenju biće predstavljena tema hakatona, nakon
+                  čega timovi imaju 24 časa da razviju svoje softversko rešenje
+                  uz pomoć stručnih mentora. Posle isteka vremena sledi
+                  prezentacija rešenja svih timova i proglašenje pobednika
+                  hakatona.
                 </p>
               </div>
             </div>

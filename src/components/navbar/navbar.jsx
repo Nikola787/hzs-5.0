@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <div style={{ ...navbarStyles, top: visible ? "0" : "-6rem" }}>
+    <div className = "ceo-nav" style={{ ...navbarStyles, top: visible ? "0" : "-6rem" }}>
       <nav className="navbar">
         <div className="navbar-logo">
           <svg
@@ -163,7 +163,7 @@ const Navbar = () => {
           </svg>
         </div>
         <div className="menu-icon" onClick={handleClick}>
-          <Hamburger toggled={active} toggle={setActive} />
+          <Hamburger className = "hamburger" toggled={active} toggle={setActive} />
         </div>
         <ul className={active ? "nav-menu active" : "nav-menu"}>
           {menuItems.map((item, index) => {

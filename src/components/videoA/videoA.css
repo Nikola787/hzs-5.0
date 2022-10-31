@@ -30,13 +30,14 @@
 }
 
 .box h2 {
-
   color: #fff;
   font-size: 2.8vw;
   font-weight: 600;
   letter-spacing: 0.1em;
-  text-shadow: 0 0 10px #00ffa3, 0 0 20px #00ffa3, 0 0 40px #00ffa3,
-    0 0 80px #00ffa3, 0 0 120px #00ffa3;
+  /* text-shadow: 0 0 10px #00ffa3, 0 0 20px #00ffa3, 0 0 40px #00ffa3,
+    0 0 80px #00ffa3, 0 0 120px #00ffa3; */
+
+  text-shadow: 0 0 10px #00ffa3, 0 0 20px #00ffa3, 0 0 40px #00ffa3;
 }
 
 .lightbar {
@@ -98,10 +99,10 @@
 }
 
 @media screen and (max-width: 960px) {
-    .box {
-        height: 40vh;
-    }
-    .box h2 {
+  .box {
+    height: 40vh;
+  }
+  .box h2 {
     font-size: 5vw;
   }
 
@@ -138,17 +139,15 @@
   }
 }
 @media screen and (max-width: 620px) {
+  .box {
+    width: 90vw;
+    height: 40vh;
+  }
 
-    .box {
-        width: 90vw;
-        height: 40vh;
-      }
+  .box h2 {
+    font-size: 8vw;
+  }
 
-    .box h2 {
-        font-size: 8vw;
-      }
-
-      
   @keyframes animatelightbar {
     0%,
     5% {
@@ -180,7 +179,6 @@
       transform: scaleY(1) translateX(calc(99vw - 10px));
     }
   }
-
 }
 @media screen and (max-width: 480px) {
   /*od ovog pointa krece mobilna verzija*/

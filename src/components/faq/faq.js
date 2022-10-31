@@ -13,7 +13,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="ceo-f">
+    <div className="ceo-f" id="pitanja">
       {/* <div className="naslov-f">
         <div className="rectangle-f"></div>
         <div className="tekst_naslov-f">ČESTO POSTAVLJANA PITANJA</div>
@@ -28,7 +28,12 @@ const Faq = () => {
           {dataF.map((item, i) => (
             <div className="item-f">
               <div className="title-f" onClick={() => toggle(i)}>
-                <h2 style={{ color: selected === i ? "#00ffa3" : "#FFFFFF", fontWeight: selected === i ? "bold" : "400" }}>
+                <h2
+                  style={{
+                    color: selected === i ? "#00ffa3" : "#FFFFFF",
+                    fontWeight: selected === i ? "bold" : "400",
+                  }}
+                >
                   {item.questionF}
                 </h2>
                 <span className="span-f">{selected === i ? "-" : "+"}</span>
@@ -65,13 +70,16 @@ const dataF = [
       "Svakom timu je dodeljen stručan mentor koji će ih usmeravati i pomagati im u toku izrade projekta kako bi iskoristili pun potencijal svoje ideje.",
   },
   {
-    questionF: "Da li je zabranjeno korišćenje određene tehnologije za vreme Hakatona?",
-    answerF: "Takmičari imaju prava da koriste Internet, tehnologiju po želji, kao i bilo koju dodatnu literaturu za koju smatraju da im može pomoći i olakšati rad na takmičenju."
+    questionF:
+      "Da li je zabranjeno korišćenje određene tehnologije za vreme Hakatona?",
+    answerF:
+      "Takmičari imaju prava da koriste Internet, tehnologiju po želji, kao i bilo koju dodatnu literaturu za koju smatraju da im može pomoći i olakšati rad na takmičenju.",
   },
   {
     questionF: "Kako se određuje pobednik?",
-    answerF: "Na kraju takmičenja svaki tim prezentuje 10 minuta svoju ideju, posle čega članove istog očekuju pitanja stručnog žirija. Na osnovu svih prezentacija i odgovora žiri proglašava pobednika."
-  }
+    answerF:
+      "Na kraju takmičenja svaki tim prezentuje 10 minuta svoju ideju, posle čega članove istog očekuju pitanja stručnog žirija. Na osnovu svih prezentacija i odgovora žiri proglašava pobednika.",
+  },
 ];
 
 export default Faq;

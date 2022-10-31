@@ -4,7 +4,7 @@ import slikaPredavaca from "../../images/5-3.jpg";
 
 const radionice = () => {
   return (
-    <div className="radionice-wrapper">
+    <div className="radionice-wrapper" id="radionice">
       <div className="radionica1-container">
         <div className="radionica1-levo-container">
           <h1 className="redni-broj">001</h1>

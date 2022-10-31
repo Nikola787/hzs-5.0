@@ -1,7 +1,7 @@
 const menuItems = [
   {
     title: "O PROJEKTU",
-    url: "#oS2S",
+    url: "#oHZSU",
     cName: "nav-links",
   },
 
