@@ -183,14 +183,14 @@
     flex-direction: column;
   }
   .slike-tima-levo .opis-slike {
-    padding-top: 10%;
+    padding: 0%;
   }
   .slike-tima-container .slike-tima-levo {
     padding-bottom: 0%;
   }
 
   .navbar-st {
-    padding: 4% 0;
+    padding: 1% 0;
   }
 
   .navbar-st ul {
@@ -214,12 +214,12 @@
   }
 
   .left-arrow {
-    top: 20%;
+    top: 30%;
     right: 420%;
     width: 15vw;
   }
   .right-arrow {
-    top: 20%;
+    top: 30%;
     left: 420%;
     width: 15vw;
   }
