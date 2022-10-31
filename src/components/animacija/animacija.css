@@ -11,6 +11,7 @@
   width: 100%;
 
   /* margin-bottom: -7vw; */
+  content: "";
   position: absolute;
   top: 2;
 }
