@@ -163,7 +163,7 @@ const Navbar = () => {
           </svg>
         </div>
         <div className="menu-icon" onClick={handleClick}>
-          <Hamburger toggled={active} toggle={setActive} />
+          <Hamburger className = "hamburger" toggled={active} toggle={setActive} />
         </div>
         <ul className={active ? "nav-menu active" : "nav-menu"}>
           {menuItems.map((item, index) => {
