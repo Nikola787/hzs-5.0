@@ -24,8 +24,8 @@ const Home = () => {
       <Navbar />
       {/* <Gradijent /> */}
       <Tajmer />
-      {/* <O_projektu /> */}
-      <Iskustva />
+      <O_projektu />
+      {/* <Iskustva /> */}
       <Radionice />
       <Agenda />
       <Faq />
