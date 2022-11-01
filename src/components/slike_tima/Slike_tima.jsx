@@ -9,9 +9,20 @@ import { DataSlider } from "./DataSlider";
 
 const Slike_tima = () => {
   const [people] = useState(DataSlider);
-  // const [index, setIndex] = useState(0);
   const [current, setCurrent] = useState(0);
   const length = people.length;
+  const [appState, changeState] = useState({
+    activeObject: null,
+    objects: [
+      { id: 0, title: "CORE" },
+      { id: 1, title: "IT" },
+      { id: 2, title: "Dizajn" },
+      { id: 3, title: "PR" },
+      { id: 4, title: "CR&AR" },
+      { id: 5, title: "Logistika" },
+      { id: 6, title: "HR" },
+    ],
+  });
 
   useEffect(() => {
     const lastCurrent = people.length - 1;
@@ -25,34 +36,59 @@ const Slike_tima = () => {
 
   useEffect(() => {
     let slider = setInterval(() => {
+
+      toggleActiveStyles(current)
+      toggleActive(current);
+      goToSlide(current);
+
+      console.log(current);
       setCurrent(current + 1);
+
     }, 3000);
+
     return () => {
       clearInterval(slider);
     };
   }, [current]);
 
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    setCurrent(current === length  ? 0 : current + 1);
   };
+
   const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+    setCurrent(current === -1 ? length - 1 : current - 1);
   };
-  if (!Array.isArray(people) || people.length <= 0) {
-    return null;
-  }
+
+  const goToSlide = (index) => {
+    setCurrent(index);
+  };
+
+  const toggleActive = (index) => {
+    changeState({ ...appState, activeObject: appState.objects[index] });
+  };
+
+  const toggleActiveStyles = (index) => {
+    if (appState.objects[index] === appState.activeObject) {
+      return "box active";
+    } else {
+      return "box inactive";
+    }
+  };
   return (
     <div className="slike-tima-wrapper">
       <div className="navbar-st">
-        <ul>
-          <li>CORE</li>
-          <li>IT</li>
-          <li>Dizajn</li>
-          <li>PR</li>
-          <li>CR&AR</li>
-          <li>Logistika</li>
-          <li>HR</li>
-        </ul>
+        {appState.objects.map((elements, index) => (
+          <h1
+            key={index}
+            className={toggleActiveStyles(index)}
+            onClick={() => {
+              toggleActive(index);
+              goToSlide(index);
+            }}
+          >
+            {elements.title}
+          </h1>
+        ))}
       </div>
       <div className="slike-tima-container">
         <div className="slike-tima-levo">
@@ -87,10 +123,21 @@ const Slike_tima = () => {
               );
             })}
           </section>
-          <div className="opis-slike">
-            <h1 className="ime-koordinatora">Vladislav Vidović</h1>
-            <h3 className="funkcija-koordinatora">Koordinator projekta</h3>
-          </div>
+          {DataSlider.map((data, index) => {
+            return (
+              <div
+                className={index === current ? "slide-active" : "slide"}
+                key={index}
+              >
+                {index === current && (
+                  <div className="opis-slike">
+                    <h1 className="ime-koordinatora">{data.name}</h1>
+                    <h3 className="funkcija-koordinatora">{data.title}</h3>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
         <div className="slike-tima-desno">
           <div className="slika-roditelj">
@@ -99,20 +146,35 @@ const Slike_tima = () => {
               src={SLikaBordera1}
               alt="Okvir za sliku tima"
             />
-            <img
-              className="slika-grupna"
-              src={SlikaGrupna}
-              alt="Grupna slika tima"
-            />
+            {DataSlider.map((data, index) => {
+              return (
+                <div
+                  className={index === current ? "slide-active" : "slide"}
+                  key={index}
+                >
+                  {index === current && (
+                    <img
+                      className="slika-grupna"
+                      src={data.imageGroup}
+                      alt="Grupna slika tima"
+                    />
+                  )}
+                </div>
+              );
+            })}
           </div>
-          <p className="opis-tima">
-            Tim za dizajn, u saradnji sa timom za odnose sa javnošću, na
-            kreativan način osmišljava vizuelni identitet projekta. Svoju
-            originalnost i veštine izražava kroz stvaranje objava za društvene
-            mreže, koje za cilj imaju da ti na najzanimljiviji način prenesu
-            informacije o našem takmičenju, kao i izgleda sajta ovogodišnjeg
-            takmičenja.
-          </p>
+          {DataSlider.map((data, index) => {
+            return (
+              <div
+                className={index === current ? "slide-active" : "slide"}
+                key={index}
+              >
+                {index === current && (
+                  <p className="opis-tima">{data.description}</p>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

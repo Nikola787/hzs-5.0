@@ -41,8 +41,8 @@ const Tajmer = () => {
   const changevalueonScroll = () => {
     const scrollValue = document.documentElement.scrollTop;
 
-    console.log(scrollValue);
-    console.log(document.documentElement.clientWidth)
+    // console.log(scrollValue);
+    // console.log(document.documentElement.clientWidth)
 
     if (scrollValue > 170) {
       setState(true);

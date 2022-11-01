@@ -224,7 +224,7 @@
   color: #ffffff;
 }
 
-/* .dugme-prijava-o::after {
+.dugme-prijava-o::after {
   position: absolute;
   content: "";
   top: 2px;
@@ -242,7 +242,7 @@
   animation: animateGlow 2.2s linear infinite;
 
   opacity: 0.5;
-} */
+}
 
 .slika-stat1 {
   justify-content: space-between;
