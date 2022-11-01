@@ -32,7 +32,7 @@
   font-family: "Manrope";
   font-size: 1.5vw;
   cursor: pointer;
-  border-radius: 30%;
+  border-radius: 1.5rem;
   user-select: none;
 }
 
