@@ -75,7 +75,7 @@ body {
   position: relative;
   cursor: pointer;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
         266.49deg,
         #00ba76 -33.81%,
         rgba(24, 25, 25, 0) 170.16%
@@ -94,9 +94,7 @@ body {
 
   backdrop-filter: blur(60px);
   -webkit-backdrop-filter: blur(60px);
-  /* Note: backdrop-filter has minimal browser support */
 
-  /* identical to box height */
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
@@ -108,10 +106,10 @@ body {
   box-shadow: 37px -37px 74px 0px rgba(14, 15, 15, 0.2);
   box-shadow: -37px 37px 74px 0px rgba(14, 15, 15, 0.2);
   box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
-  box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset;
+  box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset; */
 }
 
-.link-do-prijave::after {
+/* .link-do-prijave::after {
   position: absolute;
   content: "";
   top: 2px;
@@ -129,9 +127,9 @@ body {
   animation: animateGlow 2.2s linear infinite;
 
   opacity: 0.5;
-}
+} */
 
-@keyframes animateGlow {
+/* @keyframes animateGlow {
   0% {
     background-position: 0% 50%;
   }
@@ -139,7 +137,7 @@ body {
   100% {
     background-position: 200% 50%;
   }
-}
+} */
 
 @media (max-width: 900px) {
   .navbar {
@@ -153,7 +151,7 @@ body {
     outline: 1.5px solid rgba(255, 255, 255, 0.093);
   }
 
-  /* a.nav-links.link-do-prijave {
+  a.nav-links.link-do-prijave {
     width: 70%;
     padding: 5px;
     margin-left: 15vw;
@@ -165,7 +163,7 @@ body {
     position: relative;
     cursor: pointer;
 
-    background: linear-gradient(
+    /* background: linear-gradient(
           266.49deg,
           #00ba76 -33.81%,
           rgba(24, 25, 25, 0) 170.16%
@@ -197,7 +195,7 @@ body {
     box-shadow: -37px 37px 74px 0px rgba(14, 15, 15, 0.2);
     box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
     box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset; */
-  /* } */
+  }
 
   .nav-menu {
     display: flex;
@@ -212,10 +210,14 @@ body {
     opacity: 1;
     /* transition: all 0.5s ease; */
     overflow: hidden;
+
   }
 
   .nav-menu.active {
-    background: #181919;
+    background-image: url("./nav-tel.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
