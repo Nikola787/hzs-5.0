@@ -9,7 +9,6 @@ import { DataSlider } from "./DataSlider";
 
 const Slike_tima = () => {
   const [people] = useState(DataSlider);
-  // const [index, setIndex] = useState(0);
   const [current, setCurrent] = useState(0);
   const length = people.length;
 
@@ -41,17 +40,62 @@ const Slike_tima = () => {
   if (!Array.isArray(people) || people.length <= 0) {
     return null;
   }
+  const goToSLide = (index) => {
+    setCurrent(index);
+  };
   return (
     <div className="slike-tima-wrapper">
       <div className="navbar-st">
         <ul>
-          <li>CORE</li>
-          <li>IT</li>
-          <li>Dizajn</li>
-          <li>PR</li>
-          <li>CR&AR</li>
-          <li>Logistika</li>
-          <li>HR</li>
+          <li
+            onClick={() => {
+              goToSLide(0);
+            }}
+          >
+            CORE
+          </li>
+          <li
+            onClick={() => {
+              goToSLide(1);
+            }}
+          >
+            IT
+          </li>
+          <li
+            onClick={() => {
+              goToSLide(2);
+            }}
+          >
+            Dizajn
+          </li>
+          <li
+            onClick={() => {
+              goToSLide(3);
+            }}
+          >
+            PR
+          </li>
+          <li
+            onClick={() => {
+              goToSLide(4);
+            }}
+          >
+            CR&AR
+          </li>
+          <li
+            onClick={() => {
+              goToSLide(5);
+            }}
+          >
+            Logistika
+          </li>
+          <li
+            onClick={() => {
+              goToSLide(6);
+            }}
+          >
+            HR
+          </li>
         </ul>
       </div>
       <div className="slike-tima-container">
@@ -87,10 +131,21 @@ const Slike_tima = () => {
               );
             })}
           </section>
-          <div className="opis-slike">
-            <h1 className="ime-koordinatora">Vladislav Vidović</h1>
-            <h3 className="funkcija-koordinatora">Koordinator projekta</h3>
-          </div>
+          {DataSlider.map((data, index) => {
+            return (
+              <div
+                className={index === current ? "slide-active" : "slide"}
+                key={index}
+              >
+                {index === current && (
+                  <div className="opis-slike">
+                    <h1 className="ime-koordinatora">{data.name}</h1>
+                    <h3 className="funkcija-koordinatora">{data.title}</h3>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
         <div className="slike-tima-desno">
           <div className="slika-roditelj">
@@ -99,20 +154,35 @@ const Slike_tima = () => {
               src={SLikaBordera1}
               alt="Okvir za sliku tima"
             />
-            <img
-              className="slika-grupna"
-              src={SlikaGrupna}
-              alt="Grupna slika tima"
-            />
+            {DataSlider.map((data, index) => {
+              return (
+                <div
+                  className={index === current ? "slide-active" : "slide"}
+                  key={index}
+                >
+                  {index === current && (
+                    <img
+                      className="slika-grupna"
+                      src={data.imageGroup}
+                      alt="Grupna slika tima"
+                    />
+                  )}
+                </div>
+              );
+            })}
           </div>
-          <p className="opis-tima">
-            Tim za dizajn, u saradnji sa timom za odnose sa javnošću, na
-            kreativan način osmišljava vizuelni identitet projekta. Svoju
-            originalnost i veštine izražava kroz stvaranje objava za društvene
-            mreže, koje za cilj imaju da ti na najzanimljiviji način prenesu
-            informacije o našem takmičenju, kao i izgleda sajta ovogodišnjeg
-            takmičenja.
-          </p>
+          {DataSlider.map((data, index) => {
+            return (
+              <div
+                className={index === current ? "slide-active" : "slide"}
+                key={index}
+              >
+                {index === current && (
+                  <p className="opis-tima">{data.description}</p>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

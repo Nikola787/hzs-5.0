@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   background-color: #181919;
+  height: 100vh;
 }
 
 .navbar-st {
@@ -114,16 +115,19 @@
 .slide-active {
   display: flex;
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transform: scale(1.08);
 }
 
 .slike-tima-levo .opis-slike {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: "Manrope";
   color: #ffffff;
   padding-top: 5%;
+  width: 20vw;
+  white-space: nowrap;
 }
 
 .opis-slike .ime-koordinatora {
@@ -145,24 +149,25 @@
   position: relative;
 }
 
-.slika-roditelj .slika-grupna {
+.slika-grupna {
+  object-fit: cover;
+  width: 43.8vw;
+  height: 24.6vw;
+}
+
+.slika-bordera1 {
+  width: 52vw;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50.4%);
-  object-fit: cover;
-  width: 47.3vw;
-  height: 84.4%;
-}
-
-.slika-roditelj .slika-bordera1 {
-  width: 52vw;
+  transform: translate(-50%, -50%);
 }
 
 .slike-tima-desno .opis-tima {
   font-weight: 200;
   font-family: "Manrope";
-  padding-left: 6.7%;
+  padding-top: 5%;
+  padding-left: 10%;
   color: #ffffff;
   font-size: 1.5vw;
   width: 55vw;
@@ -185,6 +190,10 @@
   }
   .slike-tima-container .slike-tima-levo {
     padding-bottom: 0%;
+  }
+
+  .slike-tima-container .slike-tima-desno {
+    padding: 7% 0;
   }
 
   .navbar-st {
@@ -226,9 +235,8 @@
   }
 
   .slika-roditelj .slika-grupna {
-    width: 82vw;
-    height: 83%;
-    transform: translate(-50%, -51%);
+    width: 75vw;
+    height: 42vw;
   }
 
   .slika-roditelj .slika-bordera1 {
