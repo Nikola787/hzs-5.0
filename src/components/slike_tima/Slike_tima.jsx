@@ -11,6 +11,18 @@ const Slike_tima = () => {
   const [people] = useState(DataSlider);
   const [current, setCurrent] = useState(0);
   const length = people.length;
+  const [appState, changeState] = useState({
+    activeObject: null,
+    objects: [
+      { id: 1, title: "CORE" },
+      { id: 2, title: "IT" },
+      { id: 3, title: "Dizajn" },
+      { id: 4, title: "PR" },
+      { id: 5, title: "CR&AR" },
+      { id: 6, title: "Logistika" },
+      { id: 7, title: "HR" },
+    ],
+  });
 
   useEffect(() => {
     const lastCurrent = people.length - 1;
@@ -40,63 +52,35 @@ const Slike_tima = () => {
   if (!Array.isArray(people) || people.length <= 0) {
     return null;
   }
-  const goToSLide = (index) => {
+  const goToSlide = (index) => {
     setCurrent(index);
+  };
+  const toggleActive = (index) => {
+    changeState({ ...appState, activeObject: appState.objects[index] });
+  };
+
+  const toggleActiveStyles = (index) => {
+    if (appState.objects[index] === appState.activeObject) {
+      return "box active";
+    } else {
+      return "box inactive";
+    }
   };
   return (
     <div className="slike-tima-wrapper">
       <div className="navbar-st">
-        <ul>
-          <li
+        {appState.objects.map((elements, index) => (
+          <h1
+            key={index}
+            className={toggleActiveStyles(index)}
             onClick={() => {
-              goToSLide(0);
+              toggleActive(index);
+              goToSlide(index);
             }}
           >
-            CORE
-          </li>
-          <li
-            onClick={() => {
-              goToSLide(1);
-            }}
-          >
-            IT
-          </li>
-          <li
-            onClick={() => {
-              goToSLide(2);
-            }}
-          >
-            Dizajn
-          </li>
-          <li
-            onClick={() => {
-              goToSLide(3);
-            }}
-          >
-            PR
-          </li>
-          <li
-            onClick={() => {
-              goToSLide(4);
-            }}
-          >
-            CR&AR
-          </li>
-          <li
-            onClick={() => {
-              goToSLide(5);
-            }}
-          >
-            Logistika
-          </li>
-          <li
-            onClick={() => {
-              goToSLide(6);
-            }}
-          >
-            HR
-          </li>
-        </ul>
+            {elements.title}
+          </h1>
+        ))}
       </div>
       <div className="slike-tima-container">
         <div className="slike-tima-levo">
