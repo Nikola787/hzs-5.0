@@ -1,6 +1,6 @@
 .timer-text {
   text-align: center;
-  font-size: 4vw;
+  font-size: 3vw;
 
   font-family: "Manrope";
   font-style: normal;
@@ -10,13 +10,13 @@
 
 .dani {
   font-size: 0.2w;
-  margin-left: -17vw;
+  margin-left: -12vw;
   margin-bottom: -1vw;
 }
 
 .sati {
   font-size: 1w;
-  margin-left: -8vw;
+  margin-left: -5vw;
   margin-top: -1vw;
 }
 
@@ -27,21 +27,19 @@
   background-color: #181919;
   color: #00ffa3;
   position: relative;
-  margin-top: 20vh;
-  height: 60vh;
+  margin-top: 10vh;
+  height: 40vh;
 }
 
 .timer {
   position: absolute;
   width: 100%;
   text-align: center;
-  transform: scale(0.94);
-  animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
 
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: #ffff;
 }
 
@@ -52,18 +50,17 @@
 }
 
 .timer-span {
-
   position: absolute;
-  left: 28vw;
-  top: 2vw;
-  
+  left: 33vw;
+  top: 1.3vw;
+
   opacity: 1;
   filter: blur(0px);
-
-  animation: fade-out 2s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-
 }
 
+.timer-span-f {
+  animation: fade-out 1s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
 
 @keyframes fade-out {
   100% {
@@ -75,9 +72,8 @@
 .demo {
   max-width: 100%;
   text-align: center;
-  font-size: 4vw;
+  font-size: 3vw;
   transform: scale(0.94);
-  animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
 
   font-family: "Manrope";
   font-style: normal;
@@ -102,7 +98,10 @@
   text-align: center;
   opacity: 0;
   filter: blur(4px);
-  animation: fade-in 2s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.timer-f {
+  animation: fade-in 1s 1s forwards cubic-bezier(0.42, 0, 0.74, 0.75);
 }
 
 @keyframes fade-in {
@@ -110,4 +109,85 @@
     opacity: 1;
     filter: blur(0px);
   }
+}
+
+@media screen and (max-width: 960px) {
+
+  .timer {
+    font-size: 5vw;
+  }
+
+  .timer-text {
+    font-size: 6vw;
+  }
+
+  .timer-span {
+    left: 20vw;
+    top: 6vw;
+  }
+
+  .demo {
+    font-size: 8vw;
+  }
+
+  .dani {
+    margin-left: -30vw;
+    margin-bottom: -2vw;
+  }
+  
+  .sati {
+    margin-left: -10vw;
+    margin-top: -3vw;
+  }
+
+  .wrapper-t {
+    margin-top: -8%;
+  }
+  
+
+}
+
+@media screen and (max-width: 620px) {
+  .timer {
+    font-size: 7vw;
+  }
+
+  .timer-text {
+    font-size: 8vw;
+  }
+
+  .timer-span {
+    left: 8vw;
+    top: 10vw;
+  }
+
+  .demo {
+    font-size: 12vw;
+  }
+
+  .dani {
+    margin-left: -45vw;
+    margin-bottom: -2vw;
+  }
+  
+  .sati {
+    margin-left: -18vw;
+    margin-top: -3vw;
+  }
+
+  .wrapper-t {
+    margin-top: -18%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*od ovog pointa krece mobilna verzija*/
+  .wrapper-t {
+    margin-top: -10%;
+    margin-bottom: 25%;
+  }
+}
+
+@media screen and (max-width: 340px) {
 }

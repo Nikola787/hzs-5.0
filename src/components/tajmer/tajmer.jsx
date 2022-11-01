@@ -1,7 +1,5 @@
 import "./tajmer.css";
 import React, { useState, useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 function getTime(countDownDate) {
   let now = new Date().getTime();
@@ -29,67 +27,40 @@ function getTime(countDownDate) {
   return `${days} | ${hours}:${minutes}:${seconds}`;
 }
 
-// function animate(obj, initVal, lastVal, duration) {
-//   let startTime = null;
-//   let currentTime = Date.now();
-//   const step = (currentTime) => {
-//     if (!startTime) {
-//       startTime = currentTime;
-//     }
-//     const progress = Math.min((currentTime - startTime) / duration, 1);
-//     obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
-//     if (progress < 1) {
-//       window.requestAnimationFrame(step);
-//     } else {
-//       window.cancelAnimationFrame(window.requestAnimationFrame(step));
-//     }
-//   };
-//   window.requestAnimationFrame(step);
-// }
-// let text1 = document.getElementById("demo");
-// const load = () => {
-//   animate(text1, 0, 511, 7000);
-// };
-
 const Tajmer = () => {
   const [tajm, setTajm] = useState(0);
-  const { ref, inView } = useInView({
-    threshold: 0.2,
-  });
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        x: "0",
-        transition: {
-          type: "spring",
-          duration: 1,
-          bounce: 0.3,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({ x: "-60vw" });
-    }
-  }, [inView]);
 
   useEffect(() => {
     setTimeout(() => {
       setTajm(() => getTime(new Date("Nov 17, 2022 23:59:59").getTime()));
     }, 1000);
-
-    // var d = "12/12/1955 12:00:00 AM";
-    // d = d.split(" ")[0];
-    // console.log(d);
   });
+
+  const [state, setState] = useState(false);
+
+  const changevalueonScroll = () => {
+    const scrollValue = document.documentElement.scrollTop;
+
+    console.log(scrollValue);
+    console.log(document.documentElement.clientWidth)
+
+    if (scrollValue > 170) {
+      setState(true);
+    } else {
+      setState(false);
+    }
+  };
+
+  window.addEventListener("scroll", changevalueonScroll);
 
   return (
     <div className="wrapper-t">
       <div className="timer-text">
-        <div className="timer-span">DO ZATVARANJA PRIJAVA</div>
+        <div className={state ? "timer-span timer-span-f" : "timer-span"}>
+          DO ZATVARANJA PRIJAVA
+        </div>
       </div>
-      <div className="timer">
+      <div className={state ? "timer timer-f" : "timer"}>
         <div className="dani">dana</div>
         <div className="demo">{tajm}</div>
         <div className="sati">sati</div>
