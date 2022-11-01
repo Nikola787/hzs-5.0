@@ -2,6 +2,7 @@ import React from "react";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import "./footer.css";
 import MyImage from "./logo.png";
+import Srce from "./srce.png"
 
 const footer = () => {
   return (
@@ -36,7 +37,7 @@ const footer = () => {
         </div>
         <div className="center-footer">
           <div className="center-text">
-            <p className="ctext">Napravljeno sa  ❤  od strane HZS tima</p>
+            <p className="ctext">Napravljeno sa &nbsp; <img className="Srce" src={Srce} width = {30} alt="srce" />&nbsp; od strane HZS tima</p>
           </div>
           <div className="center-img">
           <a href="https://fonis.rs/" target="_blank"> <img className="fonis-footer" src={MyImage} width={150} alt="fonis_logo"/> </a>

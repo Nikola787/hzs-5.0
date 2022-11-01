@@ -66,7 +66,7 @@
 }
 
 .left-icons .fb {
-    margin-top: -2.2%;
+  margin-top: -2.2%;
 }
 
 .ctext {
@@ -187,6 +187,12 @@
     font-weight: 100;
     font-size: 1rem;
   }
+
+  .Srce {
+    width: 20px;
+    margin-left: -10px;
+    margin-right: -5px;
+  }
 }
 
 @media screen and (min-width: 341px) {
@@ -271,6 +277,12 @@
     font-weight: 100;
     font-size: 1rem;
   }
+
+  .Srce {
+    width: 20px;
+    margin-left: -10px;
+    margin-right: -5px;
+  }
 }
 
 @media screen and (min-width: 425px) {
@@ -339,6 +351,12 @@
     font-weight: 100;
     font-size: 0.5rem;
   }
+
+  .Srce {
+    width: 10px;
+    margin-left: -2px;
+    margin-right: -1px;
+  }
 }
 
 @media screen and (min-width: 660px) {
@@ -406,6 +424,12 @@
   .right-footer .rtext .adress-text {
     font-weight: 100;
     font-size: 0.8rem;
+  }
+
+  .Srce {
+    width: 20px;
+    margin-left: -2px;
+    margin-right: -1px;
   }
 }
 
@@ -502,5 +526,11 @@
   .right-footer .rtext .adress-text {
     font-weight: 100;
     font-size: 1.2rem;
+  }
+
+  .Srce {
+    width: 20px;
+    margin-left: -2px;
+    margin-right: -1px;
   }
 }

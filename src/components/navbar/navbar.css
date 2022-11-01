@@ -153,7 +153,7 @@ body {
     outline: 1.5px solid rgba(255, 255, 255, 0.093);
   }
 
-  a.nav-links.link-do-prijave {
+  /* a.nav-links.link-do-prijave {
     width: 70%;
     padding: 5px;
     margin-left: 15vw;
@@ -184,9 +184,7 @@ body {
 
     backdrop-filter: blur(60px);
     -webkit-backdrop-filter: blur(60px);
-    /* Note: backdrop-filter has minimal browser support */
 
-    /* identical to box height */
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
@@ -198,7 +196,7 @@ body {
     box-shadow: 37px -37px 74px 0px rgba(14, 15, 15, 0.2);
     box-shadow: -37px 37px 74px 0px rgba(14, 15, 15, 0.2);
     box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
-    box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset;
+    box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset; */
   }
 
   .nav-menu {
