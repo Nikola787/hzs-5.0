@@ -35,4 +35,31 @@ export const DataSlider = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam minus optio similique iure quasi! Nostrum optio non alias aut rem. Natus dicta nobis impedit dolores nulla optio totam. Inventore, amet.",
   },
+  {
+    id: 5,
+    image: require("../../images/5-16.jpg"),
+    name: "Petar Petrović",
+    title: "Koordinator IT tima",
+    imageGroup: require("../../images/Grupna.png"),
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam minus optio similique iure quasi! Nostrum optio non alias aut rem. Natus dicta nobis impedit dolores nulla optio totam. Inventore, amet.",
+  },
+  {
+    id: 6,
+    image: require("../../images/5-16.jpg"),
+    name: "Petar Petrović",
+    title: "Koordinator IT tima",
+    imageGroup: require("../../images/Grupna.png"),
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam minus optio similique iure quasi! Nostrum optio non alias aut rem. Natus dicta nobis impedit dolores nulla optio totam. Inventore, amet.",
+  },
+  {
+    id: 7,
+    image: require("../../images/5-16.jpg"),
+    name: "Petar Petrović",
+    title: "Koordinator IT tima",
+    imageGroup: require("../../images/Grupna.png"),
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam minus optio similique iure quasi! Nostrum optio non alias aut rem. Natus dicta nobis impedit dolores nulla optio totam. Inventore, amet.",
+  },
 ];
