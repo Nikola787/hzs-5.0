@@ -7,6 +7,7 @@
 .slike-tima-wrapper {
   display: flex;
   flex-direction: column;
+  /* background-color: #181919; */
 }
 
 .navbar-st {
@@ -35,9 +36,9 @@
 }
 
 .navbar-st ul li:hover {
-  background-color: #00FFA3;
-  color: rgba(51, 51, 51, 1);
-  opacity: 1;
+  background-color: #00ffa3;
+  color: #333333;
+  opacity: 0.5;
   transition: 0.5s;
 }
 
@@ -47,11 +48,10 @@
 }
 
 .slike-tima-container {
-
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0 6%;
+  padding: 0 3%;
 }
 
 .slike-tima-container .slike-tima-levo {
@@ -73,11 +73,9 @@
 .slider {
   position: relative;
   display: flex;
-  width: 5vw;
-  height: 50%;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 52;
   margin: 10%;
 }
 
@@ -91,7 +89,7 @@
 .left-arrow {
   position: absolute;
   top: 30%;
-  right: 250%;
+  right: 100%;
   width: 7vw;
   cursor: pointer;
   z-index: 10;
@@ -100,7 +98,7 @@
 .right-arrow {
   position: absolute;
   top: 30%;
-  left: 250%;
+  left: 100%;
   width: 7vw;
   cursor: pointer;
   z-index: 10;
@@ -183,14 +181,14 @@
     flex-direction: column;
   }
   .slike-tima-levo .opis-slike {
-    padding-top: 10%;
+    padding: 0;
   }
   .slike-tima-container .slike-tima-levo {
     padding-bottom: 0%;
   }
 
   .navbar-st {
-    padding: 4% 0;
+    padding: 1% 0;
   }
 
   .navbar-st ul {
@@ -214,13 +212,9 @@
   }
 
   .left-arrow {
-    top: 20%;
-    right: 420%;
     width: 15vw;
   }
   .right-arrow {
-    top: 20%;
-    left: 420%;
     width: 15vw;
   }
 

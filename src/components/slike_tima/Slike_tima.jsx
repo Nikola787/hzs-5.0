@@ -9,28 +9,28 @@ import { DataSlider } from "./DataSlider";
 
 const Slike_tima = () => {
   const [people] = useState(DataSlider);
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
   const [current, setCurrent] = useState(0);
   const length = people.length;
 
   useEffect(() => {
-    const lastIndex = people.length - 1;
-    if (index < 0) {
-      setIndex(lastIndex);
+    const lastCurrent = people.length - 1;
+    if (current < 0) {
+      setCurrent(lastCurrent);
     }
-    if (index > lastIndex) {
-      setIndex(0);
+    if (current > lastCurrent) {
+      setCurrent(0);
     }
-  }, [index, people]);
+  }, [current, people]);
 
   useEffect(() => {
     let slider = setInterval(() => {
-      setIndex(index + 1);
-    }, 1000);
+      setCurrent(current + 1);
+    }, 3000);
     return () => {
       clearInterval(slider);
     };
-  }, [index]);
+  }, [current]);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
