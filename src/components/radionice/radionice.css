@@ -189,7 +189,7 @@
 @media screen and (max-width: 960px) {
   .radionice-wrapper {
     background-image: url(../../images/RadioniceMobilni.png);
-    background-size: 100% 100%;
+    background-size: 100vw 600vw;
   }
   .radionica1-container,
   .radionica3-container {
@@ -206,13 +206,24 @@
   }
 
   .radionica1-container {
-    gap: 5vh;
+    gap: 3.6vh;
     padding-top: 8%;
     padding-bottom: 0;
   }
   .radionica2-container {
     padding-top: 13%;
-    gap: 2vh;
+    gap: 1.7vh;
+  }
+
+  .radionica3-container {
+    padding-top: 0;
+    padding-bottom: 13%;
+    gap: 2.8vh;
+  }
+
+  .radionica4-container {
+    padding-top: 0;
+    gap: 6.2vh;
   }
 
   .radionica1-desno-container {
