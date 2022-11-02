@@ -1,6 +1,20 @@
-.ceo-partneri {
+/* .ceo-partneri {
   height: 100%;
   background-color: #181919;
+} */
+
+.dveSekcijeP {
+  background-image: url("./assets/slikeT_komp.png");
+  background-size: 100% 100%;
+  height: 100%;
+
+  position: relative;
+  z-index: 1;
+}
+
+.ceo-partneri {
+  position: relative;
+  z-index: 1;
 }
 
 .ceo-partneri h1 {
@@ -8,7 +22,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
-  font-size: 30px;
+  font-size: 3vw;
   color: #ffffff;
 }
 
@@ -17,7 +31,7 @@
 }
 
 .pokrovitelj {
-  margin-top: 8%;
+  margin-top: 12%;
   margin-bottom: 3%;
 }
 
@@ -65,7 +79,7 @@
     font-family: "Manrope";
     font-style: normal;
     font-weight: 200;
-    font-size: 50px;
+    font-size: 3vw;
     color: #ffffff;
   }
 }
@@ -75,7 +89,7 @@
     font-family: "Manrope";
     font-style: normal;
     font-weight: 200;
-    font-size: 40px;
+    font-size: 3vw;
     color: #ffffff;
   }
 }
@@ -85,7 +99,7 @@
     font-family: "Manrope";
     font-style: normal;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 3vw;
     color: #ffffff;
   }
 }
@@ -95,7 +109,7 @@
     font-family: "Manrope";
     font-style: normal;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 7vw;
     color: #ffffff;
   }
 }
@@ -105,8 +119,16 @@
     font-family: "Manrope";
     font-style: normal;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 7vw;
     color: #ffffff;
+  }
+
+  .dveSekcijeP {
+    background-image: url("./assets/slikeT_tel.png");
+  }
+
+  .pokrovitelj {
+    margin-top: 18%;
   }
 }
 @media screen and (max-width: 340px) {

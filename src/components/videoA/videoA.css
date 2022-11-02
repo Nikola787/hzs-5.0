@@ -1,0 +1,191 @@
+.ceo-vA {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #181919;
+  overflow: hidden;
+
+  /* background-image: url("../gradijent/FrameC.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 2900px; */
+}
+
+.box {
+  position: relative;
+  width: 60vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h2 {
+  color: #fff;
+  font-size: 2.8vw;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  /* text-shadow: 0 0 10px #00ffa3, 0 0 20px #00ffa3, 0 0 40px #00ffa3,
+    0 0 80px #00ffa3, 0 0 120px #00ffa3; */
+
+  text-shadow: 0 0 10px #00ffa3, 0 0 20px #00ffa3, 0 0 40px #00ffa3;
+}
+
+.lightbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 0 10px #00ffa3, 0 0 20px #00ffa3, 0 0 40px #00ffa3,
+    0 0 80px #00ffa3, 0 0 120px #00ffa3;
+
+  animation: animatelightbar 2s linear 1;
+  animation-fill-mode: forwards;
+}
+
+.crniDeo {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  width: 150%;
+  height: 250%;
+  background-color: #181919;
+
+  animation: animatetopLayer 2s linear 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animatelightbar {
+  0%,
+  5% {
+    transform: scaleY(0) translateX(0);
+  }
+  25% {
+    transform: scaleY(1) translateX(0);
+  }
+  80% {
+    transform: scaleY(1) translateX(calc(60vw - 10px));
+  }
+  100% {
+    transform: scaleY(0) translateX(calc(60vw - 10px));
+  }
+}
+
+@keyframes animatetopLayer {
+  0%,
+  5% {
+    transform: scaleY(1) translateX(0);
+  }
+  25% {
+    transform: scaleY(1) translateX(0);
+  }
+  80% {
+    transform: scaleY(1) translateX(calc(60vw - 10px));
+  }
+  100% {
+    transform: scaleY(1) translateX(calc(60vw - 10px));
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .box {
+    height: 40vh;
+  }
+  .box h2 {
+    font-size: 5vw;
+  }
+
+  @keyframes animatelightbar {
+    0%,
+    5% {
+      transform: scaleY(0) translateX(0);
+    }
+    25% {
+      transform: scaleY(1) translateX(0);
+    }
+    80% {
+      transform: scaleY(1) translateX(calc(65vw - 10px));
+    }
+    100% {
+      transform: scaleY(0) translateX(calc(65vw - 10px));
+    }
+  }
+
+  @keyframes animatetopLayer {
+    0%,
+    5% {
+      transform: scaleY(1) translateX(0);
+    }
+    25% {
+      transform: scaleY(1) translateX(0);
+    }
+    80% {
+      transform: scaleY(1) translateX(calc(65vw - 10px));
+    }
+    100% {
+      transform: scaleY(1) translateX(calc(65vw - 10px));
+    }
+  }
+}
+@media screen and (max-width: 620px) {
+  .box {
+    width: 90vw;
+    height: 40vh;
+  }
+
+  .box h2 {
+    font-size: 8vw;
+  }
+
+  @keyframes animatelightbar {
+    0%,
+    5% {
+      transform: scaleY(0) translateX(0);
+    }
+    25% {
+      transform: scaleY(1) translateX(0);
+    }
+    80% {
+      transform: scaleY(1) translateX(calc(99vw - 10px));
+    }
+    100% {
+      transform: scaleY(0) translateX(calc(99vw - 10px));
+    }
+  }
+
+  @keyframes animatetopLayer {
+    0%,
+    5% {
+      transform: scaleY(1) translateX(0);
+    }
+    25% {
+      transform: scaleY(1) translateX(0);
+    }
+    80% {
+      transform: scaleY(1) translateX(calc(99vw - 10px));
+    }
+    100% {
+      transform: scaleY(1) translateX(calc(99vw - 10px));
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  /*od ovog pointa krece mobilna verzija*/
+  .box {
+    height: 35vh;
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 340px) {
+}

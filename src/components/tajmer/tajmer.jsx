@@ -10,58 +10,60 @@ function getTime(countDownDate) {
   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  return `${days}d | ${hours}h ${minutes}m ${seconds}s`;
-}
 
-// function animate(obj, initVal, lastVal, duration) {
-//   let startTime = null;
-//   let currentTime = Date.now();
-//   const step = (currentTime) => {
-//     if (!startTime) {
-//       startTime = currentTime;
-//     }
-//     const progress = Math.min((currentTime - startTime) / duration, 1);
-//     obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
-//     if (progress < 1) {
-//       window.requestAnimationFrame(step);
-//     } else {
-//       window.cancelAnimationFrame(window.requestAnimationFrame(step));
-//     }
-//   };
-//   window.requestAnimationFrame(step);
-// }
-// let text1 = document.getElementById("demo");
-// const load = () => {
-//   animate(text1, 0, 511, 7000);
-// };
+  if (days < 10) {
+    days = "0" + days;
+  }
+  if (hours < 10) {
+    hours = "0" + hours;
+  }
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+
+  return `${days} | ${hours}:${minutes}:${seconds}`;
+}
 
 const Tajmer = () => {
   const [tajm, setTajm] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
-      setTajm(() => getTime(new Date("Jan 5, 2024 15:37:25").getTime()));
+      setTajm(() => getTime(new Date("Nov 17, 2022 23:59:59").getTime()));
     }, 1000);
   });
 
+  const [state, setState] = useState(false);
+
+  const changevalueonScroll = () => {
+    const scrollValue = document.documentElement.scrollTop;
+
+    // console.log(scrollValue);
+    // console.log(document.documentElement.clientWidth)
+
+    if (scrollValue > 170) {
+      setState(true);
+    } else {
+      setState(false);
+    }
+  };
+
+  window.addEventListener("scroll", changevalueonScroll);
+
   return (
-    <div>
-      <div class="wrapper">
-        <p id="timer-text">
-          <span className="timer-span">Vreme </span>
-          <span className="timer-span">do </span>
-          <span className="timer-span">zatvaranja </span>
-          <span className="timer-span">prijava </span>
-        </p>
-        <div className="timer">
-          <label id="dani" for="html">
-            dani
-          </label>
-          <p id="demo">{tajm}</p>
-          <label id="sati" for="html">
-            sati
-          </label>
+    <div className="wrapper-t">
+      <div className="timer-text">
+        <div className={state ? "timer-span timer-span-f" : "timer-span"}>
+          DO ZATVARANJA PRIJAVA
         </div>
+      </div>
+      <div className={state ? "timer timer-f" : "timer"}>
+        <div className="dani">dana</div>
+        <div className="demo">{tajm}</div>
+        <div className="sati">sati</div>
       </div>
     </div>
   );

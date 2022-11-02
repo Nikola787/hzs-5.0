@@ -1,3 +1,13 @@
+/* obavezna polja */
+.error-input-active {
+  outline: 2px solid #f9711d;
+}
+
+
+
+
+
+
 .ceo-fo {
   background-image: url("./assets/pozadina_forma.png");
   background-size: 100% 100%;
@@ -121,7 +131,6 @@
   margin-top: 0.8%;
   margin-left: -10%;
 
-  border-bottom: 2px solid #c3b0ff;
 }
 
 .label-text input:focus::placeholder {
@@ -137,7 +146,7 @@
 }
 
 .box-pitanja {
-  margin: 12% auto 8% auto;
+  margin: 12% auto 6% auto;
   padding-bottom: 4%;
   padding-top: 1.7%;
 
@@ -208,12 +217,12 @@ hr.linija-p {
   border-color: transparent;
   border-radius: 50px;
 
-  box-shadow: -37px 37px 74px rgba(14, 15, 15, 0.2),
+  /* box-shadow: -37px 37px 74px rgba(14, 15, 15, 0.2),
     37px -37px 74px rgba(14, 15, 15, 0.2),
     -37px -37px 74px rgba(34, 35, 35, 0.9), 37px 37px 93px rgba(14, 15, 15, 0.9),
     inset 1px 1px 2px rgba(34, 35, 35, 0.3),
-    inset -1px -1px 2px rgba(14, 15, 15, 0.5);
-  backdrop-filter: blur(20px);
+    inset -1px -1px 2px rgba(14, 15, 15, 0.5); */
+  /* backdrop-filter: blur(20px); */
 }
 
 .otvoreno-text textarea {
@@ -550,8 +559,12 @@ hr.linija-p {
   transform: rotate(45deg);
 }
 
+.unos-ikona {
+  display: flex;
+}
 .unos-ikona img {
   height: 40.5px;
+  align-self: flex-end;
 }
 
 @media screen and (max-width: 1920px) {
@@ -847,4 +860,8 @@ hr.linija-p {
 }
 
 @media screen and (max-width: 340px) {
+}
+
+a {
+  color: #C3B0FF;
 }

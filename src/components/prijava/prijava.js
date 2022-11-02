@@ -6,6 +6,10 @@ import Clan from "./Clan.js";
 import { useState } from "react";
 import { useEffect } from "react";
 
+import Pravilnik from "../pravila.pdf";
+
+import Loader from "../../components/loader/Loader.js";
+
 const Prijava = () => {
   const [clan1, setClan1] = useState({});
   const [clan2, setClan2] = useState({});
@@ -23,6 +27,14 @@ const Prijava = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  const [error, setIsError] = useState(false);
+
+  function validateEmail(email) {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
 
   useEffect(() => {
     console.log(pitanje1);
@@ -138,7 +150,9 @@ const Prijava = () => {
     console.log(prijava);
 
     try {
-      const response = await fetch("heroku link ...", {
+      setIsLoading(true);
+
+      const response = await fetch("https://hzs5.herokuapp.com/prijave/api", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -155,10 +169,24 @@ const Prijava = () => {
       }
     } catch (e) {
       openModal(e.message);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   const posaljiPrijavu = () => {
+    if (
+      clan1.imePrezime === "" ||
+      clan2.imePrezime === "" ||
+      clan3.imePrezime === "" ||
+      clan1.grad === "" ||
+      clan2.grad === "" ||
+      clan3.grad === ""
+    ) {
+      setIsError(true);
+
+      return;
+    }
     let prijava = {
       pitanje1: pitanje1,
       pitanje2: pitanje2,
@@ -166,6 +194,7 @@ const Prijava = () => {
       pitanje4: pitanje4,
       pitanje5: pitanje5,
       pitanje6: pitanje6,
+      pitanje7: pitanje7,
       clanovi: [clan1, clan2, clan3, clan4],
     };
 
@@ -175,167 +204,174 @@ const Prijava = () => {
 
   return (
     <div>
-      <div className="ceo-fo">
-        <div className="naslov">
-          <div className="naslov-tekst">
-            <h1>FORMA ZA PRIJAVU</h1>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div className="ceo-fo">
+          <div className="naslov">
+            <div className="naslov-tekst">
+              <h1>FORMA ZA PRIJAVU</h1>
+            </div>
           </div>
-        </div>
 
-        <div className="clan">Član 1</div>
-        <Clan onChange={onClan1} />
-        <div className="clan">Član 2</div>
-        <Clan onChange={onClan2} />
-        <div className="clan">Član 3</div>
-        <Clan onChange={onClan3} />
-        <div className="clan">Član 4 (opciono)</div>
-        <Clan onChange={onClan4} />
+          <div className="clan">Član 1</div>
+          <Clan onChange={onClan1} error={error} />
+          <div className="clan">Član 2</div>
+          <Clan onChange={onClan2} error={error} />
+          <div className="clan">Član 3</div>
+          <Clan onChange={onClan3} error={error} />
+          <div className="clan">Član 4 (opciono)</div>
+          <Clan onChange={onClan4} error={error} />
 
-        <div className="box-pitanja">
-          <div className="unos-tekst-it">
-            Ime tima:
-            <label className="label-text-it">
+          <div className="box-pitanja">
+            <div className="unos-tekst-it">
+              Ime tima:
+              <label className="label-text-it">
+                <input
+                  type="text"
+                  placeholder="Green day"
+                  required
+                  onChange={(e) => setPitanje1(e.target.value)}
+                />
+              </label>
+            </div>
+            <hr className="linija-p" />
+
+            <div className="pitanje">
+              Kako ste saznali za Hakaton za srednjoškolce?
+            </div>
+            <hr className="linija-p" />
+
+            <div className="radio-box">
+              <label className="radio-btn">
+                Preko društvenih mreža
+                <input
+                  type="radio"
+                  name="mreze"
+                  onChange={(e) => setPitanje2("Preko društvenih mreža")}
+                />
+                <span className="checkmark" />
+              </label>
+
+              <label className="radio-btn">
+                Preko prijatelja
+                <input
+                  type="radio"
+                  name="mreze"
+                  onChange={(e) => setPitanje2("Preko prijatelja")}
+                />
+                <span className="checkmark" />
+              </label>
+
+              <label className="radio-btn">
+                Preko profesora
+                <input
+                  type="radio"
+                  name="mreze"
+                  onChange={(e) => setPitanje2("Preko profesora")}
+                />
+                <span className="checkmark" />
+              </label>
+
+              <label className="radio-btn">
+                Preko televizije
+                <input
+                  type="radio"
+                  name="mreze"
+                  onChange={(e) => setPitanje2("Preko televizije")}
+                />
+                <span className="checkmark" />
+              </label>
+
+              <label className="radio-btn">
+                Preko portala
+                <input
+                  type="radio"
+                  name="mreze"
+                  onChange={(e) => setPitanje2("Preko portala")}
+                />
+                <span className="checkmark" />
+              </label>
+            </div>
+
+            <div className="pitanje">
+              Da li ste nekada učestvovali na takmičenjima u programiranju?
+              Ukoliko jeste, opišite vaša iskustva.
+            </div>
+            <hr className="linija-p"></hr>
+            <div className="otvoreno-pitanje">
+              <label className="otvoreno-text">
+                <textarea
+                  type="text"
+                  placeholder="Napišite odgovor ovde"
+                  onChange={(e) => setPitanje3(e.target.value)}
+                />
+              </label>
+            </div>
+
+            <div className="pitanje">
+              Zašto baš vaš tim? (na koji način se razlikujete od drugih, koje
+              su vaše vrline, prednosti itd...)
+            </div>
+            <hr className="linija-p"></hr>
+            <div className="otvoreno-pitanje">
+              <label className="otvoreno-text">
+                <textarea
+                  type="text"
+                  placeholder="Napišite odgovor ovde"
+                  onChange={(e) => setPitanje4(e.target.value)}
+                />
+              </label>
+            </div>
+
+            <div className="pitanje">
+              Koja oblast u IT svetu vas najviše interesuje i zbog čega?
+            </div>
+            <hr className="linija-p"></hr>
+            <div className="otvoreno-pitanje">
+              <label className="otvoreno-text">
+                <textarea
+                  type="text"
+                  placeholder="Napišite odgovor ovde"
+                  onChange={(e) => setPitanje5(e.target.value)}
+                />
+              </label>
+            </div>
+
+            <div className="pitanje">
+              Šta je najveća slabost vašeg tima i šta činite da je otklonite?
+            </div>
+            <hr className="linija-p"></hr>
+            <div className="otvoreno-pitanje">
+              <label className="otvoreno-text">
+                <textarea
+                  type="text"
+                  placeholder="Napišite odgovor ovde"
+                  onChange={(e) => setPitanje6(e.target.value)}
+                />
+              </label>
+            </div>
+
+            <label className="checkbox-p">
+              Saglasni smo da smo pročitali i da smo upoznati sa &nbsp;
+              <a href={Pravilnik} target="_blank" rel="noopener noreferrer">
+                pravilnikom
+              </a>{" "}
+              &nbsp;takmičenja
               <input
-                type="text"
-                placeholder="Green day"
+                type="checkbox"
                 required
-                onChange={(e) => setPitanje1(e.target.value)}
+                onChange={(e) => setPitanje7("1")}
               />
-            </label>
-          </div>
-          <hr className="linija-p" />
-
-          <div className="pitanje">
-            Kako ste saznali za Hakaton za srednjoškolce?
-          </div>
-          <hr className="linija-p" />
-
-          <div className="radio-box">
-            <label className="radio-btn">
-              Preko društvenih mreža
-              <input
-                type="radio"
-                name="mreze"
-                onChange={(e) => setPitanje2("Preko društvenih mreža")}
-              />
-              <span className="checkmark" />
-            </label>
-
-            <label className="radio-btn">
-              Preko prijatelja
-              <input
-                type="radio"
-                name="mreze"
-                onChange={(e) => setPitanje2("Preko prijatelja")}
-              />
-              <span className="checkmark" />
-            </label>
-
-            <label className="radio-btn">
-              Preko profesora
-              <input
-                type="radio"
-                name="mreze"
-                onChange={(e) => setPitanje2("Preko profesora")}
-              />
-              <span className="checkmark" />
-            </label>
-
-            <label className="radio-btn">
-              Preko televizije
-              <input
-                type="radio"
-                name="mreze"
-                onChange={(e) => setPitanje2("Preko televizije")}
-              />
-              <span className="checkmark" />
-            </label>
-
-            <label className="radio-btn">
-              Preko portala
-              <input
-                type="radio"
-                name="mreze"
-                onChange={(e) => setPitanje2("Preko portala")}
-              />
-              <span className="checkmark" />
+              <span className="checkmark-p"></span>
             </label>
           </div>
 
-          <div className="pitanje">
-            Da li ste nekada učestvovali na takmičenjima u programiranju?
-            Ukoliko jeste, opišite vaša iskustva.
-          </div>
-          <hr className="linija-p"></hr>
-          <div className="otvoreno-pitanje">
-            <label className="otvoreno-text">
-              <textarea
-                type="text"
-                placeholder="Napišite odgovor ovde"
-                onChange={(e) => setPitanje3(e.target.value)}
-              />
-            </label>
-          </div>
-
-          <div className="pitanje">
-            Zašto baš vaš tim? (na koji način se razlikujete od drugih, koje su
-            vaše vrline, prednosti itd...)
-          </div>
-          <hr className="linija-p"></hr>
-          <div className="otvoreno-pitanje">
-            <label className="otvoreno-text">
-              <textarea
-                type="text"
-                placeholder="Napišite odgovor ovde"
-                onChange={(e) => setPitanje4(e.target.value)}
-              />
-            </label>
-          </div>
-
-          <div className="pitanje">
-            Koja oblast u IT svetu vas najviše interesuje i zbog čega?
-          </div>
-          <hr className="linija-p"></hr>
-          <div className="otvoreno-pitanje">
-            <label className="otvoreno-text">
-              <textarea
-                type="text"
-                placeholder="Napišite odgovor ovde"
-                onChange={(e) => setPitanje5(e.target.value)}
-              />
-            </label>
-          </div>
-
-          <div className="pitanje">
-            Šta je najveća slabost vašeg tima i šta činite da je otklonite?
-          </div>
-          <hr className="linija-p"></hr>
-          <div className="otvoreno-pitanje">
-            <label className="otvoreno-text">
-              <textarea
-                type="text"
-                placeholder="Napišite odgovor ovde"
-                onChange={(e) => setPitanje6(e.target.value)}
-              />
-            </label>
-          </div>
-
-          <label class="checkbox-p">
-            Saglasni smo da smo pročitali i da smo upoznati sa pravilnikom
-            takmičenja
-            <input
-              type="checkbox"
-              required
-              onChange={(e) => setPitanje7("1")}
-            />
-            <span className="checkmark-p"></span>
-          </label>
+          <button type="submit" className="dugme" onClick={posaljiPrijavu}>
+            Pošalji prijavu
+          </button>
         </div>
-
-        <button type="submit" className="dugme" onClick={posaljiPrijavu}>
-          Pošalji prijavu
-        </button>
-      </div>
+      )}
     </div>
   );
 };
