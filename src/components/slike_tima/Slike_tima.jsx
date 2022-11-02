@@ -10,6 +10,7 @@ import { DataSlider } from "./DataSlider";
 const Slike_tima = () => {
   const [people] = useState(DataSlider);
   const [current, setCurrent] = useState(0);
+
   const length = people.length;
   const [appState, changeState] = useState({
     activeObject: null,
@@ -36,14 +37,18 @@ const Slike_tima = () => {
 
   useEffect(() => {
     let slider = setInterval(() => {
-
-      toggleActiveStyles(current)
-      toggleActive(current);
-      goToSlide(current);
+      if (current == 6) {
+        toggleActiveStyles(0);
+        toggleActive(0);
+        goToSlide(0);
+      } else {
+        toggleActiveStyles(current + 1);
+        toggleActive(current + 1);
+        goToSlide(current + 1);
+      }
 
       console.log(current);
       setCurrent(current + 1);
-
     }, 3000);
 
     return () => {
@@ -52,11 +57,17 @@ const Slike_tima = () => {
   }, [current]);
 
   const nextSlide = () => {
-    setCurrent(current === length  ? 0 : current + 1);
+    const index = current === length-1 ? 0 : current + 1
+    setCurrent(index);
+    toggleActiveStyles(index)
+    toggleActive(index);
   };
 
   const prevSlide = () => {
-    setCurrent(current === -1 ? length - 1 : current - 1);
+    const index = current === 0 ? length - 1 : current - 1;
+    setCurrent(index);
+    toggleActiveStyles(index)
+    toggleActive(index);
   };
 
   const goToSlide = (index) => {
@@ -68,12 +79,14 @@ const Slike_tima = () => {
   };
 
   const toggleActiveStyles = (index) => {
+    console.log(appState.objects[index], appState.activeObject);
     if (appState.objects[index] === appState.activeObject) {
       return "box active";
     } else {
       return "box inactive";
     }
   };
+
   return (
     <div className="slike-tima-wrapper">
       <div className="navbar-st">
