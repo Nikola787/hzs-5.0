@@ -18,9 +18,11 @@
 }
 
 .navbar-st .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 7vw;
   height: 4vw;
-  padding-top: 1%;
   font-weight: 300;
   font-family: "Manrope";
   font-size: 1.5vw;
@@ -208,7 +210,6 @@
   .navbar-st .box {
     width: 13vw;
     height: 9vw;
-    padding-top: 2.5%;
     font-size: 3vw;
     border-radius: 1rem;
   }
