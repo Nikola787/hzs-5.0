@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 .radionice-wrapper {
@@ -200,11 +201,13 @@
   }
 
   .radionica1-container {
-    gap: 4vh;
+    gap: 5vh;
+    padding-top: 8%;
     padding-bottom: 0;
   }
   .radionica2-container {
-    gap: 4vh;
+    padding-top: 13%;
+    gap: 2vh;
   }
 
   .radionica1-desno-container {
@@ -232,6 +235,14 @@
     width: 40vw;
   }
 
+  .radionica1-container .redni-broj {
+    margin-bottom: 2%;
+  }
+
+  .radionica2-container .redni-broj {
+    margin-bottom: 4%;
+  }
+
   .radionica1-levo-container .redni-broj {
     border-left: 2.5vw #00ffa3 solid;
     font-size: 16vw;
@@ -246,6 +257,7 @@
     white-space: nowrap;
     font-size: 13vw;
   }
+
   .radionica2-desno-container .naziv-radionice {
     white-space: nowrap;
     font-size: 13vw;
