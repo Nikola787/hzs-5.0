@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 .radionice-wrapper {
@@ -12,16 +13,24 @@
   background-color: #181919;
 }
 
-.radionica1-container {
+.radionica1-container,
+.radionica2-container,
+.radionica3-container,
+.radionica4-container {
+  padding: 5vw;
+}
+
+.radionica1-container,
+.radionica3-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  gap: 15%;
 }
 
 .radionica1-levo-container {
   display: flex;
-  width: 35%;
+  width: 30%;
   flex-direction: column;
 }
 .radionica1-levo-container .redni-broj {
@@ -30,25 +39,26 @@
   padding-left: 3%;
   padding-bottom: 1%;
   margin-left: -7%;
-  font-size: 7vw;
+  font-size: 6vw;
   font-family: "Manrope";
   font-weight: 500;
   color: #ffffff;
-  line-height: 70%;
+  line-height: 3.5vw;
 }
 
 .radionica1-levo-container .naziv-radionice {
   display: flex;
   font-family: "Manrope";
   color: #00ffa3;
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 200;
+  white-space: nowrap;
 }
 
 .radionica1-levo-container .radionica-opis {
   font-family: "Manrope";
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 1.2vw;
   font-weight: 400;
   text-align: left;
 }
@@ -62,19 +72,19 @@
 .radionica1-desno-container .prvi-deo {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .radionica1-desno-container .slika_desna {
   border: #00ffa3 3px solid;
   border-radius: 50%;
-  width: 30vw;
+  width: 25vw;
 }
 
 .radionica1-desno-container .ime-predavaca {
   display: flex;
   color: #ffffff;
-  font-size: 2.7vw;
+  font-size: 2.2vw;
   font-family: "Manrope";
   font-weight: 400;
   white-space: nowrap;
@@ -83,34 +93,35 @@
 .radionica1-desno-container .predavac-opis {
   font-family: "Manrope";
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 1.2vw;
   font-weight: 400;
   text-align: right;
   padding-top: 2%;
 }
 
-.radionica2-container {
+.radionica2-container,
+.radionica4-container {
   display: flex;
-  justify-content: space-around;
-  margin-top: 10%;
+  justify-content: center;
+  gap: 5%;
 }
 
 .radionica2-levo-container {
   display: flex;
   flex-direction: column;
   max-width: 50.5%;
-  margin-left: 4%;
+  padding-bottom: 5%;
 }
 
 .radionica2-levo-container .prvi-deo {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .radionica2-levo-container .ime-predavaca {
   color: #ffffff;
-  font-size: 3vw;
+  font-size: 2.2vw;
   font-family: "Manrope";
   font-weight: 400;
   white-space: nowrap;
@@ -119,25 +130,24 @@
 .radionica2-levo-container .slika_leva {
   border: #00ffa3 3px solid;
   border-radius: 50%;
-  width: 30vw;
+  width: 25vw;
   height: auto;
-  margin-right: 10%;
 }
 
 .radionica2-levo-container .predavac-opis {
   font-family: "Manrope";
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 1.2vw;
   font-weight: 400;
   text-align: left;
-  margin-top: 2%;
+  width: 35vw;
+  padding-top: 2%;
 }
 
 .radionica2-desno-container {
   display: flex;
   flex-direction: column;
   max-width: 35%;
-  padding-left: 2%;
 }
 
 .radionica2-desno-container .redni-broj {
@@ -146,25 +156,25 @@
   padding-left: 3%;
   padding-bottom: 1%;
   margin-left: -7%;
-  font-size: 7vw;
+  font-size: 6vw;
   font-family: "Manrope";
   font-weight: 500;
   color: #ffffff;
-  line-height: 70%;
+  line-height: 3.5vw;
 }
 
 .radionica2-desno-container .naziv-radionice {
   display: flex;
   font-family: "Manrope";
   color: #00ffa3;
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 200;
 }
 
 .radionica2-desno-container .radionica-opis {
   font-family: "Manrope";
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 1.2vw;
   font-weight: 400;
   text-align: left;
 }
@@ -172,48 +182,83 @@
 @media screen and (max-width: 340px) {
 }
 @media screen and (max-width: 480px) {
+}
+
+@media screen and (min-width: 620px) {
+}
+@media screen and (max-width: 960px) {
   .radionice-wrapper {
     background-image: url(../../images/RadioniceMobilni.png);
-    background-size: 100% 100%;
+    background-size: 100vw 600vw;
   }
-  .radionica1-container {
+  .radionica1-container,
+  .radionica3-container {
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 5%;
   }
-  .radionica2-container {
+  .radionica2-container,
+  .radionica4-container {
     flex-direction: column-reverse;
-    margin-top: 0;
   }
 
   .radionica1-levo-container {
-    max-width: 100%;
-    margin-left: 0;
-    margin-left: 7%;
+    width: 100%;
+    align-self: flex-start;
   }
+
+  .radionica1-container {
+    /* gap: 3.6vh;
+    padding-top: 8%;
+    padding-bottom: 0; */
+    padding-top: 8%;
+  }
+  .radionica2-container {
+    /* padding-top: 13%;
+    gap: 1.7vh; */
+    padding-top: 2%;
+    padding-bottom: 8%;
+  }
+
+  .radionica3-container {
+    /* padding-top: 0;
+    padding-bottom: 13%;
+    gap: 2.8vh; */
+    padding-top: 0;
+  }
+
+  .radionica4-container {
+    /* padding-top: 0;
+    gap: 6.2vh; */
+    padding-top: 2%;
+  }
+
   .radionica1-desno-container {
     width: 100%;
     align-items: center;
-    margin-top: 5%;
   }
   .radionica2-levo-container {
-    max-width: 80%;
-    margin-left: 0;
-    justify-content: center;
-    align-self: center;
-    margin-bottom: 5%;
+    max-width: 100%;
+  }
+  .radionica2-desno-container {
+    max-width: 100%;
+  }
+  .radionica1-container .radionica1-desno-container {
+    margin-top: 11vw;
   }
 
-  .radionica2-desno-container {
-    margin-left: 13.5%;
-    margin-bottom: 5%;
-    padding-left: 0;
-    max-width: 100%;
+  .radionica2-container .radionica2-levo-container {
+    margin-top: 2vw;
+  }
+
+  .radionica3-container .radionica1-desno-container {
+    margin-top: 3vw;
+  }
+  .radionica4-container .radionica2-levo-container {
+    margin-top: 10vw;
   }
   .radionica1-desno-container .prvi-deo {
     flex-direction: row-reverse;
+    width: 100%;
     justify-content: space-between;
-    width: 80%;
   }
   .radionica2-levo-container .prvi-deo {
     justify-content: space-between;
@@ -223,76 +268,67 @@
     border: #00ffa3 1px solid;
     width: 40vw;
   }
-  .radionica2-levo-container .slika_leva {
-    margin-right: 0;
+
+  .radionica1-container .redni-broj {
+    margin-bottom: 2%;
   }
 
+  .radionica2-container .redni-broj {
+    margin-bottom: 4%;
+  }
+
+  .radionica3-container .redni-broj {
+    margin-bottom: 2%;
+  }
+
+  .radionica4-container .redni-broj {
+    margin-bottom: 2%;
+  }
   .radionica1-levo-container .redni-broj {
     border-left: 2.5vw #00ffa3 solid;
-    font-size: 18vw;
-    padding-left: 1%;
-    margin-left: 0;
-    margin-top: 5%;
-    line-height: 60%;
+    font-size: 16vw;
+    line-height: 10vw;
   }
   .radionica2-desno-container .redni-broj {
     border-left: 2.5vw #00ffa3 solid;
-    font-size: 18vw;
-    padding-left: 1%;
-    margin-top: 12%;
-    line-height: 60%;
+    font-size: 16vw;
+    line-height: 10vw;
   }
   .radionica1-levo-container .naziv-radionice {
     white-space: nowrap;
-    font-size: 15vw;
-    padding-top: 5%;
-    padding-left: 12%;
+    font-size: 13vw;
   }
+
   .radionica2-desno-container .naziv-radionice {
     white-space: nowrap;
-    font-size: 15vw;
-    padding-top: 3%;
+    font-size: 13vw;
   }
 
   .radionica1-levo-container .radionica-opis {
     text-align: start;
     font-size: 4vw;
-    width: 80vw;
-    padding-left: 12%;
   }
   .radionica2-desno-container .radionica-opis {
     font-size: 4vw;
-    width: 85%;
   }
   .radionica1-desno-container .ime-predavaca {
     white-space: nowrap;
-    font-size: 7vw;
+    font-size: 6vw;
     color: #00ffa3;
   }
   .radionica2-levo-container .ime-predavaca {
     white-space: nowrap;
-    font-size: 7vw;
+    font-size: 6vw;
     color: #00ffa3;
   }
   .radionica1-desno-container .predavac-opis {
     text-align: start;
-    padding-top: 0%;
     font-size: 4vw;
-    margin: 3% 0;
-    width: 80%;
   }
   .radionica2-levo-container .predavac-opis {
-    padding-top: 0%;
-    margin: 2% 0;
     font-size: 4vw;
+    width: 100%;
   }
-
-  /*od ovog pointa krece mobilna verzija */
-}
-
-@media screen and (min-width: 620px) {
-}
-@media screen and (min-width: 960px) {
 }
 @media screen and (min-width: 1200px) {
 }

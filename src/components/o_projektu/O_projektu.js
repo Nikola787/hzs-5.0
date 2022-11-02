@@ -18,7 +18,7 @@ const O_projektu = () => {
 
   return (
     <div className="dveSekcije">
-      <div className="ceo">
+      <div className="ceo" id="o_takmicenju">
         <div className="prostor"></div>
         <div className="o-projektu">
           <div className="levi-deo">

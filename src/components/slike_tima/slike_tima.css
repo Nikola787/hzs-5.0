@@ -32,16 +32,16 @@
   transition: all 0.3s ease-in-out;
 }
 
-.inactive {
+.inactiveS {
   color: #00ffa3;
 }
-.inactive:hover {
+.inactiveS:hover {
   background-color: #00ffa3;
   color: #333333;
   opacity: 0.3;
 }
 
-.active {
+.activeS {
   background-color: #00ffa3;
   color: #333333;
 }

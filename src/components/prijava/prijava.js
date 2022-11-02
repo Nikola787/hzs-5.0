@@ -357,7 +357,7 @@ const Prijava = () => {
               <a href={Pravilnik} target="_blank" rel="noopener noreferrer">
                 pravilnikom
               </a>{" "}
-              &nbsp;takmičenja
+              &nbsp;takmičenja.
               <input
                 type="checkbox"
                 required

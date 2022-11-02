@@ -144,18 +144,25 @@ body {
     z-index: 500;
     width: 100%;
     background-color: #181919;
+    opacity: 1;
 
     position: fixed;
     top: 0;
 
+    height: 60px;
+
     outline: 1.5px solid rgba(255, 255, 255, 0.093);
+  }
+
+  .hamburger-react {
+    margin-top: -10px;
   }
 
   a.nav-links.link-do-prijave {
     width: 70%;
     padding: 5px;
     margin-left: 15vw;
-    margin-bottom: 33vw;
+    margin-bottom: 20%;
 
     color: white;
     padding: 0.5rem 1rem;
@@ -205,11 +212,13 @@ body {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    top: 5rem;
+    top: 3rem;
     left: -100%;
     opacity: 1;
     /* transition: all 0.5s ease; */
     overflow: hidden;
+
+    
 
   }
 
@@ -230,7 +239,7 @@ body {
     padding-left: 20%;
     padding-right: 20%;
     margin-bottom: 6vw;
-    font-size: 10vw;
+    font-size: 8.5vw;
     width: 100vw;
     display: table;
 

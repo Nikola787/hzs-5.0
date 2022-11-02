@@ -1,7 +1,7 @@
 const menuItems = [
   {
-    title: "O PROJEKTU",
-    url: "#oS2S",
+    title: "O TAKMIČENJU",
+    url: "#o_takmicenju",
     cName: "nav-links",
   },
 
@@ -13,7 +13,7 @@ const menuItems = [
 
   {
     title: "PITANJA",
-    url: "#pitanja",
+    url: "#faq",
     cName: "nav-links",
   },
   {
@@ -23,7 +23,7 @@ const menuItems = [
   },
   {
     title: "PARTNERI",
-    url: "#nasi-partneri",
+    url: "#partneri",
     cName: "nav-links",
   },
 

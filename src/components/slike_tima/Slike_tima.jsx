@@ -81,14 +81,14 @@ const Slike_tima = () => {
   const toggleActiveStyles = (index) => {
     console.log(appState.objects[index], appState.activeObject);
     if (appState.objects[index] === appState.activeObject) {
-      return "box active";
+      return "box activeS";
     } else {
-      return "box inactive";
+      return "box inactiveS";
     }
   };
 
   return (
-    <div className="slike-tima-wrapper">
+    <div className="slike-tima-wrapper" id="tim">
       <div className="navbar-st">
         {appState.objects.map((elements, index) => (
           <h1
