@@ -140,11 +140,11 @@
 
 .opis-slike .ime-koordinatora {
   font-weight: 400;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 .opis-slike .funkcija-koordinatora {
   font-weight: 200;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .slike-tima-container .slike-tima-desno {
@@ -177,7 +177,7 @@
   padding-top: 5%;
   padding-left: 10%;
   color: #ffffff;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   width: 55vw;
   text-align: start;
 }
@@ -189,7 +189,7 @@
 }
 @media screen and (min-width: 620px) {
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .slike-tima-container {
     flex-direction: column;
   }
@@ -231,10 +231,10 @@
   }
 
   .opis-slike .ime-koordinatora {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .opis-slike .funkcija-koordinatora {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .slika-roditelj .slika-grupna {
@@ -251,7 +251,7 @@
     font-family: "Manrope";
     padding-left: 0%;
     color: #ffffff;
-    font-size: 3.2vw;
+    font-size: 3vw;
     width: 90vw;
     text-align: center;
   }
