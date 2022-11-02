@@ -19,7 +19,7 @@ const footer = () => {
           </div>
           <div className="left-icons">
             <div className="insta">
-              <a href="https://www.instagram.com/fonis_fon/" target="_blank">
+              <a href="https://www.instagram.com/hakaton_za_srednjoskolce/" target="_blank">
                 <FaInstagram />
               </a>
             </div>
@@ -47,7 +47,7 @@ const footer = () => {
           <div className="rtext">
             <p className="adress">Adresa:</p>
             <p className="faqulty-text">Fakultet organizacionih nauka</p>
-            <p className="adress-text">Jove Ilica 154, Beograd</p>
+            <p className="adress-text">Jove Ilića 154, Beograd</p>
           </div>
         </div>
       </div>

@@ -45,6 +45,8 @@
 }
 .title-f {
   margin-top: 5%;
+  padding-bottom: 10px;
+
 
   display: flex;
   justify-content: space-between;
@@ -110,28 +112,42 @@
 @media screen and (max-width: 960px) {
   .naslov-tekst-f h1 {
     text-align: left;
-    font-size: 5vw;
-    line-height: 4vw;
+    font-size: 48px;
+    line-height: 40px;
+    border-width: 10px;
+    padding-left: 10px;
+
+    margin-bottom: 5%;
+  }
+
+  .naslov-f {
+    margin-left: 1%;
+  }
+
+  .accordion-f {
+    margin-bottom: 10%;
   }
 
   .title-f {
     text-align: left;
-    font-size: 3.5vw;
+    font-size: 20px;
+
+    margin-top: 8%;
   }
 
   .title-f h2 {
     text-align: left;
-    font-size: 3.5vw;
+    font-size: 20px;
   }
 
   .content {
     text-align: left;
-    font-size: 1.5vw;
+    font-size: 15px;
   }
 
   .content.show {
     text-align: left;
-    font-size: 1.5vw;
+    font-size: 15px;
   }
 
   .naslov-f {
@@ -147,18 +163,5 @@
   .accordion-f {
     margin-left: 4%;
   }
-
-}
-
-@media screen and (max-width: 660px) {
-  .title-f h2 {
-    font-size: 4vw;
-  }
-
-}
-@media screen and (max-width: 480px) {
-  /*od ovog pointa krece mobilna verzija*/
-}
-@media screen and (max-width: 400px) {
 
 }

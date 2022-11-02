@@ -20,7 +20,7 @@ const Faq = () => {
       </div> */}
       <div className="naslov-f">
         <div className="naslov-tekst-f">
-          <h1>ČESTO POSTAVLJANA PITANJA</h1>
+          <h1>PITANJA</h1>
         </div>
       </div>
       <div className="wrapper-f">
@@ -47,7 +47,7 @@ const dataF = [
   {
     questionF: "Ko sve može da učestvuje na Hakatonu?",
     answerF:
-      "Na takmičenju mogu da učestuju svi učenici srednjih škola Republike Srbije. Timovi trebaju da se sastoje od 3 ili 4 člana i učešće je besplatno. Prijava se može poslati putem forme.",
+      "Na takmičenju mogu da učestuju svi učenici srednjih škola Republike Srbije. Timovi treba da se sastoje od 3 ili 4 člana i učešće je besplatno. Prijava se može poslati putem forme.",
   },
   {
     questionF: "Da li postoje neki kriterijumi za sastavljanje timova?",
