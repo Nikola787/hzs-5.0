@@ -182,6 +182,11 @@
 @media screen and (max-width: 340px) {
 }
 @media screen and (max-width: 480px) {
+}
+
+@media screen and (min-width: 620px) {
+}
+@media screen and (max-width: 960px) {
   .radionice-wrapper {
     background-image: url(../../images/RadioniceMobilni.png);
     background-size: 100% 100%;
@@ -288,13 +293,6 @@
     font-size: 4vw;
     width: 100%;
   }
-
-  /*od ovog pointa krece mobilna verzija */
-}
-
-@media screen and (min-width: 620px) {
-}
-@media screen and (min-width: 960px) {
 }
 @media screen and (min-width: 1200px) {
 }
