@@ -10,10 +10,10 @@ const radionice = () => {
           <h1 className="redni-broj">001</h1>
           <h1 className="naziv-radionice">BACK-END</h1>
           <p className="radionica-opis">
-            Na back-end radionici učesnici će saznati šta mogu ostvariti kroz
-            Spring, njegov ekosistem i za šta on nudi rešenje. Programski jezik
-            koji će biti korišćen je Java, a kreiraće se back-end aplikacija
-            koja će se koristiti i na front-end radionici.
+            Back-end podrazumeva serversku stranu, to jest izradu programa koji
+            je zaslužan za rad veb-sajta ili aplikacije. Odgovoran je za
+            skladištenje, čuvanje i organizovanje podataka i osiguravanju da sve
+            na strani korisnika funkcioniše.
           </p>
         </div>
         <div className="radionica1-desno-container">
@@ -50,24 +50,25 @@ const radionice = () => {
         </div>
         <div className="radionica2-desno-container">
           <h1 className="redni-broj">002</h1>
-          <h1 className="naziv-radionice">BACK-END</h1>
+          <h1 className="naziv-radionice">FRONT-END</h1>
           <p className="radionica-opis">
-            Na back-end radionici učesnici će saznati šta mogu ostvariti kroz
-            Spring, njegov ekosistem i za šta on nudi rešenje. Programski jezik
-            koji će biti korišćen je Java, a kreiraće se back-end aplikacija
-            koja će se koristiti i na front-end radionici.
+            Kako bi aplikacije naših takmičara dobile svoj izgled i bile
+            pristupačne, ova radionica je posvećena upravo kreiranju korisničkog
+            interfejsa. Front-end je sve što korisnik vidi i omogućava laku
+            komunikaciju sa korisnikom, nebitno da li se radi o veb-sajtu ili
+            aplikaciji.
           </p>
         </div>
       </div>
-      <div className="radionica1-container">
+      <div className="radionica3-container">
         <div className="radionica1-levo-container">
-          <h1 className="redni-broj">001</h1>
-          <h1 className="naziv-radionice">BACK-END</h1>
+          <h1 className="redni-broj">003</h1>
+          <h1 className="naziv-radionice">SOFT-SKILLS</h1>
           <p className="radionica-opis">
-            Na back-end radionici učesnici će saznati šta mogu ostvariti kroz
-            Spring, njegov ekosistem i za šta on nudi rešenje. Programski jezik
-            koji će biti korišćen je Java, a kreiraće se back-end aplikacija
-            koja će se koristiti i na front-end radionici.
+            Kako je prezentovanje rešenja sastavni deo takmičenja, jako je važno
+            da učesnici na pravi način predstave svoju ideju. Ova radionica
+            osmišljena je tako da takmičari čuju savete i iskustva ljudi koji su
+            odlično upoznati sa važnošću pravilnog izlaganja rešenja.
           </p>
         </div>
         <div className="radionica1-desno-container">
@@ -86,7 +87,7 @@ const radionice = () => {
           </p>
         </div>
       </div>
-      <div className="radionica2-container">
+      <div className="radionica4-container">
         <div className="radionica2-levo-container">
           <div className="prvi-deo">
             <h1 className="ime-predavaca">Pavle Prica</h1>
@@ -103,13 +104,13 @@ const radionice = () => {
           </p>
         </div>
         <div className="radionica2-desno-container">
-          <h1 className="redni-broj">002</h1>
-          <h1 className="naziv-radionice">BACK-END</h1>
+          <h1 className="redni-broj">004</h1>
+          <h1 className="naziv-radionice">GIT</h1>
           <p className="radionica-opis">
-            Na back-end radionici učesnici će saznati šta mogu ostvariti kroz
-            Spring, njegov ekosistem i za šta on nudi rešenje. Programski jezik
-            koji će biti korišćen je Java, a kreiraće se back-end aplikacija
-            koja će se koristiti i na front-end radionici.
+            Git je sistem za kontrolu i istoriju verzije koda, a samim tim i
+            veoma koristan za naše takmičare. Na ovoj radionici naučiće kako na
+            što lakši način kodirati u timu i upoznaće se sa prednostima koje
+            ovaj program nudi.
           </p>
         </div>
       </div>

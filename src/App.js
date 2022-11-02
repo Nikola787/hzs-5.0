@@ -9,25 +9,24 @@ import FadeLoader from "react-spinners/FadeLoader";
 import Loader from "./components/loader/Loader.js";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1000);
+  // }, []);
 
   return (
     <div className="App">
-      {loading ? (
+      {/* {loading ? (
         <Loader />
-      ) : (
-        <Routes>
-          <Route path="/prijava" exact element={<Prijava />} />
-          <Route path="/" exact element={<Home />} />
-        </Routes>
-      )}
+      ) : ( */}
+      <Routes>
+        {/* <Route path="/prijava" exact element={<Prijava />} /> */}
+        <Route path="/" exact element={<Home />} />
+      </Routes>
+      {/* )} */}
     </div>
   );
 }
