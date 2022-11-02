@@ -206,24 +206,29 @@
   }
 
   .radionica1-container {
-    gap: 3.6vh;
+    /* gap: 3.6vh;
     padding-top: 8%;
-    padding-bottom: 0;
+    padding-bottom: 0; */
+    padding-top: 8%;
   }
   .radionica2-container {
-    padding-top: 13%;
-    gap: 1.7vh;
+    /* padding-top: 13%;
+    gap: 1.7vh; */
+    padding-top: 2%;
+    padding-bottom: 8%;
   }
 
   .radionica3-container {
-    padding-top: 0;
+    /* padding-top: 0;
     padding-bottom: 13%;
-    gap: 2.8vh;
+    gap: 2.8vh; */
+    padding-top: 0;
   }
 
   .radionica4-container {
-    padding-top: 0;
-    gap: 6.2vh;
+    /* padding-top: 0;
+    gap: 6.2vh; */
+    padding-top: 2%;
   }
 
   .radionica1-desno-container {
@@ -233,9 +238,22 @@
   .radionica2-levo-container {
     max-width: 100%;
   }
-
   .radionica2-desno-container {
     max-width: 100%;
+  }
+  .radionica1-container .radionica1-desno-container {
+    margin-top: 11vw;
+  }
+
+  .radionica2-container .radionica2-levo-container {
+    margin-top: 2vw;
+  }
+
+  .radionica3-container .radionica1-desno-container {
+    margin-top: 3vw;
+  }
+  .radionica4-container .radionica2-levo-container {
+    margin-top: 10vw;
   }
   .radionica1-desno-container .prvi-deo {
     flex-direction: row-reverse;
@@ -259,6 +277,13 @@
     margin-bottom: 4%;
   }
 
+  .radionica3-container .redni-broj {
+    margin-bottom: 2%;
+  }
+
+  .radionica4-container .redni-broj {
+    margin-bottom: 2%;
+  }
   .radionica1-levo-container .redni-broj {
     border-left: 2.5vw #00ffa3 solid;
     font-size: 16vw;
