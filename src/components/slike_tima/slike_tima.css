@@ -36,18 +36,14 @@
   color: #00ffa3;
 }
 .inactiveS:hover {
-  background-color: #00ffa3;
-  color: #000000;;
-  opacity: 0.3;
+  background-color: transparent;
+  color: #ffffff;
+  opacity: 1;
 }
 
 .activeS {
   background-color: #00ffa3;
-  color: #000000;
-}
-
-.activeS h1 {
-  color: #000000;
+  color:#000000 !important
 }
 
 .slike-tima-container {
@@ -261,6 +257,13 @@
     text-align: center;
     height: 20vw;
   }
+
+  .inactiveS:hover {
+    background-color: transparent;
+    color: #ffffff;
+    opacity: 1;
+  }
+
 }
 @media screen and (min-width: 340px) {
 }
