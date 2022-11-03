@@ -10,6 +10,9 @@ import Pravilnik from "../Pravila.pdf";
 
 import Loader from "../../components/loader/Loader.js";
 
+import { useNavigate } from 'react-router';
+
+
 const Prijava = () => {
   const [clan1, setClan1] = useState({});
   const [clan2, setClan2] = useState({});
@@ -30,6 +33,8 @@ const Prijava = () => {
 
   const [error, setIsError] = useState(false);
   const [error4, setIsError4] = useState(false);
+
+  const navigate = useNavigate();
 
   function validateEmail(email) {
     const re =
@@ -165,7 +170,7 @@ const Prijava = () => {
     }
   };
 
-  const posaljiPrijavu = () => {
+  const posaljiPrijavu = async () => {
     if (
       clan1.imePrezime === "" ||
       clan2.imePrezime === "" ||
@@ -282,7 +287,8 @@ const Prijava = () => {
     };
 
     console.log(prijava);
-    postPrijava(prijava);
+    await postPrijava(prijava);
+    navigate('/')  
   };
 
   return (
