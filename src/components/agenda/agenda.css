@@ -169,11 +169,13 @@
     }
 
     .agenda .title::before {
-        width: 7px;
-        height: 1.7rem;
+        content: "";
+        height: 3.7rem;
+        width: 10px;
+        background-color: #00ffa3;
         position: absolute;
-        top: 1.7rem;
-        left: 2rem;
+        top: 6.4rem;
+        left: 8.4rem;
     }
 
     .first,
@@ -198,15 +200,20 @@
         text-align: right !important;
     }
 
+
     .agenda-first,
     .agenda-second,
     .agenda-third,
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 15vh;
+        height: 38vw;
         border: 2px solid #00FFA3;
-        padding: 0rem;
+        padding: .1rem;
+    }
+
+    .sixth {
+        width: 80%;
     }
 
     .ag-fi-date,
@@ -293,11 +300,13 @@
     }
 
     .agenda .title::before {
-        width: 7px;
-        height: 1.7rem;
+        content: "";
+        height: 3.7rem;
+        width: 10px;
+        background-color: #00ffa3;
         position: absolute;
-        top: 1.8rem;
-        left: 2rem;
+        top: 6.4rem;
+        left: 8.4rem;
     }
 
     .first,
@@ -328,9 +337,13 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 16vh;
+        height: 39vw;
         border: 2px solid #00FFA3;
         padding: 0rem;
+    }
+
+    .sixth {
+        width: 70%;
     }
 
     .ag-fi-date,
@@ -432,12 +445,12 @@
 
     .agenda .title::before {
         content: "";
-        width: 7px;
-        background-color: #00FFA3;
-        height: 2.3rem;
+        height: 3.7rem;
+        width: 10px;
+        background-color: #00ffa3;
         position: absolute;
-        top: 1.9rem;
-        left: 2rem;
+        top: 6.4rem;
+        left: 8.4rem;
     }
 
     .first,
@@ -468,9 +481,13 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 17vh;
+        height: 35vw;
         border: 2px solid #00FFA3;
         padding: .1rem;
+    }
+
+    .sixth {
+        width: 80%;
     }
 
     .ag-fi-date,
@@ -570,12 +587,12 @@
 
     .agenda .title::before {
         content: "";
-        width: 7px;
-        background-color: #00FFA3;
-        height: 3rem;
+        height: 3.7rem;
+        width: 10px;
+        background-color: #00ffa3;
         position: absolute;
-        top: 2.5rem;
-        left: 3.5rem;
+        top: 6.4rem;
+        left: 8.4rem;
     }
 
     .first,
@@ -607,9 +624,13 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 24vh;
+        height: 28vw;
         border: 2px solid #00FFA3;
         padding: .1rem;
+    }
+
+    .sixth {
+        width: 65%;
     }
 
     .ag-fi-date,
@@ -707,10 +728,10 @@
         content: "";
         height: 3.7rem;
         width: 10px;
-        background-color: #00FFA3;
+        background-color: #00ffa3;
         position: absolute;
-        top: 3rem;
-        left: 3.4rem;
+        top: 6.4rem;
+        left: 8.4rem;
     }
 
     .agenda-content {
@@ -738,7 +759,7 @@
     .agenda-fourth,
     .agenda-fifth,
     .agenda-sixth {
-        height: 73vh;
+        height: 60vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
