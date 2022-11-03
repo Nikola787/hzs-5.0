@@ -28,7 +28,7 @@
   font-size: 1.5vw;
   cursor: pointer;
   border-radius: 1.5rem;
-  user-select: none;
+  /* user-select: none; */
   transition: all 0.3s ease-in-out;
 }
 
@@ -82,7 +82,7 @@
   height: 24vw;
   width: 17.8vw;
   object-fit: cover;
-  user-select: none;
+  /* user-select: none; */
 }
 
 .left-arrow {
@@ -92,7 +92,7 @@
   width: 7vw;
   cursor: pointer;
   z-index: 10;
-  user-select: none;
+  /* user-select: none; */
 }
 .right-arrow {
   position: absolute;
@@ -101,7 +101,7 @@
   width: 7vw;
   cursor: pointer;
   z-index: 10;
-  user-select: none;
+  /* user-select: none; */
 }
 
 @keyframes animScale {
