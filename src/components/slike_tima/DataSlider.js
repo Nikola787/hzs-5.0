@@ -10,10 +10,10 @@ export const DataSlider = [
   },
   {
     id: 1,
-    image: require("../../images/ana.JPG"),
+    image: require("../../images/moze.JPG"),
     name: "Nikola Ratković",
     title: "Koordinator tima za informacione tehnologije",
-    imageGroup: require("../../images/pr.JPG"),
+    imageGroup: require("../../images/mozee2.JPG"),
     description:
       "Tim za informacione tehnologije svojim znanjem i neumornim radom zaslužan je za izradu veb sajta Hakaton za srednjoškolce, na kom možeš naći sve potrebne informacije o ovom takmičenju i poslati prijavu.                                                                                                                                                                                                                     ",
   },

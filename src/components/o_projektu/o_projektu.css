@@ -184,15 +184,15 @@
   color: #00ffa3;
 }
 .dugme-prijava-o {
-  width: 17vw;
-  height: 3vw;
+  width: 20vw;
+  height: 7vw;
   position: absolute;
   margin-top: -11vw;
 
-  margin-left: -9vw;
+  margin-left: -11vw;
 
-  padding-top: 1vw;
-  padding-bottom: 4vw;
+  padding-top: 1.2vw;
+  padding-bottom: 4.2vw;
 
   cursor: pointer;
 
@@ -220,7 +220,7 @@
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5vw;
+  font-size: 3vw;
 
   color: #ffffff;
 }
@@ -228,16 +228,16 @@
 .dugme-prijava-o::after {
   position: absolute;
   content: "";
-  top: 2px;
-  left: -15px;
-  border-radius: 20px;
+  top: 0.000000vw;
+  left: -2vw;
+  border-radius: 50vw;
 
   right: 0;
   z-index: -1;
-  height: 100%;
-  width: 110%;
+  height: 110%;
+  width: 120%;
   transform: scale(0.9) translateZ(0);
-  filter: blur(15px);
+  filter: blur(10px);
   background: linear-gradient(to left, #00ffa3, #c3b0ff, #ffffff);
   background-size: 200% 200%;
   animation: animateGlow 2.2s linear infinite;
@@ -330,14 +330,14 @@
   }
 
   .dugme-prijava-o {
-    width: 50vw;
-    height: 15vw;
+    width: 55vw;
+    height: 20vw;
 
-    padding-top: 2vw;
-    font-size: 7vw;
+    padding-top: 2.2vw;
+    font-size: 9vw;
 
     margin-top: -15vw;
-    margin-left: -26vw;
+    margin-left: -28vw;
     margin-bottom: 10vw;
   }
 
@@ -391,6 +391,26 @@
     height: 15vw;
     width: 16vw;
     margin-top: 4vw;
+  }
+
+  .dugme-prijava-o::after {
+    position: absolute;
+    content: "";
+    top: 0.000000vw;
+    left: -4vw;
+    border-radius: 50vw;
+  
+    right: 0;
+    z-index: -1;
+    height: 110%;
+    width: 110%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(10px);
+    background: linear-gradient(to left, #00ffa3, #c3b0ff, #ffffff);
+    background-size: 200% 200%;
+    animation: animateGlow 2.2s linear infinite;
+  
+    opacity: 0.5;
   }
 }
 

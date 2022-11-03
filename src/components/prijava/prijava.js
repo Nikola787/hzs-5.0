@@ -16,35 +16,26 @@ const Prijava = () => {
   const [clan3, setClan3] = useState({});
   const [clan4, setClan4] = useState({});
 
-  const [pitanje1, setPitanje1] = useState();
-  const [pitanje2, setPitanje2] = useState();
-  const [pitanje3, setPitanje3] = useState();
-  const [pitanje4, setPitanje4] = useState();
-  const [pitanje5, setPitanje5] = useState();
-  const [pitanje6, setPitanje6] = useState();
-  const [pitanje7, setPitanje7] = useState();
+  const [pitanje1, setPitanje1] = useState("");
+  const [pitanje2, setPitanje2] = useState("");
+  const [pitanje3, setPitanje3] = useState("");
+  const [pitanje4, setPitanje4] = useState("");
+  const [pitanje5, setPitanje5] = useState("");
+  const [pitanje6, setPitanje6] = useState("");
+  const [pitanje7, setPitanje7] = useState("");
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const [error, setIsError] = useState(false);
+  const [error4, setIsError4] = useState(false);
 
   function validateEmail(email) {
     const re =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
-
-  useEffect(() => {
-    console.log(pitanje1);
-    console.log(pitanje2);
-    console.log(pitanje3);
-    console.log(pitanje4);
-    console.log(pitanje5);
-    console.log(pitanje6);
-    console.log(pitanje7);
-  }, [clan1, clan2, clan3, clan4]);
 
   const openModal = (poruka) => {
     setModalMessage(poruka);
@@ -181,12 +172,104 @@ const Prijava = () => {
       clan3.imePrezime === "" ||
       clan1.grad === "" ||
       clan2.grad === "" ||
-      clan3.grad === ""
+      clan3.grad === "" ||
+      clan1.srednjaSkola === "" ||
+      clan2.srednjaSkola === "" ||
+      clan3.srednjaSkola === "" ||
+      clan1.razred === "" ||
+      clan2.razred === "" ||
+      clan3.razred === "" ||
+      clan1.brojTelefona === "" ||
+      clan2.brojTelefona === "" ||
+      clan3.brojTelefona === "" ||
+      clan1.email === "" ||
+      clan2.email === "" ||
+      clan3.email === "" || 
+      pitanje1 === "" ||
+      pitanje2 === "" ||
+      pitanje3 === "" ||
+      pitanje4 === "" ||
+      pitanje5 === "" ||
+      pitanje6 === "" ||
+      pitanje7 === ""
     ) {
-      setIsError(true);
+      // if (
+      //   clan4.imePrezime !== "" &&
+      //   clan4.grad === "" &&
+      //   clan4.srednjaSkola === "" &&
+      //   clan4.razred === "" &&
+      //   clan4.brojTelefona === "" &&
+      //   clan4.email === ""
+      // ) {
+      //   // setIsError4(true);
+      //   console.log('4true')
+      // }
+      // if (
+      //   clan4.imePrezime === "" &&
+      //   clan4.grad !== "" &&
+      //   clan4.srednjaSkola === "" &&
+      //   clan4.razred === "" &&
+      //   clan4.brojTelefona === "" &&
+      //   clan4.email === ""
+      // ) {
+      //   // setIsError4(true);
+      //   console.log('4true')
 
+      // }
+      // if (
+      //   clan4.imePrezime === "" &&
+      //   clan4.grad === "" &&
+      //   clan4.srednjaSkola !== "" &&
+      //   clan4.razred === "" &&
+      //   clan4.brojTelefona === "" &&
+      //   clan4.email === ""
+      // ) {
+      //   // setIsError4(true);
+      //   console.log('4true')
+
+      // }
+      // if (
+      //   clan4.imePrezime === "" ||
+      //   clan4.grad === "" ||
+      //   clan4.srednjaSkola === "" ||
+      //   clan4.razred !== "" ||
+      //   clan4.brojTelefona === "" ||
+      //   clan4.email === ""
+      // ) {
+      //   // setIsError4(true);
+      //   console.log('4true')
+
+      // }
+      // if (
+      //   clan4.imePrezime === "" ||
+      //   clan4.grad === "" ||
+      //   clan4.srednjaSkola === "" ||
+      //   clan4.razred === "" ||
+      //   clan4.brojTelefona !== "" ||
+      //   clan4.email === ""
+      // ) {
+      //   // setIsError4(true);
+      //   console.log('4true')
+
+      // }
+      // if (
+      //   clan4.imePrezime === "" ||
+      //   clan4.grad === "" ||
+      //   clan4.srednjaSkola === "" ||
+      //   clan4.razred === "" ||
+      //   clan4.brojTelefona === "" ||
+      //   clan4.email !== ""
+      // ) {
+      //   // setIsError4(true);
+      //   console.log('4true')
+
+      // }
+      // setIsError(true);
+      // console.log(clan4)
+      console.log("prvi deo niije dobar");
       return;
     }
+
     let prijava = {
       pitanje1: pitanje1,
       pitanje2: pitanje2,
@@ -221,7 +304,7 @@ const Prijava = () => {
           <div className="clan">Član 3</div>
           <Clan onChange={onClan3} error={error} />
           <div className="clan">Član 4 (opciono)</div>
-          <Clan onChange={onClan4} error={error} />
+          <Clan onChange={onClan4} error={error4} />
 
           <div className="box-pitanja">
             <div className="unos-tekst-it">
