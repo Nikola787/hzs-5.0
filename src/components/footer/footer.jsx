@@ -2,7 +2,7 @@ import React from "react";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import "./footer.css";
 import MyImage from "./logo.png";
-import Srce from "./srce.png"
+import Srce from "./srce2.png"
 
 const footer = () => {
   return (

@@ -37,13 +37,17 @@
 }
 .inactiveS:hover {
   background-color: #00ffa3;
-  color: black;
+  color: #000000;;
   opacity: 0.3;
 }
 
 .activeS {
   background-color: #00ffa3;
+  color: #000000;
+}
 
+.activeS h1 {
+  color: #000000;
 }
 
 .slike-tima-container {

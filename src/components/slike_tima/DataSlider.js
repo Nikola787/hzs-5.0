@@ -4,7 +4,7 @@ export const DataSlider = [
     image: require("../../images/ana.JPG"),
     name: "Vladislav Vidović",
     title: "Koordinator projekta",
-    imageGroup: require("../../images/pr.JPG"),
+    imageGroup: require("../../images/Core.jpeg"),
     description:
       "Tim koordinatora je zadužen da na nabolji mogući način upravlja kormilom ovog takmičenja. Imaju najvažnije zaduženje, a to je upravo predvođenje i motivacija svih ljudi koji vredno rade na realizaciji takmičenja. Svojom predanošću i znanjem vredno rade da bi ovogodišnji Hakaton za srednjoškolce bio najbolji do sada.                                                                                                  ",
   },
@@ -22,7 +22,7 @@ export const DataSlider = [
     image: require("../../images/ana.JPG"),
     name: "Teodora Ćopić",
     title: "Koordinatorka tima za dizajn",
-    imageGroup: require("../../images/pr.JPG"),
+    imageGroup: require("../../images/dizajn.png"),
     description:
       "Tim za dizajn u saradnji sa timom za odnose sa javnošću na kreativan način osmišljava vizuelni identitet takmičenja. Svoju originalnost i veštine članovi ovog tima izražavaju kroz stvaranje vizuala za društvene mreže, koji za cilj imaju da ti na najzanimljiviji način prenesu potrebne informacije. Takođe, osmišljavaju izgled sajta na kom možeš naći sve pojedinosti takmičenja na jednom mestu, kao i da se prijaviš.",
   },
@@ -55,10 +55,10 @@ export const DataSlider = [
   },
   {
     id: 6,
-    image: require("../../images/ana.JPG"),
+    image: require("../../images/Petra.jpg"),
     name: "Petra Popović",
     title: "Koordinatorka tima za ljudske resurse",
-    imageGroup: require("../../images/pr.JPG"),
+    imageGroup: require("../../images/hr.jpeg"),
     description:
       "Tim za ljudske resurse se trudi da kroz selekciju prijavljenih timova odabere najbolje, ali i komunicira sa učesnicima i tu je da ti pruži odgovor na sva pitanja. Radi na ojačavanju kohezije unutar organizacionog tima i stvaranju što prijatnije radne atmosfere.                                                                                                                                                          ",
   },

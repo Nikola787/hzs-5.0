@@ -1,6 +1,5 @@
 import React from "react";
 import "./iskustva.css";
-import Slika from "./slika.png";
 
 const iskustva = () => {
   return (

@@ -4,7 +4,7 @@ import img1 from "./Group.png";
 import img2 from "./Group(1).png";
 import img3 from "./Group(2).png";
 
-import Pravilnik from "../pravila.pdf";
+import Pravilnik from "../Pravila.pdf";
 
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";

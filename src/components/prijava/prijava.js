@@ -6,7 +6,7 @@ import Clan from "./Clan.js";
 import { useState } from "react";
 import { useEffect } from "react";
 
-import Pravilnik from "../pravila.pdf";
+import Pravilnik from "../Pravila.pdf";
 
 import Loader from "../../components/loader/Loader.js";
 
@@ -264,8 +264,8 @@ const Prijava = () => {
       //   console.log('4true')
 
       // }
-      // setIsError(true);
-      // console.log(clan4)
+      setIsError(true);
+      console.log(clan4)
       console.log("prvi deo niije dobar");
       return;
     }
