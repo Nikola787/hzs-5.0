@@ -255,6 +255,7 @@
     font-size: 3vw;
     width: 90vw;
     text-align: center;
+    height: 20vw;
   }
 }
 @media screen and (min-width: 340px) {
