@@ -3,7 +3,7 @@
   outline: 2px solid #f9711d;
 }
 
-input, input:before, input:after {
+input, textarea input:before, input:after {
   -webkit-user-select: initial;
   -khtml-user-select: initial;
   -moz-user-select: initial;
