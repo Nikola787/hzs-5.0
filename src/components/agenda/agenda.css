@@ -7,7 +7,10 @@
     background-size: 100% 100%;
 }
 
-
+.naslov-agenda{
+    margin-left: 10%;
+    padding-top: 2%;
+}
 
 .agenda .title {
     font-size: 4rem;

@@ -4,9 +4,16 @@ const agenda = () => {
   return (
     <div>
       <div className="agenda">
-        <div className="agenda-title">
-          <h1 className="title">AGENDA</h1>
+        <div className="naslov-agenda">
+          <div className="naslov-o">
+            <div className="naslov-tekst-o">
+              <h1>AGENDA</h1>
+            </div>
+          </div>
         </div>
+        {/* <div className="agenda-title">
+          <h1 className="title">AGENDA</h1>
+        </div> */}
         <div className="agenda-content">
           <div className="agenda-first">
             <div className="first">
