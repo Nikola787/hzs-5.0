@@ -40,11 +40,12 @@ const Slike_tima = () => {
       if (current == 6) {
         toggleActiveStyles(0);
         toggleActive(0);
-        goToSlide(0);
+        // goToSlide(0);
+        setCurrent(-1);
       } else {
         toggleActiveStyles(current + 1);
         toggleActive(current + 1);
-        goToSlide(current + 1);
+        // goToSlide(current + 1);
       }
 
       console.log(current);
