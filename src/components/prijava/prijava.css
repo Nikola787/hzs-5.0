@@ -1,0 +1,875 @@
+/* obavezna polja */
+.error-input-active {
+  outline: 2px solid #f9711d;
+}
+
+input, textarea input:before, textarea:before, textarea:after, input:after {
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+ } 
+
+
+
+
+.ceo-fo {
+  background-image: url("./assets/pozadina_forma.png");
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+}
+
+.naslov {
+  display: flex;
+  margin-left: 5%;
+  padding-top: 1%;
+}
+
+.boja {
+  margin-top: 6%;
+  margin-left: 5%;
+
+  background: #c3b0ff;
+  width: 17px;
+  height: 60px;
+}
+
+.naslov-tekst h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  border-left: 15px solid #c3b0ff;
+  padding-left: 20px;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.naslov-tekst {
+  margin-top: 4%;
+  margin-left: 1%;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 123px;
+  color: #ffffff;
+}
+
+.box-clan {
+  margin: 0 auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  width: 55%;
+  height: 48%;
+
+  background: linear-gradient(#181919, #181919) padding-box,
+    linear-gradient(
+        120.39deg,
+        #c3b0ff 23.45%,
+        rgba(190, 171, 248, 0.975) 59.96%,
+        rgba(24, 25, 25, 0.2) 104.96%
+      )
+      border-box;
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50px;
+
+  box-shadow: -37px 37px 74px rgba(14, 15, 15, 0.2),
+    37px -37px 74px rgba(14, 15, 15, 0.2),
+    -37px -37px 74px rgba(34, 35, 35, 0.9), 37px 37px 93px rgba(14, 15, 15, 0.9),
+    inset 1px 1px 2px rgba(34, 35, 35, 0.3),
+    inset -1px -1px 2px rgba(14, 15, 15, 0.5);
+  backdrop-filter: blur(20px);
+}
+
+.label-text input {
+  margin-top: 4%;
+}
+
+.unos {
+  display: flex;
+  margin-top: 1%;
+  margin-left: 4%;
+}
+
+.unos-tekst {
+  margin-left: 6%;
+}
+
+.clan {
+  margin-top: 4%;
+  margin-left: 25.5%;
+  text-align: left;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.label-text input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #181919;
+
+  border-radius: 3px;
+  width: 40vw;
+  outline: none;
+
+  color: white;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+
+  margin-top: 0.8%;
+  margin-left: -10%;
+
+}
+
+.label-text input:focus::placeholder {
+  color: transparent;
+}
+
+.label-text input::placeholder {
+  color: rgba(195, 176, 255, 0.4);
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.box-pitanja {
+  margin: 12% auto 6% auto;
+  padding-bottom: 4%;
+  padding-top: 1.7%;
+
+  width: 55%;
+
+  background: linear-gradient(#181919, #181919) padding-box,
+    linear-gradient(
+        120.39deg,
+        #c3b0ff 23.45%,
+        rgba(190, 171, 248, 0.975) 59.96%,
+        rgba(24, 25, 25, 0.2) 104.96%
+      )
+      border-box;
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50px;
+
+  box-shadow: -37px 37px 74px rgba(14, 15, 15, 0.2),
+    37px -37px 74px rgba(14, 15, 15, 0.2),
+    -37px -37px 74px rgba(34, 35, 35, 0.9), 37px 37px 93px rgba(14, 15, 15, 0.9),
+    inset 1px 1px 2px rgba(34, 35, 35, 0.3),
+    inset -1px -1px 2px rgba(14, 15, 15, 0.5);
+  backdrop-filter: blur(20px);
+}
+
+.pitanje {
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  padding-top: 3%;
+  text-align: left;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 35px;
+
+  color: #ffffff;
+}
+
+hr.linija-p {
+  background: #c3b0ff;
+  border-color: #c3b0ff;
+
+  width: 78%;
+  height: 0.08%;
+  margin: 0% auto 3% auto;
+}
+
+.otvoreno-pitanje {
+  width: 78%;
+  height: 55vh;
+
+  margin: 3% auto;
+
+  background: linear-gradient(#181919, #181919) padding-box,
+    linear-gradient(
+        120.39deg,
+        #c3b0ff 23.45%,
+        rgba(190, 171, 248, 0.975) 59.96%,
+        rgba(24, 25, 25, 0.2) 104.96%
+      )
+      border-box;
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50px;
+
+  /* box-shadow: -37px 37px 74px rgba(14, 15, 15, 0.2),
+    37px -37px 74px rgba(14, 15, 15, 0.2),
+    -37px -37px 74px rgba(34, 35, 35, 0.9), 37px 37px 93px rgba(14, 15, 15, 0.9),
+    inset 1px 1px 2px rgba(34, 35, 35, 0.3),
+    inset -1px -1px 2px rgba(14, 15, 15, 0.5); */
+  /* backdrop-filter: blur(20px); */
+}
+
+.otvoreno-text textarea {
+  resize: none;
+
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #181919;
+
+  margin-top: 3%;
+
+  border-radius: 3px;
+  height: 92%;
+  width: 95%;
+  outline: none;
+
+  color: white;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.otvoreno-text textarea::placeholder {
+  color: white;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.dugme {
+  height: 80px;
+  width: 20%;
+
+  position: relative;
+
+  margin-bottom: 8%;
+  cursor: pointer;
+
+  font-size: 2em;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  color: #ffffff;
+  opacity: 1;
+
+  background: linear-gradient(
+        265.16deg,
+        #c3b0ff -12.84%,
+        rgba(24, 25, 25, 0) 217.93%
+      )
+      padding-box,
+    linear-gradient(
+        120.39deg,
+        #c3b0ff 23.45%,
+        rgba(190, 171, 248, 0.975) 59.96%,
+        rgba(24, 25, 25, 0.2) 104.96%
+      )
+      border-box;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 60px;
+
+  /* box-shadow: inset 1px 1px 2px rgba(34, 35, 35, 0.3),
+    inset -1px -1px 2px rgba(14, 15, 15, 0.5);
+  filter: drop-shadow(-37px 37px 74px rgba(14, 15, 15, 0.2))
+    drop-shadow(37px -37px 74px rgba(14, 15, 15, 0.2))
+    drop-shadow(-37px -37px 74px rgba(34, 35, 35, 0.9))
+    drop-shadow(37px 37px 93px rgba(14, 15, 15, 0.9));
+
+  box-shadow: 37px 37px 93px 0px rgba(14, 15, 15, 0.9);
+  box-shadow: -37px -37px 74px 0px rgba(34, 35, 35, 0.9);
+  box-shadow: 37px -37px 74px 0px rgba(14, 15, 15, 0.2);
+  box-shadow: -37px 37px 74px 0px rgba(14, 15, 15, 0.2);
+  box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
+  box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset; */
+
+  backdrop-filter: blur(20px);
+
+  transition: 1s;
+}
+
+.dugme::after {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -15px;
+  border-radius: 20px;
+
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 110%;
+  transform: scale(0.9) translateZ(0);
+  filter: blur(15px);
+  background: linear-gradient(to left, #8d88e3, #4e51c2, #cfbfff);
+  background-size: 200% 200%;
+  animation: animateGlow 2.2s linear infinite;
+
+  opacity: 0.5;
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.dugme:hover {
+  background: #9245d1;
+}
+
+/* DUGME */
+
+/* The container */
+.radio-btn {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 35px;
+  color: white;
+
+  text-align: left;
+  justify-content: center;
+  line-height: 25px;
+
+  margin-left: 11%;
+  margin-bottom: 3%;
+}
+
+/* Hide the browser's default radio button */
+.radio-btn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-btn:hover input ~ .checkmark {
+  background-color: rgba(195, 176, 255, 1);
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-btn input:checked ~ .checkmark {
+  background-color: rgba(195, 176, 255, 1);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-btn input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-btn .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.odgovor {
+  width: 78%;
+  height: 0.08%;
+  margin: 0% auto;
+
+  text-align: left;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.unos-tekst-it {
+  margin-left: 11%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  padding-top: 3%;
+  text-align: left;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.label-text-it input {
+  margin-left: 2%;
+
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #181919;
+
+  border-radius: 3px;
+  width: 50%;
+  outline: none;
+
+  color: #c3b0ff;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.label-text-it input::placeholder {
+  color: #c3b0ff;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+/* CHECKBOX  */
+/* The container */
+.checkbox-p {
+  margin-left: 11%;
+  margin-right: 25%;
+  margin-top: 8%;
+  text-align: left;
+
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+
+  color: #ffffff;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-p input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-p {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+
+  border: 1px solid #c3b0ff;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-p:hover input ~ .checkmark-o {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-p input:checked ~ .checkmark-p {
+  background-color: #c3b0ff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-p:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-p input:checked ~ .checkmark-p:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-p .checkmark-p:after {
+  left: 8px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.unos-ikona {
+  display: flex;
+}
+.unos-ikona img {
+  height: 40.5px;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 1100px) {
+  /*od ovog pointa krece mobilna verzija*/
+  .radio-btn .checkmark:after {
+    top: 6.5px;
+    left: 6.5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  .naslov-tekst h1 {
+    font-size: 40px;
+    border-left: 10px solid #c3b0ff;
+    line-height: 40px;
+  }
+  .naslov-tekst {
+    font-size: 50px;
+  }
+  .box-clan {
+    width: 80%;
+  }
+  .box-pitanja {
+    width: 85%;
+  }
+  .otvoreno-text textarea {
+    width: 90%;
+    margin-top: 9%;
+    font-size: 20px;
+  }
+  .unos {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 15%;
+  }
+  .clan {
+    margin-top: 8%;
+    margin-left: 25.5%;
+    text-align: left;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    color: #ffffff;
+  }
+  .pitanje {
+    font-size: 25px;
+  }
+  .otvoreno-text textarea {
+    width: 90%;
+    margin-top: 5%;
+    font-size: 22px;
+  }
+  .otvoreno-text textarea::placeholder {
+    font-size: 22px;
+  }
+  .dugme {
+    font-size: 22px;
+  }
+
+  .radio-btn {
+    font-size: 25px;
+  }
+  .odgovor {
+    font-size: 22px;
+  }
+  .unos-tekst-it {
+    font-size: 25px;
+  }
+  .label-text-it input {
+    font-size: 25px;
+  }
+  .label-text-it input::placeholder {
+    font-size: 25px;
+  }
+  .checkbox-p {
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: 2.3%;
+  }
+
+  .unos-ikona img {
+    height: 38px;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark-p {
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    height: 20px;
+    width: 20px;
+
+    border: 1px solid #c3b0ff;
+  }
+
+  hr.linija-p {
+    background: #c3b0ff;
+    border-color: #c3b0ff;
+
+    width: 78%;
+    height: 0.08%;
+    margin: 5% auto 7% auto;
+  }
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .radio-box {
+    margin-bottom: 11%;
+  }
+  .otvoreno-pitanje {
+    margin-bottom: 11%;
+  }
+  .otvoreno-pitanje textarea {
+    margin-bottom: 18%;
+  }
+  .otvoreno-text textarea {
+    margin-top: 4%;
+
+    border-radius: 15px;
+    height: 90%;
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .otvoreno-text textarea::placeholder {
+    font-size: 15px;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkbox-p .checkmark-p:after {
+    left: 6px;
+    top: 1px;
+  }
+
+  .checkbox-p {
+    margin-right: auto;
+    margin-left: 11%;
+  }
+
+  .dugme {
+    font-size: 20px;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*od ovog pointa krece mobilna verzija*/
+  .naslov-tekst h1 {
+    font-size: 30px;
+    border-left: 10px solid #c3b0ff;
+    line-height: 30px;
+  }
+  .naslov-tekst {
+    font-size: 40px;
+  }
+  .box-clan {
+    width: 90%;
+  }
+  .box-pitanja {
+    width: 85%;
+  }
+  .otvoreno-text textarea {
+    width: 90%;
+    margin-top: 9%;
+    font-size: 10px;
+  }
+  .unos {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 15%;
+  }
+  .clan {
+    margin-top: 8%;
+    margin-left: 25.5%;
+    text-align: left;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 25px;
+    color: #ffffff;
+  }
+  .pitanje {
+    font-size: 20px;
+  }
+  .otvoreno-text textarea {
+    width: 90%;
+    margin-top: 5%;
+    font-size: 18px;
+  }
+  .otvoreno-text textarea::placeholder {
+    font-size: 18px;
+  }
+  .dugme {
+    font-size: 20px;
+    width: 55%;
+  }
+  .radio-btn {
+    font-size: 20px;
+  }
+  .odgovor {
+    font-size: 20px;
+  }
+  .unos-tekst-it {
+    font-size: 20px;
+  }
+  .label-text-it input {
+    font-size: 20px;
+  }
+  .label-text-it input::placeholder {
+    font-size: 20px;
+  }
+  .checkbox-p {
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: 2%;
+  }
+
+  .unos-ikona img {
+    height: 24px;
+  }
+
+  .label-text input {
+    font-size: 20px;
+  }
+
+  .label-text input::placeholder {
+    font-size: 20px;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark-p {
+    position: absolute;
+    top: 1px;
+    left: 8px;
+    height: 20px;
+    width: 20px;
+
+    border: 1px solid #c3b0ff;
+  }
+
+  hr.linija-p {
+    background: #c3b0ff;
+    border-color: #c3b0ff;
+
+    width: 78%;
+    height: 0.08%;
+    margin: 5% auto 10% auto;
+  }
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .radio-box {
+    margin-bottom: 18%;
+  }
+  .otvoreno-pitanje {
+    margin-bottom: 18%;
+  }
+  .otvoreno-pitanje textarea {
+    margin-bottom: 18%;
+  }
+  .otvoreno-text textarea {
+    margin-top: 6%;
+
+    border-radius: 15px;
+    height: 90%;
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .otvoreno-text textarea::placeholder {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+}
+
+a {
+  color: #C3B0FF;
+}

@@ -7,7 +7,11 @@
 .slike-tima-wrapper {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   background-color: #181919;
+=======
+  /* background-color: #181919; */
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
 }
 
 .navbar-st {
@@ -28,6 +32,7 @@
   font-size: 1.5vw;
   cursor: pointer;
   border-radius: 1.5rem;
+<<<<<<< HEAD
   user-select: none;
   transition: all 0.3s ease-in-out;
 }
@@ -44,6 +49,24 @@
 .active {
   background-color: #00ffa3;
   color: #333333;
+=======
+  /* user-select: none; */
+  transition: all 0.3s ease-in-out;
+}
+
+.inactiveS {
+  color: #00ffa3;
+}
+.inactiveS:hover {
+  background-color: #00ffa3;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.activeS {
+  background-color: #00ffa3;
+  color: #000000 !important;
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
 }
 
 .slike-tima-container {
@@ -82,7 +105,11 @@
   height: 24vw;
   width: 17.8vw;
   object-fit: cover;
+<<<<<<< HEAD
   user-select: none;
+=======
+  /* user-select: none; */
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
 }
 
 .left-arrow {
@@ -92,7 +119,11 @@
   width: 7vw;
   cursor: pointer;
   z-index: 10;
+<<<<<<< HEAD
   user-select: none;
+=======
+  /* user-select: none; */
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
 }
 .right-arrow {
   position: absolute;
@@ -101,6 +132,7 @@
   width: 7vw;
   cursor: pointer;
   z-index: 10;
+<<<<<<< HEAD
   user-select: none;
 }
 
@@ -112,6 +144,61 @@
 .right-arrow:hover {
   transform: scale(1.5);
   transition: all 0.2s ease-in-out;
+=======
+  /* user-select: none; */
+}
+
+@keyframes animScale {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+@keyframes animScale1 {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.inactiveAR {
+  animation-name: animScale;
+  animation-duration: 0.3s;
+}
+.activeAR {
+  animation-name: animScale1;
+  animation-duration: 0.3s;
+}
+.inactiveARL {
+  animation-name: animScale;
+  animation-duration: 0.3s;
+}
+.activeARL {
+  animation-name: animScale1;
+  animation-duration: 0.3s;
+}
+
+.right-arrow,
+.left-arrow {
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (min-width: 560px) {
+  .right-arrow:hover,
+  .left-arrow:hover {
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out;
+  }
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
 }
 
 .slide {
@@ -140,11 +227,21 @@
 
 .opis-slike .ime-koordinatora {
   font-weight: 400;
+<<<<<<< HEAD
   font-size: 3vw;
 }
 .opis-slike .funkcija-koordinatora {
   font-weight: 200;
   font-size: 2vw;
+=======
+  font-size: 2.5vw;
+}
+.opis-slike .funkcija-koordinatora {
+  font-weight: 200;
+  font-size: 1.3vw;
+  /* white-space: initial;
+  height: 10vh; */
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
 }
 
 .slike-tima-container .slike-tima-desno {
@@ -177,7 +274,12 @@
   padding-top: 5%;
   padding-left: 10%;
   color: #ffffff;
+<<<<<<< HEAD
   font-size: 1.5vw;
+=======
+  font-size: 1.3vw;
+  height: 10vw;
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
   width: 55vw;
   text-align: start;
 }
@@ -189,7 +291,14 @@
 }
 @media screen and (min-width: 620px) {
 }
+<<<<<<< HEAD
 @media screen and (max-width: 480px) {
+=======
+@media screen and (max-width: 560px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
   .slike-tima-container {
     flex-direction: column;
   }
@@ -206,6 +315,10 @@
 
   .navbar-st {
     padding: 1% 0;
+<<<<<<< HEAD
+=======
+    margin-bottom: 5%;
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
   }
   .navbar-st .box {
     width: 13vw;
@@ -230,11 +343,42 @@
     width: 15vw;
   }
 
+<<<<<<< HEAD
   .opis-slike .ime-koordinatora {
     font-size: 7vw;
   }
   .opis-slike .funkcija-koordinatora {
     font-size: 4vw;
+=======
+  @keyframes animScale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes animScale1 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .opis-slike .ime-koordinatora {
+    font-size: 6vw;
+  }
+  .opis-slike .funkcija-koordinatora {
+    font-size: 3vw;
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
   }
 
   .slika-roditelj .slika-grupna {
@@ -251,6 +395,7 @@
     font-family: "Manrope";
     padding-left: 0%;
     color: #ffffff;
+<<<<<<< HEAD
     font-size: 3.2vw;
     width: 90vw;
     text-align: center;
@@ -258,3 +403,19 @@
 }
 @media screen and (min-width: 340px) {
 }
+=======
+    font-size: 3vw;
+    width: 90vw;
+    text-align: center;
+    height: 20vw;
+  }
+
+  .inactiveS:hover {
+    background-color: transparent;
+    color: #ffffff;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 340px) {
+}
+>>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd

@@ -1,30 +1,271 @@
+/* ovo je za celu stranu */
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ceo-nav {
+  position: relative;
+  z-index: 10;
+}
+
+body {
+  --main-color: #181919;
+  background-color: var(--main-color);
 }
 
 .navbar {
-    display: flex;
-    width: 100%;
+  background-color: #181919;
+  padding: 0rem 3vw;
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+  /* scroll-behavior: smooth; */
+  background-color: transparent;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .navbar-logo {
-    width: 10%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  margin-left: -8vw;
+  margin-top: 10px;
 }
 
-.navbar-pages .list{
-    display: flex;
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+
+  width: 77%;
+  justify-content: space-between;
 }
 
-.navbar-pages {
-    width: 90%;
+.nav-links {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: #00ffa3;
+  transition: all 0.5s ease-out;
+}
+
+.link-do-prijave:hover {
+  color: #00ffa3;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.link-do-prijave {
+  color: white;
+  padding: 0.5rem 1rem;
+
+  position: relative;
+  cursor: pointer;
+
+  /* background: linear-gradient(
+        266.49deg,
+        #00ba76 -33.81%,
+        rgba(24, 25, 25, 0) 170.16%
+      )
+      padding-box,
+    linear-gradient(120.39deg, #00d084 23.45%, rgba(24, 25, 25, 0.2) 104.96%)
+      border-box;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50px;
+
+  box-shadow: inset 1px 1px 2px rgba(34, 35, 35, 0.3),
+    inset -1px -1px 2px rgba(14, 15, 15, 0.5);
+
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+
+  color: #ffffff;
+
+  box-shadow: 37px 37px 93px 0px rgba(14, 15, 15, 0.9);
+  box-shadow: -37px -37px 74px 0px rgba(34, 35, 35, 0.9);
+  box-shadow: 37px -37px 74px 0px rgba(14, 15, 15, 0.2);
+  box-shadow: -37px 37px 74px 0px rgba(14, 15, 15, 0.2);
+  box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
+  box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset; */
+}
+
+/* .link-do-prijave::after {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -8px;
+  border-radius: 20px;
+
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 110%;
+  transform: scale(0.9) translateZ(0);
+  filter: blur(15px);
+  background: linear-gradient(to left, #00ffa3, #c3b0ff, #ffffff);
+  background-size: 200% 200%;
+  animation: animateGlow 2.2s linear infinite;
+
+  opacity: 0.5;
+} */
+
+/* @keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+} */
+
+@media (max-width: 750px) {
+  .navbar {
+    z-index: 500;
+    width: 100%;
+    background-color: #181919;
+    opacity: 1;
+
+    position: fixed;
+    top: 0;
+
+    height: 60px;
+
+    outline: 1.5px solid rgba(255, 255, 255, 0.093);
+  }
+
+  .hamburger-react {
+    margin-top: -10px;
+  }
+
+  a.nav-links.link-do-prijave {
+    width: 70%;
+    padding: 5px;
+    margin-left: 15vw;
+    margin-bottom: 20%;
+
+    color: white;
+    padding: 0.5rem 1rem;
+
+    position: relative;
+    cursor: pointer;
+
+    /* background: linear-gradient(
+          266.49deg,
+          #00ba76 -33.81%,
+          rgba(24, 25, 25, 0) 170.16%
+        )
+        padding-box,
+      linear-gradient(120.39deg, #00d084 23.45%, rgba(24, 25, 25, 0.2) 104.96%)
+        border-box;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 50px;
+
+    box-shadow: inset 1px 1px 2px rgba(34, 35, 35, 0.3),
+      inset -1px -1px 2px rgba(14, 15, 15, 0.5);
+
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(60px);
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+
+    color: #ffffff;
+
+    box-shadow: 37px 37px 93px 0px rgba(14, 15, 15, 0.9);
+    box-shadow: -37px -37px 74px 0px rgba(34, 35, 35, 0.9);
+    box-shadow: 37px -37px 74px 0px rgba(14, 15, 15, 0.2);
+    box-shadow: -37px 37px 74px 0px rgba(14, 15, 15, 0.2);
+    box-shadow: -1px -1px 2px 0px rgba(14, 15, 15, 0.5) inset;
+    box-shadow: 1px 1px 2px 0px rgba(34, 35, 35, 0.3) inset; */
+  }
+
+  .nav-menu {
     display: flex;
-    list-style: none;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
+    padding-bottom: 10%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 3rem;
+    left: -100%;
+    opacity: 1;
+    /* transition: all 0.5s ease; */
+    overflow: hidden;
 
-.navbar-pages .list li{
-text-decoration: none;
+    
+
+  }
+
+  .nav-menu.active {
+    background-image: url("./nav-tel.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 6vw;
+    font-size: 8.5vw;
+    width: 100vw;
+    display: table;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+
+    color: #ffffff;
+  }
+
+  .nav-links:hover {
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+
+    top: 1.5rem;
+    right: 2rem;
+    transform: translate(-10%, -7%);
+    color: #00ffa3;
+    cursor: pointer;
+  }
 }

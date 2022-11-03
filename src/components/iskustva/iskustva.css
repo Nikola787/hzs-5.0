@@ -1,0 +1,86 @@
+/* .dveSekcije {
+  background-image: url("./assets/O\ projektu\ POZADINA-01.png");
+  background-size: 100% 100%;
+
+  position: relative;
+  z-index: 1;
+} */
+
+.iskustva-deo {
+  background-image: url("./assets/iskustva_d.png");
+  background-size: 100% 100%;
+  margin: 2% auto 5% auto;
+  height: 50vw;
+  width: 80vw;
+}
+
+.naslov-i {
+  display: flex;
+  margin-top: 3%;
+  margin-left: 13%;
+  padding-top: 1%;
+}
+
+.naslov-tekst-i h1 {
+  margin: 0;
+  padding: 0;
+
+  line-height: 4vw;
+  border-left: 1vw solid #00ffa3;
+  padding-left: 1vw;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 5vw;
+  color: #ffffff;
+}
+
+.naslov-tekst-i {
+  margin-top: 4%;
+  margin-left: 1%;
+  margin-bottom: 4%;
+}
+
+@media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .iskustva-deo {
+    height: 60vw;
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .iskustva-deo {
+    height: 65vw;
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .iskustva-deo {
+    background-image: url("./assets/NOVO.png");
+    height: 200vw;
+    width: 90vw;
+  }
+
+  .naslov-i h1 {
+    margin-top: 10vw;
+    margin-left: -6vw;
+
+    font-size: 13vw;
+    line-height: 10vw;
+
+    margin-bottom: 8%;
+    border-left: 2vw solid #00ffa3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dveSekcije {
+    /* background-image: url("./assets/OI_mobilni_p.png"); */
+    background-size: 100% 100%;
+  }
+}

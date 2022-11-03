@@ -1,0 +1,78 @@
+.animacijaD {
+  -webkit-transform: translateZ(0);
+  font-family: "Manrope";
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #181919;
+  overflow: hidden;
+
+  height: 100vh;
+  width: 100%;
+
+  /* margin-bottom: -7vw; */
+  content: "";
+  position: absolute;
+  top: 2;
+}
+
+#video {
+  align-self: center;
+  height: 120vh;
+  width: 140vw;
+}
+
+/* @media (min-aspect-ratio: 16/9) {
+  #video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #video {
+    width: auto;
+    height: 100%;
+  }
+} */
+
+@media screen and (max-width: 960px) {
+  /* .box {
+    height: 40vh;
+  }
+  .box h2 {
+    font-size: 5vw;
+  } */
+  #video {
+    align-self: center;
+    height: 200vh;
+    width: 220vw;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  /* .box {
+    width: 90vw;
+    height: 40vh;
+  }
+
+  .box h2 {
+    font-size: 8vw;
+  } */
+  #video {
+    align-self: center;
+    height: 360vh;
+    width: 380vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*od ovog pointa krece mobilna verzija*/
+  /* .box {
+    height: 35vh;
+    width: 90vw;
+  } */
+}
+@media screen and (max-width: 340px) {
+}

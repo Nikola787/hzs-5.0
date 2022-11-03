@@ -1,19 +1,193 @@
-p {
-    text-align: center;
-    font-size: 60px;
-    margin: 0;
+.timer-text {
+  text-align: center;
+  font-size: 3vw;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  color: #ffff;
 }
 
-#dani {
-    margin-left: -20rem;
-    font-size: 1.5rem;
+.dani {
+  font-size: 0.2w;
+  margin-left: -12vw;
+  margin-bottom: -1vw;
 }
 
-#sati {
-    font-size: 1.5rem;
+.sati {
+  font-size: 1w;
+  margin-left: -5vw;
+  margin-top: -1vw;
 }
 
-.wrapper {
-    display: block;
-    text-align: center;
+.wrapper-t {
+  display: flex;
+  justify-content: center;
+
+  background-color: #181919;
+  color: #00ffa3;
+  position: relative;
+  margin-top: 10vh;
+  height: 40vh;
+}
+
+.timer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.5vw;
+  color: #ffff;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.timer-span {
+  position: absolute;
+  left: 33vw;
+  top: 1.3vw;
+
+  opacity: 1;
+  filter: blur(0px);
+}
+
+.timer-span-f {
+  animation: fade-out 0.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-out {
+  100% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+}
+
+.demo {
+  max-width: 100%;
+  text-align: center;
+  font-size: 3vw;
+  transform: scale(0.94);
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+
+  /* identical to box height */
+
+  color: #00ffa3;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.timer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.timer-f {
+  animation: fade-in 0.5s 0.5s forwards cubic-bezier(0.42, 0, 0.74, 0.75);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .timer {
+    font-size: 5vw;
+  }
+
+  .timer-text {
+    font-size: 6vw;
+  }
+
+  .timer-span {
+    left: 20vw;
+    top: 6vw;
+  }
+
+  .demo {
+    font-size: 8vw;
+  }
+
+  .dani {
+    margin-left: -30vw;
+    margin-bottom: -2vw;
+  }
+  
+  .sati {
+    margin-left: -10vw;
+    margin-top: -3vw;
+  }
+
+  .wrapper-t {
+    margin-top: -8%;
+  }
+  
+
+}
+
+@media screen and (max-width: 620px) {
+  .timer {
+    font-size: 7vw;
+  }
+
+  .timer-text {
+    font-size: 8vw;
+  }
+
+  .timer-span {
+    left: 8vw;
+    top: 10vw;
+  }
+
+  .demo {
+    font-size: 12vw;
+  }
+
+  .dani {
+    margin-left: -45vw;
+    margin-bottom: -2vw;
+  }
+  
+  .sati {
+    margin-left: -18vw;
+    margin-top: -3vw;
+  }
+
+  .wrapper-t {
+    margin-top: -18%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*od ovog pointa krece mobilna verzija*/
+  .wrapper-t {
+    margin-top: -10%;
+    margin-bottom: 25%;
+  }
+}
+
+@media screen and (max-width: 340px) {
 }
