@@ -1,6 +1,6 @@
 import React from "react";
 import "./radionice.css";
-import slikaPredavaca from "../../images/5-3.jpg";
+import slikaPredavaca from "../../images/Petra.jpg";
 
 const radionice = () => {
   return (

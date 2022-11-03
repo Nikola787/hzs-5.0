@@ -47,30 +47,30 @@ const dataF = [
   {
     questionF: "Ko sve može da učestvuje na Hakatonu?",
     answerF:
-      "Na takmičenju mogu da učestuju svi učenici srednjih škola Republike Srbije. Timovi treba da se sastoje od 3 ili 4 člana i učešće je besplatno. Prijava se može poslati putem forme.",
+      "Na takmičenju mogu da učestuju svi učenici srednjih škola Republike Srbije. Timovi treba da se sastoje od 3 ili 4 člana i učešće je besplatno. Prijava se može poslati putem forme." ,
   },
   {
-    questionF: "Da li postoje neki kriterijumi za sastavljanje timova?",
+    questionF: "Da li postoje neki ograničenja za sastavljanje timova?",
     answerF:
-      "Pored toga da učesnici treba da budu učenici srednjih škola ne postoje dodatni kriterijumi. Jedan tim može da se sastoji od učenika iz različitih škola, razreda i smerova.",
+      "Pored toga da učesnici treba da budu učenici srednjih škola ne postoje dodatna ograničenja. Jedan tim može da se sastoji od učenika iz različitih škola, razreda i smerova.",
   },
   {
     questionF: "Kako izgleda proces prijave za učešće na Hakatonu?",
     answerF:
-      "Prvo se vrši selekcija na osnovu prijave poslate putem sajta i izabrani rade online test koji proverava znanje iz oblasti Informacionih tehnologija. Na osnovu uspeha u ova 2 kruga selekcije prijavljeni timovi dobijaju priliku da učestvuju na radionicama. Radionice pripremaju učesnike za domaći zadatak, treći krug selekcije, koji će presuditi da li se tim takmiči na hakatonu.",
+      "Prvo se vrši selekcija na osnovu prijave poslate putem sajta i izabrani timovi rade online test koji proverava znanje iz oblasti Informacionih tehnologija. Na osnovu uspeha u ova 2 kruga selekcije prijavljeni timovi dobijaju priliku da učestvuju na radionicama. Radionice pripremaju učesnike za domaći zadatak, treći krug selekcije, koji će presuditi da li se tim takmiči na hakatonu.",
   },
   {
     questionF: "Da li takmičari dobijaju mentora za rad na takmičenju?",
     answerF:
-      "Svakom timu je dodeljen stručan mentor koji će ih usmeravati i pomagati im u toku izrade projekta kako bi iskoristili pun potencijal svoje ideje.",
+      "Svakom timu je dodeljen stručni mentor koji će ih usmeravati i pomagati im u toku izrade projekta kako bi iskoristili pun potencijal svoje ideje.",
   },
   {
-    questionF: "Da li je zabranjeno korišćenje određene tehnologije za vreme Hakatona?",
+    questionF: "Koje tehnologije se koriste za vreme Hakatona?",
     answerF: "Takmičari imaju prava da koriste Internet, tehnologiju po želji, kao i bilo koju dodatnu literaturu za koju smatraju da im može pomoći i olakšati rad na takmičenju."
   },
   {
     questionF: "Kako se određuje pobednik?",
-    answerF: "Na kraju takmičenja svaki tim prezentuje 10 minuta svoju ideju, posle čega članove istog očekuju pitanja stručnog žirija. Na osnovu svih prezentacija i odgovora žiri proglašava pobednika."
+    answerF: "Na kraju takmičenja svaki tim prezentuje 10 minuta svoje rešenje, nakon čega stručni žiri ima 5 minuta za postavljanje pitanja. Na osnovu prezentacija i odgovora žiri odlučuje o pobedniku."
   }
 ];
 

@@ -36,14 +36,14 @@
   color: #00ffa3;
 }
 .inactiveS:hover {
-  background-color: transparent;
-  color: #ffffff;
-  opacity: 1;
+  background-color: #00ffa3;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .activeS {
   background-color: #00ffa3;
-  color:#000000 !important
+  color: #000000 !important;
 }
 
 .slike-tima-container {
@@ -104,14 +104,56 @@
   user-select: none;
 }
 
-.left-arrow,
-.right-arrow {
+@keyframes animScale {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+@keyframes animScale1 {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.inactiveAR {
+  animation-name: animScale;
+  animation-duration: 0.3s;
+}
+.activeAR {
+  animation-name: animScale1;
+  animation-duration: 0.3s;
+}
+.inactiveARL {
+  animation-name: animScale;
+  animation-duration: 0.3s;
+}
+.activeARL {
+  animation-name: animScale1;
+  animation-duration: 0.3s;
+}
+
+.right-arrow,
+.left-arrow {
   transition: all 0.2s ease-in-out;
 }
-.left-arrow:hover,
-.right-arrow:hover {
-  transform: scale(1.5);
-  transition: all 0.2s ease-in-out;
+@media screen and (min-width: 560px) {
+  .right-arrow:hover,
+  .left-arrow:hover {
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out;
+  }
 }
 
 .slide {
@@ -145,6 +187,8 @@
 .opis-slike .funkcija-koordinatora {
   font-weight: 200;
   font-size: 1.3vw;
+  /* white-space: initial;
+  height: 10vh; */
 }
 
 .slike-tima-container .slike-tima-desno {
@@ -178,6 +222,7 @@
   padding-left: 10%;
   color: #ffffff;
   font-size: 1.3vw;
+  height: 10vw;
   width: 55vw;
   text-align: start;
 }
@@ -190,6 +235,9 @@
 @media screen and (min-width: 620px) {
 }
 @media screen and (max-width: 560px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
   .slike-tima-container {
     flex-direction: column;
   }
@@ -231,6 +279,29 @@
     width: 15vw;
   }
 
+  @keyframes animScale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes animScale1 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
   .opis-slike .ime-koordinatora {
     font-size: 6vw;
   }
@@ -263,7 +334,6 @@
     color: #ffffff;
     opacity: 1;
   }
-
 }
 @media screen and (min-width: 340px) {
 }

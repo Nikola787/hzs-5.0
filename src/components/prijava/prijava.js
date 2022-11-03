@@ -6,7 +6,7 @@ import Clan from "./Clan.js";
 import { useState } from "react";
 import { useEffect } from "react";
 
-import Pravilnik from "../Pravila.pdf";
+import Pravilnik from "../PravilnikHZS.pdf";
 
 import Loader from "../../components/loader/Loader.js";
 

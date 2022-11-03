@@ -2,11 +2,11 @@ import React from "react";
 import "./agenda.css";
 const agenda = () => {
   return (
-    <div>
-      <div className="agenda">
+    <div >
+      <div className="agenda" >
         <div className="naslov-agenda">
           <div className="naslov-o">
-            <div className="naslov-tekst-o">
+            <div className="naslov-tekst-o" id = "#agendaM">
               <h1>AGENDA</h1>
             </div>
           </div>
@@ -18,7 +18,7 @@ const agenda = () => {
           <div className="agenda-first">
             <div className="first">
               <div className="ag-fi-date">
-                <p>3. 11</p>
+                <p>3. 11.</p>
               </div>
               <div className="ag-fi-title">
                 <p>Otvaranje prijava</p>
@@ -34,7 +34,7 @@ const agenda = () => {
           <div className="agenda-second">
             <div className="second">
               <div className="ag-sc-date">
-                <p>17. 11</p>
+                <p>17. 11.</p>
               </div>
               <div className="ag-sc-title">
                 <p>Zatvaranje prijava</p>
@@ -51,7 +51,7 @@ const agenda = () => {
           <div className="agenda-third">
             <div className="third">
               <div className="ag-th-date">
-                <p>22. 11</p>
+                <p>22. 11.</p>
               </div>
               <div className="ag-th-title">
                 <p>Online test</p>
@@ -68,7 +68,7 @@ const agenda = () => {
           <div className="agenda-fourth">
             <div className="fourth">
               <div className="ag-fo-date">
-                <p>26. 11 - 27. 11</p>
+                <p>26. 11 - 27. 11.</p>
               </div>
               <div className="ag-fo-title">
                 <p>Radionice</p>
@@ -85,7 +85,7 @@ const agenda = () => {
           <div className="agenda-fifth">
             <div className="fifth">
               <div className="ag-fv-date">
-                <p>27. 11 - 1. 12</p>
+                <p>27. 11 - 1. 12.</p>
               </div>
               <div className="ag-fv-title">
                 <p>Domaći zadatak</p>
@@ -102,7 +102,7 @@ const agenda = () => {
           <div className="agenda-sixth">
             <div className="sixth">
               <div className="ag-sh-date">
-                <p>10. 12 - 11. 12</p>
+                <p>10. 12 - 11. 12.</p>
               </div>
               <div className="ag-sh-title">
                 <p>Hakaton</p>

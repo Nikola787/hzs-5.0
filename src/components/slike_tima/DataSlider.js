@@ -1,7 +1,7 @@
 export const DataSlider = [
   {
     id: 0,
-    image: require("../../images/ana.JPG"),
+    image: require("../../images/Blajvislav.jpg"),
     name: "Vladislav Vidović",
     title: "Koordinator projekta",
     imageGroup: require("../../images/Core.jpeg"),
@@ -10,16 +10,16 @@ export const DataSlider = [
   },
   {
     id: 1,
-    image: require("../../images/moze.JPG"),
+    image: require("../../images/moze.jpg"),
     name: "Nikola Ratković",
     title: "Koordinator tima za informacione tehnologije",
-    imageGroup: require("../../images/mozee2.JPG"),
+    imageGroup: require("../../images/mozee2.jpg"),
     description:
       "Tim za informacione tehnologije svojim znanjem i neumornim radom zaslužan je za izradu veb sajta Hakaton za srednjoškolce, na kom možeš naći sve potrebne informacije o ovom takmičenju i poslati prijavu.                                                                                                                                                                                                                     ",
   },
   {
     id: 2,
-    image: require("../../images/ana.JPG"),
+    image: require("../../images/tea.png"),
     name: "Teodora Ćopić",
     title: "Koordinatorka tima za dizajn",
     imageGroup: require("../../images/dizajn.png"),
@@ -28,28 +28,28 @@ export const DataSlider = [
   },
   {
     id: 3,
-    image: require("../../images/ana.JPG"),
+    image: require("../../images/ana.jpg"),
     name: "Ana Vićovac",
     title: "Koordinatorka tima za odnose sa javnošću",
-    imageGroup: require("../../images/pr.JPG"),
+    imageGroup: require("../../images/pr.jpg"),
     description:
       "Tim za odnose sa javnošću, pored toga što u saradnji sa dizajn timom osmišljava vizuelni identitet, zaslužan je za sklapanje medijskih saradnji i širenju glasa o takmičenju. Svojom kreativnošću se trude da ti na pravi način prenesu ideju naše organizacije.                                                                                                                                                               ",
   },
   {
     id: 4,
-    image: require("../../images/ana.JPG"),
+    image: require("../../images/Jolobitch.jpg"),
     name: "Miloš Jolović",
     title: "Koordinator tima za korporativne i akademske odnose",
-    imageGroup: require("../../images/pr.JPG"),
+    imageGroup: require("../../images/CAR.jpg"),
     description:
       "Tim za korporativne i akademske odnose neumorno radi na sklapanju i održavanju partnerstava sa brojnim kompanijama koje nam pružaju podršku u realizaciji takmičenja. Takođe, sarađuju sa stručnim mentorima i žirijem i trude se da tebi i tvom timu obezbede nezaboravno iskustvo.                                                                                                                                           ",
   },
   {
     id: 5,
-    image: require("../../images/ana.JPG"),
+    image: require("../../images/Dusan.jpg"),
     name: "Dušan Kostić",
     title: "Koordinator tima za logistiku",
-    imageGroup: require("../../images/pr.JPG"),
+    imageGroup: require("../../images/logistika.jpg"),
     description:
       "Tim za logistiku osmišljava operacioni plan celokupnog takmičenja i obezbeđuje prostor u kom će se održati. Svojim prisustvom potrudiće se da se svaki učesnik oseća prijatno i da ovo druženje svima bude prelepo iskustvo.                                                                                                                                                                                                   ",
   },
