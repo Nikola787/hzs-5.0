@@ -50,7 +50,7 @@ const Slike_tima = () => {
 
       // console.log(current);
       setCurrent(current + 1);
-    }, 3000);
+    }, 5000);
 
     return () => {
       clearInterval(slider);
