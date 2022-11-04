@@ -48,7 +48,7 @@ const Slike_tima = () => {
         goToSlide(current + 1);
       }
 
-      console.log(current);
+      // console.log(current);
       setCurrent(current + 1);
     }, 3000);
 

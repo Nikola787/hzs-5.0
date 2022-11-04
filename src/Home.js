@@ -3,7 +3,7 @@ import Animacija from "./components/animacija/animacija.js";
 import Radionice from "./components/radionice/radionice.jsx";
 import Tajmer from "./components/tajmer/tajmer.jsx";
 import SlikeTima from "./components/slike_tima/Slike_tima.jsx";
-import Agenda from "./components/agenda/agenda.jsx";
+import Agenda from "./components/agenda/Agenda.jsx";
 import Faq from "./components/faq/faq.js";
 import O_projektu from "./components/o_projektu/O_projektu.js";
 import Iskustva from "./components/iskustva/iskustva.js";

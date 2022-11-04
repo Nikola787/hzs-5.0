@@ -7,7 +7,7 @@
 } */
 
 .iskustva-deo {
-  background-image: url("./assets/iskustva_d.png");
+  background-image: url("./assets/desktop_novo.png");
   background-size: 100% 100%;
   margin: 2% auto 5% auto;
   height: 50vw;
@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 660px) {
   .iskustva-deo {
-    background-image: url("./assets/NOVO.png");
+    background-image: url("./assets/telefon_novo.png");
     height: 200vw;
     width: 90vw;
   }

@@ -5,15 +5,15 @@ const menuItems = [
     cName: "nav-links",
   },
 
-  // {
-  //   title: "RADIONICE",
-  //   url: "#radionice",
-  //   cName: "nav-links",
-  // },
+  {
+    title: "AGENDA",
+    url: "#agenda",
+    cName: "nav-links",
+  },
 
   {
     title: "PITANJA",
-    url: "#faq",
+    url: "#pitanja",
     cName: "nav-links",
   },
   {

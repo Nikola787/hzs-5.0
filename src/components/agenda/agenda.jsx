@@ -1,9 +1,9 @@
 import React from "react";
 import "./agenda.css";
-const agenda = () => {
+const Agenda = () => {
   return (
     <div >
-      <div className="agenda" >
+      <div className="agenda" id="agenda" >
         <div className="naslov-agenda">
           <div className="naslov-o">
             <div className="naslov-tekst-o" id = "#agendaM">
@@ -124,4 +124,4 @@ const agenda = () => {
   );
 };
 
-export default agenda;
+export default Agenda;

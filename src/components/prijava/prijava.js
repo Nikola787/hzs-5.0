@@ -10,8 +10,7 @@ import Pravilnik from "../PravilnikHZS.pdf";
 
 import Loader from "../../components/loader/Loader.js";
 
-import { useNavigate } from 'react-router';
-
+import { useNavigate } from "react-router";
 
 const Prijava = () => {
   const [clan1, setClan1] = useState({});
@@ -25,7 +24,7 @@ const Prijava = () => {
   const [pitanje4, setPitanje4] = useState("");
   const [pitanje5, setPitanje5] = useState("");
   const [pitanje6, setPitanje6] = useState("");
-  const [pitanje7, setPitanje7] = useState("");
+  const [pitanje7, setPitanje7] = useState(false);
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
@@ -189,14 +188,14 @@ const Prijava = () => {
       clan3.brojTelefona === "" ||
       clan1.email === "" ||
       clan2.email === "" ||
-      clan3.email === "" || 
+      clan3.email === "" ||
       pitanje1 === "" ||
       pitanje2 === "" ||
       pitanje3 === "" ||
       pitanje4 === "" ||
       pitanje5 === "" ||
       pitanje6 === "" ||
-      pitanje7 === ""
+      pitanje7 === false
     ) {
       // if (
       //   clan4.imePrezime !== "" &&
@@ -270,7 +269,7 @@ const Prijava = () => {
 
       // }
       setIsError(true);
-      console.log(clan4)
+      console.log(clan4);
       console.log("prvi deo niije dobar");
       return;
     }
@@ -288,7 +287,7 @@ const Prijava = () => {
 
     console.log(prijava);
     await postPrijava(prijava);
-    navigate('/')  
+    navigate("/");
   };
 
   return (
@@ -313,7 +312,12 @@ const Prijava = () => {
           <Clan onChange={onClan4} error={error4} />
 
           <div className="box-pitanja">
-            <div className="unos-tekst-it">
+            <div
+              className="unos-tekst-it"
+              style={{
+                color: pitanje1 === "" && error ? "red" : "#FFFFFF",
+              }}
+            >
               Ime tima:
               <label className="label-text-it">
                 <input
@@ -326,7 +330,12 @@ const Prijava = () => {
             </div>
             <hr className="linija-p" />
 
-            <div className="pitanje">
+            <div
+              className="pitanje"
+              style={{
+                color: pitanje2 === "" && error ? "red" : "#FFFFFF",
+              }}
+            >
               Kako ste saznali za Hakaton za srednjoškolce?
             </div>
             <hr className="linija-p" />
@@ -383,7 +392,12 @@ const Prijava = () => {
               </label>
             </div>
 
-            <div className="pitanje">
+            <div
+              className="pitanje"
+              style={{
+                color: pitanje3 === "" && error ? "red" : "#FFFFFF",
+              }}
+            >
               Da li ste nekada učestvovali na takmičenjima u programiranju?
               Ukoliko jeste, opišite vaša iskustva.
             </div>
@@ -398,7 +412,12 @@ const Prijava = () => {
               </label>
             </div>
 
-            <div className="pitanje">
+            <div
+              className="pitanje"
+              style={{
+                color: pitanje4 === "" && error ? "red" : "#FFFFFF",
+              }}
+            >
               Zašto baš vaš tim? (na koji način se razlikujete od drugih, koje
               su vaše vrline, prednosti itd...)
             </div>
@@ -413,7 +432,12 @@ const Prijava = () => {
               </label>
             </div>
 
-            <div className="pitanje">
+            <div
+              className="pitanje"
+              style={{
+                color: pitanje5 === "" && error ? "red" : "#FFFFFF",
+              }}
+            >
               Koja oblast u IT svetu vas najviše interesuje i zbog čega?
             </div>
             <hr className="linija-p"></hr>
@@ -427,7 +451,12 @@ const Prijava = () => {
               </label>
             </div>
 
-            <div className="pitanje">
+            <div
+              className="pitanje"
+              style={{
+                color: pitanje6 === "" && error ? "red" : "#FFFFFF",
+              }}
+            >
               Šta je najveća slabost vašeg tima i šta činite da je otklonite?
             </div>
             <hr className="linija-p"></hr>
@@ -441,7 +470,12 @@ const Prijava = () => {
               </label>
             </div>
 
-            <label className="checkbox-p">
+            <label
+              className="checkbox-p"
+              style={{
+                color: pitanje7 === false && error ? "red" : "#FFFFFF",
+              }}
+            >
               Saglasni smo da smo pročitali i da smo upoznati sa &nbsp;
               <a href={Pravilnik} target="_blank" rel="noopener noreferrer">
                 pravilnikom
@@ -450,7 +484,7 @@ const Prijava = () => {
               <input
                 type="checkbox"
                 required
-                onChange={(e) => setPitanje7("1")}
+                onChange={(e) => setPitanje7(e.target.checked)}
               />
               <span className="checkmark-p"></span>
             </label>

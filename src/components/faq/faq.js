@@ -13,7 +13,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="ceo-f" id="faq">
+    <div className="ceo-f" id="pitanja">
       {/* <div className="naslov-f">
         <div className="rectangle-f"></div>
         <div className="tekst_naslov-f">ČESTO POSTAVLJANA PITANJA</div>
