@@ -141,8 +141,8 @@ const Prijava = () => {
   };
 
   const postPrijava = async (prijava) => {
-    console.log("Post zahtev za prijava");
-    console.log(prijava);
+    // console.log("Post zahtev za prijava");
+    // console.log(prijava);
 
     try {
       setIsLoading(true);
@@ -269,8 +269,8 @@ const Prijava = () => {
 
       // }
       setIsError(true);
-      console.log(clan4);
-      console.log("prvi deo niije dobar");
+      // console.log(clan4);
+      // console.log("prvi deo niije dobar");
       return;
     }
 
@@ -285,7 +285,7 @@ const Prijava = () => {
       clanovi: [clan1, clan2, clan3, clan4],
     };
 
-    console.log(prijava);
+    // console.log(prijava);
     await postPrijava(prijava);
     navigate("/");
   };
@@ -476,11 +476,11 @@ const Prijava = () => {
                 color: pitanje7 === false && error ? "red" : "#FFFFFF",
               }}
             >
-              Saglasni smo da smo pročitali i da smo upoznati sa &nbsp;
+              Upoznati smo sa&nbsp;
               <a href={Pravilnik} target="_blank" rel="noopener noreferrer">
-                pravilnikom
+                pravilima
               </a>{" "}
-              &nbsp;takmičenja.
+              takmičenja i saglasni smo sa istim.
               <input
                 type="checkbox"
                 required

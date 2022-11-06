@@ -11,7 +11,7 @@ const footer = () => {
         <div className="left-footer">
           <div className="left-text">
             <p className="ltext">
-              <span className="site">Nas sajt: </span>
+              <span className="site">Naš sajt: </span>
               <a href="https://fonis.rs/" target="_blank" className="fonis">
                 fonis.rs
               </a>
