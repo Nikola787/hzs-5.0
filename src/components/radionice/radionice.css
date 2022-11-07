@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* user-select: none; */
 }
 
 .radionice-wrapper {
@@ -11,13 +10,15 @@
   background-image: url(../../images/Radionice.png);
   background-size: 100% 100%;
   background-color: #181919;
+  user-select: none;
+  overflow: hidden;
 }
 
 .radionica1-container,
 .radionica2-container,
 .radionica3-container,
 .radionica4-container {
-  padding: 5vw;
+  padding: 10%;
 }
 
 .radionica1-container,
@@ -32,6 +33,72 @@
   display: flex;
   width: 30%;
   flex-direction: column;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+  animation-name: animLeftSlide;
+  animation-duration: 0.5s;
+}
+
+.hidden1 {
+  visibility: hidden;
+}
+
+.visible1 {
+  visibility: visible;
+  animation-name: animRightSlide;
+  animation-duration: 0.5s;
+}
+
+.hidden2 {
+  visibility: hidden;
+}
+.visible2 {
+  visibility: visible;
+  animation-name: animImg;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animImg {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animLeftSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes animRightSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .radionica1-levo-container .redni-broj {
   display: flex;
@@ -116,7 +183,7 @@
 .radionica2-levo-container .prvi-deo {
   display: flex;
   align-items: flex-end;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .radionica2-levo-container .ime-predavaca {
@@ -188,12 +255,19 @@
 }
 @media screen and (max-width: 960px) {
   .radionice-wrapper {
-    background-image: url(../../images/RadioniceMobilni.png);
-    background-size: 100vw 600vw;
+    background-image: none;
+  }
+  .radionica1-container,
+  .radionica3-container,
+  .radionica2-container,
+  .radionica4-container {
+    background-image: url(../../images/Radionice-mobilni.png);
+    background-size: 100% 100%;
   }
   .radionica1-container,
   .radionica3-container {
     flex-direction: column;
+    padding: 0 10%;
   }
   .radionica2-container,
   .radionica4-container {
@@ -206,34 +280,44 @@
   }
 
   .radionica1-container {
-    /* gap: 3.6vh;
     padding-top: 8%;
-    padding-bottom: 0; */
-    padding-top: 8%;
+    padding-bottom: 8%;
   }
   .radionica2-container {
-    /* padding-top: 13%;
-    gap: 1.7vh; */
-    padding-top: 2%;
-    padding-bottom: 8%;
+    padding-top: 8%;
+    padding-bottom: 9%;
   }
 
   .radionica3-container {
-    /* padding-top: 0;
-    padding-bottom: 13%;
-    gap: 2.8vh; */
-    padding-top: 0;
+    padding-top: 8%;
+    padding-bottom: 8%;
   }
 
   .radionica4-container {
-    /* padding-top: 0;
-    gap: 6.2vh; */
-    padding-top: 2%;
+    padding-top: 7%;
+    padding-bottom: 8%;
   }
 
-  .radionica1-desno-container {
+  .radionica1-container .radionica1-desno-container {
     width: 100%;
     align-items: center;
+    padding-top: 15%;
+  }
+
+  .radionica2-container .radionica2-levo-container {
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 0;
+  }
+
+  .radionica3-container .radionica1-desno-container {
+    width: 100%;
+    padding-top: 15%;
+  }
+  .radionica4-container .radionica2-levo-container {
+    width: 100%;
+    padding-top: 22%;
+    padding-bottom: 0;
   }
   .radionica2-levo-container {
     max-width: 100%;
@@ -241,20 +325,7 @@
   .radionica2-desno-container {
     max-width: 100%;
   }
-  .radionica1-container .radionica1-desno-container {
-    margin-top: 11vw;
-  }
 
-  .radionica2-container .radionica2-levo-container {
-    margin-top: 2vw;
-  }
-
-  .radionica3-container .radionica1-desno-container {
-    margin-top: 3vw;
-  }
-  .radionica4-container .radionica2-levo-container {
-    margin-top: 10vw;
-  }
   .radionica1-desno-container .prvi-deo {
     flex-direction: row-reverse;
     width: 100%;
@@ -328,6 +399,14 @@
   .radionica2-levo-container .predavac-opis {
     font-size: 4vw;
     width: 100%;
+  }
+  .radionica2-container .visible,
+  .radionica4-container .visible {
+    animation-name: animRightSlide;
+  }
+  .radionica2-container .visible1,
+  .radionica4-container .visible1 {
+    animation-name: animLeftSlide;
   }
 }
 @media screen and (min-width: 1200px) {

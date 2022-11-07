@@ -11,6 +11,7 @@ const Slike_tima = () => {
   const [current, setCurrent] = useState(0);
   const [stateR, setStateR] = useState(false);
   const [stateL, setStateL] = useState(false);
+  const [state, setState] = useState(false);
   const length = people.length;
   const [appState, changeState] = useState({
     activeObject: null,
@@ -36,21 +37,24 @@ const Slike_tima = () => {
   }, [current, people]);
 
   useEffect(() => {
-    let slider = setInterval(() => {
-      if (current == 6) {
-        toggleActiveStyles(0);
-        toggleActive(0);
-        goToSlide(0);
-        // setCurrent(-1);
-      } else {
-        toggleActiveStyles(current + 1);
-        toggleActive(current + 1);
-        goToSlide(current + 1);
-      }
+    let slider = setInterval(
+      () => {
+        setState(false);
+        if (current == 6) {
+          toggleActiveStyles(0);
+          toggleActive(0);
+          setCurrent(0);
+        } else {
+          toggleActiveStyles(current + 1);
+          toggleActive(current + 1);
+          setCurrent(current + 1);
+        }
 
-      // console.log(current);
-      setCurrent(current + 1);
-    }, 5000);
+        console.log(current);
+        setCurrent(current + 1);
+      },
+      state === true ? 10000 : 3000
+    );
 
     return () => {
       clearInterval(slider);
@@ -69,10 +73,6 @@ const Slike_tima = () => {
     setCurrent(index);
     toggleActiveStyles(index);
     toggleActive(index);
-  };
-
-  const goToSlide = (index) => {
-    setCurrent(index);
   };
 
   const toggleActive = (index) => {
@@ -127,7 +127,8 @@ const Slike_tima = () => {
             className={toggleActiveStyles(index)}
             onClick={() => {
               toggleActive(index);
-              goToSlide(index);
+              setCurrent(index);
+              setState(true);
             }}
           >
             {elements.title}
@@ -144,6 +145,7 @@ const Slike_tima = () => {
               onClick={() => {
                 prevSlide();
                 toggleStateL();
+                setState(true);
               }}
             />
             <img
@@ -153,6 +155,7 @@ const Slike_tima = () => {
               onClick={() => {
                 nextSlide();
                 toggleStateR();
+                setState(true);
               }}
             />
             <img

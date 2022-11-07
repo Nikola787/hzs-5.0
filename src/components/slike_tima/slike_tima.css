@@ -7,7 +7,7 @@
 .slike-tima-wrapper {
   display: flex;
   flex-direction: column;
-  /* background-color: #181919; */
+  user-select: none;
 }
 
 .navbar-st {
@@ -28,7 +28,6 @@
   font-size: 1.5vw;
   cursor: pointer;
   border-radius: 1.5rem;
-  /* user-select: none; */
   transition: all 0.3s ease-in-out;
 }
 
@@ -82,7 +81,6 @@
   height: 24vw;
   width: 17.8vw;
   object-fit: cover;
-  /* user-select: none; */
 }
 
 .left-arrow {
@@ -92,7 +90,6 @@
   width: 7vw;
   cursor: pointer;
   z-index: 10;
-  /* user-select: none; */
 }
 .right-arrow {
   position: absolute;
@@ -101,7 +98,6 @@
   width: 7vw;
   cursor: pointer;
   z-index: 10;
-  /* user-select: none; */
 }
 
 @keyframes animScale {
@@ -176,6 +172,7 @@
   font-family: "Manrope";
   color: #ffffff;
   padding-top: 5%;
+  height: 7.5vw;
   width: 20vw;
   white-space: nowrap;
 }
@@ -187,8 +184,6 @@
 .opis-slike .funkcija-koordinatora {
   font-weight: 200;
   font-size: 1.3vw;
-  /* white-space: initial;
-  height: 10vh; */
 }
 
 .slike-tima-container .slike-tima-desno {
@@ -242,6 +237,7 @@
     flex-direction: column;
   }
   .slike-tima-levo .opis-slike {
+    height: 12vw;
     padding: 0;
   }
   .slike-tima-container .slike-tima-levo {
