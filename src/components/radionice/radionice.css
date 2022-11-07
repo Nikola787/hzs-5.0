@@ -11,6 +11,7 @@
   background-size: 100% 100%;
   background-color: #181919;
   user-select: none;
+  overflow: hidden;
 }
 
 .radionica1-container,
@@ -28,15 +29,76 @@
   gap: 15%;
 }
 
-.radionica1-container .radionica1-levo-container {
+.radionica1-levo-container {
   display: flex;
   width: 30%;
   flex-direction: column;
 }
-.radionica3-container .radionica1-levo-container {
-  display: flex;
-  width: 30%;
-  flex-direction: column;
+
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+  animation-name: animLeftSlide;
+  animation-duration: 0.5s;
+}
+
+.hidden1 {
+  visibility: hidden;
+}
+
+.visible1 {
+  visibility: visible;
+  animation-name: animRightSlide;
+  animation-duration: 0.5s;
+}
+
+.hidden2 {
+  visibility: hidden;
+}
+.visible2 {
+  visibility: visible;
+  animation-name: animImg;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animImg {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animLeftSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes animRightSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .radionica1-levo-container .redni-broj {
   display: flex;
@@ -337,6 +399,14 @@
   .radionica2-levo-container .predavac-opis {
     font-size: 4vw;
     width: 100%;
+  }
+  .radionica2-container .visible,
+  .radionica4-container .visible {
+    animation-name: animRightSlide;
+  }
+  .radionica2-container .visible1,
+  .radionica4-container .visible1 {
+    animation-name: animLeftSlide;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -1,12 +1,22 @@
 import React from "react";
 import "./radionice.css";
 import slikaPredavaca from "../../images/5-3.jpg";
+import { useInView } from "react-intersection-observer";
 
-const radionice = () => {
+const Radionice = () => {
+  const { ref: myRef1, inView: Visible1 } = useInView();
+  const { ref: myRef2, inView: Visible2 } = useInView();
+  const { ref: myRef3, inView: Visible3 } = useInView();
+  const { ref: myRef4, inView: Visible4 } = useInView();
+
   return (
     <div className="radionice-wrapper">
-      <div className="radionica1-container">
-        <div className="radionica1-levo-container">
+      <div ref={myRef1} className="radionica1-container">
+        <div
+          className={`radionica1-levo-container ${
+            Visible1 ? "visible" : "hidden"
+          }`}
+        >
           <h1 className="redni-broj">001</h1>
           <h1 className="naziv-radionice">BACK-END</h1>
           <p className="radionica-opis">
@@ -19,36 +29,46 @@ const radionice = () => {
         <div className="radionica1-desno-container">
           <div className="prvi-deo">
             <img
-              className="slika_desna"
+              className={`slika_desna ${Visible1 ? "visible2" : "hidden2"}`}
               src={slikaPredavaca}
               alt="Slika predavaca"
             />
-            <h1 className="ime-predavaca">Pavle Prica</h1>
+            <h1
+              className={`ime-predavaca ${Visible1 ? "visible1" : "hidden1"}`}
+            >
+              Pavle Prica
+            </h1>
           </div>
-          <p className="predavac-opis">
+          <p className={`predavac-opis ${Visible1 ? "visible1" : "hidden1"}`}>
             Pavle je Cloud inženjer i deo Zühlke tima. Bavi se aplikacijama
             baziranim na Cloud-u i fokus je na tehnologijama kao što su Java,
             Kotlin, Spring, Amazon Web Services.
           </p>
         </div>
       </div>
-      <div className="radionica2-container">
+      <div ref={myRef2} className="radionica2-container">
         <div className="radionica2-levo-container">
           <div className="prvi-deo">
-            <h1 className="ime-predavaca">Pavle Prica</h1>
+            <h1 className={`ime-predavaca ${Visible2 ? "visible" : "hidden"}`}>
+              Pavle Prica
+            </h1>
             <img
-              className="slika_leva"
+              className={`slika_leva ${Visible2 ? "visible2" : "hidden2"}`}
               src={slikaPredavaca}
               alt="Slika predavaca"
             />
           </div>
-          <p className="predavac-opis">
+          <p className={`predavac-opis ${Visible2 ? "visible" : "hidden"}`}>
             Pavle je Cloud inženjer i deo Zühlke tima. Bavi se aplikacijama
             baziranim na Cloud-u i fokus je na tehnologijama kao što su Java,
             Kotlin, Spring, Amazon Web Services.
           </p>
         </div>
-        <div className="radionica2-desno-container">
+        <div
+          className={`radionica2-desno-container ${
+            Visible2 ? "visible1" : "hidden1"
+          }`}
+        >
           <h1 className="redni-broj">002</h1>
           <h1 className="naziv-radionice">FRONT-END</h1>
           <p className="radionica-opis">
@@ -60,8 +80,12 @@ const radionice = () => {
           </p>
         </div>
       </div>
-      <div className="radionica3-container">
-        <div className="radionica1-levo-container">
+      <div ref={myRef3} className="radionica3-container">
+        <div
+          className={`radionica1-levo-container ${
+            Visible3 ? "visible" : "hidden"
+          }`}
+        >
           <h1 className="redni-broj">003</h1>
           <h1 className="naziv-radionice">SOFT-SKILLS</h1>
           <p className="radionica-opis">
@@ -74,36 +98,46 @@ const radionice = () => {
         <div className="radionica1-desno-container">
           <div className="prvi-deo">
             <img
-              className="slika_desna"
+              className={`slika_desna ${Visible3 ? "visible2" : "hidden2"}`}
               src={slikaPredavaca}
               alt="Slika predavaca"
             />
-            <h1 className="ime-predavaca">Pavle Prica</h1>
+            <h1
+              className={`ime-predavaca ${Visible3 ? "visible1" : "hidden1"}`}
+            >
+              Pavle Prica
+            </h1>
           </div>
-          <p className="predavac-opis">
+          <p className={`predavac-opis ${Visible3 ? "visible1" : "hidden1"}`}>
             Pavle je Cloud inženjer i deo Zühlke tima. Bavi se aplikacijama
             baziranim na Cloud-u i fokus je na tehnologijama kao što su Java,
             Kotlin, Spring, Amazon Web Services.
           </p>
         </div>
       </div>
-      <div className="radionica4-container">
+      <div ref={myRef4} className="radionica4-container">
         <div className="radionica2-levo-container">
           <div className="prvi-deo">
-            <h1 className="ime-predavaca">Pavle Prica</h1>
+            <h1 className={`ime-predavaca ${Visible4 ? "visible" : "hidden"}`}>
+              Pavle Prica
+            </h1>
             <img
-              className="slika_leva"
+              className={`slika_leva ${Visible4 ? "visible2" : "hidden2"}`}
               src={slikaPredavaca}
               alt="Slika predavaca"
             />
           </div>
-          <p className="predavac-opis">
+          <p className={`predavac-opis ${Visible4 ? "visible" : "hidden"}`}>
             Pavle je Cloud inženjer i deo Zühlke tima. Bavi se aplikacijama
             baziranim na Cloud-u i fokus je na tehnologijama kao što su Java,
             Kotlin, Spring, Amazon Web Services.
           </p>
         </div>
-        <div className="radionica2-desno-container">
+        <div
+          className={`radionica2-desno-container ${
+            Visible4 ? "visible1" : "hidden1"
+          }`}
+        >
           <h1 className="redni-broj">004</h1>
           <h1 className="naziv-radionice">GIT</h1>
           <p className="radionica-opis">
@@ -118,4 +152,4 @@ const radionice = () => {
   );
 };
 
-export default radionice;
+export default Radionice;
