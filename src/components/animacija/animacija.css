@@ -1,4 +1,5 @@
 .animacijaD {
+  -webkit-transform: translateZ(0);
   font-family: "Manrope";
 
   display: flex;
