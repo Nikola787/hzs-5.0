@@ -28,7 +28,12 @@
   gap: 15%;
 }
 
-.radionica1-levo-container {
+.radionica1-container .radionica1-levo-container {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+.radionica3-container .radionica1-levo-container {
   display: flex;
   width: 30%;
   flex-direction: column;
