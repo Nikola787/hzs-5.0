@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./slike_tima.css";
 import SLikaBordera1 from "../../images/Slike tima - okvir za sliku tima.png";
-<<<<<<< HEAD
-import SlikaGrupna from "../../images/Grupna.png";
-=======
->>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
 import StrelaLevo from "../../images/LeftArrow.png";
 import StrelaDesno from "../../images/RightArrow.png";
 import SlikaBordera from "../../images/Slike tima - okvir za koordinatora.png";
@@ -13,24 +9,13 @@ import { DataSlider } from "./DataSlider";
 const Slike_tima = () => {
   const [people] = useState(DataSlider);
   const [current, setCurrent] = useState(0);
-<<<<<<< HEAD
-=======
   const [stateR, setStateR] = useState(false);
   const [stateL, setStateL] = useState(false);
->>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
+  const [state, setState] = useState(false);
   const length = people.length;
   const [appState, changeState] = useState({
     activeObject: null,
     objects: [
-<<<<<<< HEAD
-      { id: 1, title: "CORE" },
-      { id: 2, title: "IT" },
-      { id: 3, title: "Dizajn" },
-      { id: 4, title: "PR" },
-      { id: 5, title: "CR&AR" },
-      { id: 6, title: "Logistika" },
-      { id: 7, title: "HR" },
-=======
       { id: 0, title: "CORE" },
       { id: 1, title: "IT" },
       { id: 2, title: "Dizajn" },
@@ -38,7 +23,6 @@ const Slike_tima = () => {
       { id: 4, title: "CR&AR" },
       { id: 5, title: "Logistika" },
       { id: 6, title: "HR" },
->>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
     ],
   });
 
@@ -53,46 +37,31 @@ const Slike_tima = () => {
   }, [current, people]);
 
   useEffect(() => {
-    let slider = setInterval(() => {
-<<<<<<< HEAD
-      setCurrent(current + 1);
-    }, 3000);
-=======
-      if (current == 6) {
-        toggleActiveStyles(0);
-        toggleActive(0);
-        goToSlide(0);
-        // setCurrent(-1);
-      } else {
-        toggleActiveStyles(current + 1);
-        toggleActive(current + 1);
-        goToSlide(current + 1);
-      }
+    let slider = setInterval(
+      () => {
+        setState(false);
+        if (current == 6) {
+          toggleActiveStyles(0);
+          toggleActive(0);
+          setCurrent(0);
+        } else {
+          toggleActiveStyles(current + 1);
+          toggleActive(current + 1);
+          setCurrent(current + 1);
+        }
 
-      console.log(current);
-      setCurrent(current + 1);
-    }, 3000);
+        console.log(current);
+        setCurrent(current + 1);
+      },
+      state === true ? 10000 : 3000
+    );
 
->>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
     return () => {
       clearInterval(slider);
     };
   }, [current]);
 
   const nextSlide = () => {
-<<<<<<< HEAD
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
-  if (!Array.isArray(people) || people.length <= 0) {
-    return null;
-  }
-  const goToSlide = (index) => {
-    setCurrent(index);
-  };
-=======
     const index = current === length - 1 ? 0 : current + 1;
     setCurrent(index);
     toggleActiveStyles(index);
@@ -106,26 +75,11 @@ const Slike_tima = () => {
     toggleActive(index);
   };
 
-  const goToSlide = (index) => {
-    setCurrent(index);
-  };
-
->>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
   const toggleActive = (index) => {
     changeState({ ...appState, activeObject: appState.objects[index] });
   };
 
   const toggleActiveStyles = (index) => {
-<<<<<<< HEAD
-    if (appState.objects[index] === appState.activeObject) {
-      return "box active";
-    } else {
-      return "box inactive";
-    }
-  };
-  return (
-    <div className="slike-tima-wrapper">
-=======
     console.log(appState.objects[index], appState.activeObject);
     if (appState.objects[index] === appState.activeObject) {
       return "box activeS";
@@ -166,7 +120,6 @@ const Slike_tima = () => {
 
   return (
     <div className="slike-tima-wrapper" id="tim">
->>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
       <div className="navbar-st">
         {appState.objects.map((elements, index) => (
           <h1
@@ -174,7 +127,8 @@ const Slike_tima = () => {
             className={toggleActiveStyles(index)}
             onClick={() => {
               toggleActive(index);
-              goToSlide(index);
+              setCurrent(index);
+              setState(true);
             }}
           >
             {elements.title}
@@ -185,24 +139,13 @@ const Slike_tima = () => {
         <div className="slike-tima-levo">
           <section className="slider">
             <img
-<<<<<<< HEAD
-              className="left-arrow"
-              src={StrelaLevo}
-              alt="Slika strele"
-              onClick={prevSlide}
-            />
-            <img
-              className="right-arrow"
-              src={StrelaDesno}
-              alt="Slika strele"
-              onClick={nextSlide}
-=======
               className={toggleActiveStylesLeftArrow()}
               src={StrelaLevo}
               alt="Slika strele"
               onClick={() => {
                 prevSlide();
                 toggleStateL();
+                setState(true);
               }}
             />
             <img
@@ -212,8 +155,8 @@ const Slike_tima = () => {
               onClick={() => {
                 nextSlide();
                 toggleStateR();
+                setState(true);
               }}
->>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
             />
             <img
               className="slika-bordera"
@@ -291,8 +234,4 @@ const Slike_tima = () => {
   );
 };
 
-<<<<<<< HEAD
 export default Slike_tima;
-=======
-export default Slike_tima;
->>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd

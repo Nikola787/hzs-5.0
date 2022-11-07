@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import React from "react";
 import "./radionice.css";
 import slikaPredavaca from "../../images/Petra.jpg";
@@ -121,4 +119,3 @@ const radionice = () => {
 };
 
 export default radionice;
->>>>>>> d39044c6fac2cc070b788a7252c926222c22cacd
