@@ -319,6 +319,8 @@
 
     margin-bottom: 8%;
     border-left: 2vw solid #00ffa3;
+
+    white-space: nowrap;
   }
 
   .levi-deo {
