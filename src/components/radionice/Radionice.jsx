@@ -70,9 +70,7 @@ const Radionice = () => {
           <p className="radionica-opis">
             Kako bi aplikacije naših takmičara dobile svoj izgled i bile
             pristupačne, ova radionica je posvećena upravo kreiranju korisničkog
-            interfejsa. Front-end je sve što korisnik vidi i omogućava laku
-            komunikaciju sa korisnikom, nebitno da li se radi o veb-sajtu ili
-            aplikaciji.
+            interfejsa. Front-end omogućava laku komunikaciju sa korisnikom, nebitno da li se radi o veb-sajtu ili aplikaciji.
           </p>
         </div>
       </div>
