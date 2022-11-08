@@ -8,6 +8,8 @@
   color: #ffff;
 
   white-space: nowrap;
+  overflow:auto;
+
 }
 
 .dani {
