@@ -132,14 +132,14 @@
 
 .radionica1-desno-container {
   display: flex;
-  width: 45%;
+  width: 52%;
   flex-direction: column;
 }
 
 .radionica1-desno-container .prvi-deo {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .radionica1-desno-container .slika_desna {
@@ -164,6 +164,9 @@
   font-weight: 400;
   text-align: right;
   padding-top: 2%;
+  height: 7vw;
+  width: 100%;
+  align-items: flex-start;
 }
 
 .radionica2-container,
@@ -207,8 +210,10 @@
   font-size: 1.2vw;
   font-weight: 400;
   text-align: left;
-  width: 35vw;
+  width: 100%;
   padding-top: 2%;
+  height: 7vw;
+  align-items: flex-start;
 }
 
 .radionica2-desno-container {
@@ -285,12 +290,12 @@
   }
   .radionica2-container {
     padding-top: 8%;
-    padding-bottom: 9%;
+    padding-bottom: 10%;
   }
 
   .radionica3-container {
     padding-top: 8%;
-    padding-bottom: 8%;
+    padding-bottom: 9%;
   }
 
   .radionica4-container {
@@ -384,21 +389,23 @@
   }
   .radionica1-desno-container .ime-predavaca {
     white-space: nowrap;
-    font-size: 6vw;
+    font-size: 5vw;
     color: #00ffa3;
   }
   .radionica2-levo-container .ime-predavaca {
     white-space: nowrap;
-    font-size: 6vw;
+    font-size: 5vw;
     color: #00ffa3;
   }
   .radionica1-desno-container .predavac-opis {
     text-align: start;
     font-size: 4vw;
+    height: 23vw;
   }
   .radionica2-levo-container .predavac-opis {
     font-size: 4vw;
     width: 100%;
+    height: 23vw;
   }
   .radionica2-container .visible,
   .radionica4-container .visible {

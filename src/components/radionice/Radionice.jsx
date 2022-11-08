@@ -36,7 +36,7 @@ const Radionice = () => {
             <h1
               className={`ime-predavaca ${Visible1 ? "visible1" : "hidden1"}`}
             >
-              Naziv pred.
+              Naziv predavača
             </h1>
           </div>
           <p className={`predavac-opis ${Visible1 ? "visible1" : "hidden1"}`}>
@@ -101,7 +101,7 @@ const Radionice = () => {
             <h1
               className={`ime-predavaca ${Visible3 ? "visible1" : "hidden1"}`}
             >
-             Naziv pred.
+              Naziv predavača
             </h1>
           </div>
           <p className={`predavac-opis ${Visible3 ? "visible1" : "hidden1"}`}>
@@ -113,7 +113,7 @@ const Radionice = () => {
         <div className="radionica2-levo-container">
           <div className="prvi-deo">
             <h1 className={`ime-predavaca ${Visible4 ? "visible" : "hidden"}`}>
-            Naziv predavača...
+              Naziv predavača
             </h1>
             <img
               className={`slika_leva ${Visible4 ? "visible2" : "hidden2"}`}
