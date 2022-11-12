@@ -22,7 +22,7 @@ const Radionice = () => {
           <p className="radionica-opis">
             Back-end podrazumeva serversku stranu, to jest izradu programa koji
             je zaslužan za rad veb-sajta ili aplikacije. Odgovoran je za
-            skladištenje, čuvanje i organizovanje podataka i osiguravanju da sve
+            skladištenje, čuvanje i organizovanje podataka i osigurava da sve
             na strani korisnika funkcioniše.
           </p>
         </div>
@@ -131,9 +131,9 @@ const Radionice = () => {
           <h1 className="redni-broj">004</h1>
           <h1 className="naziv-radionice">GIT</h1>
           <p className="radionica-opis">
-            Git je sistem za kontrolu i istoriju verzije koda, a samim tim i
+            Git je sistem za kontrolu i istoriju verzije koda, a samim tim je i
             veoma koristan za naše takmičare. Na ovoj radionici naučiće kako na
-            što lakši način kodirati u timu i upoznaće se sa prednostima koje
+            što lakši način programirati u timu i upoznaće se sa prednostima koje
             ovaj program nudi.
           </p>
         </div>

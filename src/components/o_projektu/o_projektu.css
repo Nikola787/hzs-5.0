@@ -323,7 +323,8 @@
     border-left: 2vw solid #00ffa3;
 
     white-space: nowrap;
-    overflow:auto;
+    /* overflow:auto; */
+    
   }
 
   .levi-deo {
