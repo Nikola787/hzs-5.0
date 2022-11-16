@@ -12,7 +12,6 @@ const animacija = () => {
         webkit-playsinline
         playsinline="true"
         muted
-        preload="none"
         type="video/mp4"
       >
         <source src={bgVideo} type="video/mp4" />
