@@ -13,6 +13,9 @@ const animacija = () => {
         playsinline="true"
         muted
         type="video/mp4"
+        controlBar = "false"
+        loadingSpinner = "false"
+        bigPlayButton = "false"
       >
         <source src={bgVideo} type="video/mp4" />
       </video>
