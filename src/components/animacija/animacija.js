@@ -16,6 +16,9 @@ const animacija = () => {
         controlBar = "false"
         loadingSpinner = "false"
         bigPlayButton = "false"
+
+        preload="auto"
+        poster="#181919"
       >
         <source src={bgVideo} type="video/mp4" />
       </video>
