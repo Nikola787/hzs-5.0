@@ -21,8 +21,8 @@ const PrijavaT = () => {
             Nestrpljivo očekujemo tvoju prijavu!
           </p>
         </div>
-      </div>
-      <button className="dugme-prijava" onClick={() => navigate('/prijava')}>PRIJAVI SE</button>
+      </div >
+      {/* <button className="dugme-prijava" onClick={() => navigate('/prijava')}>PRIJAVI SE</button> */}
     </div>
   );
 };

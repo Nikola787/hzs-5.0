@@ -38,26 +38,23 @@ const Tajmer = () => {
 
   const [state, setState] = useState(false);
 
-  const changevalueonScroll = () => {
-    const scrollValue = document.documentElement.scrollTop;
+  // const changevalueonScroll = () => {
+  //   const scrollValue = document.documentElement.scrollTop;
 
-    // console.log(scrollValue);
-    // console.log(document.documentElement.clientWidth)
+  //   if (scrollValue > 170) {
+  //     setState(true);
+  //   } else {
+  //     setState(false);
+  //   }
+  // };
 
-    if (scrollValue > 170) {
-      setState(true);
-    } else {
-      setState(false);
-    }
-  };
-
-  window.addEventListener("scroll", changevalueonScroll);
+  // window.addEventListener("scroll", changevalueonScroll);
 
   return (
     <div className="wrapper-t">
       <div className="timer-text">
         <div className={state ? "timer-span timer-span-f" : "timer-span"}>
-          DO ZATVARANJA PRIJAVA
+          PRIJAVE SU ZATVORENE!
         </div>
       </div>
       <div className={state ? "timer timer-f" : "timer"}>

@@ -3,6 +3,11 @@ import "./radionice.css";
 import slikaPredavaca from "../../images/slika.png";
 import { useInView } from "react-intersection-observer";
 
+import Boris from "../../images/Boris Vajagić-min.JPG";
+import Branislav from "../../images/Branislav Stojanovic-min.jpeg";
+import Jelena from "../../images/Jelena Milev-min.jpg";
+import Nikola from "../../images/Nikola Mirilo-min.jpg";
+
 const Radionice = () => {
   const { ref: myRef1, inView: Visible1 } = useInView();
   const { ref: myRef2, inView: Visible2 } = useInView();
@@ -22,25 +27,30 @@ const Radionice = () => {
           <p className="radionica-opis">
             Back-end podrazumeva serversku stranu, to jest izradu programa koji
             je zaslužan za rad veb-sajta ili aplikacije. Odgovoran je za
-            skladištenje, čuvanje i organizovanje podataka i osigurava da sve
-            na strani korisnika funkcioniše.
+            skladištenje, čuvanje i organizovanje podataka i osigurava da sve na
+            strani korisnika funkcioniše.
           </p>
         </div>
         <div className="radionica1-desno-container">
           <div className="prvi-deo">
             <img
               className={`slika_desna ${Visible1 ? "visible2" : "hidden2"}`}
-              src={slikaPredavaca}
+              src={Branislav}
               alt="Slika predavaca"
             />
             <h1
               className={`ime-predavaca ${Visible1 ? "visible1" : "hidden1"}`}
             >
-              Naziv predavača
+              Branislav Stojanović
             </h1>
           </div>
           <p className={`predavac-opis ${Visible1 ? "visible1" : "hidden1"}`}>
-            Biografija predavača...
+            Branislav je student Master studija na FON-u na smeru za
+            Informacione tehnologije i sajber bezbednost. Praktično znanje je
+            stekao radeći u IT sektoru, učešćem na hakatonima i razvojem ličnih
+            projekata. Trenutno je zaposlen na poziciji softverskog inženjera u
+            kompaniji Blinking gde je primarno zadužen za razvoj mikroservisa u
+            NodeJS okruženju.
           </p>
         </div>
       </div>
@@ -48,16 +58,19 @@ const Radionice = () => {
         <div className="radionica2-levo-container">
           <div className="prvi-deo">
             <h1 className={`ime-predavaca ${Visible2 ? "visible" : "hidden"}`}>
-              Naziv predavača
+              Nikola Mirilo
             </h1>
             <img
               className={`slika_leva ${Visible2 ? "visible2" : "hidden2"}`}
-              src={slikaPredavaca}
+              src={Nikola}
               alt="Slika predavaca"
             />
           </div>
           <p className={`predavac-opis ${Visible2 ? "visible" : "hidden"}`}>
-            Biografija predavača...
+            Nikola je student četvrte godine na Fakultetu organizacionih nauka,
+            smer Operacioni Menadžment. Zaposlen je kao Junior IT Projektni
+            Menadžer u kompaniji Adacta. Pored projektnog menadžmenta radi i kao
+            front-end web developer na startup projektu pod nazivom „Swapabee”.
           </p>
         </div>
         <div
@@ -70,7 +83,8 @@ const Radionice = () => {
           <p className="radionica-opis">
             Kako bi aplikacije naših takmičara dobile svoj izgled i bile
             pristupačne, ova radionica je posvećena upravo kreiranju korisničkog
-            interfejsa. Front-end omogućava laku komunikaciju sa korisnikom, nebitno da li se radi o veb-sajtu ili aplikaciji.
+            interfejsa. Front-end omogućava laku komunikaciju sa korisnikom,
+            nebitno da li se radi o veb-sajtu ili aplikaciji.
           </p>
         </div>
       </div>
@@ -93,17 +107,22 @@ const Radionice = () => {
           <div className="prvi-deo">
             <img
               className={`slika_desna ${Visible3 ? "visible2" : "hidden2"}`}
-              src={slikaPredavaca}
+              src={Boris}
               alt="Slika predavaca"
             />
             <h1
               className={`ime-predavaca ${Visible3 ? "visible1" : "hidden1"}`}
             >
-              Naziv predavača
+              Boris Vajagić
             </h1>
           </div>
           <p className={`predavac-opis ${Visible3 ? "visible1" : "hidden1"}`}>
-            Biografija predavača...
+            Boris je student četvrte godine Fakulteta organizacionih nauka. U
+            prethodnoj školskoj godini obavljao je ulogu predsednika Udruženja
+            studenata informatike FONIS, a sada je član Upravnog odbora za
+            upravljanje projektima. Od malih nogu pa sve do danas deo je
+            različitih događaja u kojima ima priliku da pokaže veštine javnog
+            nastupa i govorništva.
           </p>
         </div>
       </div>
@@ -111,16 +130,18 @@ const Radionice = () => {
         <div className="radionica2-levo-container">
           <div className="prvi-deo">
             <h1 className={`ime-predavaca ${Visible4 ? "visible" : "hidden"}`}>
-              Naziv predavača
+              Jelena Milev
             </h1>
             <img
               className={`slika_leva ${Visible4 ? "visible2" : "hidden2"}`}
-              src={slikaPredavaca}
+              src={Jelena}
               alt="Slika predavaca"
             />
           </div>
           <p className={`predavac-opis ${Visible4 ? "visible" : "hidden"}`}>
-            Biografija predavača...
+            Jelena Milev je Master inženjer organizacionih nauka i Medior
+            software developer u kompaniji Levi9. Bavi se razvojem veb
+            aplikacija korišćenjem Spring i Angular frameworka.
           </p>
         </div>
         <div
@@ -133,8 +154,8 @@ const Radionice = () => {
           <p className="radionica-opis">
             Git je sistem za kontrolu i istoriju verzije koda, a samim tim je i
             veoma koristan za naše takmičare. Na ovoj radionici naučiće kako na
-            što lakši način programirati u timu i upoznaće se sa prednostima koje
-            ovaj program nudi.
+            što lakši način programirati u timu i upoznaće se sa prednostima
+            koje ovaj program nudi.
           </p>
         </div>
       </div>

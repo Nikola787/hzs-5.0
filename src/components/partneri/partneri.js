@@ -31,8 +31,22 @@ import medijski15 from "./assets/medijski/15.jpeg";
 
 import robni1 from "./assets/robni/1.png";
 import robni2 from "./assets/robni/2.png";
+import robni3 from "./assets/robni/3.png";
+import robni4 from "./assets/robni/4.png";
 
-import Pokrovitelj from "./assets/pokrovitelj.png"
+
+import godisnji1 from "./assets/godisnji/1.png";
+import godisnji2 from "./assets/godisnji/2.png";
+import godisnji3 from "./assets/godisnji/3.png";
+import godisnji4 from "./assets/godisnji/4.png";
+import godisnji5 from "./assets/godisnji/5.png";
+import godisnji6 from "./assets/godisnji/6.png";
+import godisnji7 from "./assets/godisnji/7.png";
+import godisnji8 from "./assets/godisnji/8.png";
+import godisnji9 from "./assets/godisnji/9.png";
+import godisnji10 from "./assets/godisnji/10.png";
+
+import Pokrovitelj from "./assets/pokrovitelj.png";
 
 const Partneri = (props) => {
   const partneriSettings = {
@@ -115,12 +129,12 @@ const Partneri = (props) => {
       pozadina: "#C3B0FF",
       link: "https://nova.rs/",
     },
-    // {
-    //   partnerSlika: medijski7,
-    //   partnerIme: "Slika",
-    //   pozadina: "#C3B0FF",
-    //   link: "",
-    // },
+    {
+      partnerSlika: medijski7,
+      partnerIme: "Slika",
+      pozadina: "#C3B0FF",
+      link: "https://www.instagram.com/codewithmary/?igshid=YmMyMTA2M2Y%3D",
+    },
     {
       partnerSlika: medijski8,
       partnerIme: "n1",
@@ -185,6 +199,18 @@ const Partneri = (props) => {
       link: "https://www.instagram.com/dev_hub_/",
     },
     {
+      partnerSlika: robni3,
+      partnerIme: "campster",
+      pozadina: "#000000",
+      link: "https://www.thecampster.com/rs/",
+    },
+    {
+      partnerSlika: robni4,
+      partnerIme: "njamb",
+      pozadina: "#C3B0FF",
+      link: "https://www.jaffa.rs/en/njamb/",
+    },
+    {
       partnerSlika: Slika,
       partnerIme: "Slika",
       pozadina: "#C3B0FF",
@@ -195,6 +221,75 @@ const Partneri = (props) => {
       partnerIme: "Slika",
       pozadina: "#C3B0FF",
       link: "http://fonis.rs/",
+    },
+    {
+      partnerSlika: Slika,
+      partnerIme: "Slika",
+      pozadina: "#C3B0FF",
+      link: "http://fonis.rs/",
+    },
+  ];
+
+  const godisnjiPartneri = [
+    {
+      partnerSlika: godisnji1,
+      partnerIme: "upisi fon",
+      pozadina: "#C3B0FF",
+      link: "https://upisifon.rs/",
+    },
+    {
+      partnerSlika: godisnji2,
+      partnerIme: "devhub",
+      pozadina: "#000000",
+      link: "https://www.instagram.com/dev_hub_/",
+    },
+    {
+      partnerSlika: godisnji3,
+      partnerIme: "guarana",
+      pozadina: "#C3B0FF",
+      link: "https://guarana.rs/",
+    },
+    {
+      partnerSlika: godisnji4,
+      partnerIme: "hedwell",
+      pozadina: "#C3B0FF",
+      link: "https://hedwell.com/",
+    },
+    {
+      partnerSlika: godisnji5,
+      partnerIme: "mainstream",
+      pozadina: "#C3B0FF",
+      link: "https://www.mainstream.rs/en/",
+    },
+    {
+      partnerSlika: godisnji6,
+      partnerIme: "mintpromoprint",
+      pozadina: "#C3B0FF",
+      link: "https://www.mintpromoprint.rs/",
+    },
+    {
+      partnerSlika: godisnji7,
+      partnerIme: "primeholding",
+      pozadina: "#C3B0FF",
+      link: "https://primeholding.com/",
+    },
+    {
+      partnerSlika: godisnji8,
+      partnerIme: "devit",
+      pozadina: "#C3B0FF",
+      link: "https://www.devit.rs/",
+    },
+    {
+      partnerSlika: godisnji9,
+      partnerIme: "fon",
+      pozadina: "#C3B0FF",
+      link: "http://www.fon.bg.ac.rs/",
+    },
+    {
+      partnerSlika: godisnji10,
+      partnerIme: "sbgakademija",
+      pozadina: "#C3B0FF",
+      link: "https://sbgakademija.rs/",
     },
   ];
 
@@ -279,7 +374,7 @@ const Partneri = (props) => {
 
       <div className="partneri-box">
         <PartneriSlider
-          partneri={partneriLista}
+          partneri={godisnjiPartneri}
           settings={partneriSettings}
           width="16em"
           height="9em"
