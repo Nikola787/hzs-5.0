@@ -18,7 +18,7 @@
 .radionica2-container,
 .radionica3-container,
 .radionica4-container {
-  padding: 10%;
+  padding: 10% 5%;
 }
 
 .radionica1-container,
@@ -26,7 +26,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15%;
+  gap: 10%;
+  padding-right: 0%;
 }
 
 .radionica1-levo-container {
@@ -132,14 +133,14 @@
 
 .radionica1-desno-container {
   display: flex;
-  width: 52%;
   flex-direction: column;
+  width: 45%;
 }
 
 .radionica1-desno-container .prvi-deo {
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
-  justify-content: space-between;
 }
 
 .radionica1-desno-container .slika_desna {
@@ -179,7 +180,7 @@
 .radionica2-levo-container {
   display: flex;
   flex-direction: column;
-  max-width: 50.5%;
+  max-width: 40%;
   padding-bottom: 5%;
 }
 
@@ -268,6 +269,7 @@
   .radionica4-container {
     background-image: url(../../images/Radionice-mobilni.png);
     background-size: 100% 100%;
+    padding: 10%;
   }
   .radionica1-container,
   .radionica3-container {
@@ -334,9 +336,12 @@
   .radionica1-desno-container .prvi-deo {
     flex-direction: row-reverse;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
   }
   .radionica2-levo-container .prvi-deo {
+    justify-content: space-between;
+  }
+  .radionica3-container .prvi-deo {
     justify-content: space-between;
   }
   .radionica1-desno-container .slika_desna,
@@ -399,13 +404,23 @@
   }
   .radionica1-desno-container .predavac-opis {
     text-align: start;
-    font-size: 4vw;
+    padding-top: 1%;
+    padding-left: 4%;
+    font-size: 3.4vw;
+    width: 110%;
     height: 23vw;
   }
   .radionica2-levo-container .predavac-opis {
-    font-size: 4vw;
-    width: 100%;
+    font-size: 3.4vw;
+    width: 110%;
     height: 23vw;
+    padding-top: 3%;
+  }
+  .radionica3-container .predavac-opis {
+    padding-left: 0;
+  }
+  .radionica4-container .predavac-opis {
+    padding-top: 0;
   }
   .radionica2-container .visible,
   .radionica4-container .visible {

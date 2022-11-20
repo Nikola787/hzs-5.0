@@ -45,12 +45,10 @@ const Radionice = () => {
             </h1>
           </div>
           <p className={`predavac-opis ${Visible1 ? "visible1" : "hidden1"}`}>
-            Branislav je student Master studija na FON-u na smeru za
-            Informacione tehnologije i sajber bezbednost. Praktično znanje je
+            Branislav je student Master studija na FON-u. Praktično znanje je
             stekao radeći u IT sektoru, učešćem na hakatonima i razvojem ličnih
             projekata. Trenutno je zaposlen na poziciji softverskog inženjera u
-            kompaniji Blinking gde je primarno zadužen za razvoj mikroservisa u
-            NodeJS okruženju.
+            kompaniji Blinking.
           </p>
         </div>
       </div>
@@ -67,10 +65,10 @@ const Radionice = () => {
             />
           </div>
           <p className={`predavac-opis ${Visible2 ? "visible" : "hidden"}`}>
-            Nikola je student četvrte godine na Fakultetu organizacionih nauka,
-            smer Operacioni Menadžment. Zaposlen je kao Junior IT Projektni
-            Menadžer u kompaniji Adacta. Pored projektnog menadžmenta radi i kao
-            front-end web developer na startup projektu pod nazivom „Swapabee”.
+            Nikola je student četvrte godine na Fakultetu organizacionih nauka.
+            Zaposlen je kao Junior IT Projektni Menadžer u kompaniji Adacta.
+            Pored projektnog menadžmenta radi i kao front-end web developer na
+            startup projektu pod nazivom „Swapabee”.
           </p>
         </div>
         <div
@@ -120,9 +118,7 @@ const Radionice = () => {
             Boris je student četvrte godine Fakulteta organizacionih nauka. U
             prethodnoj školskoj godini obavljao je ulogu predsednika Udruženja
             studenata informatike FONIS, a sada je član Upravnog odbora za
-            upravljanje projektima. Od malih nogu pa sve do danas deo je
-            različitih događaja u kojima ima priliku da pokaže veštine javnog
-            nastupa i govorništva.
+            upravljanje projektima.
           </p>
         </div>
       </div>
