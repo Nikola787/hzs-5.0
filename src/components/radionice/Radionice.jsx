@@ -1,12 +1,12 @@
-import React from "react";
-import "./radionice.css";
-import slikaPredavaca from "../../images/slika.png";
-import { useInView } from "react-intersection-observer";
-
-import Boris from "../../images/Boris Vajagić-min.JPG";
+import Boris from "../../images/Boris Vajagić-min.jpeg";
 import Branislav from "../../images/Branislav Stojanovic-min.jpeg";
 import Jelena from "../../images/Jelena Milev-min.jpg";
 import Nikola from "../../images/Nikola Mirilo-min.jpg";
+
+import React from "react";
+import "./radionice.css";
+import slikaPredavaca from "../../images/5-3.jpg";
+import { useInView } from "react-intersection-observer";
 
 const Radionice = () => {
   const { ref: myRef1, inView: Visible1 } = useInView();
@@ -45,7 +45,7 @@ const Radionice = () => {
             </h1>
           </div>
           <p className={`predavac-opis ${Visible1 ? "visible1" : "hidden1"}`}>
-            Branislav je student Master studija na FON-u. Praktično znanje je
+            Branislav je student master studija na FON-u. Praktično znanje je
             stekao radeći u IT sektoru, učešćem na hakatonima i razvojem ličnih
             projekata. Trenutno je zaposlen na poziciji softverskog inženjera u
             kompaniji Blinking.
@@ -66,9 +66,9 @@ const Radionice = () => {
           </div>
           <p className={`predavac-opis ${Visible2 ? "visible" : "hidden"}`}>
             Nikola je student četvrte godine na Fakultetu organizacionih nauka.
-            Zaposlen je kao Junior IT Projektni Menadžer u kompaniji Adacta.
+            Zaposlen je kao junior IT projektni menadžer u kompaniji Adacta.
             Pored projektnog menadžmenta radi i kao front-end web developer na
-            startup projektu pod nazivom „Swapabee”.
+            startup projektu pod nazivom <i>„Swapabee”</i>.
           </p>
         </div>
         <div
@@ -135,7 +135,7 @@ const Radionice = () => {
             />
           </div>
           <p className={`predavac-opis ${Visible4 ? "visible" : "hidden"}`}>
-            Jelena Milev je Master inženjer organizacionih nauka i Medior
+            Jelena Milev je master inženjer organizacionih nauka i medior
             software developer u kompaniji Levi9. Bavi se razvojem veb
             aplikacija korišćenjem Spring i Angular frameworka.
           </p>
