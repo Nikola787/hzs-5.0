@@ -65,6 +65,16 @@
   animation-timing-function: ease-in-out;
 }
 
+.hidden22 {
+  visibility: hidden;
+}
+.visible22 {
+  visibility: visible;
+  animation-name: animImg;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
 @keyframes animImg {
   0% {
     transform: scale(0);
@@ -137,13 +147,32 @@
   width: 45%;
 }
 
+.radionica1-desno-container2 {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+
 .radionica1-desno-container .prvi-deo {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
+.radionica1-desno-container2 .prvi-deo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .radionica1-desno-container .slika_desna {
+  border: #00ffa3 3px solid;
+  border-radius: 50%;
+  width: 25vw;
+}
+
+.radionica1-desno-container2 .slika_desna2 {
   border: #00ffa3 3px solid;
   border-radius: 50%;
   width: 25vw;
@@ -158,7 +187,28 @@
   white-space: nowrap;
 }
 
+.radionica1-desno-container2 .ime-predavaca {
+  display: flex;
+  color: #ffffff;
+  font-size: 2.2vw;
+  font-family: "Manrope";
+  font-weight: 400;
+  white-space: nowrap;
+}
+
 .radionica1-desno-container .predavac-opis {
+  font-family: "Manrope";
+  color: #ffffff;
+  font-size: 1.2vw;
+  font-weight: 400;
+  text-align: right;
+  padding-top: 2%;
+  height: 7vw;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.radionica1-desno-container2 .predavac-opis {
   font-family: "Manrope";
   color: #ffffff;
   font-size: 1.2vw;
@@ -311,6 +361,12 @@
     padding-top: 15%;
   }
 
+  .radionica1-container .radionica1-desno-container2 {
+    width: 100%;
+    align-items: center;
+    padding-top: 15%;
+  }
+
   .radionica2-container .radionica2-levo-container {
     width: 100%;
     padding-top: 15%;
@@ -321,6 +377,12 @@
     width: 100%;
     padding-top: 15%;
   }
+
+  .radionica3-container .radionica1-desno-container2 {
+    width: 100%;
+    padding-top: 15%;
+  }
+
   .radionica4-container .radionica2-levo-container {
     width: 100%;
     padding-top: 22%;
@@ -338,6 +400,12 @@
     width: 100%;
     justify-content: center;
   }
+
+  .radionica1-desno-container2 .prvi-deo {
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: center;
+  }
   .radionica2-levo-container .prvi-deo {
     justify-content: space-between;
   }
@@ -345,6 +413,12 @@
     justify-content: space-between;
   }
   .radionica1-desno-container .slika_desna,
+  .radionica2-levo-container .slika_leva {
+    border: #00ffa3 1px solid;
+    width: 40vw;
+  }
+
+  .radionica1-desno-container2 .slika_desna2,
   .radionica2-levo-container .slika_leva {
     border: #00ffa3 1px solid;
     width: 40vw;
@@ -397,12 +471,25 @@
     font-size: 5vw;
     color: #00ffa3;
   }
+  .radionica1-desno-container2 .ime-predavaca {
+    white-space: nowrap;
+    font-size: 5vw;
+    color: #00ffa3;
+  }
   .radionica2-levo-container .ime-predavaca {
     white-space: nowrap;
     font-size: 5vw;
     color: #00ffa3;
   }
   .radionica1-desno-container .predavac-opis {
+    text-align: start;
+    padding-top: 1%;
+    padding-left: 4%;
+    font-size: 3.4vw;
+    width: 110%;
+    height: 23vw;
+  }
+  .radionica1-desno-container2 .predavac-opis {
     text-align: start;
     padding-top: 1%;
     padding-left: 4%;

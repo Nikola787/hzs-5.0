@@ -1,4 +1,4 @@
-import Boris from "../../images/Boris Vajagić-min.jpeg";
+import Boris from "../../images/Boris.jpg";
 import Branislav from "../../images/Branislav Stojanovic-min.jpeg";
 import Jelena from "../../images/Jelena Milev-min.jpg";
 import Nikola from "../../images/Nikola Mirilo-min.jpg";
@@ -101,10 +101,10 @@ const Radionice = () => {
             odlično upoznati sa važnošću pravilnog izlaganja rešenja.
           </p>
         </div>
-        <div className="radionica1-desno-container">
+        <div className="radionica1-desno-container2">
           <div className="prvi-deo">
             <img
-              className={`slika_desna ${Visible3 ? "visible2" : "hidden2"}`}
+              className={`slika_desna2 ${Visible3 ? "visible22" : "hidden22"}`}
               src={Boris}
               alt="Slika predavaca"
             />
