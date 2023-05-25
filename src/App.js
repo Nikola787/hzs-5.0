@@ -24,7 +24,7 @@ function App() {
         <Loader />
       ) : (
         <Routes>
-          {/* <Route path="/prijava" exact element={<Prijava />} /> */}
+          <Route path="/prijava" exact element={<Prijava />} />
           <Route path="/" exact element={<Home />} />
         </Routes>
       )}

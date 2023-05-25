@@ -2,6 +2,7 @@ import Boris from "../../images/Boris.jpg";
 import Branislav from "../../images/Branislav Stojanovic-min.jpeg";
 import Jelena from "../../images/Jelena Milev-min.jpg";
 import Nikola from "../../images/Nikola Mirilo-min.jpg";
+import NikolaR from "../../images/moze2.jpg"
 
 import React from "react";
 import "./radionice.css";
@@ -126,18 +127,19 @@ const Radionice = () => {
         <div className="radionica2-levo-container">
           <div className="prvi-deo">
             <h1 className={`ime-predavaca ${Visible4 ? "visible" : "hidden"}`}>
-              Jelena Milev
+              Nikola Ratković
             </h1>
             <img
               className={`slika_leva ${Visible4 ? "visible2" : "hidden2"}`}
-              src={Jelena}
+              src={NikolaR}
               alt="Slika predavaca"
             />
           </div>
           <p className={`predavac-opis ${Visible4 ? "visible" : "hidden"}`}>
-            Jelena Milev je master inženjer organizacionih nauka i medior
-            software developer u kompaniji Levi9. Bavi se razvojem veb
-            aplikacija korišćenjem Spring i Angular frameworka.
+            Nikola je student četvrte godine osnovnih studija na Fakultetu
+            organizacionih nauka. Svoje znanje iz programiranje je unapredio
+            samostalnim radom na projektima, a trenutno je i koordinator IT
+            tima.
           </p>
         </div>
         <div

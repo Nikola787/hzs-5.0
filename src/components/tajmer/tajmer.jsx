@@ -32,29 +32,29 @@ const Tajmer = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setTajm(() => getTime(new Date("Nov 17, 2022 23:59:59").getTime()));
+      setTajm(() => getTime(new Date("Nov 17, 2023 23:59:59").getTime()));
     }, 1000);
   });
 
   const [state, setState] = useState(false);
 
-  // const changevalueonScroll = () => {
-  //   const scrollValue = document.documentElement.scrollTop;
+  const changevalueonScroll = () => {
+    const scrollValue = document.documentElement.scrollTop;
 
-  //   if (scrollValue > 170) {
-  //     setState(true);
-  //   } else {
-  //     setState(false);
-  //   }
-  // };
+    if (scrollValue > 170) {
+      setState(true);
+    } else {
+      setState(false);
+    }
+  };
 
-  // window.addEventListener("scroll", changevalueonScroll);
+  window.addEventListener("scroll", changevalueonScroll);
 
   return (
     <div className="wrapper-t">
       <div className="timer-text">
         <div className={state ? "timer-span timer-span-f" : "timer-span"}>
-          PRIJAVE SU ZATVORENE!
+          DO ZATVARNJA PRIJAVA
         </div>
       </div>
       <div className={state ? "timer timer-f" : "timer"}>

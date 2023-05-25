@@ -60,12 +60,12 @@ const O_projektu = () => {
                 .
               </p>
             </div>
-            {/* <button
+            <button
               className="dugme-prijava-o"
               onClick={() => navigate("/prijava")}
             >
               PRIJAVI SE
-            </button> */}
+            </button>
           </div>
           <div className="desni-deo"></div>
           <div className="statistika-box">

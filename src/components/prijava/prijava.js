@@ -170,6 +170,7 @@ const Prijava = () => {
   };
 
   const posaljiPrijavu = async () => {
+    return;
     if (
       clan1.imePrezime === "" ||
       clan2.imePrezime === "" ||
